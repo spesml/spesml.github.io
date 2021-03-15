@@ -1,0 +1,303 @@
+/** General Settings */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(./bilder/body_bg.png);
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	line-height: 20px;
+	text-align: justify;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+body_lang {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(./bilder/body_bg-2.png);
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	line-height: 20px;
+	text-align: justify;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+a {
+	color: #0077dd;
+}
+
+a:hover {
+	color:#A5B800;
+	text-decoration: none;
+}
+
+.list1 {
+	margin: 0;
+	padding: 10;
+	list-style-type: circle;
+}
+
+.list1 a {
+	padding-left: 12px;
+}
+
+.list2 {
+	margin: 0;
+	list-style: circle;
+}
+
+.list2 a {
+	padding-left: 12px;
+}
+
+.red {
+	color: red;
+}
+
+/** Header-Picture*/
+.head{
+	height: 270px;
+	background-image: url(./bilder/logo_spesml.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+.navigation {
+	padding-top: 0px;
+}
+
+.navigation ul {
+	color:#A5B800;
+	margin-left: 10px;
+	padding-left:10px;
+}
+
+.navigation ul li {
+	margin:2px 0px;
+	color:#003F77;
+}
+
+.navigation ul li a {
+	text-decoration: none;
+	color: #003F77;
+}
+
+.navigation ul li a:hover {
+	text-decoration: none;
+	color:#A5B800;
+}
+
+.navigation ul li a.on{
+	text-decoration: none;
+	font-weight: bold;
+	color:#1E3952;
+}
+
+.navigation a.on{
+	text-decoration: none;
+	font-weight: bold;
+	color:#1E3952;
+}
+
+/** Header */
+
+#header {
+	width: 800px;
+	margin: 0px auto;
+	padding: 1em;
+}
+
+#header h1 {
+	margin: 0px;
+	padding: 20px 0px 0px 0px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#header h2 {
+	margin: 0 0 0 -80px;
+	padding: 0px 0px 0px 95px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/** Header-Menu */
+
+#menu {
+	width: 800px;
+	margin: 0px auto;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	background: #FFFFFF;
+	color: #254360;
+}
+
+#menu .active {
+	background: #FFFFFF;
+	color: #254360;
+}
+
+/** Content */
+
+#content {
+	width: 800px;
+	margin: -15px;
+	padding: 0px 0px 0px 0px;
+	background: #FFFFFF;
+}
+
+#col {
+	float: right;
+	width: 730px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#col h2 {
+	height: 22px;
+	border-bottom: 2px solid grey;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+#col h3 {
+	height: 22px;
+	border-bottom: 2px solid grey;
+	border-spacing: 2px;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#col h3a {
+	height: 22px;
+	border-spacing: 2px;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#right_col {
+	float: right;
+	width: 530px;
+	padding-left: 20px;
+	border-left: 2px solid grey;
+}
+
+#right_col h2 {
+	height: 22px;
+	border-bottom: 2px solid grey;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+#right_col h3 {
+	height: 22px;
+	border-bottom: 2px solid grey;
+	border-spacing: 2px;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#right_col h3a {
+	height: 22px;
+	border-spacing: 2px;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#left_col {
+	float: left;
+	width: 200px;
+}
+
+#left_col h2 {
+	height: 22px;
+	border-bottom: 2px solid grey;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+#left_col h3 {
+	height: 22px;
+	border-bottom: 2px solid grey;
+	border-spacing: 2px;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#orgatab-cell{
+	padding: 7px 15px 7px 30px; 
+}
+
+#orgatab{
+	border-style: none;
+	margin-left: 30px;
+}
+
+/** Footer */
+
+#footer {
+	clear: both;
+	width: 800px;
+	background: #1E3952;
+	margin: 0px auto;
+	height: 130px;
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+}
+
+#footer p {
+	margin: 0px;
+	padding: 18px 0px 0px 0px;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #CCCCCC;
+}
+
+.left_logo{
+	height: 80px;
+	width: 200px;
+	padding: 0px 0px 0px 10px;
+	margin-top: -10px;
+	text-align: left;
+}
+
+.right_logo{
+	height: 80px;
+	width: 200px;
+	padding: 0px 10px 0px 0px;
+	margin-top: -10px;
+	text-align: right;
+}
+
+.centertext {
+	text-align: center;
+	width: 400px;
+}
