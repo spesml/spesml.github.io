@@ -67,12 +67,39 @@
 						</div>
 					</div>
 					<div id="right_col">
-						<table>
+						<table border="0" cellpadding="15" cellspacing="0" width="100%">
 							<tr>
 								<td><h2><img src="./images/logical_viewpoint/LogicalViewpoint.png" align="left" hspace="5">SpesML Plugin - Logical Viewpoint</h2><br>
 									<h4 id="overview">Overview</h4>
+										<p>In order to realize the desired functionality that is specified in the models of the functional viewpoint, the system under development is decomposed into a network of communicating logical components.
+										The result is a logical architecture model which is independent on any technological constraints and which can be reused for multiple platforms.</p>
+										<p>The Logical Components within the Logical Component Architecture provide a syntactic interface and a behavior specified by state automata.
+										To compose the individual logical components to a logical architecture, the components interfaces are connected via connectors.
+										Every such connection specifies which output channels will provide values to with input channels.</p>
 									<h4 id="method">Method</h4>
+										<p>The elements from the <a href="functional_viewpoint.html">functional architecture</a> are mapped onto the components of the logical architecture.
+										In general, this mapping is n:m.
+										We recommend to design the functional white-box models already with the component architecture in mind, to achieve a n:1 mapping of elementary functions onto logical components.</p>
+										<p>The platform independent logical components of the Logical Component Architecture will be mapped to technical components of the <a href="technical_viewpoint.html">technical architecture</a> in order to come to a platform dependent implementation of the component.</p>
+										<p>The following figure illustrates these relations:</p>
+										
+											<img src="./images/logical_viewpoint/logical_architecture_concept.png" alt="Logical Architecture Concepts" width="100%" />
+											
 									<h4 id="structure">Structure</h4>
+										<p>The Logical Architecture is modelled in the <em>Logical Viewpoint</em> folder of a SpesML Project.
+										This diagram can be defined inside any logical (sub-)system (i.e. logical component).</p>
+										<p>The following figure shows how the logical architecture of an exemplary window lifter system is embedded in the model:</p>
+										
+											<center>
+											<img src="./images/logical_viewpoint/logical_architecture_window-lifter_containment.png" alt="Logical Architecture Concepts" width="250"" />
+											</center>
+											
+										<p>Inside the SpesML Logical Internal Component Diagram the modeler can use all <em>Logical Components</em> to model the actual Logical Component Architecture.
+										The <em>Logical Interfaces</em> of these components can then be connected via <em>Connectors</em>.
+										In the following figure you can see how the logical architecture of the window lifter system is modelled:</p>
+										
+											<img src="./images/logical_viewpoint/logical_architecture_window-lifter.png" alt="Logical Architecture Concepts" width="100%" />
+											
 									<h4 id="howto">How to Model</h4>
 									<h4 id="elements">Elements</h4>
 										<h5 id="logical_viewpoint"><img src="./images/logical_viewpoint/LogicalViewpoint.png" align="left" hspace="5">Logical Viewpoint</h5>
