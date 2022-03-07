@@ -173,29 +173,31 @@
 										<h5 id="logical_context"><img src="./images/logical_viewpoint/LogicalContext.png" align="left" hspace="5">Logical Context</h5>
 										<h5 id="logical_actor"><img src="./images/logical_viewpoint/LogicalActor.png" align="left" hspace="5">Logical Actor</h5>
 										<h5 id="logical_component"><img src="./images/logical_viewpoint/LogicalComponent.png" align="left" hspace="5">Logical Component</h5>
-										This element is based on a <i>SysML Block</i> with a dedicated stereotype that allows to define where the element can be created and what sub-elements can be created.  
-										A <i>Logical Component</i> provides a syntactic interface and a behavior specified by state automata.
+										This element is based on a <i>SysML Block</i> with a dedicated stereotype that allows to define where the element. In addition, it restricts that only certain sub-elements can be created
+										below a <i>Logical Component</i>. <i>Logical Components</i> provide a syntactic interface and a behavior specified by state automata. The syntactic interface can be specified by using 
+										<a href="logical_viewpoint.html#functional_interface_type">Logical Interface Types</a> and <a href="logical_viewpoint.html#channel">Channels</a>.
 										
 										<h5 id="logical_component_part"><img src="./images/logical_viewpoint/LogicalComponentPart.png" align="left" hspace="5">Logical Component Part</h5>
 										<h5 id="functional_interface_type"><img src="./images/logical_viewpoint/LogicalInterfaceType.png" align="left" hspace="5">Logical Interface Type</h5>
 										<h5 id="channel"><img src="./images/universal_interface_model/Channel.png" align="left" hspace="5">Channel</h5>
 									<h4 id="diagrams">Diagrams</h1>
 										<h5 id="logical_impact_map"><img src="./images/diagrams/map.png" align="left" hspace="5">SpesML Logical Impact Map</h5>
-										This relation map shows <i>Logical Components</i> and what elements from the <i>Technical Viewpoint</i> are tracing to these elements. 
-										By default, all <i>Logical Components</i> are shown but it is also possible to drag & drop a single <i>Logical Component</i> to the relation map to show only the particular relationships.     
+										This relation map shows <a href="logical_viewpoint.html#logical_component">Logical Component</a> and what elements from the <a href="technical_viewpoint.html">Technical Component</a> are tracing to these elements. 
+										By default, all <a href="logical_viewpoint.html#logical_component">Logical Components</a> are shown but it is also possible to drag & drop a single <a href="logical_viewpoint.html#logical_component">Logical Component</a> to the relation map to show only the particular relationships.     
 										
 										<h5 id="logical_tracing_map"><img src="./images/diagrams/map.png" align="left" hspace="5">SpesML Logical Tracing Map</h5>
-										This relation map shows <i>Logical Components</i> and to what <i>Requirements</i> or <i>Functional Components</i> these elements are tracing to. 
-										By default, all <i>Logical Components</i> are shown but it is also possible to drag & drop a single <i>Logical Component</i> to the relation map to show only the particular relationships.   
+										This relation map shows <a href="logical_viewpoint.html#logical_component">Logical Component</a> and to what <a href="requirements_viewpoint.html#textual_requirement">Requirements</a> or <a href="functional_viewpoint.html#functional_component">Functional Component</a> these elements are tracing to. 
+										By default, all <a href="logical_viewpoint.html#logical_component">Logical Components</a> are shown but it is also possible to drag & drop a single <a href="logical_viewpoint.html#logical_component">Logical Component</a> to the relation map to show only the particular relationships.   
 										
 										<h5 id="logical_to_functional_matrix"><img src="./images/diagrams/matrix.png" align="left" hspace="5">SpesML LogicalToFunctional Matrix</h5>
-										This matrix allows to create relationships between elements of the Logical Viewpoint and elements of the Functional Viewpoint. 
+										This matrix allows to create relationships between elements of the <a href="logical_viewpoint.html">Logical Viewpoint</a> and elements of the <a href="functional_viewpoint.html">Functional Viewpoint</a>. 
 										
 										<h5 id="logical_to_requirement_matrix"><img src="./images/diagrams/matrix.png" align="left" hspace="5">SpesML LogicalToRequirement Matrix</h5>
-										This matrix allows to create relationships between elements of the Logical Viewpoint and Requirements. 
+										This matrix allows to create relationships between elements of the <a href="logical_viewpoint.html">Logical Viewpoint</a> and <a href="requirements_viewpoint.html">Requirements</a>. 
 										
 										<h5 id="logical_internal_component_diagram"><img src="./images/diagrams/composite_structure.png" align="left" hspace="5">SpesML Logical Internal Component Diagram</h5>
-										This diagram is based on a <i>Composite Structure Diagram</i> / <i>Internal Block Diagram</i> and provides a diagram toolbar related to SpesML.
+										This diagram is based on a <i>UML Composite Structure Diagram</i> / <i>SysML Internal Block Diagram</i> and provides a reduced diagram toolbar related to SpesML. Note that intentionally <a href="logical_viewpoint.html#logical_component_part">Logical Component Parts</a>
+										cannot be created using the diagram toolbar. Instead, it is recommended to create these elements by dragging / dropping a <a href="logical_viewpoint.html#logical_component">Logical Component</a> to the diagram. 
 										
 										
 								</td>
