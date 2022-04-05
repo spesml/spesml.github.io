@@ -6,7 +6,7 @@ title: Data Types
 permalink: /plugin/data_types.html
 ---
 
-# ![Data Types](/spesml/plugin/images/data_types/DataTypes.png){:height="30px" width="30px"}{:class="img-responsive"} SpesML Plugin - Data Types
+# ![Data Types](/spesml.github.io/plugin/images/data_types/DataTypes.png){:height="30px" width="30px"}{:class="img-responsive"} SpesML Plugin - Data Types
 
 ## Overview
 
@@ -17,11 +17,11 @@ permalink: /plugin/data_types.html
 ## How to Model
 
 ## Elements
-### ![Data Types](/spesml/plugin/images/data_types/DataTypes.png){:class="img-responsive"} Data Types Package
+### ![Data Types](/spesml.github.io/plugin/images/data_types/DataTypes.png){:class="img-responsive"} Data Types Package
 Insert text here
-### ![Data Types](/spesml/plugin/images/data_types/enumeration.png){:class="img-responsive"} Enumeration
+### ![Data Types](/spesml.github.io/plugin/images/data_types/enumeration.png){:class="img-responsive"} Enumeration
 Insert text here
-### ![Data Types](/spesml/plugin/images/data_types/value_type.png){:class="img-responsive"} Value Type
+### ![Data Types](/spesml.github.io/plugin/images/data_types/value_type.png){:class="img-responsive"} Value Type
 Insert text here
 
 ## Diagrams
