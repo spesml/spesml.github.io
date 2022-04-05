@@ -29,6 +29,7 @@ favicon: "/favicon.ico"
 aux_links:
   "Legal":
     - "https://spesml.github.io/credits.html/"
+heading_anchors: false
 
 
 # Build settings
