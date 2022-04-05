@@ -5,7 +5,7 @@ nav_order: 3
 title: Functional Viewpoint
 permalink: /plugin/functional_viewpoint.html
 ---
-# ![Functional Viewpoint](plugin/images/functional_viewpoint/FunctionalViewpoint.png){:height="30px" width="30px"}{:class="img-responsive"} SpesML Plugin - Functional Viewpoint
+# ![Functional Viewpoint](/plugin/images/functional_viewpoint/FunctionalViewpoint.png){:height="30px" width="30px"}{:class="img-responsive"} SpesML Plugin - Functional Viewpoint
 
 ## Overview
 
