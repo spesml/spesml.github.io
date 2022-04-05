@@ -112,7 +112,7 @@ This relation map shows [Logical Component](https://spesml.github.io/plugin/logi
 ### ![LogicalToFunctional Matrix](/plugin/images/diagrams/matrix.png){:class="img-responsive"} SpesML LogicalToFunctional Matrix
 This matrix allows to create relationships between elements of the [Logical Viewpoint](https://spesml.github.io/plugin/logical_viewpoint.html#-logical-viewpoint) and elements of the [Functional Viewpoint](https://spesml.github.io/plugin/functional_viewpoint.html).
 
-### ![LogicalToRequirement Matrix](/spesml/plugin/images/diagrams/matrix.png){:class="img-responsive"} SpesML LogicalToRequirement Matrix
+### ![LogicalToRequirement Matrix](/plugin/images/diagrams/matrix.png){:class="img-responsive"}SpesML LogicalToRequirement Matrix
 This matrix allows to create relationships between elements of the [Logical Viewpoint](https://spesml.github.io/plugin/logical_viewpoint.html#-logical-viewpoint) and [Requirements](https://spesml.github.io/plugin/requirements_viewpoint.html#-requirements).
 
 ### ![Logical Internal Component Diagram](/plugin/images/diagrams/composite_structure.png){:class="img-responsive"} SpesML Logical Internal Component Diagram
