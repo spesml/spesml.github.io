@@ -12,3 +12,4 @@ The Github repository that is used for the website files is available through ht
 ### Structure of the repository
 The repository is organised in a root directory (the repository itself) and a folder structure. All files already organised in the root directory need to remain in this directory and shall be updated diectly via Github.
 
+![Choice of branch](/Docu/pics/branch_choice.png)
