@@ -52,7 +52,7 @@ Insert text here
 
 ## Diagrams
 
-### ![Functional Impact Map](/plugin/images/diagrams/map.png){:class="img-responsive"}SpesMl Functional Impact Map
+### ![Functional Impact Map](/plugin/images/diagrams/map.png){:class="img-responsive"}SpesML Functional Impact Map
 Insert text here
 
 ### ![Functional Tracing Map](/plugin/images/diagrams/map.png){:class="img-responsive"}SpeSML Functional Tracing Map
