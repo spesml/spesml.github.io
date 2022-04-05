@@ -104,7 +104,7 @@ Insert text here
 ## Diagrams
 
 ### ![Logical Impact Map](/plugin/images/diagrams/map.png){:class="img-responsive"} SpesML Logical Impact Map
-This relation map shows [Logical Component](https://aknerr.github.io/spesml/plugin/logical_viewpoint.html#-logical-component) and what elements from the [Technical Component](https://aknerr.github.io/spesml/plugin/technical_viewpoint.html) are tracing to these elements. By default, all Logical Components are shown but it is also possible to drag & drop a single Logical Component to the relation map to show only the particular relationships.
+This relation map shows [Logical Component](https://spesml.github.io/plugin/logical_viewpoint.html#-logical-component) and what elements from the [Technical Component](https://spesml.github.io/plugin/technical_viewpoint.html) are tracing to these elements. By default, all Logical Components are shown but it is also possible to drag & drop a single Logical Component to the relation map to show only the particular relationships.
 
 ### ![LogicalTracing Map](/plugin/images/diagrams/map.png){:class="img-responsive"} SpesML Logical Tracing Map
 This relation map shows [Logical Component](https://spesml.github.io/plugin/logical_viewpoint.html#-logical-component) and to what [Requirements](https://spesml.github.io/plugin/requirements_viewpoint.html#-requirements) or [Functional Component](https://spesml.github.io/plugin/functional_viewpoint.html#-function) these elements are tracing to. By default, all Logical Components are shown but it is also possible to drag & drop a single Logical Component to the relation map to show only the particular relationships.
