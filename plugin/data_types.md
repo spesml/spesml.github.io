@@ -18,7 +18,7 @@ heading_anchors: false
 ## How to Model
 
 ## Elements
-### [![Data Types](/plugin/images/data_types/DataTypes.png){:class="img-responsive"}Data Types Package](https://spesml.github.io/plugin/data_types.html#data_types_package)
+### [![Data Types](/plugin/images/data_types/DataTypes.png){:class="img-responsive"}Data Types Package](#data_types_package)
 Insert text here
 ### ![Data Types](/plugin/images/data_types/enumeration.png){:class="img-responsive"}Enumeration
 Insert text here
