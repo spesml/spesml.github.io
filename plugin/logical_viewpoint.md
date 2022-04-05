@@ -5,7 +5,7 @@ nav_order: 4
 title: Logical Viewpoint
 permalink: /plugin/logical_viewpoint.html
 ---
-# ![Logical Viewpoint](/plugin/images/logical_viewpoint/LogicalViewpoint.png){:height="30px" width="30px"}{:class="img-responsive"} SpesML Plugin - Logical Viewpoint
+# ![Logical Viewpoint](/plugin/images/logical_viewpoint/LogicalViewpoint.png){:height="30px" width="30px"}{:class="img-responsive"}SpesML Plugin - Logical Viewpoint
 
 ## Overview
 In order to realize the desired functionality that is specified in the models of the functional viewpoint, the system under development is decomposed into a network of communicating logical components. The result is a logical architecture model which is independent on any technological constraints and which can be reused for multiple platforms.  
@@ -67,53 +67,53 @@ To create the logical architecture of the examplary Window Lifter above, you can
 
 ## Elements
 
-### ![Logical Viewpoint](/plugin/images/logical_viewpoint/LogicalViewpoint.png){:class="img-responsive"} Logical Viewpoint
+### ![Logical Viewpoint](/plugin/images/logical_viewpoint/LogicalViewpoint.png){:class="img-responsive"}Logical Viewpoint
 This element is a *UML/SysML Package* with a dedicated stereotype that allows to define a adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package.
 
-### ![Logical Tracing Package](/plugin/images/logical_viewpoint/LogicalTracingPackage.png){:class="img-responsive"} Logical Tracing Package
+### ![Logical Tracing Package](/plugin/images/logical_viewpoint/LogicalTracingPackage.png){:class="img-responsive"}Logical Tracing Package
 This element is a *UML/SysML Package* with a dedicated stereotype that allows to define a adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package. This package usually contains only tracing related relation maps and matrixes.
 
-### ![Logical Interface Types Package](/plugin/images/logical_viewpoint/LogicalInterfaceTypesPackage.png){:class="img-responsive"} Logical Interface Types Package
+### ![Logical Interface Types Package](/plugin/images/logical_viewpoint/LogicalInterfaceTypesPackage.png){:class="img-responsive"}Logical Interface Types Package
 Insert text here
 
-### ![Logical Package](/plugin/images/logical_viewpoint/LogicalPackage.png){:class="img-responsive"} Logical Package
+### ![Logical Package](/plugin/images/logical_viewpoint/LogicalPackage.png){:class="img-responsive"}Logical Package
 Insert text here
 
-### ![Logical Context](/plugin/images/logical_viewpoint/LogicalContext.png){:class="img-responsive"} Logical Context
+### ![Logical Context](/plugin/images/logical_viewpoint/LogicalContext.png){:class="img-responsive"}Logical Context
 Insert text here
 
-### ![Logical Actor](/plugin/images/logical_viewpoint/LogicalActor.png){:class="img-responsive"} Logical Actor
+### ![Logical Actor](/plugin/images/logical_viewpoint/LogicalActor.png){:class="img-responsive"}Logical Actor
 Insert text here
 
-### ![Logical Component](/plugin/images/logical_viewpoint/LogicalComponent.png){:class="img-responsive"} Logical Component
+### ![Logical Component](/plugin/images/logical_viewpoint/LogicalComponent.png){:class="img-responsive"}Logical Component
 
 This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element. In addition, it restricts that only certain sub-elements can be created below a *Logical Component*. *Logical Components* provide a syntactic interface and a behavior specified by state automata. The syntactic interface can be specified by using [Logical Interface Types](https://spesml.github.io/plugin/logical_viewpoint.html#-logical-interface-type) and [Channels](https://spesml.github.io/plugin/logical_viewpoint.html#-channel).
 
-### ![Logical Component Part](/plugin/images/logical_viewpoint/LogicalComponentPart.png){:class="img-responsive"} Logical Component Part
+### ![Logical Component Part](/plugin/images/logical_viewpoint/LogicalComponentPart.png){:class="img-responsive"}Logical Component Part
 Insert text here
 
-### ![Logical Interface Type](/plugin/images/logical_viewpoint/LogicalInterfaceType.png){:class="img-responsive"} Logical Interface Type
+### ![Logical Interface Type](/plugin/images/logical_viewpoint/LogicalInterfaceType.png){:class="img-responsive"}Logical Interface Type
 Insert text here
 
-### ![Logical Interface](/plugin/images/logical_viewpoint/LogicalInterface.png){:class="img-responsive"} Logical Interface 
+### ![Logical Interface](/plugin/images/logical_viewpoint/LogicalInterface.png){:class="img-responsive"}Logical Interface 
 Insert text here
 
-### ![Channel](/plugin/images/universal_interface_model/Channel.png){:class="img-responsive"} Channel
+### ![Channel](/plugin/images/universal_interface_model/Channel.png){:class="img-responsive"}Channel
 Insert text here
 
 ## Diagrams
 
-### ![Logical Impact Map](/plugin/images/diagrams/map.png){:class="img-responsive"} SpesML Logical Impact Map
+### ![Logical Impact Map](/plugin/images/diagrams/map.png){:class="img-responsive"}SpesML Logical Impact Map
 This relation map shows [Logical Component](https://spesml.github.io/plugin/logical_viewpoint.html#-logical-component) and what elements from the [Technical Component](https://spesml.github.io/plugin/technical_viewpoint.html) are tracing to these elements. By default, all Logical Components are shown but it is also possible to drag & drop a single Logical Component to the relation map to show only the particular relationships.
 
-### ![LogicalTracing Map](/plugin/images/diagrams/map.png){:class="img-responsive"} SpesML Logical Tracing Map
+### ![LogicalTracing Map](/plugin/images/diagrams/map.png){:class="img-responsive"}SpesML Logical Tracing Map
 This relation map shows [Logical Component](https://spesml.github.io/plugin/logical_viewpoint.html#-logical-component) and to what [Requirements](https://spesml.github.io/plugin/requirements_viewpoint.html#-requirements) or [Functional Component](https://spesml.github.io/plugin/functional_viewpoint.html#-function) these elements are tracing to. By default, all Logical Components are shown but it is also possible to drag & drop a single Logical Component to the relation map to show only the particular relationships.
 
-### ![LogicalToFunctional Matrix](/plugin/images/diagrams/matrix.png){:class="img-responsive"} SpesML LogicalToFunctional Matrix
+### ![LogicalToFunctional Matrix](/plugin/images/diagrams/matrix.png){:class="img-responsive"}SpesML LogicalToFunctional Matrix
 This matrix allows to create relationships between elements of the [Logical Viewpoint](https://spesml.github.io/plugin/logical_viewpoint.html#-logical-viewpoint) and elements of the [Functional Viewpoint](https://spesml.github.io/plugin/functional_viewpoint.html).
 
 ### ![LogicalToRequirement Matrix](/plugin/images/diagrams/matrix.png){:class="img-responsive"}SpesML LogicalToRequirement Matrix
 This matrix allows to create relationships between elements of the [Logical Viewpoint](https://spesml.github.io/plugin/logical_viewpoint.html#-logical-viewpoint) and [Requirements](https://spesml.github.io/plugin/requirements_viewpoint.html#-requirements).
 
-### ![Logical Internal Component Diagram](/plugin/images/diagrams/composite_structure.png){:class="img-responsive"} SpesML Logical Internal Component Diagram
+### ![Logical Internal Component Diagram](/plugin/images/diagrams/composite_structure.png){:class="img-responsive"}SpesML Logical Internal Component Diagram
 This diagram is based on a *UML Composite Structure Diagram/SysML Internal Block Diagram* and provides a reduced diagram toolbar related to SpesML. Note that intentionally [Logical Component Parts](https://spesml.github.io/plugin/logical_viewpoint.html#-logical-component-part) cannot be created using the diagram toolbar. Instead, it is recommended to create these elements by dragging/dropping a Logical Component to the diagram.
