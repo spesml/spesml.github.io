@@ -23,4 +23,5 @@ jobs:
     name: deploy to github pages
     runs-on: ubuntu-latest
     steps:
+    - name: Deploy Website
       run: deploy
