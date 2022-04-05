@@ -9,7 +9,7 @@ Das Projekt wird in insgesamt 5 Iterationen unterschiedlicher Dauer durchgeführ
 Es ist geplant, in den einzelnen Iterationen agil vorzugehen. Dabei sollen wesentliche Elemente des Vorgehensmodells SCRUM, die gegebenenfalls für den kon-kreten Projektkontext angepasst werden, verwendet werden. 
 Die Tatsache, dass die meisten Projektpartner bereits in den Vorgängerprojekten gut zusammengearbeitet haben, und eine sehr ver-trauensvolle Basis besteht, ist ein wichtiger Faktor für das Gelingen des agilen Ansatzes.
 
-[![Iterationen](/spesml/bilder/iterationen.png)](https://aknerr.github.io/spesml/bilder/iterationen.png)
+[![Iterationen](/bilder/iterationen.png)](https://aknerr.github.io/spesml/bilder/iterationen.png)
 
 Die Iterationen werden in agilen Phasen (Sprints) realisiert, die jeweils eine Dauer von ca. 4 Wochen haben. 
 In diesen Sprints werden die Aufgaben (Tasks) aus dem Backlog abgearbeitet. Resultate eines Sprints sind immer die methodische Umsetzung der SPES Modelle in SysML (meist in Form eines Meta-Modells), die Implementierung der methodischen Umsetzung in den Werkzeugen und die Evaluierung der Resultate anhand der Praxisbeispiele („Running Code“). 
