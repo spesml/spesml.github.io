@@ -29,7 +29,7 @@ To create a new model using the <i>SpesML Plugin</i> perform the following steps
 * Specify the *Name* and *Project location*
 * Select *OK*
 
-![SpesML Template](/spesml.github.io/plugin/images/overview/Template.png){:class="img-responsive"}
+![SpesML Template](/plugin/images/overview/Template.png){:class="img-responsive"}
 
 ## SpesML Perspectives
 The *SpesML Plugin* provides two perspectives:
@@ -38,12 +38,12 @@ The *SpesML Plugin* provides two perspectives:
   
 Of course you can use the defaults MagicDraw perspectives e.g. *Full Featured* to work with the *SpesML Plugin*.
 
-![SpesML Perspectives](/spesml.github.io/plugin/images/overview/Perspective.png){:class="img-responsive"}
+![SpesML Perspectives](/plugin/images/overview/Perspective.png){:class="img-responsive"}
 
 ## Integrated Help
 The *SpesML Plugin* provides a fully integrated help. There are two ways to access the SpesML Help:
 1. Open *Help &#x2192; SpesML Documentation* to access this help page directly from within MagicDraw
 2. Open the *Specification* of any SpesML model element or SpesML diagram and click on *Help* to access an element/diagram specific help page
 
-![SpesML Integrated Help](/spesml.github.io/plugin/images/overview/Help.png){:class="img-responsive"}
+![SpesML Integrated Help](/plugin/images/overview/Help.png){:class="img-responsive"}
 
