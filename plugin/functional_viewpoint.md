@@ -55,7 +55,7 @@ Insert text here
 ### ![Functional Impact Map](/plugin/images/diagrams/map.png){:class="img-responsive"}SpesML Functional Impact Map
 Insert text here
 
-### ![Functional Tracing Map](/plugin/images/diagrams/map.png){:class="img-responsive"}SpeSML Functional Tracing Map
+### ![Functional Tracing Map](/plugin/images/diagrams/map.png){:class="img-responsive"}SpesML Functional Tracing Map
 Insert text here
 
 ### ![FunctionToRequirement Matrix](/plugin/images/diagrams/matrix.png){:class="img-responsive"}SpesML FunctionToRequirement Matrix
