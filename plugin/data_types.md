@@ -24,4 +24,4 @@ Insert text here
 ### ![Data Types](/plugin/images/data_types/value_type.png){:class="img-responsive"}Value Type
 Insert text here
 
-## Diagrams
+## <a href="spesml.github.io/plugin/data_types.html/diagrams">Diagrams</a>
