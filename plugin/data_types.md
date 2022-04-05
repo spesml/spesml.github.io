@@ -6,7 +6,7 @@ title: Data Types
 permalink: /plugin/data_types.html
 ---
 
-# ![Data Types ](/plugin/images/data_types/DataTypes.png){:height="30px" width="30px"}{:class="img-responsive"}SpesML Plugin - Data Types
+# ![Data Types ](/plugin/images/data_types/DataTypes.png){:height="30px" width="30px"}{:class="img-responsive"} <a href="https://spesml.github.io/plugin/data_types.html#data_types_package">SpesML Plugin - Data Types </a>
 
 ## Overview
 
