@@ -28,7 +28,7 @@ logo: "bilder/logo_spesml.png"
 favicon: "/favicon.ico"
 aux_links:
   "Legal":
-    - "https://aknerr.github.io/spesml/credits.html/"
+    - "https://spesml.github.io/credits.html/"
 
 
 # Build settings
