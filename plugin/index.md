@@ -9,7 +9,7 @@ permalink: /plugin/overview.html/
 As a result of the project we have developed a *SpesML Plugin* for the tool *MagicDraw* [(Link)](https://www.3ds.com/products-services/catia/products/no-magic/magicdraw/). In order to use the *SpesML Plugin* at least a *MagcDraw Standard Edition* as well as the *SysML Plugin* is required. 
 
 ## Download
-You can find the latest version of the SpesML Plugin [here](https://spesmlgroup.pages.rwth-aachen.de/spesml/plugin/).
+You can find the latest version of the SpesML Plugin [here](https://git.rwth-aachen.de/spesmlgroup/spesml/-/tree/42c1f2d02e77220d1d21bb95880639924f884ed0/04_Arbeitspakete/Tooling/prototypen/MagicDraw/SpesML/Plugins/SpesMLDragAndDropPlugin).
 
 ## Installation
 To install the *SpesML Plugin* perform the following steps:
