@@ -44,4 +44,27 @@ Beim Auftreten eines Fehlers kann es unter Umständen zum Abbruch eines Workflow
 ## 3. Jekyll-Konfigurationen bei der SpesML-Webseite
 Die SpesML-Webseite wird mithilfe von Jekyll generiert und über Github Pages veröffentlicht. Um eine korrekte Darstellung der Webseite zu gewährleisten, müssen Jekyll bestimmte Informationen zur Konfiguration der Webseite mitgeteilt werden. Hierfür wird die im Hauptverzeichnis abgelegte YAML-Datei *_config.yml* verwendet. Diese Datei beinhaltet alle Konfigurationsinformationen, die für die Generierung der Webseite benötigt werden. Hierzu gehören unter anderem der titel der Webseite, das Logo der Webseite, das verwendete Layout (bzw. Theme) oder auch einstellen zu Suchfunktionen. Die folgenden Abschnitte geben einen Überblick über das verwendete Layout/theme und über die genutzten Konfigurationen.
 
-### *Just The Docs*-Theme
+### *Just the Docs*-Theme
+Die spesML-Webseite baut auf dem open source Jekyll-Theme "Just the Docs" von *pmarsceill* auf und ist im Github Repository [just-the-docs/just-the-docs](https://github.com/just-the-docs/just-the-docs) erhältlich. Das Theme ist ein Layout, das sich unter anderem zur Dokumentation von Projekterfolgen eignet und viele Features bietet.  
+  
+Damit Jekyll und Github Pages die Webseite mit diesem Layout veröffentlichen kann, ist es notwendig das Layout in der Konfigurationsdatei festzulegen. Da das Theme selbst in Github abgelegt ist, ist der einfachste Weg zur Einbindung des Layouts die Nutzung als *remote-theme*. Hierfür wird in der Datei *_config.yml* folgende Codezeile eingetragen
+  
+```yaml
+remote_theme: just-the-docs/just-the-docs
+```  
+  
+Mit diesem Vorgehen können alle im Github abgelegten Themes unkompliziert eingebunden werden.  
+  
+Das Layout kann auch lokal verwendet werden. Hierfür muss das Theme in die Jekyll-Gemfile intergriert werden. Die entsprechende Codezeile lautet:
+
+```ruby
+gem "just-the-docs"
+```  
+  
+Zusätzlich muss in *_config.yml* das Theme definiert werden:
+
+```yaml
+theme: just-the-docs
+```  
+  
+Über ```$ bundle``` oder ```$ gem install just-the-docs``` kann das Layout schließlich lokal installiert und genutzt werden.
