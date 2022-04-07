@@ -29,6 +29,8 @@ favicon: "/favicon.ico"
 aux_links:
   "Imprint":
     - "https://spesml.github.io/imprint.html/"
+  "Privacy":
+    - "https://spesml.github.io/privacy.html/"
 
 
 # Build settings
