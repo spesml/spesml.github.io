@@ -1,6 +1,3 @@
----
-nav_exclude: true
----
 # Richtlinien zur Erstellung und Verwaltung der SpesML-Webseiteninhalte
 Diese Richtlinien und Anleitungen sollen dazu dienen, den SpesML Projektmitgliedern einen schnellen Start in die Veröffentlichung und Verwaltung der [SpesML Webseite](https://spesml.github.io) - mithilfe von Guthub Pages und Jekyll - zu bieten und als Hilfestellung zu agieren. Diese Richtlinien geben eine Einleitung in den Static Site Generator *Jekyll* und in die Veröffentlichung von Webinhalten als *Markdown*-Dateien. 
 
