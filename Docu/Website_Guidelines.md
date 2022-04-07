@@ -67,4 +67,8 @@ Zusätzlich muss in *_config.yml* das Theme definiert werden:
 theme: just-the-docs
 ```  
   
-Über ```$ bundle``` oder ```$ gem install just-the-docs``` kann das Layout schließlich lokal installiert und genutzt werden.
+Über ```$ bundle``` oder ```$ gem install just-the-docs``` kann das Layout schließlich lokal installiert und genutzt werden.  
+  
+Um eine korrekte Darstellung der Webseite und des Layouts zu gewährleisten, wird empfohlen die aktuellen Konfigurationseinstellungen unter *_config.yml* beizubehalten. Weiterführende Informationen zur Nutzung und Konfiguration des Themes gibt es auf [Github](https://github.com/just-the-docs/just-the-docs) und auf https://pdmosses.github.io/just-the-docs/. 
+
+### Konfigurationsdatei *_config.yml*
