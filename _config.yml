@@ -27,8 +27,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "bilder/logo_spesml.png"
 favicon: "/favicon.ico"
 aux_links:
-  "Legal":
-    - "https://spesml.github.io/credits.html/"
+  "Imprint":
+    - "https://spesml.github.io/imprint.html/"
 
 
 # Build settings
