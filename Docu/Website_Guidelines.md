@@ -8,6 +8,7 @@ Diese Richtlinien und Anleitungen sollen dazu dienen, den SpesML Projektmitglied
 ### Inhaltsverzeichnis
 1. [Jekyll - ein Static Site Generator](https://github.com/spesml/spesml.github.io/blob/gh-pages/Docu/Website_Guidelines.md#1-jekyll---ein-static-site-generator)
 2. [Github Repository](https://github.com/spesml/spesml.github.io/blob/gh-pages/Docu/Website_Guidelines.md#2-github-repository)
+3. [Jekyll-Konfigurationen bei der SpesML-Webseite]()
 ---
 
 ## 1. Jekyll - ein Static Site Generator
@@ -29,4 +30,15 @@ Die Ordnerstruktur im Hauptverzeichnis richtet sich nach der Navigationsstruktur
   
 Damit Github Pages die Jekyll-Konfigurationen und die Indexseite verarbeiten kann, müssen die Konfigurationsdateien, die Gemfiles sowie die Markdown-Datei der Indexseite im Hauptverzeichnis abgelegt werden und dürfen nicht in einen Unterordner verschoben oder umbenannt werden (siehe folgendes Bild).  
   
-![Dateien im Hauptverzeichnis](/Docu/Dateien.png)
+![Dateien im Hauptverzeichnis](/Docu/Dateien.png)  
+  
+### Actions
+Im Reiter "Actions" werden alle aktuellen und vergangenen Workflows aufgezeigt. Workflow sind Anweisungsabfolgen, die von Github abgearbeitet werden, um beispielsweise über Github Pages eine Seite zu veröffentlich. In diesem Reiter kann der Fortschritt der einzelnen Workflows verfolgt werden und Fehler untersucht werden.  
+  
+![Workflows in Github](/Docu/Workflows.png)  
+  
+Beim Auftreten eines Fehlers kann es unter Umständen zum Abbruch eines Workflows kommen. Der Fehler kann durch die Detailansicht des betroffenen Workflows ausgewertet und untersucht werden.  
+  
+![Workflowfehler](/Docu/Fehler.png)  
+  
+## 3. Jekyll-Konfigurationen bei der SpesML-Webseite
