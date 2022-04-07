@@ -1,12 +1,13 @@
 ---
 nav_exclude: true
 ---
-# Richtlinien zur Erstellung und Verwaltung der SpesML Webseiteninhalte
-Diese Richtlinien und Anleitungen sollen dazu dienen, den SpesML Projektmitgliedern einen einfachen und schnellen Start in die Veröffentlichung und Verwaltung der [SpesML Webseite](https://spesml.github.io) - mithilfe von Guthub Pages und Jekyll - zu bieten und als Hilfestellung zu agieren. Diese Richtlinien geben eine Einleitung in den Static Site Generator *Jekyll* und in die Veröffentlichung von Webinhalten als *Markdown*-Dateien. 
+# Richtlinien zur Erstellung und Verwaltung der SpesML-Webseiteninhalte
+Diese Richtlinien und Anleitungen sollen dazu dienen, den SpesML Projektmitgliedern einen schnellen Start in die Veröffentlichung und Verwaltung der [SpesML Webseite](https://spesml.github.io) - mithilfe von Guthub Pages und Jekyll - zu bieten und als Hilfestellung zu agieren. Diese Richtlinien geben eine Einleitung in den Static Site Generator *Jekyll* und in die Veröffentlichung von Webinhalten als *Markdown*-Dateien. 
 
 ---
 ### Inhaltsverzeichnis
-1. [Jekyll - ein Static Site Generator](https://github.com/spesml/spesml.github.io/blob/gh-pages/Docu/Website_Guidelines.md#1-jekyll---ein-static-site-generator)  
+1. [Jekyll - ein Static Site Generator](https://github.com/spesml/spesml.github.io/blob/gh-pages/Docu/Website_Guidelines.md#1-jekyll---ein-static-site-generator)
+2. [Github Repository](https://github.com/spesml/spesml.github.io/blob/gh-pages/Docu/Website_Guidelines.md#2-github-repository)
 ---
 
 ## 1. Jekyll - ein Static Site Generator
@@ -20,10 +21,12 @@ Weitere Informationen zu Jekyll gibt es im zugehörigen [Github Repository](http
 Die Webseite wird über das bereits vorhandene [Github Repository](https://github.com/spesml/spesml.github.io) verwaltet, gewartet und veröffentlicht. Die genutzte Branch ist "gh-pages". Alle in dieser Branch hochgeladenen und veränderten Inhalte werden von Github Pages automatisch erkannt, verarbeitet und gemäß der abgelegten Jekyll-Konfiguration (siehe *_config.yml*) veröffentlicht. Dies bedarf keiner manuellen Veröffentlichung und keiner Kenntnisse in der Programmierung von CI/CD-Pipelines in Github.
 
 ### Struktur des Repository
-In diesem Abschnitt wird die Struktur des genutzten Repositorys vorgestellt. Ein Repository besteht standardmäßig aus einem Hauptverzeichnis (Root Directory), in dem Dateien abgelegt und weitere Ordner angelegt werden können. Jede Branch verfügt über ein eigenes Hauptverzeichnis und entsprechende - wenn angelegt - Unterordner. Um die fehlerfreie und korrekte Übernahme der zu veröffentlichenden Inhalte zu gewährleisten, müssen diese in die bereits vorgestellte Branch "gh-pages" abgelegt werden.
+In diesem Abschnitt wird die Struktur des genutzten Repository vorgestellt. Ein Repository besteht standardmäßig aus einem Hauptverzeichnis (Root Directory), in dem Dateien abgelegt und weitere Ordner angelegt werden können. Jede Branch verfügt über ein eigenes Hauptverzeichnis und entsprechende - wenn angelegt - Unterordner. Um die fehlerfreie und korrekte Übernahme der zu veröffentlichenden Inhalte zu gewährleisten, müssen diese in der bereits angelegte Branch "gh-pages" abgelegt werden.
   
-![Choice of branch](/Docu/pics/branch_choice.png)  
+![Struktur des Repository](/Docu/GitStruktur.png)  
   
- 
+Die Ordnerstruktur im Hauptverzeichnis richtet sich nach der Navigationsstruktur der Webseite. Für jede Hauptseite wurde ein eigener Unterordner angelegt. Da Github Pages das ganze Hauptverzeichnis der Branch überprüft, können die Unterordner in beliebig viele weitere Unterordner aufgeschlüsselt werden.  
   
- 
+Damit Github Pages die Jekyll-Konfigurationen und die Indexseite verarbeiten kann, müssen die Konfigurationsdateien, die Gemfiles sowie die Markdown-Datei der Indexseite im Hauptverzeichnis abgelegt werden und dürfen nicht in einen Unterordner verschoben oder umbenannt werden (siehe folgendes Bild).  
+  
+![Dateien im Hauptverzeichnis](/Docu/Dateien.png)
