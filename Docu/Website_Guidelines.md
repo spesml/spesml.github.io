@@ -8,7 +8,7 @@ Diese Richtlinien und Anleitungen sollen dazu dienen, den SpesML Projektmitglied
 ### Inhaltsverzeichnis
 1. [Jekyll - ein Static Site Generator](https://github.com/spesml/spesml.github.io/blob/gh-pages/Docu/Website_Guidelines.md#1-jekyll---ein-static-site-generator)
 2. [Github Repository](https://github.com/spesml/spesml.github.io/blob/gh-pages/Docu/Website_Guidelines.md#2-github-repository)
-3. [Jekyll-Konfigurationen bei der SpesML-Webseite]()
+3. [Jekyll-Konfigurationen bei der SpesML-Webseite](https://github.com/spesml/spesml.github.io/blob/gh-pages/Docu/Website_Guidelines.md#3-jekyll-konfigurationen-bei-der-spesml-webseite)
 ---
 
 ## 1. Jekyll - ein Static Site Generator
@@ -33,7 +33,7 @@ Damit Github Pages die Jekyll-Konfigurationen und die Indexseite verarbeiten kan
 ![Dateien im Hauptverzeichnis](/Docu/Dateien.png)  
   
 ### Actions
-Im Reiter "Actions" werden alle aktuellen und vergangenen Workflows aufgezeigt. Workflow sind Anweisungsabfolgen, die von Github abgearbeitet werden, um beispielsweise über Github Pages eine Seite zu veröffentlich. In diesem Reiter kann der Fortschritt der einzelnen Workflows verfolgt werden und Fehler untersucht werden.  
+Im Reiter "Actions" werden alle aktuellen und vergangenen Workflows aufgezeigt. Workflow sind Anweisungsabfolgen, die von Github abgearbeitet werden, um beispielsweise über Github Pages eine Seite zu veröffentlichen. In diesem Reiter kann der Fortschritt der einzelnen Workflows verfolgt werden und Fehler untersucht werden.  
   
 ![Workflows in Github](/Docu/Workflows.png)  
   
@@ -42,3 +42,6 @@ Beim Auftreten eines Fehlers kann es unter Umständen zum Abbruch eines Workflow
 ![Workflowfehler](/Docu/Fehler.png)  
   
 ## 3. Jekyll-Konfigurationen bei der SpesML-Webseite
+Die SpesML-Webseite wird mithilfe von Jekyll generiert und über Github Pages veröffentlicht. Um eine korrekte Darstellung der Webseite zu gewährleisten, müssen Jekyll bestimmte Informationen zur Konfiguration der Webseite mitgeteilt werden. Hierfür wird die im Hauptverzeichnis abgelegte YAML-Datei *_config.yml* verwendet. Diese Datei beinhaltet alle Konfigurationsinformationen, die für die Generierung der Webseite benötigt werden. Hierzu gehören unter anderem der titel der Webseite, das Logo der Webseite, das verwendete Layout (bzw. Theme) oder auch einstellen zu Suchfunktionen. Die folgenden Abschnitte geben einen Überblick über das verwendete Layout/theme und über die genutzten Konfigurationen.
+
+### *Just The Docs*-Theme
