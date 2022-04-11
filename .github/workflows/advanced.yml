@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: prepare output directories
         run: |
-          for d in */Word_Files; do
+          for d in */Word_Files/; do
             mkdir -p output/$d
           done
       - name: convert docx to md
