@@ -13,11 +13,11 @@ jobs:
         run: |
           mkdir output  # create output dir
           # this will also include README.md
-          echo "::set-output name=files::$(printf '"%s" ' *.md)"
+          echo "::set-output name=files::$(printf '"%s" ' *.docx)"
 
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --output=output/result.pdf ${{ steps.files_list.outputs.files }}
+          args: --output=output/result.md ${{ steps.files_list.outputs.files }}
           
       - uses: actions/upload-artifact@master
         with:
