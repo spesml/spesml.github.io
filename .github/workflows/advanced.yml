@@ -1,24 +1,22 @@
-name: Advanced Usage
-
+name: Generate Word docs
 on: push
 
 jobs:
   convert_via_pandoc:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
+    container:
+      image: docker://pandoc/latex:2.9
+      options: --entrypoint=sh
     steps:
       - uses: actions/checkout@v2
-
-      - name: create file list
-        id: files_list
+      - name: prepare output directories
         run: |
-          mkdir output  # create output dir
-          # this will also include README.md
-          echo "::set-output name=files::$(printf '"%s" ' *.docx)"
-
-      - uses: docker://pandoc/latex:2.9
-        with:
-          args: --output=output/result.md ${{ steps.files_list.outputs.files }}
-          
+          for d in */; do
+            mkdir -p output/$d
+          done
+      - name: convert docx to md
+        run: |
+          find ./ -iname '*.docx' -type f -exec sh -c 'pandoc ${0} -o output/${0%.docx}.md' {} \;
       - uses: actions/upload-artifact@master
         with:
           name: output
