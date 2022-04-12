@@ -96,7 +96,7 @@ Acepted papers will be published in the common workshop proceedings in the [Digi
 Submission link: [Easy Chair](https://easychair.org/my/conference?conf=mtmse22)
 
 ## Events
-* 16.04.2022 Submission of the abstracts  
+* 16.04.2022 Submission of the abstracts (optional)
   
 * 23.04.2022 Submission of the contributions  
   
