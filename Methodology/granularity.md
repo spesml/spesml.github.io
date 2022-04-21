@@ -8,3 +8,4 @@ permalink: /methodology/layers_of_granularity.html
 ---
 # Layers of Granularity
 Insert text here
+Hallo
