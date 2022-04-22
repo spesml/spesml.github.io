@@ -95,16 +95,16 @@ Acepted papers will be published in the common workshop proceedings in the [Digi
   
 Submission link: [Easy Chair](https://easychair.org/my/conference?conf=mtmse22)
 
-## Events (Deadline extended)
-* 16.04.2022 Submission of the abstracts (optional)
+## Events (Deadlines extended)
+* **16.04.2022** Submission of the abstracts (optional)
   
 * ~~23.04.2022~~ **01.05.2022** Submission of the contributions  
   
 * ~~14.05.2022~~ **22.05.2022** Notification of the acceptance decision  
   
-* ~~26.05.2022~~ **29.05.2022** Submission of the final version  
+* **26.05.2022** Submission of the final version  
   
-* 27.06.2022 Workshop
+* **27.06.2022** Workshop
 
 ## Publications
 The workshop papers will be included in the conference proceedings and published in the Digital Library of the Gesellschaft für Informatik.
