@@ -9,6 +9,6 @@ permalink: /downloads.html/
 This download archive gathers all documentations, papers, plugins and publications available on this site. Please use the different buttons to download the files.  
   
 ---
-[Download](https//spesml.github.io/Downloads/lorem_ipsum.pdf){: .btn }
+[Download](https://spesml.github.io/Downloads/lorem_ipsum.pdf){: .btn }
 ---
 ahbshda
