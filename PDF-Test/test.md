@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 9
-#nav_exclude: true
+nav_exclude: true
 title: Test PDF
 ---
 # Test
