@@ -20,3 +20,9 @@ Download the exeample "Lorem Ipsum" File.
 Download example file "Lorem Ipsum".  
   
 [Download Example File 2](https://spesml.github.io/Downloads/lorem_ipsum.pdf){: .btn }
+
+---
+## SpesML Plugin
+Here you can download the SpesML plugin as .zip for MagicDraw 2021x Refresh 1.
+
+[Download](https://spesml.github.io/Downloads/examples_spesml){: .btn }
