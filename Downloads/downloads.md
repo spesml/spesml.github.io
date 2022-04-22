@@ -10,4 +10,3 @@ This download archive gathers all documentations, papers, plugins and publicatio
   
 ---
 [Download](https://spesml.github.io/Downloads/lorem_ipsum.pdf){: .btn }
----
