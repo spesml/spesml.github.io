@@ -11,5 +11,6 @@ This download archive gathers all documentations, papers, plugins and publicatio
 ---
 ## Example File
 
-Download the exeample "Lorem Ipsum" File.
+Download the exeample "Lorem Ipsum" File.  
+  
 [Download](https://spesml.github.io/Downloads/lorem_ipsum.pdf){: .btn }
