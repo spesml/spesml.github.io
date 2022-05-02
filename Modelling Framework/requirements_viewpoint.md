@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: SpesML Modelling Framework
-grand_parent: SPES Conecepts
+grand_parent: SPES Concepts
 nav_order: 4
 title: Requirements Viewpoint
 permalink: /requirements_viewpoint.html
