@@ -1,10 +1,10 @@
 ---
 layout: default
-parent: Realized Viewpoints in SpesML
-grand_parent: SpesML Modelling Framework
-nav_order: 2
+parent: SpesML Modelling Framework
+grand_parent: SPES Conecepts
+nav_order: 4
 title: Requirements Viewpoint
-permalink: /modelling_framework/realized_viewpoints/requirements_viewpoint.html
+permalink: /requirements_viewpoint.html
 
 ---
 # Requirements Viewpoint
