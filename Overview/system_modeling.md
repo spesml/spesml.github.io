@@ -2,8 +2,8 @@
 layout: default
 title: System Modeling
 nav_order: 1
-parent: SPES Methodology
+parent: Overview
 grand_parent: SPES Concepts
-permalink: /methodology/system_modeling.html
+permalink: /overview/system_modeling.html
 ---
 # System Modeling

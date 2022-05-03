@@ -2,8 +2,8 @@
 layout: default
 title: Benefits of SpesML
 nav_order: 3
-parent: SPES Methodology
+parent: Overview
 grand_parent: SPES Concepts
-permalink: /methodology/benefits.html
+permalink: /overview/benefits.html
 ---
 # Benefits of SpesML

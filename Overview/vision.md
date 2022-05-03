@@ -2,8 +2,8 @@
 layout: default
 title: Vision
 nav_order: 2
-parent: SPES Methodology
+parent: Overview
 grand_parent: SPES Concepts
-permalink: /methodology/vision.html
+permalink: /overview/vision.html
 ---
 # Vision

@@ -1,11 +1,11 @@
 ---
 layout: default
-parent: SPES Concepts
-has_children: true
-nav_order: 4
 title: SpesML Implementation As Plugin
+parent: SPES Concepts
+nav_order: 4
+has_children: true
 has_toc: false
-permalink: /implementation.html
+permalink: /implementation.html/
 ---
 # SpesML Implementation As Plugin
 
