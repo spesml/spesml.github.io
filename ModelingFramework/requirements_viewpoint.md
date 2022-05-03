@@ -35,7 +35,7 @@ Although requirements themselves in SpesML have, for the reasons discussed above
 
 As discussed above, SpesML has different requirements categories aiming at different engineering aspects. These categories are also encoded in the SpesML plugin, so that they can be used for e.g. automated consistency checks. The SpesML requirements taxonomy is shown in the figure below: 
 
-![SpesML Requirements Taxonomy](/modelling_framework/images/requirements_viewpoint/taxonomy.png){:class="img-responsive"}
+![SpesML Requirements Taxonomy](/modeling_framework/images/requirements_viewpoint/taxonomy.png){:class="img-responsive"}
 
 The following table summarizes the categories:
 
@@ -118,7 +118,7 @@ The *Derive* relationship is used to add detail or to include certain design dec
 
 It is a common pattern that an architectural element satisfies a requriements, which itself is derived from a more high-level requirement:
 
-![SpesML Requirements Taxonomy](/modelling_framework/images/requirements_viewpoint/derive-satisfy.png){:class="img-responsive"}
+![SpesML Requirements Taxonomy](/modeling_framework/images/requirements_viewpoint/derive-satisfy.png){:class="img-responsive"}
 
 Of course, there may be a longer chain of *derived* requirements, up to an initial stakeholder requirement.
 
@@ -130,7 +130,7 @@ Frequently, requirements and architecture co-evolve in the sense that not only a
 
 It can be represented in SpesML through the common decomposition of requirements and architecture, as shown in the figure below:
 
-![SpesML Requirements Taxonomy](/modelling_framework/images/requirements_viewpoint/containment-satisfy.png){:class="img-responsive"}
+![SpesML Requirements Taxonomy](/modeling_framework/images/requirements_viewpoint/containment-satisfy.png){:class="img-responsive"}
 
 Note that requirements are decompsed through the *Containment* relationship, which is not not a proper trace relation. Instead, containment is encoded into the requirements model itself. It is used to divide a requirements into sub-requirements which can then be traced, allocated and verified independently. 
 
