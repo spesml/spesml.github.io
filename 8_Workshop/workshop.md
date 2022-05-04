@@ -109,7 +109,7 @@ Submission link: [Easy Chair](https://easychair.org/my/conference?conf=mtmse22)
 ## Publications
 The workshop papers will be included in the conference proceedings and published in the Digital Library of the Gesellschaft für Informatik.
 
-## Program Committee (TBC)
+## Program Committee
 * Andreas Bayha, fortiss  
   
 * Wolfgang Böhm, Technische Universität München  
