@@ -13,16 +13,16 @@ This download archive gathers all documentations, papers, plugins and publicatio
 
 Download the exeample "Lorem Ipsum" File.  
   
-[Download](https://spesml.github.io/Downloads/lorem_ipsum.pdf){: .btn }
+[Download](/downloads/lorem_ipsum.pdf){: .btn }
 
 ---
 ## Example File 2
 Download example file "Lorem Ipsum".  
   
-[Download Example File 2](https://spesml.github.io/Downloads/lorem_ipsum.pdf){: .btn }
+[Download Example File 2](/downloads/lorem_ipsum.pdf){: .btn }
 
 ---
 ## SpesML Plugin
 Here you can download the SpesML plugin as .zip for MagicDraw 2021x Refresh 1.
 
-[Download](https://spesml.github.io/Downloads/examples_spesml){: .btn }
+[Download](/downloads/examples_spesml){: .btn }
