@@ -1,11 +1,11 @@
 ---
 layout: default
-parent: SpesML Plugin
-nav_order: 3
 title: Functional Viewpoint
+nav_order: 4
+parent: SpesML Plugin
 permalink: /plugin/functional_viewpoint.html
 ---
-# ![Functional Viewpoint](/plugin/images/functional_viewpoint/FunctionalViewpoint.png){:height="30px" width="30px"}{:class="img-responsive"}SpesML Plugin - Functional Viewpoint
+# ![Functional Viewpoint](/images/functional_viewpoint/FunctionalViewpoint.png){:height="30px" width="30px"}{:class="img-responsive"}SpesML Plugin - Functional Viewpoint
 
 ## Overview
 
@@ -17,50 +17,50 @@ permalink: /plugin/functional_viewpoint.html
 
 ## Elements
 
-### ![Functional Viewpoint](/plugin/images/functional_viewpoint/FunctionalViewpoint.png){:class="img-responsive"}Functional Viewpoint
+### ![Functional Viewpoint](/images/functional_viewpoint/FunctionalViewpoint.png){:class="img-responsive"}Functional Viewpoint
 Insert text here
 
-### ![Functional Tracing Package](/plugin/images/functional_viewpoint/FunctionalTracingPackage.png){:class="img-responsive"}Functional Tracing Package
+### ![Functional Tracing Package](/images/functional_viewpoint/FunctionalTracingPackage.png){:class="img-responsive"}Functional Tracing Package
 Insert text here
 
-### ![Functional Interface Types Package](/plugin/images/functional_viewpoint/FunctionalInterfaceTypesPackage.png){:class="img-responsive"}Functional Interface Types Package
+### ![Functional Interface Types Package](/images/functional_viewpoint/FunctionalInterfaceTypesPackage.png){:class="img-responsive"}Functional Interface Types Package
 Insert text here
 
-### ![Functional Package](/plugin/images/functional_viewpoint/FunctionalPackage.png){:class="img-responsive"}Functional Package
+### ![Functional Package](/images/functional_viewpoint/FunctionalPackage.png){:class="img-responsive"}Functional Package
 Insert text here
 
-### ![Functional Context](/plugin/images/functional_viewpoint/FunctionalContext.png){:class="img-responsive"}Functional Context
+### ![Functional Context](/images/functional_viewpoint/FunctionalContext.png){:class="img-responsive"}Functional Context
 Insert text here
 
-### ![Functional Actor](/plugin/images/functional_viewpoint/FunctionalActor.png){:class="img-responsive"}Functional Actor
+### ![Functional Actor](/images/functional_viewpoint/FunctionalActor.png){:class="img-responsive"}Functional Actor
 Insert text here
 
-### ![Function](/plugin/images/functional_viewpoint/Function.png){:class="img-responsive"}Function
+### ![Function](/images/functional_viewpoint/Function.png){:class="img-responsive"}Function
 Insert text here
 
-### ![Functional Part](/plugin/images/functional_viewpoint/FunctionPart.png){:class="img-responsive"}Functional Part
+### ![Functional Part](/images/functional_viewpoint/FunctionPart.png){:class="img-responsive"}Functional Part
 Insert text here
 
-### ![Functional Interface Type](/plugin/images/functional_viewpoint/FunctionalInterfaceType.png){:class="img-responsive"}Functional Interface Type
+### ![Functional Interface Type](/images/functional_viewpoint/FunctionalInterfaceType.png){:class="img-responsive"}Functional Interface Type
 Insert text here
 
-### ![Functional Interface](/plugin/images/functional_viewpoint/FunctionalInterface.png){:class="img-responsive"}Functional Interface
+### ![Functional Interface](/images/functional_viewpoint/FunctionalInterface.png){:class="img-responsive"}Functional Interface
 Insert text here
 
-### ![Channel](/plugin/images/universal_interface_model/Channel.png){:class="img-responsive"}Channel
+### ![Channel](/images/universal_interface_model/Channel.png){:class="img-responsive"}Channel
 Insert text here
 
 ## Diagrams
 
-### ![Functional Impact Map](/plugin/images/diagrams/map.png){:class="img-responsive"}SpesML Functional Impact Map
+### ![Functional Impact Map](/images/diagrams/map.png){:class="img-responsive"}SpesML Functional Impact Map
 Insert text here
 
-### ![Functional Tracing Map](/plugin/images/diagrams/map.png){:class="img-responsive"}SpesML Functional Tracing Map
+### ![Functional Tracing Map](/images/diagrams/map.png){:class="img-responsive"}SpesML Functional Tracing Map
 Insert text here
 
-### ![FunctionToRequirement Matrix](/plugin/images/diagrams/matrix.png){:class="img-responsive"}SpesML FunctionToRequirement Matrix
+### ![FunctionToRequirement Matrix](/images/diagrams/matrix.png){:class="img-responsive"}SpesML FunctionToRequirement Matrix
 Insert text here
 
-### ![Functional Internal Function Diagram](/plugin/images/diagrams/composite_structure.png){:class="img-responsive"}SpesML Functional Internal Function Diagram
+### ![Functional Internal Function Diagram](/images/diagrams/composite_structure.png){:class="img-responsive"}SpesML Functional Internal Function Diagram
 Insert text here
 
