@@ -10,8 +10,9 @@ In the SpesML project, 11 partners from industry and science, as well as another
 
 ## Industry Partners
 * ![Foqee Logo](/images/foqee.png) Foqee GmbH
-* <img src="images/qualicen.png" alt="qualicen-logo" width="50"/> Qualicen GmbH
-* <img src="images/qwitto.jpg" alt="qwitto-logo" width="200"/> Qwitto GmbH
+* ![Foqee Logo](/images/foqee.png){: width="100" } Foqee GmbH
+* ![Qualicen Logo](/images/qualicen.png) Qualicen GmbH
+* <a href="/images/qwitto.jpg" width='100' alt='qwitto-logo'> Qwitto GmbH
 * <img src="/images/schaeffler.png" alt="schaeffler-logo" width="200"/> Schaeffler Technologies AG & Co.KG
 * <img src="/images/siemens.png" alt="siemens-logo" width="50"/> Siemens AG
 * <img src="/images/healthineers.png" alt="healthineers-logo" width="50"/> Siemens Healthineers GmbH
