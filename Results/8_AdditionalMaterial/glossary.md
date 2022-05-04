@@ -2,8 +2,8 @@
 layout: default
 title: Glossary
 nav_order: 1
-parent: Appendix
+parent: Additional Material
 grand_parent: SpesML Results
-permalink: /results/appendix/glossary.html
+permalink: /results/additional_material/glossary.html
 ---
 # Glossary
