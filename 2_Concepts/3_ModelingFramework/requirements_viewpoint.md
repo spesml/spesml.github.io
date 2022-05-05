@@ -116,7 +116,7 @@ The *Derive* relationship is used to add detail or to include certain design dec
 
 It is a common pattern that an architectural element satisfies a requriements, which itself is derived from a more high-level requirement:
 
-![SpesML Requirements Taxonomy](/images/requirements_viewpoint/derive-satisfy.png){:class="img-responsive"}
+![SpesML Requirements Taxonomy](/images/requirements_viewpoint/derive-satisfy.png){:class="img-responsive" width="400px"}
 
 Of course, there may be a longer chain of *derived* requirements, up to an initial stakeholder requirement.
 
