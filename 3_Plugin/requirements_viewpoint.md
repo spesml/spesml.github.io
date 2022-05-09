@@ -25,9 +25,9 @@ As the main focus of SpesML is on the architectural models of the functional, lo
 
 ## Structure
 
-Requirments are described in the Requirements Viewpoint folder of a SpesML project:
+Requirements are described in the Requirements Viewpoint folder of a SpesML project:
 
-![Requirements folder](/images/requirements_viewpoint/requirements-structure.png){:class="img-responsive"}
+![Requirements folder](/images/requirements_viewpoint/requirements-structure.png){:class="img-responsive" width="200px"}
 
 For better comprehensibiltiy and maintainability of the set of requirements, requirements can be grouped into Requirements Packages, such as the package for technical design constraints in the figure above.
 
