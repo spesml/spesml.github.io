@@ -116,7 +116,7 @@ The *Derive* relationship is used to add detail or to include certain design dec
 
 It is a common pattern that an architectural element satisfies a requriements, which itself is derived from a more high-level requirement:
 
-![SpesML Requirements Taxonomy](/images/requirements_viewpoint/derive-satisfy.png){:class="img-responsive" width="400px"}
+![Derive and satisfy relationships](/images/requirements_viewpoint/derive-satisfy.png){:class="img-responsive" width="400px"}
 
 Of course, there may be a longer chain of *derived* requirements, up to an initial stakeholder requirement.
 
@@ -128,7 +128,7 @@ Frequently, requirements and architecture co-evolve in the sense that not only a
 
 It can be represented in SpesML through the common decomposition of requirements and architecture, as shown in the figure below:
 
-![SpesML Requirements Taxonomy](/images/requirements_viewpoint/containment-satisfy.png){:class="img-responsive"}
+![Requriements and architecture decomposition](/images/requirements_viewpoint/containment-satisfy.png){:class="img-responsive"}
 
 Note that requirements are decompsed through the *Containment* relationship, which is not not a proper trace relation. Instead, containment is encoded into the requirements model itself. It is used to divide a requirements into sub-requirements which can then be traced, allocated and verified independently. 
 
