@@ -116,7 +116,7 @@ The workshop papers will be included in the conference proceedings and published
   
 * Nico Jansen, RWTH Aachen University  
   
-* Michael Jastram, Qualicen GmbH  
+* Michael Jastram, Formal Mind GmbH
   
 * Maximilian Junker, Qualicen GmbH  
   
