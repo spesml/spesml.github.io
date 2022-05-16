@@ -58,15 +58,15 @@ Insert text here.
 ### ![Communication Component](/images/technical_viewpoint/CommunicationComponent.png){:class="img-responsive"}Communication Component
 Insert text here.
 
-### ![Technical Interface](/images/universal_interface_model/TechnicalInterface.png){:class="img-responsive"}Technical Interface
+### ![Technical Interface](/images/technical_viewpoint/TechnicalInterface.png){:class="img-responsive"}Technical Interface
 Insert text here.
-### ![Mechanical Interface](/images/universal_interface_model/MechanicalInterface.png){:class="img-responsive"}Mechanical Interface
+### ![Mechanical Interface](/images/technical_viewpoint/MechanicalInterface.png){:class="img-responsive"}Mechanical Interface
 Insert text here.
-### ![Energetic Interface](/images/universal_interface_model/EnergeticInterface.png){:class="img-responsive"}Energetic Interface
+### ![Energetic Interface](/images/technical_viewpoint/EnergeticInterface.png){:class="img-responsive"}Energetic Interface
 Insert text here.
-### ![Software Interface](/images/universal_interface_model/SoftwareInterface.png){:class="img-responsive"}Software Interface
+### ![Software Interface](/images/technical_viewpoint/SoftwareInterface.png){:class="img-responsive"}Software Interface
 Insert text here.
-### ![Communication Interface](/images/universal_interface_model/CommunicationInterface.png){:class="img-responsive"}Communication Interface
+### ![Communication Interface](/images/technical_viewpoint/CommunicationInterface.png){:class="img-responsive"}Communication Interface
 Insert text here.
 
 ### ![Channel](/images/universal_interface_model/Channel.png){:class="img-responsive"}Channel
