@@ -25,11 +25,11 @@ Insert Text here.
 Insert Text here.
 ### ![Technical Package](/images/technical_viewpoint/TechnicalPackage.png){:class="img-responsive"}Technical Package
 Insert text here.
-### ![Software Package](/images/technical_viewpoint/TechnicalPackage.png){:class="img-responsive"}Software Package
+### ![Software Package](/images/technical_viewpoint/SoftwarePackage.png){:class="img-responsive"}Software Package
 Insert text here.
-### ![Task Architecture Package](/images/technical_viewpoint/TechnicalPackage.png){:class="img-responsive"}Task Architecture Package
+### ![Task Architecture Package](/images/technical_viewpoint/TaskPackage.png){:class="img-responsive"}Task Architecture Package
 Insert text here.
-### ![Execution Platform Package](/images/technical_viewpoint/TechnicalPackage.png){:class="img-responsive"}Execution Platform Package
+### ![Execution Platform Package](/images/technical_viewpoint/ExecutionPackage.png){:class="img-responsive"}Execution Platform Package
 Insert text here.
 
 ### ![Technical Context](/images/technical_viewpoint/TechnicalContext.png){:class="img-responsive"}Technical Context
@@ -37,36 +37,36 @@ Insert text here.
 ### ![Technical Actor](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Technical Actor
 Insert text here.
 
-### ![Technical Component](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Technical Component
+### ![Technical Component](/images/technical_viewpoint/TechnicalComponent.png){:class="img-responsive"}Technical Component
 Insert text here.
-### ![Software Component](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Software Component
+### ![Software Component](/images/technical_viewpoint/SoftwareComponent.png){:class="img-responsive"}Software Component
 Insert text here.
-### ![Mechanical Component](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Mechanical Component
+### ![Mechanical Component](/images/technical_viewpoint/MechanicalComponent.png){:class="img-responsive"}Mechanical Component
 Insert text here.
-### ![Mechatronic Component](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Mechatronic Component
+### ![Mechatronic Component](/images/technical_viewpoint/MechatronicComponent.png){:class="img-responsive"}Mechatronic Component
 Insert text here.
-### ![Electronic Component](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Electronic Component
+### ![Electronic Component](/images/technical_viewpoint/ElectronicComponent.png){:class="img-responsive"}Electronic Component
 Insert text here.
-### ![Task Architecture](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Task Architecture
+### ![Task Architecture](/images/technical_viewpoint/TaskArchitecture.png){:class="img-responsive"}Task Architecture
 Insert text here.
-### ![Task Component](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Task Component
+### ![Task Component](/images/technical_viewpoint/TaskComponent.png){:class="img-responsive"}Task Component
 Insert text here.
-### ![Execution Platform](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Execution Platform
+### ![Execution Platform](/images/technical_viewpoint/ExecutionPlatform.png){:class="img-responsive"}Execution Platform
 Insert text here.
-### ![Execution Component](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Execution Component
+### ![Execution Component](/images/technical_viewpoint/ExecutionComponent.png){:class="img-responsive"}Execution Component
 Insert text here.
 ### ![Communication Component](/images/technical_viewpoint/CommunicationComponent.png){:class="img-responsive"}Communication Component
 Insert text here.
 
-### ![Technical Interface](/images/universal_interface_model/Channel.png){:class="img-responsive"}Technical Interface
+### ![Technical Interface](/images/universal_interface_model/TechnicalInterface.png){:class="img-responsive"}Technical Interface
 Insert text here.
-### ![Mechanical Interface](/images/universal_interface_model/Channel.png){:class="img-responsive"}Mechanical Interface
+### ![Mechanical Interface](/images/universal_interface_model/MechanicalInterface.png){:class="img-responsive"}Mechanical Interface
 Insert text here.
-### ![Energetic Interface](/images/universal_interface_model/Channel.png){:class="img-responsive"}Energetic Interface
+### ![Energetic Interface](/images/universal_interface_model/EnergeticInterface.png){:class="img-responsive"}Energetic Interface
 Insert text here.
-### ![Software Interface](/images/universal_interface_model/Channel.png){:class="img-responsive"}Software Interface
+### ![Software Interface](/images/universal_interface_model/SoftwareInterface.png){:class="img-responsive"}Software Interface
 Insert text here.
-### ![Communication Interface](/images/universal_interface_model/Channel.png){:class="img-responsive"}Communication Interface
+### ![Communication Interface](/images/universal_interface_model/CommunicationInterface.png){:class="img-responsive"}Communication Interface
 Insert text here.
 
 ### ![Channel](/images/universal_interface_model/Channel.png){:class="img-responsive"}Channel
