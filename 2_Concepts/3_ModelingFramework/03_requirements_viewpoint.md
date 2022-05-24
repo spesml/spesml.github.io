@@ -21,7 +21,7 @@ It is common to differentiate requirements according on the aspects they address
 * Quality requirements, concerning software and product quality characteristics such as the well-known “ilities”.
 * Constraints, concerning side conditions to be observed during development.
 
-As detailed in the next section, some of these categories can be further refined - for instance, there are differnt kinds of constraints, depending on whether it is a physical entitfy to be constrainted (e.g., its weight), architectural design decisions (e.g., notational conventions), or the development process (e.g., the need to for certain analyses or tests). 
+As detailed in the next section, some of these categories can be further refined - for instance, there are different kinds of constraints, depending on whether it is a physical entity to be constrained (e.g., its weight), architectural design decisions (e.g., notational conventions), or the development process (e.g., the need to for certain analyses or tests). 
 
 In constrast with the elements of the functional, logical or technical viewpoints, requirements as such are not given a formal semantics. in SpesML. One reason is that for most categories, the Universal Interface Model - on which the formalization of the other viewpoints is based - is not a suitable mathematical basis. The second reason is that even for functional requirements, where such a formalization is intuitively possible, formalized requirements have little use in SpesML. Instead, the black-box functions of the functional viewpoint can be seen as formalized behavior descriptions of a group of related functional requirements. In practice, this gives a better understanding of the intended functionality tha isolated partial behavior specifications. 
 
@@ -114,7 +114,7 @@ The most frequently used relationships are *Satisfy* and *Derive*. The *Satisfy*
 
 The *Derive* relationship is used to add detail or to include certain design decisions. In the absence of formal requirements notations, *derive* does not have a formal semantics, but intuitively, if a requirement _R-m_ is derived from a requirements _R-n_, we would expect that when _R-m_ is valid for a given system, then so is _R-n_ (note that this is a more liberal demand than the universal "_R-m_ implies _R-n_"). Since in general it is not possible to automatically verify this expectation, the *Derive* relationship gives rise to a verification obligation that needs to be discharged during development (typically through a review).
 
-It is a common pattern that an architectural element satisfies a requriements, which itself is derived from a more high-level requirement:
+It is a common pattern that an architectural element satisfies a requirements, which itself is derived from a more high-level requirement:
 
 ![Derive and satisfy relationships](/images/requirements_viewpoint/derive-satisfy.png){:class="img-responsive" width="400px"}
 
@@ -128,7 +128,7 @@ Frequently, requirements and architecture co-evolve in the sense that not only a
 
 It can be represented in SpesML through the common decomposition of requirements and architecture, as shown in the figure below:
 
-![Requriements and architecture decomposition](/images/requirements_viewpoint/containment-satisfy.png){:class="img-responsive"}
+![Requirements and architecture decomposition](/images/requirements_viewpoint/containment-satisfy.png){:class="img-responsive"}
 
 Note that requirements are decompsed through the *Containment* relationship, which is not not a proper trace relation. Instead, containment is encoded into the requirements model itself. It is used to divide a requirements into sub-requirements which can then be traced, allocated and verified independently. 
 
@@ -136,7 +136,7 @@ When using this co-evolution pattern, one would expect the following consistency
 
 * Taken together, the sub-requirements must imply the parent requirement. 
 
-* If the parent requirement is satisfied by a function (in the sense of an architectural element) *F* or by a logical or a technical component _E_, the sub-requirements must be satisfied by a white-box function of *F* or by sub-components of _E_, respectively.
+* If the parent requirement is satisfied by a function (in the sense of an architectural element) *F* or by a logical or a technical component _E_, the sub-requirements must be satisfied by a sub-function of *F* (in the sense of the functional hierarchy) or by sub-components of _E_, respectively.
 
 ### Derived requirements
 
