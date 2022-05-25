@@ -22,6 +22,7 @@ In the SpesML project, 11 partners from industry and science, as well as another
 ![RWTH Logo](/images/rwth_resized.png) &nbsp;
 ![TUM Logo](/images/tum_resized.png) &nbsp;
 ![UzK Logo](/images/uzk_resized.png) &nbsp;
+![Airbus Logo](/images/airbus_resized.png) &nbsp;
 ![BMW Logo](/images/bmw_resized.png) &nbsp;
 ![GfSE Logo](/images/gfse_resized.jpg)
 <!---  -->
@@ -44,5 +45,6 @@ In the SpesML project, 11 partners from industry and science, as well as another
 * Universität zu Köln
 
 ## Associated Partners
+* Airbus SE
 * BMW AG
 * Gesellschaft für Systems Engineering e.V.
