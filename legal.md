@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Site Credits
+title: Imprint
 nav_exclude: true
-permalink: /credits.html/
+permalink: /imprint.html/
 ---
-# Site Credits
+# Imprint
 
 Insert all legal information according to TMG and Impressum
