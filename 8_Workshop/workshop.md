@@ -79,14 +79,7 @@ Possible topics for workshop contributions in the above categories include:
 ## Expected Results of the Workshop
 The aim of the workshop is an intensive exchange of experience between representatives of research and industry. We want to develop a common understanding of the challenges facing industry and the model-based solutions available from research. In addition, it will be clarified how model-based solutions can be further developed and transferred into industrial practice.
 
-## Planned Procedure
-The workshop begins with a key note introducing the workshop topic. In the further course of the workshop, the contributions will be presented in *presentation sessions*. In addition, prepared and moderated discussion rounds on planned topics of the individual categories will take place for the participants.  
-  
-In the presentation sessions, the contents of the accepted technical papers will be presented and discussed. Each presentation is scheduled for 20 minutes, followed by a discussion (10 minutes). During the discussion, participants are encouraged to critically reflect on the presentation, making references to the topic of the workshop from their own perspective. To stimulate the discussion, the workshop leader will also prepare questions to be answered by the presenter within his/her presentation. This should also encourage the discovery of cross-references between different contributions of the workshop.  
-  
-In order to additionally promote cooperation among participants in the field of MBSE, dedicated discussion sessions on topics of the above-mentioned categories will be prepared. The workshop leaders will formulate central questions as an entry point. These questions are derived from the contents of the accepted submissions in order to additionally support intra- and interdisciplinary cooperation. In order to facilitate an easy entry into the discussion, additional media, posters and whiteboards for face-to-face events and corresponding digital boards for virtual events, are used similar to the dissonance *method*.
-
-## Explanation of the submission and review process for workshop contributions
+### Explanation of the submission and review process for workshop contributions
 The workshop is planned as an open event with a total of six regular contributions in the lecture section. Contributions to the workshop can be submitted as long papers (up to 14+4 pages) and short papers (up to 8 pages). The page limits are binding and include bibliography and appendices. Contributions must be submitted in .PDF format via EasyChair, use the [LNI template](https://gi.de/service/publikationen/lni/) and follow the author guidelines of the Gesellschaft für Informatik e.V..  
   
 All submissions will be independently peer-reviewed by at least two members of the Programme Committee. Based on the review results, the appropriate technical papers will be selected for the workshop. All authors of submitted papers will also receive feedback on the content of their submission.  
@@ -95,7 +88,7 @@ Acepted papers will be published in the common workshop proceedings in the [Digi
   
 Submission link: [Easy Chair](https://easychair.org/my/conference?conf=mtmse22)
 
-## Events (Deadlines extended)
+### Events (Deadlines extended)
 * **16.04.2022** Submission of the abstracts (optional)
   
 * ~~23.04.2022~~ **01.05.2022** Submission of the contributions  
@@ -106,8 +99,53 @@ Submission link: [Easy Chair](https://easychair.org/my/conference?conf=mtmse22)
   
 * **27.06.2022** Workshop
 
-## Publications
+### Publications
 The workshop papers will be included in the conference proceedings and published in the Digital Library of the Gesellschaft für Informatik.
+
+## Procedure
+The workshop begins with a key note introducing the workshop topic. In the further course of the workshop, the contributions will be presented in *presentation sessions*. In addition, prepared and moderated discussion rounds on planned topics of the individual categories will take place for the participants.  
+  
+In the presentation sessions, the contents of the accepted technical papers will be presented and discussed. Each presentation is scheduled for 20 minutes, followed by a discussion (10 minutes). During the discussion, participants are encouraged to critically reflect on the presentation, making references to the topic of the workshop from their own perspective. To stimulate the discussion, the workshop leader will also prepare questions to be answered by the presenter within his/her presentation. This should also encourage the discovery of cross-references between different contributions of the workshop.  
+  
+In order to additionally promote cooperation among participants in the field of MBSE, dedicated discussion sessions on topics of the above-mentioned categories will be prepared. The workshop leaders will formulate central questions as an entry point. These questions are derived from the contents of the accepted submissions in order to additionally support intra- and interdisciplinary cooperation. In order to facilitate an easy entry into the discussion, additional media, posters and whiteboards for face-to-face events and corresponding digital boards for virtual events, are used similar to the dissonance *method*.
+
+### Agenda of the Workshop, 27.06.2022
+
+* 8:30-9:00 Registration
+
+* 9:30-10:30 Program
+
+  * Introduction (Jansen)
+
+  * Keynote (Andreas Vogelsang)
+
+* 10:30-11:00 Coffee break (coffee and other drinks, snacks, in the foyer of the Forum)
+
+* 11:00-12:30 Program
+
+  * Implementation of the SpesML Workbench in MagicDraw (Regnat)
+
+  * Challenges in Multi-View Model Consistency Management for Systems Engineering (Bergemann)
+
+  * Modeling an Anomaly Detection System with SpesML - An Experience Report (Femmer)
+
+* 12:30-14:00 Lunch break (canteen, self-pay)
+
+* 14:00-15:30 Program
+
+  * Embedding Textual Languages in MagicDraw (Drux)
+
+  * Development of a SysML Profile for Network Configurations in Safety-critical Systems (Schweiger)
+
+  * Invited talk - Case Study 1 (Groger)
+
+* 15:30-16:00 Coffee break (coffee and other drinks, snacks, in the foyer of the Forum)
+
+* 16:00-17:30 Program
+
+  * Invited talk - Case Study 2 (Setzer)
+
+  * Machine Trainable Software Models towards a Cognitive Thinking AI with the Natural Language Processing Platform NLX (Schaller)
 
 ## Program Committee
 * Andreas Bayha, fortiss  
