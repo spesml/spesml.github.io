@@ -67,31 +67,60 @@ This element is a *UML/SysML Package* with a dedicated stereotype that allows to
 ### ![Technical Context](/images/technical_viewpoint/TechnicalContext.png){:class="img-responsive"}Technical Context
 Insert text here.
 ### ![Technical Actor](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Technical Actor
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it.
+TODO
 
 ### ![Technical Component](/images/technical_viewpoint/TechnicalComponent.png){:class="img-responsive"}Technical Component
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it. 
+*Technical Components* provide a syntactic interface via [Technical Interfaces](#technical-interface).
+
 ### ![Software Component](/images/technical_viewpoint/SoftwareComponent.png){:class="img-responsive"}Software Component
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it.
+TODO
+
 ### ![Mechanical Component](/images/technical_viewpoint/MechanicalComponent.png){:class="img-responsive"}Mechanical Component
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it.
+TODO
+
 ### ![Mechatronic Component](/images/technical_viewpoint/MechatronicComponent.png){:class="img-responsive"}Mechatronic Component
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it.
+TODO
+
 ### ![Electronic Component](/images/technical_viewpoint/ElectronicComponent.png){:class="img-responsive"}Electronic Component
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it.
+TODO
+
 ### ![Task Architecture](/images/technical_viewpoint/TaskArchitecture.png){:class="img-responsive"}Task Architecture
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it.
+TODO
+
 ### ![Task](/images/technical_viewpoint/TaskComponent.png){:class="img-responsive"}Task
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it.
+TODO
+
 ### ![Execution Platform](/images/technical_viewpoint/ExecutionPlatform.png){:class="img-responsive"}Execution Platform
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it.
+TODO
+
 ### ![Execution Component](/images/technical_viewpoint/ExecutionComponent.png){:class="img-responsive"}Execution Component
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it.
+TODO
+
 ### ![Communication Component](/images/technical_viewpoint/CommunicationComponent.png){:class="img-responsive"}Communication Component
-Insert text here.
+This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed. In addition, it restricts that only certain sub-elements can be created below it.
+TODO
+
+
+### Technical Interface Type
+TODO ?
+
+### Task Interface Type
+TODO ?
+
 
 ### ![Technical Interface](/images/technical_viewpoint/TechnicalInterface.png){:class="img-responsive"}Technical Interface
-Insert text here.
+Insert text here. TODO: can be specified by using [Technical Interface Types](#technical-interface-type) and [Channels](#channel).
+
 ### ![Task Interface](/images/technical_viewpoint/TaskInterface.png){:class="img-responsive"}Task Interface
 Insert text here.
 
@@ -100,7 +129,7 @@ Insert text here.
 
 ## Diagrams
 ### ![Technical Tracing Map](/images/diagrams/map.png){:class="img-responsive"}SpesML Technical Tracing Map
-This relation map shows technical elements like Technical Components, Mechanical Components, etc. and to what [Requirements](/plugin/requirements_viewpoint.html#requirements), [Functional Component](/plugin/functional_viewpoint.html#function) or [Logical Components](/plugin/logical_viewpoint.html#logical-component) these elements are tracing to. By default, all technical elements are shown but it is also possible to drag & drop a single technical element to the relation map to show only the particular relationships.
+This relation map shows technical elements like Technical Components, Mechanical Components, etc. and to what [Requirements](/plugin/requirements_viewpoint.html#requirement), [Functional Component](/plugin/functional_viewpoint.html#function) or [Logical Components](/plugin/logical_viewpoint.html#logical-component) these elements are tracing to. By default, all technical elements are shown but it is also possible to drag & drop a single technical element to the relation map to show only the particular relationships.
 
 ### ![TechnicalToLogical Matrix](/images/diagrams/matrix.png){:class="img-responsive"}SpesML TechnicalToLogical Matrix
 This matrix allows to create relationships between elements of the [Technical Viewpoint](/plugin/technical_viewpoint.html#technical-viewpoint) and elements of the [Logical Viewpoint](/plugin/logical_viewpoint.html#logical-viewpoint).
@@ -109,3 +138,4 @@ This matrix allows to create relationships between elements of the [Technical Vi
 This matrix allows to create relationships between elements of the [Technical Viewpoint](/plugin/technical_viewpoint.html#technical-viewpoint) and [Requirements](/plugin/requirements_viewpoint.html#requirements).
 
 ### ![Technical Internal Component Diagram](/images/diagrams/composite_structure.png){:class="img-responsive"}SpesML Technical Internal Component Diagram
+This diagram is based on a *UML Composite Structure Diagram/SysML Internal Block Diagram* and provides a reduced diagram toolbar related to SpesML for the [Technical Viewpoint](/plugin/technical_viewpoint.html). Note that intentionally any technical components cannot be created using the diagram toolbar. Instead, it is recommended to create these elements by dragging/dropping a technical component to the diagram.
