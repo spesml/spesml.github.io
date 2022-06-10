@@ -68,10 +68,10 @@ To create the logical architecture of the examplary Window Lifter above, you can
 ## Elements
 
 ### ![Logical Viewpoint](/images/logical_viewpoint/LogicalViewpoint.png){:class="img-responsive"}Logical Viewpoint
-This element is a *UML/SysML Package* with a dedicated stereotype that allows to define a adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package.
 
 ### ![Logical Tracing Package](/images/logical_viewpoint/LogicalTracingPackage.png){:class="img-responsive"}Logical Tracing Package
-This element is a *UML/SysML Package* with a dedicated stereotype that allows to define a adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package. This package usually contains only tracing related relation maps and matrixes.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package. This package usually contains only tracing related relation maps and matrixes.
 
 ### ![Logical Interface Types Package](/images/logical_viewpoint/LogicalInterfaceTypesPackage.png){:class="img-responsive"}Logical Interface Types Package
 Insert text here

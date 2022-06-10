@@ -43,20 +43,26 @@ TODO: Should be done if the Technical Viewpoint is completely realized in the pl
 
 ## Elements
 ### ![Technical Viewpoint](/images/technical_viewpoint/TechnicalViewpoint.png){:class="img-responsive"}Technical Viewpoint
-Insert Text here.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only further packages to separate different purpose categories within the Technical Viewpoint. In addition, it is already possible to create a [Technical Context](#technical-context) as a starting point.
 
 ### ![Technical Tracing Package](/images/technical_viewpoint/TechnicalTracingPackage.png){:class="img-responsive"}Technical Tracing Package
-Insert Text here.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only tracing related relation maps and matrixes.
+
 ### ![Technical Interface Types Package](/images/technical_viewpoint/TechnicalInterfaceTypesPackage.png){:class="img-responsive"}Technical Interface Types Package
-Insert Text here.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only interface types that can be used for [Technical Interfaces](#technical-interface) and [Task Interfaces](#task-interface).
+
 ### ![Technical Package](/images/technical_viewpoint/TechnicalPackage.png){:class="img-responsive"}Technical Package
-Insert text here.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only standard technical components like [Technical](#technical-component), [Mechanical](#mechanical-component), [Electronic](#electronic-component) and [Mechatronic Components](#mechatronic-component), and context-related elements like [Technical Contexts](#technical-context) and [Technical Actors](#technical-actor). In addition, it can also contain [Software Packages](#Software-Package), which are the entry point for software subsystems.
+
 ### ![Software Package](/images/technical_viewpoint/SoftwarePackage.png){:class="img-responsive"}Software Package
-Insert text here.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only elements regarding the software subsystem. It includes [Software Components](#software-component), which represent software subsystems, and packages for further software subsystem related elements like [Task Architecture Packages](#task-architecture-package) and [Execution Platform Packages](#execution-platform-package).
+
 ### ![Task Architecture Package](/images/technical_viewpoint/TaskPackage.png){:class="img-responsive"}Task Architecture Package
-Insert text here.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only elements to create a task archiecture for a software subsystem, i.e., [Task Architectures](#task-architecture) and [Tasks](#task).
+
 ### ![Execution Platform Package](/images/technical_viewpoint/ExecutionPackage.png){:class="img-responsive"}Execution Platform Package
-Insert text here.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only elements to create a execution platform for a software subsystem, i.e., [Execution Platforms](#execution-platform), [Execution Components](#execution-component) and [Communication Components](#communication-components).
+
 
 ### ![Technical Context](/images/technical_viewpoint/TechnicalContext.png){:class="img-responsive"}Technical Context
 Insert text here.
@@ -97,7 +103,9 @@ Insert text here.
 This relation map shows technical elements like Technical Components, Mechanical Components, etc. and to what [Requirements](/plugin/requirements_viewpoint.html#requirements), [Functional Component](/plugin/functional_viewpoint.html#function) or [Logical Components](/plugin/logical_viewpoint.html#logical-component) these elements are tracing to. By default, all technical elements are shown but it is also possible to drag & drop a single technical element to the relation map to show only the particular relationships.
 
 ### ![TechnicalToLogical Matrix](/images/diagrams/matrix.png){:class="img-responsive"}SpesML TechnicalToLogical Matrix
+This matrix allows to create relationships between elements of the [Technical Viewpoint](/plugin/technical_viewpoint.html#technical-viewpoint) and elements of the [Logical Viewpoint](/plugin/logical_viewpoint.html#logical-viewpoint).
 
 ### ![TechnicalToRequirement Matrix](/images/diagrams/matrix.png){:class="img-responsive"}SpesML TechnicalToRequirement Matrix
+This matrix allows to create relationships between elements of the [Technical Viewpoint](/plugin/technical_viewpoint.html#technical-viewpoint) and [Requirements](/plugin/requirements_viewpoint.html#requirements).
 
 ### ![Technical Internal Component Diagram](/images/diagrams/composite_structure.png){:class="img-responsive"}SpesML Technical Internal Component Diagram
