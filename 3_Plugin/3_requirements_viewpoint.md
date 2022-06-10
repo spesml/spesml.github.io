@@ -9,7 +9,7 @@ permalink: /plugin/requirements_viewpoint.html
 
 ## Overview
 
-In order to motivate and justify architectural decisions, SpesML models include explicit requirements and design constraints. These requirements and constraints are linked with the architectural elements of the functional, logical, and technical viewpoints through tracing relations. Requirements in SpesML are described as plain natural-language statements; in contrast with e.g. the functions of the functional viewpoint or the components of the logical viewpoint, they have no formal semantics based on the [Universal Interface Model](/concepts/methodology/modeling_theory.html). 
+In order to motivate and justify architectural decisions, SpesML models include explicit requirements and design constraints. These requirements and constraints are linked with the architectural elements of the functional, logical, and technical viewpoints through tracing relations. Requirements in SpesML are described as plain natural-language statements; in contrast with e.g. the functions of the functional viewpoint or the components of the logical viewpoint, they have no formal semantics based on the [Universal Interface Model](/concepts/modeling_framework/uim.html). 
 
 The [SpesML Concepts](/concepts.html) section of this documentation has some additional information about the [Requirements Viewpoint in the SpesML modeling framework](/concepts/modeling_framework/requirements_viewpoint.html).
 
