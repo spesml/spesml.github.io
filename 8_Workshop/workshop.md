@@ -123,11 +123,11 @@ In order to additionally promote cooperation among participants in the field of 
 
 * 11:00-12:30 Program
 
+  * Modeling an Anomaly Detection System with SpesML - An Experience Report (Femmer)
+
   * Implementation of the SpesML Workbench in MagicDraw (Regnat)
 
   * Challenges in Multi-View Model Consistency Management for Systems Engineering (Bergemann)
-
-  * Modeling an Anomaly Detection System with SpesML - An Experience Report (Femmer)
 
 * 12:30-14:00 Lunch break (canteen, self-pay)
 
