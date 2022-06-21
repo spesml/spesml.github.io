@@ -139,3 +139,6 @@ This matrix allows to create relationships between elements of the [Technical Vi
 
 ### ![Technical Internal Component Diagram](/images/diagrams/composite_structure.png){:class="img-responsive"}SpesML Technical Internal Component Diagram
 This diagram is based on a *UML Composite Structure Diagram/SysML Internal Block Diagram* and provides a reduced diagram toolbar related to SpesML for the [Technical Viewpoint](/plugin/technical_viewpoint.html). Note that intentionally any technical components cannot be created using the diagram toolbar. Instead, it is recommended to create these elements by dragging/dropping a technical component to the diagram.
+
+### TaskToExecution Allocation Matrix
+TODO
