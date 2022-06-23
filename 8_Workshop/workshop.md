@@ -137,7 +137,7 @@ In order to additionally promote cooperation among participants in the field of 
 
   * Development of a SysML Profile for Network Configurations in Safety-critical Systems (Schweiger)
 
-  * Invited talk - Case Study 1 (Groger)
+  * Invited talk - Case Study 1 (Gross)
 
 * 15:30-16:00 Coffee break (coffee and other drinks, snacks, in the foyer of the Forum)
 
