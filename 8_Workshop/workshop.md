@@ -129,9 +129,9 @@ In order to additionally promote cooperation among participants in the field of 
 
   * Implementation of the SpesML Workbench in MagicDraw (Regnat, Gupta)
 
-* 12:30-14:00 Lunch break (canteen, self-pay)
+* 12:30-13:30 Lunch break (canteen, self-pay)
 
-* 14:00-15:30 Program
+* 13:30-15:00 Program
 
   * Challenges in Multi-View Model Consistency Management for Systems Engineering (Bergemann)
 
@@ -139,9 +139,9 @@ In order to additionally promote cooperation among participants in the field of 
 
   * Development of a SysML Profile for Network Configurations in Safety-critical Systems (Schweiger)
 
-* 15:30-16:00 Coffee break (coffee and other drinks, snacks, in the foyer of the Forum)
+* 15:00-15:30 Coffee break (coffee and other drinks, snacks, in the foyer of the Forum)
 
-* 16:00-17:30 Program
+* 15:30-16:30 Program
 
   * Invited talk - Anwendung und Evaluierung der SpesML bei einem Automobilzulieferer (Gross)
 
