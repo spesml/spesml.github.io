@@ -117,33 +117,33 @@ In order to additionally promote cooperation among participants in the field of 
 
   * Introduction (Jansen)
 
-  * Keynote (Andreas Vogelsang)
+  * Keynote - Und wo soll ich anfangen? Wie Einführung von MBSE in Organisationen klappen kann (Andreas Vogelsang)
+  
+  * Invited talk - Case Study 2 (Setzer)
 
-* 10:30-11:00 Coffee break (coffee and other drinks, snacks, in the foyer of the Forum)
+* 11:00-11:30 Coffee break (coffee and other drinks, snacks, in the foyer of the Forum)
 
-* 11:00-12:30 Program
+* 11:30-12:30 Program
 
   * Modeling an Anomaly Detection System with SpesML - An Experience Report (Femmer)
 
-  * Implementation of the SpesML Workbench in MagicDraw (Regnat)
-
-  * Challenges in Multi-View Model Consistency Management for Systems Engineering (Bergemann)
+  * Implementation of the SpesML Workbench in MagicDraw (Regnat, Gupta)
 
 * 12:30-14:00 Lunch break (canteen, self-pay)
 
 * 14:00-15:30 Program
 
+  * Challenges in Multi-View Model Consistency Management for Systems Engineering (Bergemann)
+
   * Embedding Textual Languages in MagicDraw (Drux)
 
   * Development of a SysML Profile for Network Configurations in Safety-critical Systems (Schweiger)
-
-  * Invited talk - Case Study 1 (Gross)
 
 * 15:30-16:00 Coffee break (coffee and other drinks, snacks, in the foyer of the Forum)
 
 * 16:00-17:30 Program
 
-  * Invited talk - Case Study 2 (Setzer)
+  * Invited talk - Anwendung und Evaluierung der SpesML bei einem Automobilzulieferer (Gross)
 
   * Machine Trainable Software Models towards a Cognitive Thinking AI with the Natural Language Processing Platform NLX (Schaller)
 
