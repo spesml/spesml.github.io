@@ -119,7 +119,7 @@ In order to additionally promote cooperation among participants in the field of 
 
   * Keynote - Und wo soll ich anfangen? Wie Einführung von MBSE in Organisationen klappen kann (Andreas Vogelsang)
   
-  * Invited talk - Case Study 2 (Setzer)
+  * Invited talk - MBSE @ Siemens Healthineers - Approach, Challenges and Case Study (Setzer)
 
 * 11:00-11:30 Coffee break (coffee and other drinks, snacks, in the foyer of the Forum)
 
