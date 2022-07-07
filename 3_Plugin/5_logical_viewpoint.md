@@ -7,6 +7,8 @@ permalink: /plugin/logical_viewpoint.html
 ---
 # ![Logical Viewpoint](/images/logical_viewpoint/LogicalViewpoint.png){:height="30px" width="30px"}{:class="img-responsive"}SpesML Plugin - Logical Viewpoint
 
+![](/images/logical_viewpoint/LogicalViewpoint.png){width="4.127777777777778in" height="2.3895833333333334in"}
+
 ## Overview
 In order to realize the desired functionality that is specified in the models of the functional viewpoint, the system under development is decomposed into a network of communicating logical components. The result is a logical architecture model which is independent on any technological constraints and which can be reused for multiple platforms.  
   
