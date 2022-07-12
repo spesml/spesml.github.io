@@ -47,6 +47,8 @@ comprehensive system model consists of:
 <img src="./images/principles/image1.png"
 style="width:4.12778in;height:2.38958in" />
 
+Figure 1: SPES System Model
+
 The system is embedded in its context and communicates with other
 systems in the context. We call this the system’s *operational context*.
 The system under consideration interacts with its operational context
