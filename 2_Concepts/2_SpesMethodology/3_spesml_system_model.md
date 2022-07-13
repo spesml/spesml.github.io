@@ -48,7 +48,7 @@ observed by an external observer at the system interface, separating the
 system from its operational context. This constitutes the *black box*
 view on the system on given level of abstraction.
 
-<img src="./images/spesml_system_model/image1.png" style="width:4.22917in;height:3.725in" />
+<img src="./images/spesml_system_model/image1.png" style="width:2.0 in;height:1.762in" />
 
 Figure 1: System modeling blueprint (visualized as concept model)
 
