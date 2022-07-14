@@ -32,8 +32,7 @@ level of granularity, thus achieving a clear tree structure of the
 entire SuD into subsystems. However, it must be taken into account that
 with each transition to a new granularity level, the model complexity
 increases. The reason for this is the context models of the subsystems,
-which cannot be taken over 1:1 from the models of the super-system (see
-chapter 6.4 for further details).
+which cannot be taken over 1:1 from the models of the super-system.
 
 It is important to note that subsystems always have an independent
 architecture and an associated technical implementation. How models of
@@ -41,7 +40,7 @@ the architecture of the subsystem and the technical implementation can
 be derived from the models of the super-systems depends on the nature of
 the tracing relationships of the models in the super-system.
 
-### Top-Down vs. Bottom-Up Development[^1]
+### Top-Down vs. Bottom-Up Development
 
 We distinguish between two basic approaches for system development, the
 top-down and the bottom-up approach, which can also be combined
@@ -52,7 +51,7 @@ the first level of granularity) and recursively defines subsystems at
 lower layers of granularity.
 
 This approach is often found in the development of new systems
-(greenfield development). Figure 12 shows an example of a top-down
+(greenfield development). Figure 1 shows an example of a top-down
 approach. The system (S) is decomposed into three components (A, B, C).
 All these three components should possibly be further developed at a
 lower level of granularity, so that the models of 3 subsystems are
@@ -117,7 +116,7 @@ subsystem:
 In this approach, subsystems may still have additional requirements as
 well as their own context that must be considered for its development.
 SpesML offers two additional tracing relationships to express this
-situation (see Figure 11 for an example):
+situation:
 
 -   Require (from model element to requirement): This relationship
     states that a model element - typically a function of the FVP or a
@@ -227,6 +226,3 @@ super-system those white-box functions become system function of the SW
 subsystem (at the next layer of granularity), which means that
 meaningful tracing relationships between system functions of the SW
 subsystem and those white-box functions exist.
-
-[^1]: See also
-    https://git.rwth-aachen.de/spesmlgroup/spesml/-/blob/master/04_Arbeitspakete/Tooling/granularity%20layer%20transitions/Granularity%20Layer%20Transitions.md
