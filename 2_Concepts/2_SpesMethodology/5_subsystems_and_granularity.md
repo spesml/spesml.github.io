@@ -52,9 +52,8 @@ style="width:6.08889in;height:3.19028in" />
 ## Definition of Subsystems
 
 The structuring of the models for the individual views and the concept
-of the \<a href=”
-https://spesml.github.io/concepts/modeling_framework/uim.html”\>universal
-interface model UIM)\</a\> make it possible to treat components from the
+of the <a href="https://spesml.github.io/concepts/modeling_framework/uim.html">
+Universal Interface Model (UIM)</a> make it possible to treat components from the
 technical view as independent (sub-)systems that can be developed with
 independent processes, methods and tools and then to integrate these as
 components back into the higher-level system (super-system). Of course,
