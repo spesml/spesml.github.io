@@ -49,6 +49,8 @@ engineering process on the level of the technical architecture.
 <img src="./images/subsystems_and_granularity/image2.png"
 style="width:6.08889in;height:3.19028in" />
 
+Figure 1: Layers of Granularity for a System S and its Sub-Systems
+
 ## Definition of Subsystems
 
 The structuring of the models for the individual views and the concept
