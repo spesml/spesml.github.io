@@ -46,7 +46,7 @@ views based on modelling theories that capture all aspects of system
 development. Typically, some of the modelling techniques are used in a
 number of views.
 
-Model Oriented Description Techniques
+### Model Oriented Description Techniques
 
 For model oriented description techniques, we find similar structures as
 for modelling theories.
@@ -78,7 +78,7 @@ and logical calculus for properties and reasoning. For that purpose, a
 mathematical structure, such as e.g. mathematical and logical
 descriptions of state machines are better suited.
 
-Expressive Power
+### Expressive Power
 
 A highly relevant aspect is the expressive power of a description
 technique and the related modeling theory. There are many different
