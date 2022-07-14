@@ -60,9 +60,9 @@ located at the 2nd level of granularity (one for each component). This
 approach can be repeated recursively to create a deeper nesting of
 granularity levels.
 
-<img src=".//image1.png" style="width:4.1153in;height:1.91667in" />
+<img src="./images/subsystems/image1.png" style="width:4.1153in;height:1.91667in" />
 
-Figure 12: Example for Top-Down-Development
+Figure 1: Example for Top-Down-Development
 
 In contrast, the bottom-up approach starts at a lower level of
 granularity. Low-level systems are combined and integrated to form
@@ -76,10 +76,10 @@ components (A, B, C) are then integrated at the 1st level of granularity
 with their black-box view to form the super-system (S). Internally,
 these subsystems can be further structured (component A in the example).
 
-<img src="./media/image2.png"
+<img src="./images/subsystems/image2.png"
 style="width:4.11417in;height:1.91732in" />
 
-Figure 13: Example for Bottom-Up- Development
+Figure 2: Example for Bottom-Up- Development
 
 Both approaches can also be combined: While some parts of the
 super-system are built using existing subsystems, other parts may need
@@ -128,10 +128,10 @@ situation (see Figure 11 for an example):
     expresses that expectations are provided by properties guaranteed by
     the subsystem.
 
-<img src="./media/image3.png"
+<img src="./images/subsystems/image3.png"
 style="width:4.86109in;height:2.57692in" />
 
-Figure 14: Matching guarantees to assumptions
+Figure 3: Matching guarantees to assumptions
 
 A verification obligation also for these two relations arises from their
 use in a model.
