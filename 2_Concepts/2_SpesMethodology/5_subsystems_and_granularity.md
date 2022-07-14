@@ -146,4 +146,4 @@ account for their development.
     be achieved via tracing relation of their respective parent systems.
 
 [^1]: In the context of these systems are all the other elements of the
-    technical architecture of the SuD.
+    technical architecture of the SuD. 
