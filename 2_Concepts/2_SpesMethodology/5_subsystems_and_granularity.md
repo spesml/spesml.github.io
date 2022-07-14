@@ -27,12 +27,12 @@ as a stand-alone system with an own context[^1] different from the
 context of the SuD, using an independent development process. The
 development process of this stand-alone system may follow any
 development methodology as long as the resulting system interface model
-of this stand-alone system adheres to the \<a href=”
+of this stand-alone system adheres to the <a href=”
 https://spesml.github.io/concepts/modeling_framework/uim.html”\>universal
-interface model (UIM)\</a\>. In particular, the concept of granularity
+interface model (UIM)</a>. In particular, the concept of granularity
 layers, allows to recursively apply the SPES concepts and viewpoints to
 selected architecture elements which leads to a nesting of architecture
-descriptions and a hierarchy of granularity layers (see Figure 15).
+descriptions and a hierarchy of granularity layers (see Figure 1).
 
 The models of all selected technical components build the next layer of
 granularity in the development. Note, as in general only some elements
