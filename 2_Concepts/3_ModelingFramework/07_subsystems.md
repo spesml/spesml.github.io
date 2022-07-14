@@ -213,7 +213,9 @@ component directly) or at the subsystem level (e.g., by a supplier). A
 combination of both approaches is of course also conceivable.
 
 If we assume the proposed relation between the models of the logical and
-technical views of the super-system (see chapter 5.2) it is possible to
+technical views of the super-system 
+(see <a href="https://spesml.github.io/concepts/modeling_framework/tracing.html">
+Tracing between Views and Layers of Granularity</a>) it is possible to
 integrate the subsystem models in both views. Since the models from the
 two views model different properties of the subsystem (abstract
 interface behavior in the logical view and technical implementation of
