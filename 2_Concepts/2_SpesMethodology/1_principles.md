@@ -6,13 +6,54 @@ parent: SPES Methodology
 grand_parent: SpesML Concepts
 permalink: /concepts/methodology/principles.html
 ---
-# SPES Principles
+SPES Principles
+
+The SPES framework introduces a set of fundamental modeling principles.
+These principles aim at establishing specific ways of thinking to be
+applied when performing the modeling activities suggested by the
+engineering process for software-intensive embedded systems in order to
+meet the requirements from the application domains and the
+characteristics of such systems.
+
+-   *Decomposition* plays an important role as a lever to master
+    > complexity in nearly all engineering activities. As discussed
+    > above, the scientific foundation of the SPES methodology ensures
+    > that composition of the individual parts yield the properties of
+    > the SuD again. The principle of decomposition is applied on two
+    > different levels: Firstly, architecture elements will be
+    > recursively decomposed into more fine grained architectures along
+    > the SPES viewpoints. And secondly, the scope of the SuD may be
+    > changed using the concept of granularity layers.
+
+-   The concept of *granularity layers*, allows to recursively apply the
+    > SPES concepts and viewpoints to selected architecture elements
+    > (*subsystems*) which leads to a nesting of architecture
+    > descriptions. Note: As only selected elements of an architecture
+    > will become subsystems, the set of all subsystems will not form a
+    > decomposition of the SuD. It is a means to decouple the
+    > engineering processes and divide them into a number of individual
+    > fine-grained engineering processes, complemented by certain
+    > activities to support the integration of the various engineering
+    > artifacts. This enables, for example, component reuse and the
+    > integration of a supplier relation into the engineering process.
+
+-   *Refinement* is a powerful concept successively add more details to
+    > the models and to define relations between the models within a
+    > view, across architectures in different views, and models on
+    > different layers of granularity (see chapter 6 for more details).
+
+-   *Layers of Abstraction*: Models are always modelled on certain
+    > levels of abstraction. During the course of the development more
+    > detail is added to the models and the levels of abstraction
+    > decreases. The concept of interface refinement relates different
+    > layers of abstraction to each other (see chapter 6 for a
+    > discussion on abstraction layers).
+
 The SPES framework defines a methodological toolkit for MBSE that allows
 efficient model-based development of cyber-physical systems (CPS).
 Remarkably, the toolkit is based on a solid scientific foundation with a
-special focus on consistency and semantic coherence which is briefly
-introduced in Chapter 2. The SPES methodology is based on three
-principles of outstanding importance:
+special focus on consistency and semantic coherence. The SPES
+methodology is based on three principles of outstanding importance:
 
 -   Consistent consideration of interfaces along the design process
 
@@ -21,13 +62,13 @@ principles of outstanding importance:
 -   The description of systems via subsystems and components at
     different layers of granularity
 
-In SPES, a system model is a conceptual ("generic") model of systems and
-their properties. It describes what constitutes a system as the result
-of a conceptualization. System models define the components of systems,
-the structure, essential properties, and other aspects that have to be
-considered during development. Among other things, system models define
-what requirements refer to (subject of discourse). In SPES, the
-comprehensive system model consists of:
+In SPES, a *system model* is a conceptual ("generic") model of systems
+and their properties. It describes what constitutes a system as the
+result of a conceptualization. System models define the components of
+systems, the structure, essential properties, and other aspects that
+have to be considered during development. Among other things, system
+models define what requirements refer to (subject of discourse). In
+SPES, the comprehensive system model consists of:
 
 -   An operational context represents what is outside the system but
     influences or is influenced by the system at runtime
@@ -44,10 +85,8 @@ comprehensive system model consists of:
     (architecture), which are themselves systems that may be described
     by state machines
 
-<img src="./images/principles/image1.png"
+<img src="./media/image2.png"
 style="width:4.12778in;height:2.38958in" />
-
-Figure 1: SPES System Model
 
 The system is embedded in its context and communicates with other
 systems in the context. We call this the system’s *operational context*.
@@ -76,7 +115,7 @@ decomposition into a network of communicating subsystems
 universal interface model. The UIM guarantees the semantically correct
 composition and decomposition of the model elements.
 
-The granularity with which the syntactical interface is modelled
+The degree of detail with which the syntactical interface is modelled
 determines the *level of abstraction* of the models. Typically,
 development starts on a higher level (i.e. with a coarser syntactic
 interface) and is refined during later stages of development. As a
