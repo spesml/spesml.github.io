@@ -85,7 +85,7 @@ SPES, the comprehensive system model consists of:
     (architecture), which are themselves systems that may be described
     by state machines
 
-<img src="./media/image2.png"
+<img src="./images/principles/image1.png"
 style="width:4.12778in;height:2.38958in" />
 
 The system is embedded in its context and communicates with other
