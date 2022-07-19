@@ -6,7 +6,7 @@ parent: SPES Methodology
 grand_parent: SpesML Concepts
 permalink: /concepts/methodology/principles.html
 ---
-SPES Principles
+# SPES Principles
 
 The SPES framework introduces a set of fundamental modeling principles.
 These principles aim at establishing specific ways of thinking to be
@@ -15,39 +15,13 @@ engineering process for software-intensive embedded systems in order to
 meet the requirements from the application domains and the
 characteristics of such systems.
 
--   *Decomposition* plays an important role as a lever to master
-    > complexity in nearly all engineering activities. As discussed
-    > above, the scientific foundation of the SPES methodology ensures
-    > that composition of the individual parts yield the properties of
-    > the SuD again. The principle of decomposition is applied on two
-    > different levels: Firstly, architecture elements will be
-    > recursively decomposed into more fine grained architectures along
-    > the SPES viewpoints. And secondly, the scope of the SuD may be
-    > changed using the concept of granularity layers.
+-   *Decomposition* plays an important role as a lever to master complexity in nearly all engineering activities. As discussed above, the scientific foundation of the SPES methodology ensures that composition of the individual parts yield the properties of the SuD again. The principle of decomposition is applied on two different levels: Firstly, architecture elements will be recursively decomposed into more fine grained architectures along the SPES viewpoints. And secondly, the scope of the SuD may be changed using the concept of granularity layers.
 
--   The concept of *granularity layers*, allows to recursively apply the
-    > SPES concepts and viewpoints to selected architecture elements
-    > (*subsystems*) which leads to a nesting of architecture
-    > descriptions. Note: As only selected elements of an architecture
-    > will become subsystems, the set of all subsystems will not form a
-    > decomposition of the SuD. It is a means to decouple the
-    > engineering processes and divide them into a number of individual
-    > fine-grained engineering processes, complemented by certain
-    > activities to support the integration of the various engineering
-    > artifacts. This enables, for example, component reuse and the
-    > integration of a supplier relation into the engineering process.
+-   The concept of *granularity layers*, allows to recursively apply the SPES concepts and viewpoints to selected architecture elements (*subsystems*) which leads to a nesting of architecture descriptions. Note: As only selected elements of an architecture will become subsystems, the set of all subsystems will not form a decomposition of the SuD. It is a means to decouple the engineering processes and divide them into a number of individual fine-grained engineering processes, complemented by certain activities to support the integration of the various engineering artifacts. This enables, for example, component reuse and the integration of a supplier relation into the engineering process.
 
--   *Refinement* is a powerful concept successively add more details to
-    > the models and to define relations between the models within a
-    > view, across architectures in different views, and models on
-    > different layers of granularity (see chapter 6 for more details).
+-   *Refinement* is a powerful concept successively add more details to the models and to define relations between the models within a view, across architectures in different views, and models on different layers of granularity (see chapter 6 for more details).
 
--   *Layers of Abstraction*: Models are always modelled on certain
-    > levels of abstraction. During the course of the development more
-    > detail is added to the models and the levels of abstraction
-    > decreases. The concept of interface refinement relates different
-    > layers of abstraction to each other (see chapter 6 for a
-    > discussion on abstraction layers).
+-   *Layers of Abstraction*: Models are always modelled on certain levels of abstraction. During the course of the development more detail is added to the models and the levels of abstraction decreases. The concept of interface refinement relates different layers of abstraction to each other (see chapter 6 for a discussion on abstraction layers).
 
 The SPES framework defines a methodological toolkit for MBSE that allows
 efficient model-based development of cyber-physical systems (CPS).
@@ -85,7 +59,7 @@ SPES, the comprehensive system model consists of:
     (architecture), which are themselves systems that may be described
     by state machines
 
-![](/images/principles/image1.png){:class="img-responsive" width="4.12778in"}
+![Overview over the system context](/images/principles/image1.png){:class="img-responsive"}
 
 The system is embedded in its context and communicates with other
 systems in the context. We call this the system’s *operational context*.
