@@ -80,7 +80,7 @@ verification options.
 
 Central part of the universal system model is the universal interface
 model (UIM), which is applied to essential elements of the SPES modeling
-approach. The universal interface model is based on the ****Focus**** theory briefly introduced in chapter 2.
+approach. The universal interface model is based on the *Focus*{: .small} theory briefly introduced in chapter 2.
 The system under development (SuD) is then modelled by a stepwise
 decomposition into a network of communicating subsystems
 (architectures), whose behavior can then again be described by the
