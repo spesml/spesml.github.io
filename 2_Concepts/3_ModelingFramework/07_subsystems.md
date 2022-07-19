@@ -17,7 +17,7 @@ All subsystems of a super-system are combined in one granularity level.
 It is irrelevant which methodology (processes, methods, tools) is used
 to develop the subsystems of a granularity layer.
 
-### Definition of Subsystems
+## Definition of Subsystems
 
 Whether a technical component is further refined as a subsystem or is
 further refined in the models of the technical view depends on the
@@ -40,7 +40,7 @@ the architecture of the subsystem and the technical implementation can
 be derived from the models of the super-systems depends on the nature of
 the tracing relationships of the models in the super-system.
 
-### Top-Down vs. Bottom-Up Development
+## Top-Down vs. Bottom-Up Development
 
 We distinguish between two basic approaches for system development, the
 top-down and the bottom-up approach, which can also be combined
@@ -59,9 +59,8 @@ located at the 2nd level of granularity (one for each component). This
 approach can be repeated recursively to create a deeper nesting of
 granularity levels.
 
-<img src="./images/subsystems/image1.png" style="width:4.1153in;height:1.91667in" />
-
-Figure 1: Example for Top-Down-Development
+![Example for Top-Down-Development](/images/subsystems/image1.png){:class="img-responsive"}
+*Figure 1: Example for Top-Down-Development*
 
 In contrast, the bottom-up approach starts at a lower level of
 granularity. Low-level systems are combined and integrated to form
@@ -75,10 +74,8 @@ components (A, B, C) are then integrated at the 1st level of granularity
 with their black-box view to form the super-system (S). Internally,
 these subsystems can be further structured (component A in the example).
 
-<img src="./images/subsystems/image2.png"
-style="width:4.11417in;height:1.91732in" />
-
-Figure 2: Example for Bottom-Up- Development
+![Example for Bottom-Up- Development](/images/subsystems/image2.png){:class="img-responsive"}
+*Figure 2: Example for Bottom-Up- Development*
 
 Both approaches can also be combined: While some parts of the
 super-system are built using existing subsystems, other parts may need
@@ -87,7 +84,7 @@ being progressively developed at lower layers of granularity. Common to
 both approaches and their combination is that a transition between the
 different layers of granularity is required.
 
-### Bottom-up development against assumed requirements
+## Bottom-up development against assumed requirements
 
 In bottom-up development in particular, subsystem developers face the
 problem that the requirements for the subsystem have not yet been
@@ -127,15 +124,13 @@ situation:
     expresses that expectations are provided by properties guaranteed by
     the subsystem.
 
-<img src="./images/subsystems/image3.png"
-style="width:4.86109in;height:2.57692in" />
-
-Figure 3: Matching guarantees to assumptions
+![Matching guarantees to assumptions](/images/subsystems/image3.png){:class="img-responsive"}
+*Figure 3: Matching guarantees to assumptions*
 
 A verification obligation also for these two relations arises from their
 use in a model.
 
-### Operational Context Across Layers of Granularity
+## Operational Context Across Layers of Granularity
 
 The logical architecture at granularity level n defines the operational
 context at granularity layer n+1. More precisely, the operational
@@ -158,7 +153,7 @@ as follows:
     interface of a context component to SuD<sub>n+1</sub> is
     syntactically and semantically identical.
 
-### Integration of Subsystems into the Super-System
+## Integration of Subsystems into the Super-System
 
 We always use the paradigm of the universal interface model to integrate
 a subsystem into the super-system. In particular, the integration of the

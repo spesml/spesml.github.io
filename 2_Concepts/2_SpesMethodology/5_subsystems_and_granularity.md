@@ -46,10 +46,8 @@ of the various engineering artifacts. This enables, for example,
 component reuse and the integration of a supplier relation into the
 engineering process on the level of the technical architecture.
 
-<img src="./images/subsystems_and_granularity/image2.png"
-style="width:6.08889in;height:3.19028in" />
-
-Figure 1: Layers of Granularity for a System S and its Sub-Systems
+![Layers of Granularity](/images/subsystems_and_granularity/image2.png){:class="img-responsive"}
+*Figure 1: Layers of Granularity for a System S and its Sub-Systems*
 
 ## Definition of Subsystems
 
