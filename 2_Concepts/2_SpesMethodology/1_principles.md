@@ -94,14 +94,14 @@ determines the *level of abstraction* of the models. Typically,
 development starts on a higher level (i.e. with a coarser syntactic
 interface) and is refined during later stages of development. As a
 consequence, as the syntactic interface of the SuD to its context will
-change by the different views, in general, the views model the SuD on
+change in different views, the views will generally model the SuD on
 different layers of abstraction. The SPES framework provides several
 mechanisms to specify interface behavior, e.g. state machines or
 interface assertions.
 
-The SPES framework defines an MBSE artifact model (an architecture
-framework in terms of ISO 42010) which widely follows the same concepts
-as defined in the ISO 42010 standard. The aim of the concept of
+The SPES framework defines an MBSE artifact model which widely follows 
+the same concepts as the architecture framework defined in the 
+ISO 42010 standard. The aim of the concept of
 viewpoints is to separate the various concerns of different stakeholders
 and serves as a construct to manage the different artifacts during the
 engineering process. Each viewpoint in the SPES framework predefines a
@@ -110,8 +110,9 @@ its properties relevant to model under the respective system view.
 Correspondence rules are defined between the models of a single
 viewpoint as well as across viewpoints. In particular, the SPES
 framework predefines four basic viewpoints that structure the models and
-allows for defining additional viewpoints if necessary (see chapter
-3.2). In addition to the viewpoints, the SPES modelling framework
+allows for defining additional viewpoints if necessary ((see
+<a href="https://spesml.github.io/concepts/methodology/views_and_viewpoints.html">
+Views and Viewpoints</a>)). In addition to the viewpoints, the SPES modelling framework
 includes the concept of a hierarchy of granularity layers:
 
 The topmost layer of granularity represents the models of the SuD.
