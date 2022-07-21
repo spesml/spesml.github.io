@@ -15,19 +15,19 @@ engineering process for software-intensive embedded systems in order to
 meet the requirements from the application domains and the
 characteristics of such systems.
 
--   *Decomposition* plays an important role as a lever to master complexity in nearly all engineering activities. As discussed above, the scientific foundation of the SPES methodology ensures that composition of the individual parts yield the properties of the SuD again. The principle of decomposition is applied on two different levels: Firstly, architecture elements will be recursively decomposed into more fine grained architectures along the SPES viewpoints. And secondly, the scope of the SuD may be changed using the concept of granularity layers.
+-   *Decomposition* plays an important role as a lever to master complexity in nearly all engineering activities. The scientific foundation of the SPES methodology ensures that composition of the individual parts yield the properties of the SuD again. The principle of decomposition is applied on two different levels: Firstly, architecture elements will be recursively decomposed into more fine grained architectures along the SPES viewpoints. And secondly, the scope of the SuD may be changed using the concept of granularity layers.
 
--   The concept of *granularity layers*, allows to recursively apply the SPES concepts and viewpoints to selected architecture elements (*subsystems*) which leads to a nesting of architecture descriptions. Note: As only selected elements of an architecture will become subsystems, the set of all subsystems will not form a decomposition of the SuD. It is a means to decouple the engineering processes and divide them into a number of individual fine-grained engineering processes, complemented by certain activities to support the integration of the various engineering artifacts. This enables, for example, component reuse and the integration of a supplier relation into the engineering process.
+-   The concept of *granularity layers*, allows to recursively apply the SPES concepts and viewpoints to selected architecture elements (*subsystems*) which leads to a nesting of architecture descriptions. Note: As only selected elements of an architecture may become subsystems, the set of all subsystems will not form a decomposition of the SuD, in general. It is a means to decouple the engineering processes and divide them into a number of individual fine-grained engineering processes, complemented by certain activities to support the integration of the various engineering artifacts. This enables, for example, component reuse and the integration of a supplier relation into the engineering process.
 
--   *Refinement* is a powerful concept successively add more details to the models and to define relations between the models within a view, across architectures in different views, and models on different layers of granularity (see chapter 6 for more details).
+-   *Refinement* is a powerful concept to successively add more details to the models and to define relations between the models within a view, across architectures in different views, and models on different layers of granularity.
 
--   *Layers of Abstraction*: Models are always modelled on certain levels of abstraction. During the course of the development more detail is added to the models and the levels of abstraction decreases. The concept of interface refinement relates different layers of abstraction to each other (see chapter 6 for a discussion on abstraction layers).
+-   *Layers of Abstraction*: Models are always modelled on certain levels of abstraction. During the course of the development more detail is added to the models and the levels of abstraction decreases. The concept of interface refinement relates different layers of abstraction to each other.
 
 The SPES framework defines a methodological toolkit for MBSE that allows
 efficient model-based development of cyber-physical systems (CPS).
 Remarkably, the toolkit is based on a solid scientific foundation with a
 special focus on consistency and semantic coherence. The SPES
-methodology is based on three principles of outstanding importance:
+methodology is built on three principles of outstanding importance:
 
 -   Consistent consideration of interfaces along the design process
 
@@ -41,10 +41,10 @@ and their properties. It describes what constitutes a system as the
 result of a conceptualization. System models define the components of
 systems, the structure, essential properties, and other aspects that
 have to be considered during development. Among other things, system
-models define what requirements refer to (subject of discourse). In
+models define what requirements refer to, i.e. they specify what the subject of discourse is. In
 SPES, the comprehensive system model consists of:
 
--   An operational context represents what is outside the system but
+-   An operational context that represents what is outside the system but
     influences or is influenced by the system at runtime
 
 -   A syntactic interface that clearly separates the system from its
