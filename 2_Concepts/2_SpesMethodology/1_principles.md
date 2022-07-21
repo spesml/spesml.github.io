@@ -81,9 +81,7 @@ verification options.
 Central part of the universal system model is the universal interface
 model (UIM), which is applied to essential elements of the SPES modeling
 approach. The universal interface model is based on the  <span class="smallcaps">Focus</span>[^1] theory (see
-\<a href=”
-https://spesml.github.io/concepts/modeling_framework/uim.html”>universal
-interface model (UIM)</a\>).
+<a href=”https://spesml.github.io/concepts/modeling_framework/uim.html”>universal interface model (UIM)</a>).
 The system under development (SuD) is then modelled by a stepwise
 decomposition into a network of communicating subsystems
 (architectures), whose behavior can then again be described by the
