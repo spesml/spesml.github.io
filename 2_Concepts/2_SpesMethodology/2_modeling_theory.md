@@ -39,7 +39,7 @@ describe a set of views. In an approach to model based system
 development, a set of views is defined that are to be worked out in the
 course of system development. Typically, views may overlap and be in
 relationships to each other. This has to be reflected in the modeling
-theories, its models and their mutual dependencies.
+theories, its models, and their mutual dependencies.
 
 In the end, system modelling development frameworks define a number of
 views based on modelling theories that capture all aspects of system
@@ -178,13 +178,12 @@ Systems are composed by linking their systems specifications. For system
 behaviors which in the case of untimed streams are represented by sets
 of monotonic functions or in the case of timed streams by specifications
 by fully realizable relations composition is straightforward. Systems
-are composable in terms of their syntactic interfaces. Systems are
+are composed in terms of their syntactic interfaces. Systems are
 *composable* if the subset of their set of output channels of the
 systems to compose that match with input channels of the systems to
 compose fit together with respect to their types. This requires that for
 every input channel of one component that is identical to an output
-channel of another component their data types are identical. These
-matching channels become feedback loops in the composition.
+channel of another component their data types are identical.
 
 Sets of composable systems specified by interface assertions are
 composed to *composite systems* specified by interface assertions being
@@ -225,4 +224,4 @@ relations between the input and output histories. The system behaviors
 related that way are required to be in the property refinement relation.
 
 [^1]: For Details on the FOCUS theory see Broy, M.: “A Logical Basis for
-    Component-Oriented Softwae and Systems Engineering”, Springer, 2010.
+    Component-Oriented Software and Systems Engineering”, Springer, 2010.
