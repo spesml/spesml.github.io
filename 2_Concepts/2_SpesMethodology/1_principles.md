@@ -80,7 +80,7 @@ verification options.
 
 Central part of the universal system model is the universal interface
 model (UIM), which is applied to essential elements of the SPES modeling
-approach. The universal interface model is based on the *FOCUS* theory (see
+approach. The universal interface model is based on the  <span class="smallcaps">Focus</span>[^1] theory (see
 \<a href=”
 https://spesml.github.io/concepts/modeling_framework/uim.html”\>universal
 interface model UIM)\</a\>).
@@ -141,3 +141,6 @@ processes, complemented by certain activities to support the integration
 of the various engineering artifacts. This enables, for example,
 component reuse and the implementation of a supplier relation into the
 engineering process on the level of the technical architecture.
+
+[^1]: For Details on the FOCUS theory see Broy, M.: “A Logical Basis for
+    Component-Oriented Software and Systems Engineering”, Springer, 2010.
