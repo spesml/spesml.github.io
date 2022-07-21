@@ -130,9 +130,9 @@ granularity layers.
 
 The selected technical components are treated as independent sub-systems
 which may have a contextual relationship to each other. Their models
-make up the next layer of granularity in the development. Note, as, in
-general, only some elements of the technical architecture will be
-selected, therefore the set of all such components will not necessarily
+make up the next layer of granularity in the development. Note, as only 
+some elements of the technical architecture may be
+selected, the set of all such components will not necessarily
 form a complete decomposition of the SuD.
 
 Layers of granularity provide a means to decouple engineering processes
