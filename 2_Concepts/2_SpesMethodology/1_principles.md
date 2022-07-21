@@ -64,23 +64,26 @@ SPES, the comprehensive system model consists of:
 The system is embedded in its context and communicates with other
 systems in the context. We call this the system’s *operational context*.
 The system under consideration interacts with its operational context
-that influences or is influenced by the system at runtime. The system’s
+which in turn influences or is influenced by the system at runtime. The system’s
 behavior, essential system properties, and other aspects that have to be
 considered during development are represented by this interaction as it
-can be observed by an external observer at the system interface,
-separating the system from its operational context. This constitutes the
+can be observed by an external observer at the system interface.
+This separates the system from its operational context and constitutes the
 *black box* view on the system on a given level of abstraction.
 
 Relations between the models at the same or different grades of
 refinement and levels of abstraction yield consistency of the system
 specification. The system specification is documented by a set of
-artefacts which must be validated and verified to guarantee consistency.
+artifacts which must be validated and verified to guarantee said consistency.
 Hereby the grade of formalization determines automatic validation and
 verification options.
 
 Central part of the universal system model is the universal interface
 model (UIM), which is applied to essential elements of the SPES modeling
-approach. The universal interface model is based on the *FOCUS* theory briefly introduced in chapter 2.
+approach. The universal interface model is based on the *FOCUS* theory (see
+\<a href=”
+https://spesml.github.io/concepts/modeling_framework/uim.html”\>universal
+interface model UIM)\</a\>).
 The system under development (SuD) is then modelled by a stepwise
 decomposition into a network of communicating subsystems
 (architectures), whose behavior can then again be described by the
