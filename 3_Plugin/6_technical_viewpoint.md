@@ -31,7 +31,12 @@ Inside the Technical Package, other Technical Packages can be created as well fo
 
 Now, only the software subsystem is missing. For a better guidance, it is only possible to create first a [Software Package](#Software-Package) inside a Technical Package. Within a Software Package, the modeler can then create [Software Components](#software-component), which represent software subsystems. Task architectures and execution platforms are needed to define a software subsystem. Therefore, a Software Package can also contain [Task Architecture Packages](#task-architecture-package) and [Execution Platform Packages](#execution-platform-package) (besides more Software Packages). Inside the Task Architecture Packages, [Task Architectures](#task-architecture) and [Tasks](#task) can be created. Inside the Execution Platform Packages, [Execution Platforms](#execution-platform), [Execution Components](#execution-component) and [Communication Components](#communication-components) can be created.
 
-![Technical Elements Of The Plugin](/images/technical_viewpoint/TVP_elements_in_plugin.png){:class="img-responsive"}
+![Technical Elements Of The Plugin](/images/technical_viewpoint/TVP_elements_in_plugin.png){:class="img-responsive" :style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><br><b>Figure 1:</b> 
+<em>An example collection of all technical elements implemented inside the SpesML plugin.</em>
+</div><br>
+
+![Technical Elements Of The Plugin](/images/technical_viewpoint/TVP_elements_in_plugin.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><br><b>Figure 1:</b> 
 <em>An example collection of all technical elements implemented inside the SpesML plugin.</em>
 </div><br>

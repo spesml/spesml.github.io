@@ -21,8 +21,6 @@ permalink: /concepts/modeling_framework/technical_viewpoint.html
     - [Allocation Models](#allocation-models)
 
 
-[image](#image)
-
 ## General Concept of the Technical Viewpoint
 
 The technical viewpoint is mostly concerned with the question of how to get from the platform independent models (logical components) of the logical viewpoint to platform-specific models (technical components). In the following, we describe all models of the technical viewpoint including the software subsystem. 
@@ -42,6 +40,15 @@ To understand the relations and possibilities of the technical viewpoint, the fo
 <div align="center"><br><b>Figure 1:</b> 
 <em>Overview over all elements of the Technical Viewpoint.</em>
 </div><br>
+
+
+![smile]
+
+Test
+
+[smile]: /images/technical_viewpoint/TVP_Element_Overview.png
+{:class="img-responsive"}
+
 
 
 ## Technical Viewpoint Models on the System Level
@@ -73,8 +80,7 @@ Appyling redundancy (patterns) is for many reasons necessary in systems engineer
 
 ***
 
-[image]: /images/technical_viewpoint/technical_overview.png "Image Title" 
-![Example][image]{:class="img-responsive"}
+![Example](/images/technical_viewpoint/technical_overview.png){:class="img-responsive"}
 <div align="center"><br><b>Figure 2:</b> 
 <em>An example of how the technical elements can be composed inclusive different granularity levels.</em>
 </div><br>
