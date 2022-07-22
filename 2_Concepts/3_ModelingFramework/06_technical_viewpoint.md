@@ -71,7 +71,8 @@ Appyling redundancy (patterns) is for many reasons necessary in systems engineer
 
 ***
 
-![Example](/images/technical_viewpoint/technical_overview.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}<a name="figureExample"></a>
+<a name="figureExample"></a>
+![Example](/images/technical_viewpoint/technical_overview.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 2: </b><em>An example of how the technical elements can be composed inclusive different granularity levels.</em></div>
 
 ***

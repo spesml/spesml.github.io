@@ -16,7 +16,6 @@ For a better understanding of the concept of the Technical Viewpoint, please hav
 The Technical Viewpoint models technical architectures. Technical architectures can be composed of various component types to represent the technical specifications of a system (see concept in [Figure 1](#figureConcept)). Logical components of the [Logical Viewpoint](/plugin/logical_viewpoint.html) can then be mapped onto these technical components. A technical architecture can not only represent mechanical, electronic or mechatronic elements (or any generic technical element) but also a software subsystem. A software subsystem is a model of the pure software part of the system including its execution elements. It contains a task architecture with tasks onto which the software relevant logical components of the [Logical Viewpoint](/plugin/logical_viewpoint.html) are mapped. Furthermore, it contains an execution platform consisting of execution units like ECUs and communication elements like buses. An allocation of tasks to execution units realizes the deployment.
 
 <a name="figureConcept"></a>
-
 ![Technical Architecture Concept](/images/technical_viewpoint/TVP_Element_Overview.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 1: </b><em>The concept of the implemented Technical Viewpoint.</em></div>
 
@@ -32,7 +31,6 @@ Inside the Technical Package, other Technical Packages can be created as well fo
 Now, only the software subsystem is missing. For a better guidance, it is only possible to create first a [Software Package](#Software-Package) inside a Technical Package. Within a Software Package, the modeler can then create [Software Components](#software-component), which represent software subsystems. Task architectures and execution platforms are needed to define a software subsystem. Therefore, a Software Package can also contain [Task Architecture Packages](#task-architecture-package) and [Execution Platform Packages](#execution-platform-package) (besides more Software Packages). Inside the Task Architecture Packages, [Task Architectures](#task-architecture) and [Tasks](#task) can be created. Inside the Execution Platform Packages, [Execution Platforms](#execution-platform), [Execution Components](#execution-component) and [Communication Components](#communication-components) can be created.
 
 <a name="figureElements"></a>
-
 ![Technical Elements Of The Plugin](/images/technical_viewpoint/TVP_elements_in_plugin.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 2: </b><em>An example collection of all technical elements implemented inside the SpesML plugin.</em></div>
 
@@ -81,6 +79,7 @@ This element is a *UML/SysML Package* with a dedicated stereotype that allows to
 
 ### ![Technical Context](/images/technical_viewpoint/TechnicalContext.png){:class="img-responsive"}Technical Context
 Insert text here.
+TODO
 
 ### ![Technical Actor](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Technical Actor
 This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
