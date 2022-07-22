@@ -20,6 +20,9 @@ permalink: /concepts/modeling_framework/technical_viewpoint.html
     - [Execution Platform Models](#execution-platform-models)
     - [Allocation Models](#allocation-models)
 
+
+[image](#image)
+
 ## General Concept of the Technical Viewpoint
 
 The technical viewpoint is mostly concerned with the question of how to get from the platform independent models (logical components) of the logical viewpoint to platform-specific models (technical components). In the following, we describe all models of the technical viewpoint including the software subsystem. 
@@ -36,18 +39,10 @@ The following sections will, as already mentioned, cover first the more general 
 To understand the relations and possibilities of the technical viewpoint, the following **Figure 1** gives an overview of it. In addition, we provide in **Figure 2** an abstract example of how a technical architecture can look like across granularity levels.
  
 <div align="center">
-<img width="500" src="./images/technical_viewpoint/TVP_Element_Overview.png">
+![Overview](/images/technical_viewpoint/TVP_Element_Overview.png){:class="img-responsive"}
 <br>
 <b>Figure 1:</b> 
-Overview over all elements of the Technical Viewpoint.
-</div>
-<br>
-
-<div align="center">
-<img width="500" src="images/technical_viewpoint/TVP_Element_Overview.png">
-<br>
-<b>Figure 1:</b> 
-Overview over all elements of the Technical Viewpoint.
+<em>Overview over all elements of the Technical Viewpoint.</em>
 </div>
 <br>
 
@@ -82,7 +77,8 @@ Appyling redundancy (patterns) is for many reasons necessary in systems engineer
 ***
 
 <div align="center">
-<img width="500" src="https://spesml.github.io/2_Concepts/3_ModelingFramework/images/technical_viewpoint/technical_overview.png">
+[image]: /images/technical_viewpoint/technical_overview.png "Image Title" 
+![Example][image]{:class="img-responsive"}
 <br>
 <b>Figure 2:</b> 
 <em>An example of how the technical elements can be composed inclusive different granularity levels.</em>
