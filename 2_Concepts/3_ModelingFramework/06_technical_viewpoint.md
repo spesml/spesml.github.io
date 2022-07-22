@@ -38,13 +38,10 @@ We also envision combinations of these. The proposed approach would enable that.
 The following sections will, as already mentioned, cover first the more general technical elements (mainly on the system level) and then the software subsystem in detail. 
 To understand the relations and possibilities of the technical viewpoint, the following **Figure 1** gives an overview of it. In addition, we provide in **Figure 2** an abstract example of how a technical architecture can look like across granularity levels.
  
-<div align="center">
 ![Overview](/images/technical_viewpoint/TVP_Element_Overview.png){:class="img-responsive"}
-<br>
-<b>Figure 1:</b> 
+<div align="center"><br><b>Figure 1:</b> 
 <em>Overview over all elements of the Technical Viewpoint.</em>
-</div>
-<br>
+</div><br>
 
 
 ## Technical Viewpoint Models on the System Level
@@ -76,14 +73,11 @@ Appyling redundancy (patterns) is for many reasons necessary in systems engineer
 
 ***
 
-<div align="center">
 [image]: /images/technical_viewpoint/technical_overview.png "Image Title" 
 ![Example][image]{:class="img-responsive"}
-<br>
-<b>Figure 2:</b> 
+<div align="center"><br><b>Figure 2:</b> 
 <em>An example of how the technical elements can be composed inclusive different granularity levels.</em>
-</div>
-<br>
+</div><br>
 
 ***
 
