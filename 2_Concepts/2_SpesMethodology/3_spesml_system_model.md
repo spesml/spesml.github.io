@@ -33,7 +33,7 @@ We are especially interested in understanding which basic models are
 used in the SPES methodology, how they are interrelated and how they are
 refined and realized.
 
-We define a *concept model* (see Fig. 1) to describe a system under
+We define a *concept model* (see [Fig. 1](#figureBlueprint)) to describe a system under
 consideration: This concept model describes what constitutes a system
 and its properties as the result of a conceptualization.
 
@@ -48,9 +48,9 @@ observed by an external observer at the system interface, separating the
 system from its operational context. This constitutes the *black box*
 view on the system on given level of abstraction.
 
-![System modeling blueprint](/images/spesml_system_model/image1.png){:class="img-responsive"}
-*Figure 1: System modeling blueprint (visualized as concept model)*
-
+<a name="figureBlueprint"></a>
+![Blueprint](/images/spesml_system_model/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 1: </b><em>System modeling blueprint (visualized as concept model)</em></div>
 
 The *glass box* view reveals the *inner structure* (architecture) of the
 system consisting of connected and interacting elements (components and
