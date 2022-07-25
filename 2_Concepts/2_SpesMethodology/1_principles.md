@@ -59,7 +59,9 @@ SPES, the comprehensive system model consists of:
     (architecture), which are themselves systems that may be described
     by state machines
 
-![Overview over the system context](/images/principles/image1.png){:class="img-responsive"}
+<a name="figureSystem_Model"></a>
+![System_model](/images/principles/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 1: </b><em>SPES System Model.</em></div>
 
 The system is embedded in its context and communicates with other
 systems in the context. We call this the system’s *operational context*.
