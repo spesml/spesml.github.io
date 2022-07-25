@@ -31,13 +31,12 @@ of this stand-alone system adheres to the
 <a href="https://spesml.github.io/concepts/modeling_framework/uim.html">
 Universal Interface Model (UIM)</a>. In particular, the concept of granularity
 layers, allows to recursively apply the SPES concepts and viewpoints to
-selected architecture elements which leads to a nesting of architecture
-descriptions and a hierarchy of granularity layers (see Figure 1).
+selected architecture elements of the technical architetcure which leads to a nesting of architecture
+descriptions and a hierarchy of granularity layers (see [Figure 1](#figureGranularity))
 
-The models of all selected technical components build the next layer of
-granularity in the development. Note, as in general only some elements
-of the technical architecture will be selected, the set of all such
-components will not form a decomposition of the SuD.
+The models of all selected technical components build the next layer of granularity in the development. 
+Note, as in general only some elements of the technical architecture will be selected, the set of all 
+such components will not form a decomposition of the SuD.
 
 Layers of granularity provide a means to decouple engineering processes
 and divide them into a number of individual fine-grained engineering
@@ -46,8 +45,9 @@ of the various engineering artifacts. This enables, for example,
 component reuse and the integration of a supplier relation into the
 engineering process on the level of the technical architecture.
 
-![Layers of Granularity](/images/subsystems_and_granularity/image2.png){:class="img-responsive"}
-*Figure 1: Layers of Granularity for a System S and its Sub-Systems*
+<a name="figureGranularity"></a>
+![Granularity](/images/subsystems_and_granularity/image2.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 1: </b><em>Layers of Granularity for a System S and its Sub-Systems.</em></div>
 
 ## Definition of Subsystems
 
