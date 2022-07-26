@@ -80,7 +80,7 @@ This element is a *UML/SysML Package* with a dedicated stereotype that allows to
 ### ![Technical Context](/images/technical_viewpoint/TechnicalContext.png){:class="img-responsive"}Technical Context
 The Technical Context is a separate element but it mainly behaves as a standard [Technical Component](#technical-component) like containing a [Technical Internal Component Diagram](#technical-internal-component-diagram). 
 Its purpose is to act as an starting point for the system model, where the system under development is represented as only one component, usally a [Technical Component](#technical-component), and the connected external systems and [Technical Actors](#technical-actor) can be modeled to show the environemnt/context of the system under development. 
-A component can be defined as external (in a specific diagram like the one from the Technical Context) by changing the property "external" of this component from *No* to *Yes*. Another property is "system under development" with which the modeler can specify if a component is the current system under developement an not (the later is the default). 
+A component can be defined as external (in a specific diagram like the one from the Technical Context) by changing the property *external* of this component from *No* to *Yes*. Another property is *system under development* with which the modeler can specify if a component is the current system under developement an not (the later is the default). 
 To support the purpose as starting point and initial overview, the Technical Context is the only element (besides packages) that can be directly placed below the [Technical Viewpoint](#technical-viewpoint). If an user opens the Technical Viewpoint, it will directly see the Technical Context element and can open it to see first the context and then go deeper into the system under development.
 
 ### ![Technical Actor](/images/technical_viewpoint/TechnicalActor.png){:class="img-responsive"}Technical Actor
@@ -150,13 +150,16 @@ A Communication Component cannot be further specified by adding a diagram to it.
 A Communication Component can provide a syntactic interface via [Technical Interfaces](#technical-interface), which can be used to connect this component to other components, in this case [Execution Components](#execution-component) (to model just the composition or to model actual information flow if the used [Technical Interface Type](#technical-interface-type) contains [Channels](#channel)).
 
 
-### ![Technical Interface Type](/images/technical_viewpoint/TechnicalInterfaceType.png){:class="img-responsive"}Technical Interface Type
-This element is based on a *SysML Interface Block* with a dedicated stereotype that allows to define where the element can be placed and other specifications.
-TODO
-
 ### ![Technical Interface](/images/technical_viewpoint/TechnicalInterface.png){:class="img-responsive"}Technical Interface
 This element is based on a *SysML Proxy Port* with a dedicated stereotype that allows to define where the element can be placed and other specifications.
-TODO: can be specified by using [Technical Interface Types](#technical-interface-type) and [Channels](#channel).
+A Technical Interface is used to connect different technical elements/components in a generic way. 
+It can be specified further by using [Technical Interface Types](#technical-interface-type) and [Channels](#channel) to modeled the connection between the elements and even actual information flows (via the channels).
+A Technical Interface is nothing else than a port that can be placed on a technical element. If another technical element has also such a port/interface with the same [Technical Interface Type](#technical-interface-type)], the user can connect these two ports with a *Connector* line.
+
+### ![Technical Interface Type](/images/technical_viewpoint/TechnicalInterfaceType.png){:class="img-responsive"}Technical Interface Type
+This element is based on a *SysML Interface Block* with a dedicated stereotype that allows to define where the element can be placed and other specifications.
+A Technical Interface Type is used to specify the type of a [Technical Interface](#technical-interface). It needs to be defined separately in a [Technical Interface Types Package](#technical-interface-types-package) and can then be used to fill the *Type* property of a [Technical Interface](#technical-interface).
+A Technical Interface Type can either contain a Value Property (e.g., a specific enumeration) or a [Channel](#channel) (or multiple ones). 
 
 ### ![Channel](/images/universal_interface_model/Channel.png){:class="img-responsive"}Channel
 This element is based on a *SysML Flow Property* with a dedicated stereotype that allows to define the flow direction and other specifications. It's concept is explained in the [Universal Interface Model](/concepts/modeling_framework/uim.html). It can be added as an element to a [Technical Interface Type](#technical-interface-type). Channels enable signal/information transport between elements that are connected with an interface connection that has such an interface type (with a channel). A channel has an own type (the type of the transported signal/information), which can be any pre-defined basic data type or a new user-defined data type (see [Data Types](/plugin/data_types.html)).
