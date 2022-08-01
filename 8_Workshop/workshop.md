@@ -137,13 +137,13 @@ In order to additionally promote cooperation among participants in the field of 
 
   * Embedding Textual Languages in MagicDraw (Drux)
 
-  * Development of a SysML Profile for Network Configurations in Safety-critical Systems (Schweiger)
+  * Development of a SysML Profile for Network Configurations in Safety-critical Systems (Hemmert, Schweiger)
 
 * 15:00-15:30 Coffee break (coffee and other drinks, snacks, in the foyer of the Forum)
 
 * 15:30-16:30 Program
 
-  * Invited talk - Anwendung und Evaluierung der SpesML bei einem Automobilzulieferer (Gross)
+  * Invited talk - Anwendung und Evaluierung der SpesML bei einem Automobilzulieferer (Gross, Goger)
 
   * Machine Trainable Software Models towards a Cognitive Thinking AI with the Natural Language Processing Platform NLX (Schaller)
 
