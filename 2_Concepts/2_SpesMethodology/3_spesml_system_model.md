@@ -99,9 +99,10 @@ added to the specifications. Three refinementconcepts model this process:
     architecture view or maps the system interface of different
     architecture views to each other.
 
-Relations between the models at the same or different grades of
-refinement and levels of abstraction yield consistency in the system
-specification. The system specification is documented by a set of
-artifacts, which must be validated and verified to guarantee consistency.
-Hereby the grade of formalization determines automatic validation and
-verification options.
+Relations between the models yield consistency in the system
+specification. This holds between models at the same grade of
+refinement and levels of abstraction, as well as for models that
+respresent different levels of abstractions. The system specification 
+is documented by a set ofartifacts, which must be validated and 
+verified to guarantee consistency. Hereby the grade of formalization 
+determines automatic validation and verification options.
