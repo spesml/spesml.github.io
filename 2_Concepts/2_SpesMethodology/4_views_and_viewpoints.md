@@ -22,3 +22,18 @@ The [IEEE Standard 1471](https://standards.ieee.org/ieee/1471/2187/) characteriz
 ## View
 
 Given a viewpoint specification, a *view* can be characterized as a concrete model of the system that represents the information that is relevant for the corresponding viewpoint concerns by using the conceptual structure of the underlying viewpoint language.
+
+## Views in the SPES Methodology
+
+<a name="figureViews"></a>
+![Granularity](/images/views_and_viewpoints/views.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 1: </b><em>Views of the SPES Methodology.</em></div>
+
+Figure 1 shows the four views that the SPES methodology provides by default:
+
+- Requirements View for eliciting, documenting, negotiating, validating, and managing requirements for the system under development
+- Functional View for offering a set of user functions
+- Logical View for decomposing the system under development into an architecture of logical components in terms of a glass box view
+- Technical View for combining the software of the system under development with its hardware
+
+Each of the different views is used by different stakeholders and contains just the information the stakeholder needs in the presentation suitable for the stakeholder.
