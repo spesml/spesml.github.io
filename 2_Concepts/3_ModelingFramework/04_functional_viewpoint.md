@@ -32,7 +32,7 @@ The system boundary and the system context are specified in the `Functional Cont
 The following figure shows the `WindowLifterSystem` in its functional context
 
 
-![Functional Context](/images/functional_viewpoint/functional-context.png){:width="900" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![Functional Context](/images/functional_viewpoint/functional-context.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 1: </b><em>Functional Context</em></div>
 
 
@@ -51,8 +51,8 @@ Remember that system functions describe interactions between a system and its ex
 
 The following figure shows the system function hierarchy of the `WindowLifter`. In this example, the system contains three system functions (`CentralWindowFunction`, `TunnelWindowClosingFunction`, and `BatteryVoltageFunction`). There are dependencies between the functions (`tunnelWindowClosingMode` and `BatteryMode`) that are used to describe that the window lifter control is influenced by a (low) battery state and by being in a tunnel. 
 
-![System Function](/images/functional_viewpoint/system-function.png){:width="500" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 2: </b><em>System Function</em></div>
+![System Function Hierarchy](/images/functional_viewpoint/system-function-hierarchy.png){:width="1200" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 3: </b><em>System Function Hierarchy</em></div>
 
 ## White-box Functions
 A white-box function (_"Teilfunktion"_) describes a unit of behavior that is necessary to realize a [system function](system-function). For this purpose, it uses the modeling elements of the [universal interface model](./uim.html). 
@@ -68,7 +68,7 @@ Note: For input ports, multiple white-box functions may be listening at the same
 The following figure shows the functional white-box model of the system function `CentralWindowFunction `. It defines six white-box functions that specify the necessary steps to realize the system function.
 
 ![Functional White-Box Model](/images/functional_viewpoint/functional_viewpoint/white-box-model.png){:width="900" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 3: </b><em>Functional White-Box Model</em></div>
+<div align="center"><b>Figure 4: </b><em>Functional White-Box Model</em></div>
 
 
 ## Mode Model
@@ -81,11 +81,11 @@ In the example, we specify that only specific mode sequences are allowed to be t
 
 
 ![Data type and possible values of a mode channel](/images/functional_viewpoint/mode_datatypes.png){:width="250" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 4: </b><em>Data type and possible values of a mode channel</em></div>
+<div align="center"><b>Figure 5: </b><em>Data type and possible values of a mode channel</em></div>
 
 
 ![Mode model based on the data type of the mode channel.](/images/functional_viewpoint/mode-model.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 5: </b><em>Mode model based on the data type of the mode channel</em></div>
+<div align="center"><b>Figure 6: </b><em>Mode model based on the data type of the mode channel</em></div>
 
 
 # Structuring of Models in the Containment Tree
@@ -93,7 +93,7 @@ In the example, we specify that only specific mode sequences are allowed to be t
 The different models of the Functional Viewpoint are structured in the Containment Tree of a project. There is a top-level node called `Functional Viewpoint` that contains all elements of this viewpoint (see figure below). 
 
 ![Elements of the Functional VP in the Containment Tree](/images/functional_viewpoint/containment-tree.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 6: </b><em>Elements of the Functional VP in the Containment Tree</em></div>
+<div align="center"><b>Figure 7: </b><em>Elements of the Functional VP in the Containment Tree</em></div>
 
 Below this node, there are the following specific subnodes:
 
@@ -103,8 +103,8 @@ Below this node, there are the following specific subnodes:
 - **Functional Context**: This package contains the top-level view of the functional viewpoint and contains a diagram of the system under development in the context of its surrounding external systems and actors.
 
 
-![System Function](/images/functional_viewpoint/system-function.png){:width="500" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 2: </b><em>System Function</em></div>
+![Elements of the Functional VP in the Containment Tree](/images/functional_viewpoint/containment-tree-expanded.png){:width="500" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 8: </b><em>Elements of the Functional VP in the Expanded Containment Tree</em></div>
 
 
 
@@ -119,7 +119,7 @@ The SPES methodology suggests a design pattern that provides a closer connection
 The white-box models of the system functions in the FVP are constructed with the structure of the logical architecture in mind and build a bridge between the functional and the logical architectures. In a design decision, a structural architecture is developed from the set of white-box functions of the FVP by uniquely mapping white-box functions to logical components (see figure below).
 
 ![Mapping of functional architecture to logical components](/images/functional_viewpoint/architecture_mapping.png){:width="700" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 2: </b><em>Mapping of functional architecture to logical components</em></div>
+<div align="center"><b>Figure 9: </b><em>Mapping of functional architecture to logical components</em></div>
 
 It is important to note that the same white-box function can occur multiple times in the white-box models of different system functions. For resolving this conflict two options are available:
 
