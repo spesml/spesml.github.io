@@ -37,6 +37,10 @@ The following figure shows the `WindowLifterSystem` in its functional context
 Functional Context
 </div><br>
 
+![Functional Context](/images/functional_viewpoint/functional-context.png){:width="900" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 1: </b><em>Functional Context</em></div>
+
+
 ## System Function
 A system function describes a coherent set of interactions between a system and its external actors. For this purpose, it uses the modeling elements of the [universal interface model](./uim.html). That means a system function is described by a specific `SysML block` called `Function`. Each system function has a syntactic interface defined by a `Functional Interface`, i.e., a set of input and output ports with associated types. 
 
