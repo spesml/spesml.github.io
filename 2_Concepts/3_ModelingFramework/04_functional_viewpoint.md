@@ -32,7 +32,7 @@ The system boundary and the system context are specified in the `Functional Cont
 The following figure shows the `WindowLifterSystem` in its functional context
 
 
-![Functional Context](/images/functional_viewpoint/functional-context.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![Functional Context](/images/functional_viewpoint/functional-context.png){:width="1200" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 1: </b><em>Functional Context</em></div>
 
 
@@ -67,7 +67,7 @@ Note: For input ports, multiple white-box functions may be listening at the same
 
 The following figure shows the functional white-box model of the system function `CentralWindowFunction `. It defines six white-box functions that specify the necessary steps to realize the system function.
 
-![Functional White-Box Model](/images/functional_viewpoint/functional_viewpoint/white-box-model.png){:width="900" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![Functional White-Box Model](/images/functional_viewpoint/white-box-model.png){:width="900" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 4: </b><em>Functional White-Box Model</em></div>
 
 
