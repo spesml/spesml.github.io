@@ -14,33 +14,33 @@ Accordingly, state machines can provide specifications to a decomposed component
 # Sates
 
 The states of a state machine define the state space of a component. 
-The behavior of a state machine is defined on the basis of is state space.
-During execution, at any given time the state machine is in a single state, which we call its current state.
+The behavior of a state machine is defined on the basis of its state space.
+During execution, at any given time, the state machine is in a single state, which we call its current state.
 A state machine may change its current state through the execution of a transition.
 
-A state machine consists of at least one state and state has a name that is unique withing that state machine.
+A state machine consists of at least one state, and each state has a name that is unique within that state machine.
 Each state can have an entry action, exit action, and do-activity.
 
 ## Initial State
 
-The state machine's execution starts in its initial state. It marks the beginning of the modeled sysstem lifecycle.
+The state machine's execution starts in its initial state. It marks the beginning of the modeled system lifecycle.
 
-The initial state does not have a name and has a single transition, which we call the state machines initial transition. 
-The initial transition is unique in that it cannot have a guard, nor behavior, nor trigger and does not trigger the entry action of the target state.
+The initial state does not have a name and has a single transition, which we call the state machine's initial transition. 
+The initial transition is unique in that it cannot have a guard, behavior, or trigger and does not trigger the entry action of the target state.
 
 ## Hierarchical States
 
-States can be nested hierarchical.
-A state with sub-states is called a hierarchical state and the sub-states' parent. 
+States can be nested hierarchically.
+A state with sub-states is called a hierarchical state and the parent of the sub-state. 
 Hierarchical states can group states and prevent state explosion.
-Furthermore, hierarchical states can be utilized methodically by first introducing an abstract state and later on refning this state into sub-states.
+Furthermore, hierarchical states can be utilized methodically by first introducing an abstract state and later on refining this state into sub-states.
 Like any other state, a hierarchical state has a unique name and can have an entry action, exit action, and do-activity.
 Furthermore, a hierarchical state has at least one sub-state and an initial state.
 
-Transitions can have the hierarchical state or one of its sub-states as source or target.
+Transitions can have the hierarchical state or one of its sub-states as the source or target.
 If a state machine enters a hierarchical state, then it enters exactly one of the state's sub-states. 
 Therefore, a transition that targets a hierarchical state targets its initial state.
-If a transition targets a state on another hierarchical level, than the state machine enters and exits all states along the hierarchy until it reaches the target state during the execution of a transition.
+If a transition targets a state on another hierarchical level then the state machine enters and exits all states along the hierarchy until it reaches the target state during the execution of a transition.
 
 # Transitions
 
@@ -48,46 +48,45 @@ A transition leads from a source state to a target state
 When a transition executes, the state machine switches from the transition's source state to the transition's target state. 
 Furthermore, a transition can have a guard, a trigger, and an action.
 
-A transition is enabled for execution exactly if the current state is the source state (or one of its sub-states) of the transition , the trigger is correct, and the guard holds.
-If at any point in time multiple transitions are enabled, then the state machine is nondeterminstic (see /nondeterminism).
+A transition is enabled for execution exactly if the current state is the source state (or one of its sub-states) of the transition, the trigger is correct, and the guard holds.
+If multiple transitions are enabled at any point in time, then the state machine is nondeterministic.
 
 ## Trigger
 A transition's execution is triggered by an event.
 An event can be a clock signal for timed state machines or a message signal on incoming channels for asynchronous state machines.
 Any transition without an explicit trigger is triggered by a clock signal.
-For message signals, the trigger defines the port whoes message signals trigger the transition.
+For message signals, the trigger defines the port where message signals trigger the transition.
 
 ## Guard
-The guard of a transition govern's its execution. 
+The guard of a transition governs its execution. 
 The transition is executed only if its guard holds. 
-For transitions triggered by message signals, guards are only evaluated after the event.
-Thus, guards can reason about properties of the incoming message.
+Guards can reason about the properties of the incoming message or variables.
 
-# Action
-Actions defined the behavior of a component or respective state machine in terms messages send via outgoing channels.
-A transition's action is executed after any exit action of the source state and before any entry action of the target state.
+# Behavior
+Actions define the behavior of a component or respective state machine in terms of messages sent via outgoing channels.
+The actions defined in the transition's effect are executed after any exit action of the source state and before any entry action of the target state.
 
 ## Entry Action
 
 A state can have an entry action that is executed when the state machine enters the respective state.
-It is executed after the transitions action and any entry action of any parent state the state machine enters during execution of a transition.
+It is executed after the transitions action and any entry action of any parent state the state machine enters during the execution of a transition.
 
 ## Exit Action
 
-Analog to the entry action, a state can have an exit action is executed when the state machine exits the respective state.
-The entry action is executed bevore the entry action of a state is executed bevore the entry action of any of its parent's states and the transition action.
+Analog to the entry action, a state can have an exit action that is executed when the state machine exits the respective state.
+The entry action is executed before the entry action of a state is executed before the entry action of any of its parent's states and the transition action.
 
 ## Do Activity 
 
-A state machine can have a do-activiy that describes the continous behavior of a component in that state. 
+A state machine can have a do-activity that describes the continuous behavior of a component in that state. 
 For timed components, the do-activity is executed any time the state machine remains in its current state on a clock signal.
 
 # Timing Abstractions
 
 Streams on channels may be timed or untimed. 
 Furthermore, components may communicate synchronously or asynchronously. 
-These disctions have implications on the modeling of component behavior.
-The SpesML supports modeling of combination of these distinctions through different timing abstractions.
+These distinctions have implications for the modeling of component behavior.
+The SpesML supports these through different timing abstractions.
 These are timed-synchronous, timed, and untimed.
 
 ## Timed-Synchronous
@@ -103,44 +102,44 @@ The guard of a transition of a timed-synchronous state machine can therefore rea
 Furthermore, a timed-synchronous state machine produces exactly one message on every outgoing channel during the execution of a transition.
 
 ## Timed
-For timed streams, there may exists multiple messages between two discrete points in time.
+For timed streams, there may exist multiple messages between two discrete points in time.
 Therefore, timed components may send multiple messages between two clock signals.
 Timed components have a synchronized clock but consume and produce messages asynchronous.
 
 A timed state machine models the behavior of a timed component.
-Its transitions may trigger on message and clock signals. 
-Both must be modeled explicitly when modeling a transition of timed state machine.
+Its transitions may trigger message and clock signals. 
+Both must be explicitly defined when modeling a transition of a timed state machine.
 As components may consume multiple messages between two clock signals, a timed state machine may execute multiple transitions between two clock signals.
-Therefore, guards cannot can reason about multiple properties of incoming messages in reaction to message signals as messages arive asnynchronous.
+Therefore, guards cannot reason about multiple properties of incoming messages in reaction to message signals as messages arrive asynchronously.
 However, a transition of a  timed state machine may or may not produce outgoing messages on arbitrary output channels.
 
-The clock signal is modeled a special message signal, called a tick, that arrives on all incoming channels.
-A timed state machine only cunsumes clock signals once there is a tick on all incoming channels.
+The clock signal is modeled as a special message signal, called a tick, that arrives on all incoming channels.
+A timed state machine only consumes clock signals once there is a tick on all incoming channels.
 When executing a transition in response to a clock signal, the timed state machine produces a tick on each outgoing channel.
 
 ## Untimed
 For untimed streams, there is no concrete notion of time.
 Messages may be sent via a channel at any time.
-Untimed components consume and produce messages asynchronous.
+Untimed components consume and produce messages asynchronously.
 
-A untimed state machine models the behavior of a untimed component.
+An untimed state machine models the behavior of an untimed component.
 Its transitions may trigger on message signals only.
 Guards of a transition can reason about the property of an incoming message in reaction to message signals.
 The transition untimed state machine may or may not produce outgoing messages on arbitrary output channels.
 
 # Enabledness
 
-A transitions execution is triggered by an event.
-However, an transition must be enabled before it can execute.
-A transition is enabled iff
+An event triggers the execution of a transition.
+However, only enabled transitions can execute.
+A transition is enabled if
 
 1. the transition's source state matches or is a parent of the current state,
 
-2. the event necessary for triggering the transition occured,
+2. the event necessary for triggering the transition occurred,
 
-3. the transition's guard, which formales contraints onto properties of the incoming event and the state machine's current state, holds.
+3. the transition's guard, which forms constraints onto properties of the incoming event and the state machine's current state, holds.
 
-If at any point in time there are multiple enabled transitions, then the state machine is non-deterministic.
+If there are multiple enabled transitions at any point in time, then the state machine is nondeterministic.
 
 
 # How to model
@@ -157,31 +156,31 @@ If at any point in time there are multiple enabled transitions, then the state m
 
 ![Create Diagram](/images/state_machine/create-diagram.png){:class="img-responsive"}
 
-5. A new diagram window will open showing the diagram palett on the left-hand side and the diagram pane on the right hand side.
+5. A new diagram window will open, showing the diagram palette on the left-hand side and the diagram pane on the right-hand side.
 
 ![Diagram Pane & Palette](/images/state_machine/diagram-palett-pane.png){:class="img-responsive"}
 
 The diagram pane shows the state machine.
-The diagram palette shows the elements that you can add to the state machine.
-Select an element via a left-click in the diagram palett and add it via left click in the diagram pane.
-To delete an state machine element select it in the diagram pane and press delete.
+The diagram palette shows elements to add to the state machine.
+Select an element via a left click in the diagram palette and add it via a left click in the diagram pane.
+To delete a state machine element, select it in the diagram pane and press delete.
 
 ## State
 
 *State:* 
-Add a state by selecting it in the diagram palett and adding it to the diagram pane.
+Add a state by selecting it in the diagram palette and adding it to the diagram pane.
 Give the state a name by first left-clicking into the state.
-The name must be unique withing that state machine.
-The name can consist of numbers or letters of the latin alphabet but no spaces or other special characters.
+The name must be unique within that state machine.
+The name can consist of numbers or letters of the Latin alphabet but no spaces or other special characters.
 
 *Initial State:* 
 Add an initial state by selecting it in the diagram palette and adding it to the diagram pane.
-Also add a transition from the initial state to another state in the same state hierarchy.
+Also, add a transition from the initial state to another state in the same state hierarchy.
 The initial state doesn't need a name.
 
 *Hierarchical State:*
-Create an hierarchical state by first creating the parent state as any other state.
-Select an element (state, transition, initial state) in the diagram palette and left-click onto an state to add the element as sub-element of that state.
+Create a hierarchical state by first creating the parent state as any other state.
+Select an element (state, transition, initial state) in the diagram palette and left-click onto a state to add the element as a sub-element of that state.
 
 *State Specification:*
 Add or modify entry actions, exit actions, or do-activities via the state specification.
@@ -213,9 +212,9 @@ Add a transition to the diagram pane by first pressing left-click onto the sourc
 *Transition Specification:*
 Add or modify guards, triggers, or transition actions via the transition specification.
 
-1. Perform a right-click onto the transition in the daigram pane to open its menue and select *Specification*.
+1. Perform a right-click onto the transition in the diagram pane to open its menu and select *Specification*.
 
-2. A new windows opens with the transition's specification. 
+2. A new window opens with the transition's specification. 
 
 ![Transition Specification](/images/state_machines/transition-specification.png){:class="img-responsive"}
 
@@ -230,10 +229,10 @@ Add or modify guards, triggers, or transition actions via the transition specifi
 
 ## Behavior
 
-Entry and exit actions, do-activites, and transition effects are defined via an *OpaqueBehavior*.
+Entry and exit actions, do-activities, and transition effects are defined via an *OpaqueBehavior*.
 Actions are added to the *Body* of the *OpaqueBehavior* as textual expression statements.
 Each expression statement is terminated by a semicolon.
-Expression statements primarly consist of assignment expressions and inline computations.
+Expression statements primarily consist of assignment expressions and inline computations.
 
 Assignment expression may write values to outgoing ports or variables.
 Furthermore, expressions may read values from incoming channels and variables.
@@ -241,14 +240,14 @@ However, only ports and variables of the respective component are accessible.
 
 ![Read Write](/images/state_machines/read-write.png){:class="img-responsive"}
 
-In the above example the transition writes a buffered value to an ougoing channel and then writes the value on the incoming channel to the buffer.
+In the above example, the transition writes a buffered value to an outgoing channel and then writes the value on the incoming channel to the buffer.
 Channels are accessed via a qualified name consisting of the port and channel of the respective interface type.
-In the above example, *o* is the name of the outgoing port and *v* is the name of the channel.
-Similarly, *i* is the name of incoming port and *v* is again the name of the channel.
+In the above example, *o* is the name of the outgoing port, and *v* is the channel's name.
+Similarly, *i* is the name of the incoming port, and *v* is again the channel's name.
 Variables, on the other hand, can be accessed via their simple name.
-In the above example *buffer* is a variable of component.
+In the above example, *buffer* is a variable of the respective component.
 
-# Further Toughts
+# Further Thoughts
 
 * Non-determinism
 
@@ -256,4 +255,4 @@ In the above example *buffer* is a variable of component.
 
 * Initial state in hierarchical states
 
-* Sequentiall composition
+* Sequential composition
