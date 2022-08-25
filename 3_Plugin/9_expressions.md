@@ -33,7 +33,7 @@ Arithmetic operators perform mathematical operations.
 They apply to numbers and return a number.
 
 | Operator | Name | Example | Description |
--------------------------------------------
+| :------: | :--: | :-----: | :---------: |
 | `+` | Addition | `a + b` | Addition `a` and `b` |
 | `-` | Subtraction | `a - b` | Substract `b` from `a` |
 | `*` | Multiplication | `a * b` | Multiply `a` and `b` |
@@ -54,7 +54,7 @@ The variable or port and assigned value must have compatible types.
 Variations of the assignment operator abbreviate combinations of assignment and other operators.
 
 | Operator | Example | Abbreviation for |
--------------------------------------------
+| :------: | :-----: | :--------------: |
 | `=` | `a = 5` | `a = 5` | 
 | `+=` | `a = 5` | `a = a + 5` | 
 | `-=` | `a = 5` | `a = a - 5` | 
@@ -68,7 +68,7 @@ Comparison operators compare two values.
 They apply to primitives and return boolean values.
 
 | Operator | Name | Example | Description |
--------------------------------------------
+| :------: | :--: | :-----: | :---------: |
 | `==` | Equal to | `a == b` | `true` if `a` is equal to `b`, else `false` |
 | `!=` | Not equal to | `a != b` | `true` if `a` is not equal to `b`, else `false` |
 | `>` | Greather than | `a > b` | `true` if `a` is greather than `b`, else `false` |
@@ -82,7 +82,7 @@ Logical operators compare two variables or values.
 They apply and return boolean values.
 
 | Operator | Name | Example | Description |
--------------------------------------------
+| :------: | :--: | :-----: | :---------: |
 | `&&` | Logical and | `a && b` | `true` if both `a` and `b` are `true`, else `false` |
 | `||` | Logical or | `a || b` | `true` if `a` or `b` is `true`, else `false` |
 | `!` | Logical not | `!a|` | `true` if `a` is `false`, else `false` |
