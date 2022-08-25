@@ -85,7 +85,7 @@ They apply and return boolean values.
 | :------: | :--: | :-----: | :---------: |
 | `&&` | Logical and | `a && b` | `true` if both `a` and `b` are `true` |
 | `||` | Logical or | `a || b` | `true` if `a` or `b` is `true` |
-| `!` | Logical not | `!a|` | `true` if `a` is `false` |
+| `!` | Logical not | `!a` | `true` if `a` is `false` |
 
 ## Further Thoughts
 
