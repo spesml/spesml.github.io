@@ -69,12 +69,12 @@ They apply to primitives and return boolean values.
 
 | Operator | Name | Example | Description |
 | :------: | :--: | :-----: | :---------: |
-| `==` | Equal to | `a == b` | `true` if `a` is equal to `b`, else `false` |
-| `!=` | Not equal to | `a != b` | `true` if `a` is not equal to `b`, else `false` |
-| `>` | Greather than | `a > b` | `true` if `a` is greather than `b`, else `false` |
-| `<` | Less than | `a < b` | `true` if `a` is less than `b`, else `false` |
-| `>=` | Greather than or equal to | `a >= b` | `true` if `a` is greather than or equal to `b`, else `false` |
-| `<=` | Less than or equal to | `a <= b` | `true` if `a` is less than or equal to `b`, else `false` |
+| `==` | Equal to | `a == b` | `true` if `a` is equal to `b` |
+| `!=` | Not equal to | `a != b` | `true` if `a` is not equal to `b` |
+| `>` | Greather than | `a > b` | `true` if `a` is greather than `b` |
+| `<` | Less than | `a < b` | `true` if `a` is less than `b` |
+| `>=` | Greather than or equal to | `a >= b` | `true` if `a` is greather than or equal to `b` |
+| `<=` | Less than or equal to | `a <= b` | `true` if `a` is less than or equal to `b` |
 
 ### Logical Operators
 
@@ -83,9 +83,9 @@ They apply and return boolean values.
 
 | Operator | Name | Example | Description |
 | :------: | :--: | :-----: | :---------: |
-| `&&` | Logical and | `a && b` | `true` if both `a` and `b` are `true`, else `false` |
-| `||` | Logical or | `a || b` | `true` if `a` or `b` is `true`, else `false` |
-| `!` | Logical not | `!a|` | `true` if `a` is `false`, else `false` |
+| `&&` | Logical and | `a && b` | `true` if both `a` and `b` are `true` |
+| `||` | Logical or | `a || b` | `true` if `a` or `b` is `true` |
+| `!` | Logical not | `!a|` | `true` if `a` is `false` |
 
 ## Further Thoughts
 
