@@ -148,17 +148,17 @@ If there are multiple enabled transitions at any point in time, then the state m
 
 2. Perform a right-click on this component and select *Create Element*
 
-![Create Element](/images/state_machine/create-element.png){:class="img-responsive"}
+	![Create Element](/images/state_machine/create-element.png){:class="img-responsive"}
 
 3. You may give the state machine a name
 
 4. Perform a right-click on this state machine and select *Create Diagram* 
 
-![Create Diagram](/images/state_machine/create-diagram.png){:class="img-responsive"}
+	![Create Diagram](/images/state_machine/create-diagram.png){:class="img-responsive"}
 
 5. A new diagram window will open, showing the diagram palette on the left-hand side and the diagram pane on the right-hand side.
 
-![Diagram Pane & Palette](/images/state_machine/diagram-palett-pane.png){:class="img-responsive"}
+	![Diagram Pane n Palette](/images/state_machine/diagram-palette-pane.png){:class="img-responsive"}
 
 The diagram pane shows the state machine.
 The diagram palette shows elements to add to the state machine.
@@ -187,15 +187,15 @@ Add or modify entry actions, exit actions, or do-activities via the state specif
 
 1. Perform a right-click onto the state in the diagram pane to open its menu and select *Specification*.
 
-![State Menu](/images/state_machines/state-menu.png){:class="img-responsive"}
+	![State Menu](/images/state_machine/state-menu.png){:class="img-responsive"}
 
 2. A new window opens with the state's specification.
 
-![State Specification](/images/state_machines/state-specification.png){:class="img-responsive"}
+	![State Specification](/images/state_machine/state-specification.png){:class="img-responsive"}
 
 3. Scroll down to the element in question (entry action, exit action, or do-activity) and select *OpaqueBehavior* as its *Behavior Type*.
 
-![Behavior Type](/images/state_machines/behavior-type.png){:class="img-responsive"}
+	![Behavior Type](/images/state_machine/behavior-type.png){:class="img-responsive"}
 
 4. The menu for that element extends, showing additional fields.
 
@@ -216,7 +216,7 @@ Add or modify guards, triggers, or transition actions via the transition specifi
 
 2. A new window opens with the transition's specification. 
 
-![Transition Specification](/images/state_machines/transition-specification.png){:class="img-responsive"}
+	![Transition Specification](/images/state_machine/transition-specification.png){:class="img-responsive"}
 
 3. Add a textual boolean expression as the transition's *Guard*.
 
@@ -238,7 +238,7 @@ Assignment expression may write values to outgoing ports or variables.
 Furthermore, expressions may read values from incoming channels and variables.
 However, only ports and variables of the respective component are accessible.
 
-![Read Write](/images/state_machines/read-write.png){:class="img-responsive"}
+	![Read Write](/images/state_machine/read-write.png){:class="img-responsive"}
 
 In the above example, the transition writes a buffered value to an outgoing channel and then writes the value on the incoming channel to the buffer.
 Channels are accessed via a qualified name consisting of the port and channel of the respective interface type.
