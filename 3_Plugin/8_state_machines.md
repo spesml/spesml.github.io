@@ -11,7 +11,7 @@ State machines are a means to model the behavior of functions and logical compon
 Using state machines, system engineers can model high-level specifications of a system or implementations of low-level system functionality. 
 Accordingly, state machines can provide specifications to a decomposed component or model the behavior of atomic components, i.e., leave nodes in the components composition hierarchy.
 
-# Sates
+## Sates
 
 The states of a state machine define the state space of a component. 
 The behavior of a state machine is defined on the basis of its state space.
@@ -21,14 +21,14 @@ A state machine may change its current state through the execution of a transiti
 A state machine consists of at least one state, and each state has a name that is unique within that state machine.
 Each state can have an entry action, exit action, and do-activity.
 
-## Initial State
+### Initial State
 
 The state machine's execution starts in its initial state. It marks the beginning of the modeled system lifecycle.
 
 The initial state does not have a name and has a single transition, which we call the state machine's initial transition. 
 The initial transition is unique in that it cannot have a guard, behavior, or trigger and does not trigger the entry action of the target state.
 
-## Hierarchical States
+### Hierarchical States
 
 States can be nested hierarchically.
 A state with sub-states is called a hierarchical state and the parent of the sub-state. 
@@ -42,7 +42,7 @@ If a state machine enters a hierarchical state, then it enters exactly one of th
 Therefore, a transition that targets a hierarchical state targets its initial state.
 If a transition targets a state on another hierarchical level then the state machine enters and exits all states along the hierarchy until it reaches the target state during the execution of a transition.
 
-# Transitions
+## Transitions
 
 A transition leads from a source state to a target state
 When a transition executes, the state machine switches from the transition's source state to the transition's target state. 
@@ -51,37 +51,37 @@ Furthermore, a transition can have a guard, a trigger, and an action.
 A transition is enabled for execution exactly if the current state is the source state (or one of its sub-states) of the transition, the trigger is correct, and the guard holds.
 If multiple transitions are enabled at any point in time, then the state machine is nondeterministic.
 
-## Trigger
+### Trigger
 A transition's execution is triggered by an event.
 An event can be a clock signal for timed state machines or a message signal on incoming channels for asynchronous state machines.
 Any transition without an explicit trigger is triggered by a clock signal.
 For message signals, the trigger defines the port where message signals trigger the transition.
 
-## Guard
+### Guard
 The guard of a transition governs its execution. 
 The transition is executed only if its guard holds. 
 Guards can reason about the properties of the incoming message or variables.
 
-# Behavior
+## Behavior
 Actions define the behavior of a component or respective state machine in terms of messages sent via outgoing channels.
 The actions defined in the transition's effect are executed after any exit action of the source state and before any entry action of the target state.
 
-## Entry Action
+### Entry Action
 
 A state can have an entry action that is executed when the state machine enters the respective state.
 It is executed after the transitions action and any entry action of any parent state the state machine enters during the execution of a transition.
 
-## Exit Action
+### Exit Action
 
 Analog to the entry action, a state can have an exit action that is executed when the state machine exits the respective state.
 The entry action is executed before the entry action of a state is executed before the entry action of any of its parent's states and the transition action.
 
-## Do Activity 
+### Do Activity 
 
 A state machine can have a do-activity that describes the continuous behavior of a component in that state. 
 For timed components, the do-activity is executed any time the state machine remains in its current state on a clock signal.
 
-# Timing Abstractions
+## Timing Abstractions
 
 Streams on channels may be timed or untimed. 
 Furthermore, components may communicate synchronously or asynchronously. 
@@ -89,7 +89,7 @@ These distinctions have implications for the modeling of component behavior.
 The SpesML supports these through different timing abstractions.
 These are timed-synchronous, timed, and untimed.
 
-## Timed-Synchronous
+### Timed-Synchronous
 For timed-synchronous steams, there is exactly one message at any discrete point in time.
 The observed output behavior of a component changes only with the clock signal.
 Timed-synchronous components are synchronized via the clock.
@@ -101,7 +101,7 @@ As all timed-synchronous input channels are synchronized, there is exactly one i
 The guard of a transition of a timed-synchronous state machine can therefore reason about message properties on all incoming channels.
 Furthermore, a timed-synchronous state machine produces exactly one message on every outgoing channel during the execution of a transition.
 
-## Timed
+### Timed
 For timed streams, there may exist multiple messages between two discrete points in time.
 Therefore, timed components may send multiple messages between two clock signals.
 Timed components have a synchronized clock but consume and produce messages asynchronous.
@@ -117,7 +117,7 @@ The clock signal is modeled as a special message signal, called a tick, that arr
 A timed state machine only consumes clock signals once there is a tick on all incoming channels.
 When executing a transition in response to a clock signal, the timed state machine produces a tick on each outgoing channel.
 
-## Untimed
+### Untimed
 For untimed streams, there is no concrete notion of time.
 Messages may be sent via a channel at any time.
 Untimed components consume and produce messages asynchronously.
@@ -127,7 +127,7 @@ Its transitions may trigger on message signals only.
 Guards of a transition can reason about the property of an incoming message in reaction to message signals.
 The transition untimed state machine may or may not produce outgoing messages on arbitrary output channels.
 
-# Enabledness
+## Enabledness
 
 An event triggers the execution of a transition.
 However, only enabled transitions can execute.
@@ -142,7 +142,7 @@ A transition is enabled if
 If there are multiple enabled transitions at any point in time, then the state machine is nondeterministic.
 
 
-# How to model
+## How to model
 
 1. Navigate to function or logical component
 
@@ -165,7 +165,7 @@ The diagram palette shows elements to add to the state machine.
 Select an element via a left click in the diagram palette and add it via a left click in the diagram pane.
 To delete a state machine element, select it in the diagram pane and press delete.
 
-## State
+### State
 
 *State:* 
 Add a state by selecting it in the diagram palette and adding it to the diagram pane.
@@ -202,7 +202,7 @@ Add or modify entry actions, exit actions, or do-activities via the state specif
 5. Add actions as textual expression statements to the *Body* of the *OpaqueBehavior*.
 
 
-## Transition
+### Transition
 
 *Transition:*
 A transition is represented in the diagram pane as an arrow from its source to its target state.
@@ -227,7 +227,7 @@ Add or modify guards, triggers, or transition actions via the transition specifi
 6. Add actions as textual expression statements to the *Body* of the *OpaqueBehavior*.
 
 
-## Behavior
+### Behavior
 
 Entry and exit actions, do-activities, and transition effects are defined via an *OpaqueBehavior*.
 Actions are added to the *Body* of the *OpaqueBehavior* as textual expression statements.
@@ -247,7 +247,7 @@ Similarly, *i* is the name of the incoming port, and *v* is again the channel's 
 Variables, on the other hand, can be accessed via their simple name.
 In the above example, *buffer* is a variable of the respective component.
 
-# Further Thoughts
+## Further Thoughts
 
 * Non-determinism
 
