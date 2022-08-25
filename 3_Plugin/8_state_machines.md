@@ -238,7 +238,7 @@ Assignment expression may write values to outgoing ports or variables.
 Furthermore, expressions may read values from incoming channels and variables.
 However, only ports and variables of the respective component are accessible.
 
-	![Read Write](/images/state_machine/read-write.png){:class="img-responsive"}
+![Read Write](/images/state_machine/read-write.png){:class="img-responsive"}
 
 In the above example, the transition writes a buffered value to an outgoing channel and then writes the value on the incoming channel to the buffer.
 Channels are accessed via a qualified name consisting of the port and channel of the respective interface type.
