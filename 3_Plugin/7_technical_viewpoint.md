@@ -96,6 +96,7 @@ A Technical Component can be further specified by adding a [Technical Internal C
 A Technical Component can provide a syntactic interface via [Technical Interfaces](#technical-interface), which can be used to connect this component to other components (to model just the composition or to model actual information flow if the used [Technical Interface Type](#technical-interface-type) contains [Channels](#channel)).
 
 ### ![Software Component](/images/technical_viewpoint/SoftwareComponent.png){:class="img-responsive"}Software Component
+TODO: update needed
 This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
 A Software Component is the container representing the software subsystem (see [Technical Viewpoint concept](/concepts/modeling_framework/technical_viewpoint.html)). It is used by the software engineering discipline to model the software part of the system (and its execution environment). 
 A Software Component can be further specified by adding a [Technical Internal Component Diagram](#technical-internal-component-diagram) to it. With such an owner it is possible to place [Task Architectures](#task-architecture) and [Execution Platforms](#execution-platform) in this diagram. 
@@ -131,7 +132,8 @@ A Task is a specific (atomic) component representing a single software task that
 A Task cannot be further specified by adding a diagram to it. It is an atomic unit on which software-related Logical Components of the [Logical Viewpoint](/plugin/logical_viewpoint.html) can be mapped, and which itself can then be mapped on [Execution Components](#execution-component) to realize the final (software) deployment with such an allocation.
 A Task can provide a syntactic interface via [Technical Interfaces](#technical-interface), which can be used to connect this component to other components, in this case other Tasks (to model actual information flow if the used [Technical Interface Type](#technical-interface-type) contains [Channels](#channel)).
 
-### ![Execution Platform](/images/technical_viewpoint/ExecutionPlatform.png){:class="img-responsive"}Execution Platform
+### Software Execution Subsystem
+TODO: update needed
 This element is based on a *SysML Block* with a dedicated stereotype that allows to define where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
 An Execution Platform is a container element for [Execution](#execution-component) and [Communication Components](#communication-components) to represent the execution environment of a software subsystem (represented by [Software Components](#software-component)). 
 An Execution Platform can be further specified by adding a [Technical Internal Component Diagram](#technical-internal-component-diagram) to it. With such an owner it is possible to place [Execution](#execution-component) and [Communication Components](#communication-components) in this diagram. 
