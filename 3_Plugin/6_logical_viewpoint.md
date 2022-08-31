@@ -8,32 +8,32 @@ permalink: /plugin/logical_viewpoint.html
 # ![Logical Viewpoint](/images/logical_viewpoint/LogicalViewpoint.png){:height="30px" width="30px"}{:class="img-responsive"}SpesML Plugin - Logical Viewpoint
 
 ## Overview
-In order to realize the desired functionality that is specified in the models of the functional viewpoint, the system under development is decomposed into a network of communicating logical components. The result is a logical architecture model which is independent on any technological constraints and which can be reused for multiple platforms.  
+In order to realize the desired functionality that is specified in the models of the functional viewpoint, the system under development is decomposed into a network of communicating logical components. The result is a logical architecture model which is independent of any technological constraints and which can be reused for multiple platforms.  
   
-The Logical Components within the Logical Component Architecture provide a syntactic interface and a behavior specified by state automata. To compose the individual logical components to a logical architecture, the components interfaces are connected via connectors. Every such connection specifies which output channels will provide values to with input channels.
+The Logical Components within the Logical Component Architecture provide a syntactic interface and a behavior specified by state automata. To compose the individual logical components to a logical architecture, the interfaces of the components are connected via connectors. Every such connection specifies which output channels will provide values to input channels.
 
 ## Method
-The elements from the [functional architecture](https://spesml.github.io/plugin/functional_viewpoint.html) are mapped onto the components of the logical architecture. In general, this mapping is n:m. We recommend to design the functional white-box models already with the component architecture in mind, to achieve a n:1 mapping of elementary functions onto logical components.  
+The elements from the [functional architecture](https://spesml.github.io/plugin/functional_viewpoint.html) are mapped onto the components of the logical architecture. In general, this mapping is n:m. We recommend designing the functional white-box models already with the component architecture in mind, to achieve an n:1 mapping of elementary functions onto logical components.  
   
-The platform independent logical components of the Logical Component Architecture will be mapped to technical components of the [technical architecture](https://spesml.github.io/plugin/technical_viewpoint.html) in order to come to a platform dependent implementation of the component.  
+The platform-independent logical components of the Logical Component Architecture will be mapped to technical components of the [technical architecture](https://spesml.github.io/plugin/technical_viewpoint.html) in order to come to a platform-dependent implementation of the component.  
   
 The following figure illustrates these relations:  
   
 ![Logical Architecture Concept](/images/logical_viewpoint/logical_architecture_concept.png){:class="img-responsive"}
 
 ## Structure
-The Logical Architecture is modelled in the Logical Viewpoint folder of a SpesML Project. This diagram can be defined inside any logical (sub-)system (i.e. logical component).  
+The Logical Architecture is modeled in the Logical Viewpoint folder of a SpesML Project. This diagram can be defined inside any logical (sub-)system (i.e. logical component).  
   
 The following figure shows how the logical architecture of an exemplary window lifter system is embedded in the model:  
   
 ![Logical Architecture Window Lifter Containment](/images/logical_viewpoint/logical_architecture_window-lifter_containment.png){:class="img-responsive"}  
   
-Inside the SpesML Logical Internal Component Diagram the modeler can use all *Logical Components* to model the actual Logical Component Architecture. The *Logical Interfaces* of these components can then be connected via *Connectors*. In the following figure you can see how the logical architecture of the window lifter system is modelled:  
+Inside the SpesML Logical Internal Component Diagram the modeler can use all *Logical Components* to model the actual Logical Component Architecture. The *Logical Interfaces* of these components can then be connected via *Connectors*. In the following figure you can see how the logical architecture of the window lifter system is modeled:  
 
 ![Logical Architecture Window Lifter](/images/logical_viewpoint/logical_architecture_window-lifter.png){:class="img-responsive"}
 
 ## How to model
-To create the logical architecture of the examplary Window Lifter above, you can start by following these steps:
+To create the logical architecture of the exemplary Window Lifter above, you can start by following these steps:
 1. Navigate to the component in the containment tree, for which you want to model the logical architecture.
 2. Perform a right-click on this component and select *Create Diagram*:  
   
@@ -43,7 +43,7 @@ To create the logical architecture of the examplary Window Lifter above, you can
   
       ![Select Diagram](/images/logical_viewpoint/create_diagram_select.png){:class="img-responsive"}  
   
-4. Another dialog will open that lets you choose, which elements of the selected components you immediately want to display in the new diagram. For our components this means that we can select which of the interfaces we want to see represented in the diagram. Keep all of them selected and click *OK*:  
+4. Another dialog will open that lets you choose, which elements of the selected components you immediately want to display in the new diagram. For our components, this means that we can select which of the interfaces we want to see represented in the diagram. Keep all of them selected and click *OK*:  
   
       ![Create Diagram Ports](/images/logical_viewpoint/create_diagram_ports.png){:class="img-responsive"}  
   
@@ -68,10 +68,10 @@ To create the logical architecture of the examplary Window Lifter above, you can
 ## Elements
 
 ### ![Logical Viewpoint](/images/logical_viewpoint/LogicalViewpoint.png){:class="img-responsive"}Logical Viewpoint
-This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guides users by restricting what elements and diagrams can be created below this package.
 
 ### ![Logical Tracing Package](/images/logical_viewpoint/LogicalTracingPackage.png){:class="img-responsive"}Logical Tracing Package
-This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guide users by restricting what elements and diagrams can be created below this package. This package usually contains only tracing related relation maps and matrixes.
+This element is a *UML/SysML Package* with a dedicated stereotype that allows to define an adequate SpesML model structure and guides users by restricting what elements and diagrams can be created below this package. This package usually contains only tracing-related relation maps and matrixes.
 
 ### ![Logical Interface Types Package](/images/logical_viewpoint/LogicalInterfaceTypesPackage.png){:class="img-responsive"}Logical Interface Types Package
 Insert text here
@@ -116,4 +116,4 @@ This matrix allows to create relationships between elements of the [Logical View
 This matrix allows to create relationships between elements of the [Logical Viewpoint](https://spesml.github.io/plugin/logical_viewpoint.html#logical-viewpoint) and [Requirements](https://spesml.github.io/plugin/requirements_viewpoint.html#requirements).
 
 ### ![Logical Internal Component Diagram](/images/diagrams/composite_structure.png){:class="img-responsive"}SpesML Logical Internal Component Diagram
-This diagram is based on a *UML Composite Structure Diagram/SysML Internal Block Diagram* and provides a reduced diagram toolbar related to SpesML. Note that intentionally [Logical Component Parts](https://spesml.github.io/plugin/logical_viewpoint.html#logical-component-part) cannot be created using the diagram toolbar. Instead, it is recommended to create these elements by dragging/dropping a Logical Component to the diagram.
+This diagram is based on a *UML Composite Structure Diagram/SysML Internal Block Diagram* and provides a reduced diagram toolbar related to SpesML. Note that intentionally [Logical Component Parts](https://spesml.github.io/plugin/logical_viewpoint.html#logical-component-part) cannot be created using the diagram toolbar. Instead, it is recommended to create these elements by dragging/dropping a Logical Component into the diagram.
