@@ -136,18 +136,18 @@ The logical architecture can also contain further subcomponents that are defined
 
 ## System Functions
 
-- [The interface of each system function must have at least one output port or one output port that is part of the interface of the top-level system](Functional-VP-WFRs.md#wf-1-system-functions-have-to-contribute-at-least-one-output-port-to-the-overall-sud).
+- The interface of each system function must have at least one output port or one output port that is part of the interface of the top-level system.
 
 ## White-Box Functions
-- [Each functional white-box model must be related to exactly one system function](Functional-VP-WFRs.md#wf-3-each-functional-white-box-model-must-be-related-to-exactly-one-system-function).
-- [Each system function must be related to at most one functional white-box model](Functional-VP-WFRs.md#wf-4-each-system-function-must-be-related-to-at-most-one-functional-white-box-model).
-- [The interface of a system function (i.e., inputs and outputs) must be reflected in its related functional white-box model, i.e., each input and output port of the system function must also be a _free_ input or output port in the functional white-box model (i.e., a port without any flow property)](Functional-VP-WFRs.md#wf-5-ports-of-system-functions-have-to-match-the-ports-of-the-associated-white-box-model). <br>_Hint: In a first version, this _port matching_ may be achieved by a convention of matching port names_.
-- [Each white-box function must be related to at most one logical component that implements this white-box function](Functional-VP-WFRs.md#wf-10-at-most-one-logical-component-per-white-box-function).
+- Each functional white-box model must be related to exactly one system function.
+- Each system function must be related to at most one functional white-box model.
+- The interface of a system function (i.e., inputs and outputs) must be reflected in its related functional white-box model, i.e., each input and output port of the system function must also be a _free_ input or output port in the functional white-box model (i.e., a port without any flow property). 
+- Each white-box function must be related to at most one logical component that implements this white-box function.
 
 ## Mode Model
-- [Each value that can be sent over a mode channel (i.e., a channel between system functions in the functional black-box model) must have a corresponding state in the mode model](Functional-VP-WFRs.md#wf-6-mode-states-exactly-match-the-set-of-allowed-messages-on-mode-channels).
-- [Transitions in the mode model do not have any guards or actions as they simply define potential sequences of modes](Functional-VP-WFRs.md#wf-8-transitions-in-the-mode-model-do-not-have-any-guards-or-actions).
-- [A mode model has an initial state but no final state](Functional-VP-WFRs.md#wf-9-a-mode-model-has-an-initial-state-but-no-final-state). 
+- Each value that can be sent over a mode channel (i.e., a channel between system functions in the functional black-box model) must have a corresponding state in the mode model.
+- Transitions in the mode model do not have any guards or actions as they simply define potential sequences of modes.
+- A mode model has an initial state but no final state. 
 
 
 
