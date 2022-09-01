@@ -284,24 +284,12 @@ Please be aware that not all theoretical concepts are represented by this table 
     </tr>    
     <tr>
         <td>Model structuring</td><td>Package</td><td>SpesML Software Package</td><td>Software Package</td>
-    </tr> 
-    <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Task Architecture Package</td><td>Task Architecture Package</td>
-    </tr> 
-    <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Execution Platform Package</td><td>Execution Platform Package</td>
-    </tr> 
+    </tr>
     <tr>
         <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Technical Component</td><td>Technical Component</td>
     </tr>
     <tr>
         <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Technical Component Part</td><td>Technical Component Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Software Component</td><td>Software Component</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Software Component Part</td><td>Software Component Part</td>
     </tr>
     <tr>
         <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Mechanical Component</td><td>Mechanical Component</td>
@@ -322,22 +310,10 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Electronic Component Part</td><td>Electronic Component Part</td>
     </tr>
     <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Task Architecture</td><td>Task Architecture</td>
+        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Software Execution Subsystem</td><td>Execution Platform</td>
     </tr>
     <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Task Architecture Part</td><td>Task Architecture Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Task</td><td>Task</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Task Part</td><td>Task Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Execution Platform</td><td>Execution Platform</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Execution Platform Part</td><td>Execution Platform Part</td>
+        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Software Execution Subsystem Part</td><td>Execution Platform Part</td>
     </tr>
     <tr>
         <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Execution Component</td><td>Execution Component</td>
@@ -350,6 +326,18 @@ Please be aware that not all theoretical concepts are represented by this table 
     </tr>
     <tr>
         <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Communication Component Part</td><td>Communication Component Part</td>
+    </tr>
+    <tr>
+        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Task Architecture</td><td>Task Architecture</td>
+    </tr>
+    <tr>
+        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Task Architecture Part</td><td>Task Architecture Part</td>
+    </tr>
+    <tr>
+        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Task</td><td>Task</td>
+    </tr>
+    <tr>
+        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Task Part</td><td>Task Part</td>
     </tr>
     <tr>
         <td>Message Connection</td><td>Connector</td><td>no specific SpesML Stereotype</td><td>Connector</td>
