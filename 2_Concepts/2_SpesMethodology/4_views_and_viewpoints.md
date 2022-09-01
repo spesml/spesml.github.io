@@ -12,7 +12,7 @@ Multiple stakeholders with different concerns are typically involved in the engi
 
 ## Viewpoint
 
-The [IEEE Standard 1471](https://standards.ieee.org/ieee/1471/2187/) characterizes viewpoints as a specification of the conventions for constructing and using a view. In other words, a *viewpoint* is a pattern, template or blueprint that can be used to develop individual views on a system (and its environment). Typically, the specification of a viewpoint defines its syntax, semantics and pragmatics by providing, among others:
+The [IEEE Standard 42010](https://standards.ieee.org/ieee/42010/5334/) characterizes viewpoints as a specification of the conventions for constructing and using a view. In other words, a *viewpoint* is a pattern, template or blueprint that can be used to develop individual views on a system (and its environment). Typically, the specification of a viewpoint defines its syntax, semantics and pragmatics by providing, among others:
 
 - the name of the viewpoint,
 - the corresponding stakeholder concerns,
@@ -32,8 +32,8 @@ Given a viewpoint specification, a *view* can be characterized as a concrete mod
 Figure 1 shows the four views that the SPES methodology provides by default:
 
 - Requirements View for eliciting, documenting, negotiating, validating, and managing requirements for the system under development
-- Functional View for offering a set of user functions
+- Funtional View for formalizing and transforming requirements into functional system specification
 - Logical View for decomposing the system under development into an architecture of logical components in terms of a glass box view
-- Technical View for combining the software of the system under development with its hardware
+- Technical View for holding the models of the platform dependant realization of the system and for breaking down the system into components that can be assigned to the various engineering disciplines.
 
 Each of the different views is used by different stakeholders and contains just the information the stakeholder needs in the presentation suitable for the stakeholder.
