@@ -283,7 +283,7 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Technical Package</td><td>Technical Package</td>
     </tr>    
     <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Software Package</td><td>Software Execution Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Software Execution Package</td><td>Software Execution Package</td>
     </tr>
     <tr>
         <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Technical Component</td><td>Technical Component</td>
@@ -310,10 +310,10 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Electronic Component Part</td><td>Electronic Component Part</td>
     </tr>
     <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Software Execution Subsystem</td><td>Execution Platform</td>
+        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Software Execution Subsystem</td><td>Software Execution Subsystem</td>
     </tr>
     <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Software Execution Subsystem Part</td><td>Execution Platform Part</td>
+        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Software Execution Subsystem Part</td><td>Software Execution Subsystem Part</td>
     </tr>
     <tr>
         <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Execution Component</td><td>Execution Component</td>
