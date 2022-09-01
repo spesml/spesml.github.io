@@ -72,7 +72,7 @@ Please be aware that not all theoretical concepts are represented by this table 
 
 </table>
 
-[^1] Note: Defined as an **abstract** stereotype
+[^1]: Note: Defined as an **abstract** stereotype
 
 
 
