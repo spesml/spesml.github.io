@@ -24,6 +24,8 @@ Regarding the development process, one step is to build the technical part of th
 We recommend that the software subsystem is modeled on a separate (lower) granularity level ([theoretical concept](/concepts/modeling_framework/technical_viewpoint.html)). How to create a new granularity level is described [here](/plugin/general_concepts/granularity_transitions.html). However, we also allow in the tool that the internal software subsystem with its task architecture(s) and execution platform(s) can be modeled on the same level (just hierarchical), i.e., in the same MagicDraw project directly inside the [Software Component](#software-component) representing the software subsystem (see next section).
 
 ## Structure
+TODO: needs to be updated after same naming changes, etc.
+
 The SpesML plugin has a separate folder for the Technical Viewpoint (see [Figure 2](#figureElements)). Within this folder, it is possible to create folders for technical components ([Technical Package](#technical-package)), for technical interfaces types ([Technical Interface Types Package](#technical-interface-types-package)), and for technical tracing ([Technical Tracing Package](#technical-tracing-package)). Inside the Technical Tracing Package, all diagrams regarding tracing can be created: [Technical Tracing Map](#technical-tracing-map), [TechnicalToLogical Matrix](#technicaltological-matrix), and [TechnicalToRequirement Matrix](#technicaltorequirement-matrix). Inside the Technical Interface Types Package, all possible interface types can be created that are usable for the interfaces between technical elements ([Technical Interface](#technical-interface)), and further Technical Interface Types Packages for a better organization. 
 
 Inside the Technical Package, other Technical Packages can be created as well for better organization, but more important are the possibilities of the component creations. The generic [Technical Component](#technical-component) can be used for everything. If something more specific is needed, then the [Mechanical](#mechanical-component), [Electronic](#electronic-component) or [Mechatronic Components](#mechatronic-component) are available. In addition, the modeler can define a [Technical Context](#technical-context) inside a Technical Package. The Technical Context behaves like a Technical Component, but can already be placed in the Technical Viewpoint folder to create a starting point for the system and a possibility to represent the connected external systems and [Technical Actors](#technical-actor), which can be created in a Technical Package as well. To indicate that a component is representing an external (sub-)system, the corresponding "External" part property can be set to "Yes". 
@@ -67,14 +69,10 @@ This element is a *UML/SysML Package* with a dedicated stereotype that allows de
 ### ![Technical Package](/images/technical_viewpoint/TechnicalPackage.png){:class="img-responsive"}Technical Package
 This element is a *UML/SysML Package* with a dedicated stereotype that allows defining an adequate SpesML model structure and guides users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only standard technical components like [Technical](#technical-component), [Mechanical](#mechanical-component), [Electronic](#electronic-component) and [Mechatronic Components](#mechatronic-component), and context-related elements like [Technical Contexts](#technical-context) and [Technical Actors](#technical-actor). In addition, it can also contain [Software Packages](#Software-Package), which are the entry point for software subsystems.
 
-### ![Software Package](/images/technical_viewpoint/SoftwarePackage.png){:class="img-responsive"}Software Package
+### ![Software Package](/images/technical_viewpoint/SoftwarePackage.png){:class="img-responsive"}Software Execution Package
+TODO: check different naming
+
 This element is a *UML/SysML Package* with a dedicated stereotype that allows defining an adequate SpesML model structure and guides users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only elements regarding the software subsystem. It includes [Software Components](#software-component), which represent software subsystems, and packages for further software subsystem related elements like [Task Architecture Packages](#task-architecture-package) and [Execution Platform Packages](#execution-platform-package).
-
-### ![Task Architecture Package](/images/technical_viewpoint/TaskPackage.png){:class="img-responsive"}Task Architecture Package
-This element is a *UML/SysML Package* with a dedicated stereotype that allows defining an adequate SpesML model structure and guides users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only elements to create a task architecture for a software subsystem, i.e., [Task Architectures](#task-architecture) and [Tasks](#task).
-
-### ![Execution Platform Package](/images/technical_viewpoint/ExecutionPackage.png){:class="img-responsive"}Execution Platform Package
-This element is a *UML/SysML Package* with a dedicated stereotype that allows defining an adequate SpesML model structure and guides users by restricting what elements and diagrams can be created below this package for the [Technical Viewpoint](/plugin/technical_viewpoint.html). This package usually contains only elements to create an execution platform for a software subsystem, i.e., [Execution Platforms](#execution-platform), [Execution Components](#execution-component) and [Communication Components](#communication-components).
 
 
 ### ![Technical Context](/images/technical_viewpoint/TechnicalContext.png){:class="img-responsive"}Technical Context
@@ -96,7 +94,8 @@ A Technical Component can be further specified by adding a [Technical Internal C
 A Technical Component can provide a syntactic interface via [Technical Interfaces](#technical-interface), which can be used to connect this component to other components (to model just the composition or to model actual information flow if the used [Technical Interface Type](#technical-interface-type) contains [Channels](#channel)).
 
 ### ![Software Component](/images/technical_viewpoint/SoftwareComponent.png){:class="img-responsive"}Software Component
-TODO: update needed
+TODO: update needed (remove this and maybe add some information of the this text to the new Software Execution Subsystem text
+
 This element is based on a *SysML Block* with a dedicated stereotype that allows defining where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
 A Software Component is a container representing the software subsystem (see [Technical Viewpoint concept](/concepts/modeling_framework/technical_viewpoint.html)). It is used by the software engineering discipline to model the software part of the system (and its execution environment). 
 A Software Component can be further specified by adding a [Technical Internal Component Diagram](#technical-internal-component-diagram) to it. With such an owner it is possible to place [Task Architectures](#task-architecture) and [Execution Platforms](#execution-platform) in this diagram. 
@@ -120,20 +119,9 @@ An Electronic Component is a specific component of the electrical engineering di
 An Electronic Component can be further specified by adding a [Technical Internal Component Diagram](#technical-internal-component-diagram) to it. With such an owner it is possible to place [Electronic Components](#electronic-component) in this diagram. 
 An Electronic Component can provide a syntactic interface via [Technical Interfaces](#technical-interface), which can be used to connect this component to other components (to model just the composition or to model actual information flow if the used [Technical Interface Type](#technical-interface-type) contains [Channels](#channel)).
 
-### ![Task Architecture](/images/technical_viewpoint/TaskArchitecture.png){:class="img-responsive"}Task Architecture
-This element is based on a *SysML Block* with a dedicated stereotype that allows defining where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
-A Task Architecture is a container element for [Tasks](#task) to represent the software part of a software subsystem (represented by [Software Components](#software-component)).
-A Task Architecture can be further specified by adding a [Technical Internal Component Diagram](#technical-internal-component-diagram) to it. With such an owner it is possible to place [Tasks](#task) in this diagram. 
-A Task Architecture does NOT provide any syntactic interface via e.g., [Technical Interfaces](#technical-interface). It is only used as a virtual container for all the [Tasks](#task) and does not need to have any connection with other (physical) elements.
-
-### ![Task](/images/technical_viewpoint/TaskComponent.png){:class="img-responsive"}Task
-This element is based on a *SysML Block* with a dedicated stereotype that allows defining where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
-A Task is a specific (atomic) component representing a single software task that was mapped from the [Logical Viewpoint](/plugin/logical_viewpoint.html) and should be executed on an execution unit represented by an [Execution Component](#execution-component).
-A Task cannot be further specified by adding a diagram to it. It is an atomic unit on which software-related Logical Components of the [Logical Viewpoint](/plugin/logical_viewpoint.html) can be mapped, and which itself can then be mapped on [Execution Components](#execution-component) to realize the final (software) deployment with such an allocation.
-A Task can provide a syntactic interface via [Technical Interfaces](#technical-interface), which can be used to connect this component to other components, in this case, other Tasks (to model actual information flow if the used [Technical Interface Type](#technical-interface-type) contains [Channels](#channel)).
-
 ### Software Execution Subsystem
 TODO: update needed
+
 This element is based on a *SysML Block* with a dedicated stereotype that allows defining where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
 An Execution Platform is a container element for [Execution](#execution-component) and [Communication Components](#communication-components) to represent the execution environment of a software subsystem (represented by [Software Components](#software-component)). 
 An Execution Platform can be further specified by adding a [Technical Internal Component Diagram](#technical-internal-component-diagram) to it. With such an owner it is possible to place [Execution](#execution-component) and [Communication Components](#communication-components) in this diagram. 
@@ -150,6 +138,18 @@ This element is based on a *SysML Block* with a dedicated stereotype that allows
 A Communication Component is a specific (atomic) component of the software subsystem that represents a communication unit, like a CAN bus, connecting [Execution Components](#execution-component). However, it is not needed to have always specifically modeled Communication Components between [Execution Components](#execution-component).
 A Communication Component cannot be further specified by adding a diagram to it. It is an atomic unit that can mainly be used to indicate/model communication elements between [Execution Components](#execution-component) (if wanted).
 A Communication Component can provide a syntactic interface via [Technical Interfaces](#technical-interface), which can be used to connect this component to other components, in this case [Execution Components](#execution-component) (to model just the composition or to model actual information flow if the used [Technical Interface Type](#technical-interface-type) contains [Channels](#channel)).
+
+### ![Task Architecture](/images/technical_viewpoint/TaskArchitecture.png){:class="img-responsive"}Task Architecture
+This element is based on a *SysML Block* with a dedicated stereotype that allows defining where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
+A Task Architecture is a container element for [Tasks](#task) to represent the software part of a software subsystem (represented by [Software Components](#software-component)).
+A Task Architecture can be further specified by adding a [Technical Internal Component Diagram](#technical-internal-component-diagram) to it. With such an owner it is possible to place [Tasks](#task) in this diagram. 
+A Task Architecture does NOT provide any syntactic interface via e.g., [Technical Interfaces](#technical-interface). It is only used as a virtual container for all the [Tasks](#task) and does not need to have any connection with other (physical) elements.
+
+### ![Task](/images/technical_viewpoint/TaskComponent.png){:class="img-responsive"}Task
+This element is based on a *SysML Block* with a dedicated stereotype that allows defining where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
+A Task is a specific (atomic) component representing a single software task that was mapped from the [Logical Viewpoint](/plugin/logical_viewpoint.html) and should be executed on an execution unit represented by an [Execution Component](#execution-component).
+A Task cannot be further specified by adding a diagram to it. It is an atomic unit on which software-related Logical Components of the [Logical Viewpoint](/plugin/logical_viewpoint.html) can be mapped, and which itself can then be mapped on [Execution Components](#execution-component) to realize the final (software) deployment with such an allocation.
+A Task can provide a syntactic interface via [Technical Interfaces](#technical-interface), which can be used to connect this component to other components, in this case, other Tasks (to model actual information flow if the used [Technical Interface Type](#technical-interface-type) contains [Channels](#channel)).
 
 
 ### ![Technical Interface](/images/technical_viewpoint/TechnicalInterface.png){:class="img-responsive"}Technical Interface
