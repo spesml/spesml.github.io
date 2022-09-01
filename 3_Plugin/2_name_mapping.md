@@ -283,7 +283,7 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Model structuring</td><td>Package</td><td>SpesML Technical Package</td><td>Technical Package</td>
     </tr>    
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Software Package</td><td>Software Package</td>
+        <td>Model structuring</td><td>Package</td><td>SpesML Software Package</td><td>Software Execution Package</td>
     </tr>
     <tr>
         <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Technical Component</td><td>Technical Component</td>
