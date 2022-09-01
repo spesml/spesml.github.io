@@ -83,25 +83,25 @@ Please be aware that not all theoretical concepts are represented by this table 
         <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
     </tr>
     <tr>
-        <td>Viewpoint</td><td>Package</td><td>SpesML Requirements Viewpoint</td><td>Requirements Viewpoint</td>
+        <td>-</td><td>Package</td><td>SpesML Requirements Viewpoint</td><td>Requirements Viewpoint</td>
     </tr>  
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Requirements Tracing Package</td><td>Requirements Tracing Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Requirements Tracing Package</td><td>Requirements Tracing Package</td>
     </tr>      
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Requirements Package</td><td>Requirements Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Requirements Package</td><td>Requirements Package</td>
     </tr>   
     <tr>
         <td>Requirement</td><td>Requirement</td><td>SpesML Requirement</td><td>SpesML Requirement</td>
     </tr>  
     <tr>
-        <td>View</td><td>Generic Table</td><td>SpesML Requirements Table</td><td>SpesML Requirements Table</td>
+        <td>-</td><td>Generic Table</td><td>SpesML Requirements Table</td><td>SpesML Requirements Table</td>
     </tr>  
     <tr>
-        <td>Tracing</td><td>Relation Map</td><td>SpesML Requirements Impact Map</td><td>SpesML Requirements Impact Map</td>
+        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Requirements Impact Map</td><td>SpesML Requirements Impact Map</td>
     </tr> 
     <tr>
-        <td>Tracing</td><td>Dependency Matrix</td><td>SpesML RequirementsToRequirements Matrix</td><td>SpesML RequirementsToRequirements Matrix</td>
+        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML RequirementsToRequirements Matrix</td><td>SpesML RequirementsToRequirements Matrix</td>
     </tr>     
 </table>
 
@@ -114,16 +114,16 @@ Please be aware that not all theoretical concepts are represented by this table 
         <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
     </tr>
     <tr>
-        <td>Viewpoint</td><td>Package</td><td>SpesML Functional Viewpoint</td><td>Functional Viewpoint</td>
+        <td>-</td><td>Package</td><td>SpesML Functional Viewpoint</td><td>Functional Viewpoint</td>
     </tr>  
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Functional Tracing Package</td><td>Functional Tracing Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Functional Tracing Package</td><td>Functional Tracing Package</td>
     </tr>      
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Functional Package</td><td>Functional Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Functional Package</td><td>Functional Package</td>
     </tr>    
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Functional Interface Types Package</td><td>Functional Interface Types Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Functional Interface Types Package</td><td>Functional Interface Types Package</td>
     </tr> 
     <tr>
         <td>Function</td><td>Block</td><td>SpesML Function</td><td>Function</td>
@@ -135,7 +135,7 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Message Connection</td><td>Connector</td><td>no specific SpesML Stereotype</td><td>Connector</td>
     </tr>       
     <tr>
-        <td>Context</td><td>Class</td><td>SpesML Functional Context</td><td>Functional Context</td>
+        <td>Related to context</td><td>Class</td><td>SpesML Functional Context</td><td>Functional Context</td>
     </tr> 
     <tr>
         <td>Interface</td><td>Proxy Port</td><td>SpesML Functional Interface</td><td>Functional Interface</td>
@@ -144,10 +144,10 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Interface</td><td>Interface Block</td><td>SpesML Functional Interface Type</td><td>Functional Interface Type</td>
     </tr> 
     <tr>
-        <td>Context/Actor</td><td>Block</td><td>SpesML Functional Actor</td><td>Functional Actor</td>
+        <td>Actor (for context)</td><td>Block</td><td>SpesML Functional Actor</td><td>Functional Actor</td>
     </tr> 
     <tr>
-        <td>Context/Actor</td><td>Property</td><td>SpesML Functional Actor Part</td><td>Functional Actor Part</td>
+        <td>Actor (for context)</td><td>Property</td><td>SpesML Functional Actor Part</td><td>Functional Actor Part</td>
     </tr>   
     <tr>
         <td>Behavior</td><td>State Machine</td><td>SpesML Mode Model</td><td>Mode Model</td>
@@ -156,19 +156,19 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Behavior</td><td>State Machine</td><td>SpesML State Machine</td><td>State Machine</td>
     </tr>      
     <tr>
-        <td>View</td><td>State Machine Diagram</td><td>SpesML State Machine Diagram</td><td>SpesML State Machine Diagram</td>
+        <td>-</td><td>State Machine Diagram</td><td>SpesML State Machine Diagram</td><td>SpesML State Machine Diagram</td>
     </tr> 
     <tr>
-        <td>View</td><td>SysML Internal Block Diagram</td><td>SpesML Functional Internal Function Diagram</td><td>SpesML Functional Internal Function Diagram</td>
+        <td>-</td><td>SysML Internal Block Diagram</td><td>SpesML Functional Internal Function Diagram</td><td>SpesML Functional Internal Function Diagram</td>
     </tr>       
     <tr>
-        <td>Tracing</td><td>Relation Map</td><td>SpesML Functional Impact Map</td><td>SpesML Functional Impact Map</td>
+        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Functional Impact Map</td><td>SpesML Functional Impact Map</td>
     </tr> 
      <tr>
-        <td>Tracing</td><td>Relation Map</td><td>SpesML Functional Tracing Map</td><td>SpesML Functional Tracing Map</td>
+        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Functional Tracing Map</td><td>SpesML Functional Tracing Map</td>
     </tr>    
     <tr>
-        <td>Tracing</td><td>Dependency Matrix</td><td>SpesML FunctionalToRequirements Matrix</td><td>SpesML FunctionalToRequirements Matrix</td>
+        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML FunctionalToRequirements Matrix</td><td>SpesML FunctionalToRequirements Matrix</td>
     </tr>         
 </table>
 
@@ -182,19 +182,19 @@ Please be aware that not all theoretical concepts are represented by this table 
         <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
     </tr>
     <tr>
-        <td>Viewpoint</td><td>Package</td><td>SpesML Logical Viewpoint</td><td>Logical Viewpoint</td>
+        <td>-</td><td>Package</td><td>SpesML Logical Viewpoint</td><td>Logical Viewpoint</td>
     </tr> 
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Logical Tracing Package</td><td>Logical Tracing Package</td>
+        <td>Model group (to structure/organize models)g</td><td>Package</td><td>SpesML Logical Tracing Package</td><td>Logical Tracing Package</td>
     </tr>         
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Logical Package</td><td>Logical Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Logical Package</td><td>Logical Package</td>
     </tr>    
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Logical Interface Types Package</td><td>Logical Interface Types Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Logical Interface Types Package</td><td>Logical Interface Types Package</td>
     </tr>
      <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Logical Test Case Package</td><td>Logical Test Case Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Logical Test Case Package</td><td>Logical Test Case Package</td>
     </tr>        
     <tr>
         <td>Component for Logical Architecture</td><td>Block</td><td>SpesML Logical Component</td><td>Logical Component</td>
@@ -215,16 +215,16 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Component for Logical Architecture</td><td>Part Property</td><td>SpesML Logical Component with Functions Part</td><td>Logical Component with Functions Part</td>
     </tr>
     <tr>
-        <td>Testing</td><td>Block</td><td>SpesML Logical Test Case Component</td><td>Logical Test Case Component</td>
+        <td>Related to testing</td><td>Block</td><td>SpesML Logical Test Case Component</td><td>Logical Test Case Component</td>
     </tr>
      <tr>
-        <td>Testing</td><td>Part Property</td><td>SpesML Logical Test Case Component Part</td><td>Logical Test Case Component Part</td>
+        <td>Related to testing</td><td>Part Property</td><td>SpesML Logical Test Case Component Part</td><td>Logical Test Case Component Part</td>
     </tr>
     <tr>
         <td>Message Connection</td><td>Connector</td><td>no specific SpesML Stereotype</td><td>Connector</td>
     </tr>   
     <tr>
-        <td>Context</td><td>Class</td><td>SpesML Logical Context</td><td>Logical Context</td>
+        <td>Related to context</td><td>Class</td><td>SpesML Logical Context</td><td>Logical Context</td>
     </tr>       
     <tr>
         <td>Interface</td><td>Proxy Port</td><td>SpesML Logical Interface</td><td>Logical Interface</td>
@@ -233,31 +233,31 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Interface</td><td>Interface Block</td><td>SpesML Logical Interface Type</td><td>Logical Interface Type</td>
     </tr>  
     <tr>
-        <td>Context/Actor</td><td>Block</td><td>SpesML Logical Actor</td><td>Logical Actor</td>
+        <td>Actor (for context)</td><td>Block</td><td>SpesML Logical Actor</td><td>Logical Actor</td>
     </tr> 
     <tr>
-        <td>Context/Actor</td><td>Property</td><td>SpesML Logical Actor Part</td><td>Logical Actor Part</td>
+        <td>Actor (for context)</td><td>Property</td><td>SpesML Logical Actor Part</td><td>Logical Actor Part</td>
     </tr> 
     <tr>
         <td>Behavior</td><td>State Machine</td><td>SpesML State Machine</td><td>State Machine</td>
     </tr>    
     <tr>
-        <td>View</td><td>State Machine Diagram</td><td>SpesML State Machine Diagram</td><td>SpesML State Machine Diagram</td>
+        <td>-</td><td>State Machine Diagram</td><td>SpesML State Machine Diagram</td><td>SpesML State Machine Diagram</td>
     </tr>           
     <tr>
-        <td>View</td><td>SysML Internal Block Diagram</td><td>SpesML Logical Internal Component Diagram</td><td>SpesML Logical Internal Component Diagram</td>
+        <td>-</td><td>SysML Internal Block Diagram</td><td>SpesML Logical Internal Component Diagram</td><td>SpesML Logical Internal Component Diagram</td>
     </tr>    
     <tr>
-        <td>Tracing</td><td>Relation Map</td><td>SpesML Logical Impact Map</td><td>SpesML Logical Impact Map</td>
+        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Logical Impact Map</td><td>SpesML Logical Impact Map</td>
     </tr> 
      <tr>
-        <td>Tracing</td><td>Relation Map</td><td>SpesML Logical Tracing Map</td><td>SpesML Logical Tracing Map</td>
+        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Logical Tracing Map</td><td>SpesML Logical Tracing Map</td>
     </tr>    
     <tr>
-        <td>Tracing</td><td>Dependency Matrix</td><td>SpesML LogicalToRequirements Matrix</td><td>SpesML LogicalToRequirements Matrix</td>
+        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML LogicalToRequirements Matrix</td><td>SpesML LogicalToRequirements Matrix</td>
     </tr>      
     <tr>
-        <td>Tracing</td><td>Dependency Matrix</td><td>SpesML LogicalToFunctional Matrix</td><td>SpesML LogicalToFunctional Matrix</td>
+        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML LogicalToFunctional Matrix</td><td>SpesML LogicalToFunctional Matrix</td>
     </tr>        
 </table>
 
@@ -271,19 +271,19 @@ Please be aware that not all theoretical concepts are represented by this table 
         <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
     </tr>
     <tr>
-        <td>Viewpoint</td><td>Package</td><td>SpesML Technical Viewpoint</td><td>Technical Viewpoint</td>
+        <td>-</td><td>Package</td><td>SpesML Technical Viewpoint</td><td>Technical Viewpoint</td>
     </tr>  
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Technical Tracing Package</td><td>Technical Tracing Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Technical Tracing Package</td><td>Technical Tracing Package</td>
     </tr>    
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Technical Interface Types Package</td><td>Technical Interface Types Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Technical Interface Types Package</td><td>Technical Interface Types Package</td>
     </tr>   
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Technical Package</td><td>Technical Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Technical Package</td><td>Technical Package</td>
     </tr>    
     <tr>
-        <td>Model structuring</td><td>Package</td><td>SpesML Software Package</td><td>Software Execution Package</td>
+        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Software Package</td><td>Software Execution Package</td>
     </tr>
     <tr>
         <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Technical Component</td><td>Technical Component</td>
@@ -343,7 +343,7 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Message Connection</td><td>Connector</td><td>no specific SpesML Stereotype</td><td>Connector</td>
     </tr>       
     <tr>
-        <td>Context</td><td>Class</td><td>SpesML Technical Context</td><td>Technical Context</td>
+        <td>Related to context</td><td>Class</td><td>SpesML Technical Context</td><td>Technical Context</td>
     </tr> 
     <tr>
         <td>Interface</td><td>Proxy Port</td><td>SpesML Technical Interface</td><td>Technical Interface</td>
@@ -352,22 +352,22 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Interface</td><td>Interface Block</td><td>SpesML Technical Interface Type</td><td>Technical Interface Type</td>
     </tr>     
     <tr>
-        <td>Context/Actor</td><td>Block</td><td>SpesML Technical Actor</td><td>Technical Actor</td>
+        <td>Actor (for context)</td><td>Block</td><td>SpesML Technical Actor</td><td>Technical Actor</td>
     </tr> 
     <tr>
-        <td>Context/Actor</td><td>Property</td><td>SpesML Technical Actor Part</td><td>Technical Actor Part</td>
+        <td>Actor (for context)</td><td>Property</td><td>SpesML Technical Actor Part</td><td>Technical Actor Part</td>
     </tr>  
     <tr>
-        <td>View</td><td>SysML Internal Block Diagram</td><td>SpesML Technical Internal Component Diagram</td><td>SpesML Technical Internal Component Diagram</td>
+        <td>-</td><td>SysML Internal Block Diagram</td><td>SpesML Technical Internal Component Diagram</td><td>SpesML Technical Internal Component Diagram</td>
     </tr>        
     <tr>
-        <td>Tracing</td><td>Relation Map</td><td>SpesML Technical Tracing Map</td><td>SpesML Technical Tracing Map</td>
+        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Technical Tracing Map</td><td>SpesML Technical Tracing Map</td>
     </tr>    
     <tr>
-        <td>Tracing</td><td>Dependency Matrix</td><td>SpesML TechnicalToRequirements Matrix</td><td>SpesML TechnicalToRequirements Matrix</td>
+        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML TechnicalToRequirements Matrix</td><td>SpesML TechnicalToRequirements Matrix</td>
     </tr>      
     <tr>
-        <td>Tracing</td><td>Dependency Matrix</td><td>SpesML TechnicalToLogical Matrix</td><td>SpesML TechnicalToLogical Matrix</td>
+        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML TechnicalToLogical Matrix</td><td>SpesML TechnicalToLogical Matrix</td>
     </tr>          
 </table>
 
