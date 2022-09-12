@@ -30,13 +30,13 @@ Please be aware that not all theoretical concepts are represented by this table 
     </tr>
     <tr>
         <td rowspan="2">Sub-Interface</td>
-        <td>Proxy Port</td><td>SpesML Interface[^1]</td><td>Interface[^1]</td>
+        <td>Proxy Port</td><td>SpesML Interface[^1]</td><td>Interface (1)</td>
     </tr>
     <tr>
        <td>Interface Block (can be conceptually interpreted to be a type that defines sub-interfaces)</td><td> - </td><td> - </td>
     </tr>
     <tr>
-        <td>Syntactic Interface</td><td>None (Syntactic interface of a system element is defined by set of its channels. In SysML: Syntactic Interface of part is defined by set of instances of ports (precisely: elements aggregated by the port) corresponding to the block of the part)</td><td>SpesML Interface Type[^1]</td><td>Interface Type[^1]</td>
+        <td>Syntactic Interface</td><td>None (Syntactic interface of a system element is defined by set of its channels. In SysML: Syntactic Interface of part is defined by set of instances of ports (precisely: elements aggregated by the port) corresponding to the block of the part)</td><td>SpesML Interface Type (1)</td><td>Interface Type (1)</td>
     </tr>
     <tr>
         <td>Channel matching (renaming)</td><td>Connector</td><td>no specific SpesML Stereotype</td><td>Connector</td>
@@ -72,7 +72,7 @@ Please be aware that not all theoretical concepts are represented by this table 
 
 </table>
 
-[^1]: Note: Defined as an **abstract** stereotype
+(1): Note: Defined as an **abstract** stereotype
 
 
 
@@ -92,7 +92,7 @@ Please be aware that not all theoretical concepts are represented by this table 
         <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Requirements Package</td><td>Requirements Package</td>
     </tr>   
     <tr>
-        <td>Requirement</td><td>Requirement</td><td>SpesML Requirement</td><td>SpesML Requirement</td>
+        <td>Requirement</td><td>Requirement</td><td>SpesML Requirement</td><td>Requirement</td>
     </tr>  
     <tr>
         <td>-</td><td>Generic Table</td><td>SpesML Requirements Table</td><td>SpesML Requirements Table</td>
