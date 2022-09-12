@@ -30,7 +30,7 @@ Please be aware that not all theoretical concepts are represented by this table 
     </tr>
     <tr>
         <td rowspan="2">Sub-Interface</td>
-        <td>Proxy Port</td><td>SpesML Interface[^1]</td><td>Interface (1)</td>
+        <td>Proxy Port</td><td>SpesML Interface (1)</td><td>Interface (1)</td>
     </tr>
     <tr>
        <td>Interface Block (can be conceptually interpreted to be a type that defines sub-interfaces)</td><td> - </td><td> - </td>
