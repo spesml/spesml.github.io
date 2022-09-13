@@ -15,10 +15,7 @@ We define a concept model in [Figure 1](#figure1) to describe a system under con
 From a very abstract point of view the system we are interested in is embedded in its environment and communicates with other systems in the environment. We call this the system’s *operational context*. The system under consideration interacts with its operational context that influences or is influenced by the system at runtime. The system’s behavior, essential system properties, and other aspects that have to be considered during development are represented by this interaction can be observed by an external observer at the system interface, separating the system from its operational context. This constitutes the *black box* view on the system on given level of abstraction.
 
 <a name="figure1"></a>
-<div align="center">
-  <img src="images/interface_refinement/context_and_interfaces.png">
-</div>
-
+![System modeling blueprint](/images/interface_refinement/context_and_interfaces.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 1: </b><em>System modeling blueprint (visualized as concept model).</em>
 </div>
 
