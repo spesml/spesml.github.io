@@ -20,7 +20,7 @@ From a very abstract point of view the system we are interested in is embedded i
 
 The *glass box* view reveals the *inner structure* (architecture) of the system consisting of connected and interacting elements (components and sub-systems), which can be considered as systems by themselves, with contexts and observable behavior and properties at their interface. This way the abstract model is applied recursively.
 
-To specify a system our approach provides different views on the system’s architecture:
+Our approach provides different views on the system’s architecture to specify a system:
 - Functional View 
 - Logical Component View (providing the internal system structure while abstracting from implementation details)
 - Technical Component View (modeling implementation details)
@@ -33,4 +33,6 @@ During the course of the system development more and more detail is added to the
 Relations between the models at the same or different grades of refinement and levels of abstraction yield consistency of the system specification. The system specification is documented by a set of artefacts which must be validated and verified to guarantee consistency. Hereby the grade of formalization determines automatic validation and verification options.
 
 # How do you handle refinement in SpesML?
-Refinement in SpesML is part of the continuous update of the SpesML interfaces as well as the installed versioning system, such as Teamwork Cloud. Due to the principle of simplicity in the tracing concept, refinement is not explicitly managed. One option is to reconstruct the refinement over time through manual analysis. One could also imagine an automatic analysis that could help for this activity. Since this was not part of the initial project we leave such a reconstruction of the refinement to future work.
+Refinement in SpesML is implicitly modelled in the following ways:
+*Glass box refinement* is modelled as part of the decomposition as described in the section on (Layers of Granularity)[https://spesml.github.io/concepts/methodology/subsystems_and_granularity.html].
+*Property refinement*  in SpesML is part of the continuous update of the SpesML interfaces as well as the installed versioning system, such as Teamwork Cloud. Finally, *interaction refinement*, is not explicitly managed due to the principle of simplicity in the tracing concept. It can be, to some extent reconstructed from the model: One option is to reconstruct the refinement over time through manual analysis. One could also imagine an automatic analysis that could help for this activity, e.g. based on existing traces. Since this was not part of the initial project we leave such a reconstruction of the refinement to future work.
