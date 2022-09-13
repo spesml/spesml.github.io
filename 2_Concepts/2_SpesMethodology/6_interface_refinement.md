@@ -15,7 +15,7 @@ We define a concept model in Fig. 1 to describe a system under consideration: Th
 From a very abstract point of view the system we are interested in is embedded in its environment and communicates with other systems in the environment. We call this the system’s *operational context*. The system under consideration interacts with its operational context that influences or is influenced by the system at runtime. The system’s behavior, essential system properties, and other aspects that have to be considered during development are represented by this interaction can be observed by an external observer at the system interface, separating the system from its operational context. This constitutes the *black box* view on the system on given level of abstraction.
 
 
-![](context_and_interfaces.png)![](context_and_interfaces.png)
+![](context_and_interfaces.png)
 *Figure 1: System modeling blueprint (visualized as concept model)*
 
 The *glass box* view reveals the *inner structure* (architecture) of the system consisting of connected and interacting elements (components and sub-systems), which can be considered as systems by themselves, with contexts and observable behavior and properties at their interface. This way the abstract model is applied recursively.
