@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: Interface Refinement in SPES and SpesML
 nav_order: 6
@@ -8,15 +8,19 @@ permalink: /concepts/methodology/open_issues.html
 ---
 
 # Interface Refinement in SPES and SpesML
-We define a concept model in Fig. 1 to describe a system under consideration: This concept model describes what constitutes a system and its properties as the result of a conceptualization. 
+We define a concept model in [Figure 1](#figure1) to describe a system under consideration: This concept model describes what constitutes a system and its properties as the result of a conceptualization. 
 
 *A concept model is a model informally visualizing the concepts and their connections described in this text.*
 
 From a very abstract point of view the system we are interested in is embedded in its environment and communicates with other systems in the environment. We call this the system’s *operational context*. The system under consideration interacts with its operational context that influences or is influenced by the system at runtime. The system’s behavior, essential system properties, and other aspects that have to be considered during development are represented by this interaction can be observed by an external observer at the system interface, separating the system from its operational context. This constitutes the *black box* view on the system on given level of abstraction.
 
+<a name="figure1"></a>
+<div align="center">
+  <img src="images/interface_refinement/context_and_interfaces.png">
+</div>
 
-![](context_and_interfaces.png)
-*Figure 1: System modeling blueprint (visualized as concept model)*
+<div align="center"><b>Figure 1: </b><em>System modeling blueprint (visualized as concept model).</em>
+</div>
 
 The *glass box* view reveals the *inner structure* (architecture) of the system consisting of connected and interacting elements (components and sub-systems), which can be considered as systems by themselves, with contexts and observable behavior and properties at their interface. This way the abstract model is applied recursively.
 
