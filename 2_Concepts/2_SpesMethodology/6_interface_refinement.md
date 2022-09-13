@@ -4,7 +4,7 @@ title: Interface Refinement in SPES and SpesML
 nav_order: 6
 parent: SPES Methodology
 grand_parent: SpesML Concepts
-permalink: /concepts/methodology/open_issues.html
+permalink: /concepts/methodology/interface_refinement.html
 ---
 
 # Interface Refinement in SPES and SpesML
