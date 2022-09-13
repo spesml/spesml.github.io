@@ -34,5 +34,5 @@ Relations between the models at the same or different grades of refinement and l
 
 # How do you handle refinement in SpesML?
 Refinement in SpesML is implicitly modelled in the following ways:
-*Glass box refinement* is modelled as part of the decomposition as described in the section on (Layers of Granularity)[https://spesml.github.io/concepts/methodology/subsystems_and_granularity.html].
+*Glass box refinement* is modelled as part of the decomposition as described in the section on [Layers of Granularity](https://spesml.github.io/concepts/methodology/subsystems_and_granularity.html).
 *Property refinement*  in SpesML is part of the continuous update of the SpesML interfaces as well as the installed versioning system, such as Teamwork Cloud. Finally, *interaction refinement*, is not explicitly managed due to the principle of simplicity in the tracing concept. It can be, to some extent reconstructed from the model: One option is to reconstruct the refinement over time through manual analysis. One could also imagine an automatic analysis that could help for this activity, e.g. based on existing traces. Since this was not part of the initial project we leave such a reconstruction of the refinement to future work.
