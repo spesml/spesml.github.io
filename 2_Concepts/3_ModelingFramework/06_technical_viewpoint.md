@@ -86,6 +86,11 @@ As part of the software subsystem, the execution platform represents everything 
 In SpesML, a software component, which represents a software subsystem, can contain _task architectures_ (for the run-time software), _>TBD<_ (for the design-time software), _execution platforms_ (for the hardware/execution topology) and _allocations_ between them. 
 In the following sections, we describe these models in more detail.
 
+<a name="figureOverviewSES"></a>
+![Overview SES](/images/technical_viewpoint/SES_Overview.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 3: </b><em>Overview over the Software Execution Subsystem.</em></div>
+
+TODO: mention & use [Figure 3](#figureOverviewSES)
 
 ### Run-time Software Models
 
