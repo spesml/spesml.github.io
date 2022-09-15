@@ -10,6 +10,10 @@ The purpose of the following table is to give the complete collection of all rea
 
 Please be aware that not all theoretical concepts are represented by this table and that we do not explain the concepts, elements and their relation in this table. Explanations, relation details and more can be found in the corresponding documentation sections, either of the [theoretical concepts](/concepts/modeling_framework.html/) or their actual realization inside the [SpesML Plugin](/plugin.html/).
 
+Note that SpesML uses the SysML type/property concept. Example from the "SpesML Functional Viewpoint": In a first step “SpesML Function” elements (“SysML Block” elements with a “SpesML Function” stereotype applied) are created. These “SpesML Function” elements are neutral i.e. it is not they are “System Functions” or a “Whitebox Functions”. In a second step “SpesML Function” elements can be decomposed by creating a “SpesML Functional Internal Function Diagram” (equivalent to a “SysML Internal Block Diagram”) and creating “SpesML Function Part” elements (“SysML Part Property” elements with a “SpesML Function Part” stereotype applied) of “SpesML Functions” as sub-elements. In a third step these “SpesML Part Properties” can then be tagged as being a “System Function” or “Whitebox Function” using the “Function type” tagged value.
+
+
+
 ## Universal Interface Model
 <table>
     <tr>
