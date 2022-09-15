@@ -10,9 +10,10 @@ The purpose of the following table is to give the complete collection of all rea
 
 Please be aware that not all theoretical concepts are represented by this table and that we do not explain the concepts, elements and their relation in this table. Explanations, relation details and more can be found in the corresponding documentation sections, either of the [theoretical concepts](/concepts/modeling_framework.html/) or their actual realization inside the [SpesML Plugin](/plugin.html/).
 
-Note that SpesML uses the SysML type/property concept. Example from the "SpesML Functional Viewpoint": In a first step “SpesML Function” elements (“SysML Block” elements with a “SpesML Function” stereotype applied) are created. These “SpesML Function” elements are neutral i.e. it is not defined if they are “System Functions” or a “Whitebox Functions”. In a second step “SpesML Function” elements can be decomposed by creating a “SpesML Functional Internal Function Diagram” (equivalent to a “SysML Internal Block Diagram”) and creating “SpesML Function Part” elements (“SysML Part Property” elements with a “SpesML Function Part” stereotype applied) of “SpesML Functions” as sub-elements. In a third step these “SpesML Part Properties” can then be tagged as being a “System Function” or “Whitebox Function” using the “Function type” tagged value.
-
-
+Note that SpesML uses the SysML type/property concept for model elements (functions, logical & technical components) of the SpesML viewpoints. The model elements are created as *SysML Block* elements with a SpesML specific stereotype applied. These model elements can be decomposed by creating SpesML specific *SysML Internal Block Diagrams* and *SysML Part Property* elements with an SpesML specifc stereotype applied as sub-elements. These *SpesML Part Properties* may then have additional SpesML specific tags. Using the example of the Functional Viewpoint, it looks like this:
+* In a first step *SpesML Function* elements (*SysML Block* elements with a *SpesML Function* stereotype applied) are created. These *SpesML Function* elements are neutral i.e. it is not defined if they are *System Functions* or *Whitebox Functions*. 
+* In a second step *SpesML Function* elements can be decomposed by creating a *SpesML Functional Internal Function Diagram* (equivalent to a *SysML Internal Block Diagram*) and creating *SpesML Function Part* elements (*SysML Part Property* elements with a *SpesML Function Part* stereotype applied) of *SpesML Functions* as sub-elements. 
+* In a third step these *SpesML Part Properties* can then be tagged as being a *System Function* or *Whitebox Function* using the *Function type* tag.
 
 ## Universal Interface Model
 <table>
