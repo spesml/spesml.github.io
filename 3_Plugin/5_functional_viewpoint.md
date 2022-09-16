@@ -9,11 +9,28 @@ permalink: /plugin/functional_viewpoint.html
 
 ## Overview
 
+The _Functional Viewpoint_ contains three model types that can be used to describe the desired functionality of a system on a _system_ level (i.e., primarily from the perspective of external actors such as users or external systems).
+
+In the center of the Functional Viewpoint is the concept of _system functions_. A system function describes a coherent set of interactions between a system and its external actors. The granularity of a system function is comparable to that of a [Use Case](https://en.wikipedia.org/wiki/Use_case). A system with several system functions can be called a _multifunctional system_. In general, system functions describe system behavior, which is largely independent of each other, however, system functions may also influence each other in specific cases. In the Functional Viewpoint, these influences are modeled by so-called _mode channels_ between system functions.  
+
+The Functional Viewpoint then consists of three model types:
+
+- Functional Black-box Model: Contains all system functions and structures them in a hierarchy
+- Functional White-box Model: Describes the decomposition of one particular system function into a set of related white-box functions
+- Mode Model: Describes operational states of the system. These operational states can be referenced in mode channels that describe dependencies between system functions.
+
 ## Method
+
+System functions structure and formalize the functional requirements of a system. An engineer can either start from existing functional requirements and structure them according to system functions or, start from a set of desired system functions and then specify detailed requirements for them. In a second step, the engineer may decompose system functions into a set of white-box functions to assign smaller units of functionality to logical components that satisfy the functionality specified by a white-box function. Besides specifying system functions, an engineer can also specify distinct modes of operations that a system may be in (called *system modes*). System modes can be influenced by behavior specified in system functions. On the other hand, a change in a system mode can also influence the behavior of system functions.  
+
+The following figure illustrates these relations:
+![Functional Architecture Concept](/images/functional_viewpoint/functional-architecture-concept.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><em>Elements of the Functional VP and their relations to elements of other viewpoints</em></div>
+
 
 ## Structure
 
-The different models of the Functional Viewpoint are structured in the Containment Tree of a project. There is a top-level node called `Functional Viewpoint` that contains all elements of this viewpoint (see figure below). 
+The different models of the Functional Viewpoint are structured in the Containment Tree of a project. A top-level node called `Functional Viewpoint` contains all elements of this viewpoint (see figure below). 
 
 ![Elements of the Functional VP in the Containment Tree](/images/functional_viewpoint/containment-tree.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><em>Elements of the Functional VP in the Containment Tree</em></div>
@@ -32,6 +49,146 @@ Below this node, there are the following specific subnodes:
 Tracing information is gathered in the `Functional Tracing Package`, consisting of traceability matrices and impact maps.
 
 ## How to Model
+
+### How to create System Functions
+
+To specify a system function with inputs and outputs, follow these steps:
+
+1. Navigate to the `System Functions` folder under `FunctionalViewpoint->Elements` (or create it if it does not exist)
+
+2. Right-click on the folder and select *Create Element*. A dialog will open in which you can select elements you want to create. Select *Function*:  
+  
+      ![Select Element](/images/functional_viewpoint/create_function_select.png){:class="img-responsive"}  
+
+3. You are asked to choose a name for the system function:
+      
+      ![Name Element](/images/functional_viewpoint/create_function_name.png){:class="img-responsive"} 
+
+4. To add inputs and outputs to the system function, right-click on the system function, select *Create Element*, and select *Functional Interface* 
+
+      ![Add Interface](/images/functional_viewpoint/create_interface.png){:class="img-responsive"} 
+
+5. Give the created port a name.
+
+6. Assign a type to the port by selecting a defined type in the *Type property* field ([see here how to create types](/data_types.html)).
+    
+     ![Add Type](/images/functional_viewpoint/create_type.png){:class="img-responsive"} 
+
+7. Decide whether the port is an input or output port of the system function. Set the *Is Conjugated* property to `true` if the port is an input and to `false` if it is an output.
+
+     ![Add Direction](/images/functional_viewpoint/create_direction.png){:class="img-responsive"} 
+
+
+
+### How to add a System Functions to a Functional Black-box Model
+
+To create a functional black box model of a system, you can start by following these steps:
+
+1. Navigate to the function in the containment tree, for which you want to model the functional black-box model (usually, this is the system function marked as *[system under development](#functional-context)*).
+
+2. Right-click on this function and select *Create Diagram*:  
+  
+      ![Create Diagram](/images/functional_viewpoint/create_diagram.png){:class="img-responsive"}  
+  
+3. A dialog will open in which you can select the kind of diagram you want to create. Select *SpesML Functional Internal Function Diagram*:  
+  
+      ![Select Diagram](/images/functional_viewpoint/create_diagram_select.png){:class="img-responsive"}  
+  
+4. Another dialog will open that lets you select the elements of the function that you immediately want to display in the new diagram. For our function, we can select which of the interfaces we want to see in the diagram. Keep all of them selected and click *OK*:  
+  
+      ![Create Diagram Ports](/images/functional_viewpoint/create_diagram_ports.png){:class="img-responsive"}  
+  
+5. The new diagram will open in the editor. It contains only the elements we selected in the previous dialog - in our case the ports of the function.
+
+6. You can add system functions to the diagram by dragging the functions from the containment tree and dropping them into the diagram.
+
+7. Specify the function as a *system function* by setting the *Function type* property to `System Function`.
+
+      ![Set System Function](/images/functional_viewpoint/function-type.png){:class="img-responsive"}  
+
+8. To display the interfaces of the new part, select the part and click on *Display all Ports*:  
+  
+      ![Display all ports](/images/functional_viewpoint/create_diagram_parts_ports.png){:class="img-responsive"}  
+  
+9. Connections between interfaces are created in a similar way: Select the port of an interface you want to connect and click on *Connector* in the menu next to the port:  
+  
+      ![Create Diagram Connections](/images/functional_viewpoint/create_diagram_connections.png){:class="img-responsive"}  
+  
+10. Your cursor will become the connector tool with which you can easily navigate to the target port for the connection:  
+  
+      ![Create Diagram Connection](/images/functional_viewpoint/create_diagram_connection.png){:class="img-responsive"}  
+  
+11. Using these mechanisms, you can create the functional architecture of the system:  
+  
+      ![Functional Architecture Window Lifter](/images/functional_viewpoint/system-function-hierarchy.png){:class="img-responsive"}
+
+
+### How to create White-box Functions
+
+To decompose a system function into a set of white box functions, follow these steps:
+
+1. Creating white-box functions works exactly the same as [creating system functions](#how-to-create-system-functions). However, we recommend creating the white-box functions in a separate folder called *White-Box Functions* (or even in another sub-folder named after the system function for which the white-box function is created).
+
+  ![Create White-Box Function](/images/functional_viewpoint/create_wb_function.png){:class="img-responsive"}  
+
+2. Navigate to the system function in the containment tree, for which you want to specify the functional white-box model.
+
+3. Right-click on the system function and select *Create Diagram*:  
+  
+      ![Create Diagram](/images/functional_viewpoint/create_diagram.png){:class="img-responsive"}  
+  
+4. A dialog will open in which you can select the kind of diagram you want to create. Select *SpesML Functional Internal Function Diagram*:  
+  
+      ![Select Diagram](/images/functional_viewpoint/create_diagram_select.png){:class="img-responsive"}  
+  
+5. Another dialog will open that lets you select the elements of the function that you immediately want to display in the new diagram. For our function, we can select which of the interfaces we want to see in the diagram. Keep all of them selected and click *OK*:  
+  
+      ![Create Diagram Ports](/images/functional_viewpoint/create_diagram_ports.png){:class="img-responsive"}  
+  
+6. The new diagram will open in the editor. It contains only the elements we selected in the previous dialog - in our case all ports of the function.
+
+7. You can add white-box functions to the diagram by dragging the functions from the containment tree and dropping them into the diagram.
+
+8. Specify the function as a *white-box function* by setting the *Function type* property to `Whitebox Function`.
+
+      ![Set White-box Function](/images/functional_viewpoint/create_wb_function_property.png){:class="img-responsive"}  
+
+9. To display the interfaces of the new white-box function, select the function and click on *Display all Ports*:  
+  
+      ![Display all ports](/images/functional_viewpoint/create_diagram_parts_ports.png){:class="img-responsive"}  
+  
+10. Connections between interfaces are created in a similar way: Select the port of an interface you want to connect and click on *Connector* in the menu next to the port:  
+  
+      ![Create Diagram Connections](/images/functional_viewpoint/create_diagram_connections.png){:class="img-responsive"}  
+  
+11. Your cursor will become the connector tool with which you can easily navigate to the target port for the connection:  
+  
+      ![Create Diagram Connection](/images/functional_viewpoint/create_diagram_connection.png){:class="img-responsive"}  
+  
+12. Using these mechanisms, you can create a *functional white-box model* for a system function:  
+  
+      ![Functional White Box Model](/images/functional_viewpoint/wb-model.png){:class="img-responsive"}
+
+
+
+### How to create a Mode Model
+To create a mode model of a system, you can start by following these steps:
+
+1. Navigate to the function in the containment tree, for which you want to model the mode model (usually, this is the system function marked as *[system under development](#functional-context)*).
+
+2. Right-click on this function and select *Create Element*. A dialog will open in which you can select the kind of element you want to create. Select *Mode Model*:  
+  
+      ![Select Element](/images/functional_viewpoint/create_mm_element.png){:class="img-responsive"}  
+
+3. You are asked to choose a name for the element. You may simply call this element *mode model*:
+      
+      ![Name Element](/images/functional_viewpoint/create_mm_name.png){:class="img-responsive"} 
+ 
+4. Right-click on the *mode model* element and select *Create Diagram* to create a *SpeML State Machine Diagram*:  
+  
+      ![Create Diagram](/images/functional_viewpoint/create_sm_diagram.png){:class="img-responsive"}  
+  
+5. The state machine will open in the editor. Specify the mode model by [creating a state machine](/state_machines.html). 
 
 ## Elements
 
@@ -56,8 +213,8 @@ The Functional Context represents the top-level view of the system under develop
 ![Marking a system function as *system under development*](/images/functional_viewpoint/sud-property.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><em>Marking a system function as *system under development*</em></div>
 
-Additonaly, the Functional Context contains a number of [Functional Actors](#functional-actor) and [external functions](#function) that represent elements of the context. 
-A function can be defined as external by changing the property `external` of this component from `no` to `yes` (see below). 
+Additionaly, the Functional Context contains a number of [Functional Actors](#functional-actor) and [external functions](#function) that represent elements of the context. 
+A function can be defined as external by changing the property `external` from `no` to `yes` (see below). 
 
 ![Marking a function as *external* function](/images/functional_viewpoint/external-property.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><em>Marking a function as *external* function</em></div>
@@ -103,7 +260,7 @@ This relation map shows [Functions](#function) and what elements from the [Logic
 This relation map shows [Functions](#function) and to what [Requirements](https://spesml.github.io/plugin/requirements_viewpoint.html#requirement) these elements trace. By default, all Functions are shown but it is also possible to drag & drop a single Function to the relation map to show only the particular relationships.
 
 ### ![FunctionToRequirement Matrix](/images/diagrams/matrix.png){:class="img-responsive"}SpesML FunctionToRequirement Matrix
-This diagram can be used to create and visualize trace relations between [functions](#function) and [requirements](/plugin/requirements_viewpoint.html#requirement). Possible trace relations are [*satsify*](/concepts/modeling_framework/requirements_viewpoint.html#tracing-relationships) and [*requires*](/concepts/modeling_framework/requirements_viewpoint.html#tracing-relationships)
+This diagram can be used to create and visualize trace relations between [functions](#function) and [requirements](/plugin/requirements_viewpoint.html#requirement). Possible trace relations are [*satisfy*](/concepts/modeling_framework/requirements_viewpoint.html#tracing-relationships) and [*requires*](/concepts/modeling_framework/requirements_viewpoint.html#tracing-relationships)
 
 ### ![Functional Internal Function Diagram](/images/diagrams/composite_structure.png){:class="img-responsive"}SpesML Functional Internal Function Diagram
 This diagram is based on a *UML Composite Structure Diagram/SysML Internal Block Diagram* and provides a reduced diagram toolbar related to SpesML. Note that intentionally [Functional Parts](#functional-part) cannot be created using the diagram toolbar. Instead, it is recommended to create these elements by dragging/dropping a Function to the diagram.
