@@ -24,7 +24,7 @@ The Functional Viewpoint then consists of three model types:
 System functions structure and formalize the functional requirements of a system. An engineer can either start from existing functional requirements and structure them according to system functions or, start from a set of desired system functions and then specify detailed requirements for them. In a second step, the engineer may decompose system functions into a set of white-box functions to assign smaller units of functionality to logical components that satisfy the functionality specified by a white-box function. Besides specifying system functions, an engineer can also specify distinct modes of operations that a system may be in (called *system modes*). System modes can be influenced by behavior specified in system functions. On the other hand, a change in a system mode can also influence the behavior of system functions.  
 
 The following figure illustrates these relations:
-![Functional Architecture Concept](/images/functional_viewpoint/functional-architecture-concept.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![Functional Architecture Concept](/images/functional_viewpoint/functional-architecture-concept.png){:width="500" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><em>Elements of the Functional VP and their relations to elements of other viewpoints</em></div>
 
 
@@ -54,29 +54,29 @@ Tracing information is gathered in the `Functional Tracing Package`, consisting 
 
 To specify a system function with inputs and outputs, follow these steps:
 
-1. Navigate to the `System Functions` folder under `FunctionalViewpoint->Elements` (or create it if it does not exist)
+1. Navigate to the `System Functions` folder under `FunctionalViewpoint -> Elements` (or create it if it does not exist)
 
 2. Right-click on the folder and select *Create Element*. A dialog will open in which you can select elements you want to create. Select *Function*:  
   
-      ![Select Element](/images/functional_viewpoint/create_function_select.png){:class="img-responsive"}  
+      ![Select Element](/images/functional_viewpoint/create_function_select.png){:width="400" :class="img-responsive"}  
 
 3. You are asked to choose a name for the system function:
       
-      ![Name Element](/images/functional_viewpoint/create_function_name.png){:class="img-responsive"} 
+      ![Name Element](/images/functional_viewpoint/create_function_name.png){:width="400" :class="img-responsive"} 
 
 4. To add inputs and outputs to the system function, right-click on the system function, select *Create Element*, and select *Functional Interface* 
 
-      ![Add Interface](/images/functional_viewpoint/create_interface.png){:class="img-responsive"} 
+      ![Add Interface](/images/functional_viewpoint/create_interface.png){:width="400" :class="img-responsive"} 
 
 5. Give the created port a name.
 
-6. Assign a type to the port by selecting a defined type in the *Type property* field ([see here how to create types](/data_types.html)).
+6. Assign a type to the port by selecting a defined type in the *Type property* field ([see here how to create types](/plugin/data_types.html)).
     
-     ![Add Type](/images/functional_viewpoint/create_type.png){:class="img-responsive"} 
+     ![Add Type](/images/functional_viewpoint/create_type.png){:width="400" :class="img-responsive"} 
 
 7. Decide whether the port is an input or output port of the system function. Set the *Is Conjugated* property to `true` if the port is an input and to `false` if it is an output.
 
-     ![Add Direction](/images/functional_viewpoint/create_direction.png){:class="img-responsive"} 
+     ![Add Direction](/images/functional_viewpoint/create_direction.png){:width="300" :class="img-responsive"} 
 
 
 
@@ -88,15 +88,15 @@ To create a functional black box model of a system, you can start by following t
 
 2. Right-click on this function and select *Create Diagram*:  
   
-      ![Create Diagram](/images/functional_viewpoint/create_diagram.png){:class="img-responsive"}  
+      ![Create Diagram](/images/functional_viewpoint/create_diagram.png){:width="400" :class="img-responsive"}  
   
 3. A dialog will open in which you can select the kind of diagram you want to create. Select *SpesML Functional Internal Function Diagram*:  
   
-      ![Select Diagram](/images/functional_viewpoint/create_diagram_select.png){:class="img-responsive"}  
+      ![Select Diagram](/images/functional_viewpoint/create_diagram_select.png){:width="300" :class="img-responsive"}  
   
 4. Another dialog will open that lets you select the elements of the function that you immediately want to display in the new diagram. For our function, we can select which of the interfaces we want to see in the diagram. Keep all of them selected and click *OK*:  
   
-      ![Create Diagram Ports](/images/functional_viewpoint/create_diagram_ports.png){:class="img-responsive"}  
+      ![Create Diagram Ports](/images/functional_viewpoint/create_diagram_ports.png){:width="500" :class="img-responsive"}  
   
 5. The new diagram will open in the editor. It contains only the elements we selected in the previous dialog - in our case the ports of the function.
 
@@ -104,23 +104,23 @@ To create a functional black box model of a system, you can start by following t
 
 7. Specify the function as a *system function* by setting the *Function type* property to `System Function`.
 
-      ![Set System Function](/images/functional_viewpoint/function-type.png){:class="img-responsive"}  
+      ![Set System Function](/images/functional_viewpoint/function-type.png){:width="300" :class="img-responsive"}  
 
 8. To display the interfaces of the new part, select the part and click on *Display all Ports*:  
   
-      ![Display all ports](/images/functional_viewpoint/create_diagram_parts_ports.png){:class="img-responsive"}  
+      ![Display all ports](/images/functional_viewpoint/create_diagram_parts_ports.png){:width="400" :class="img-responsive"}  
   
-9. Connections between interfaces are created in a similar way: Select the port of an interface you want to connect and click on *Connector* in the menu next to the port:  
+9. Connections between interfaces are created similarly: Select the port of an interface you want to connect to and click on *Connector* in the menu next to the port:  
   
-      ![Create Diagram Connections](/images/functional_viewpoint/create_diagram_connections.png){:class="img-responsive"}  
+      ![Create Diagram Connections](/images/functional_viewpoint/create_diagram_connections.png){:width="400" :class="img-responsive"}  
   
 10. Your cursor will become the connector tool with which you can easily navigate to the target port for the connection:  
   
-      ![Create Diagram Connection](/images/functional_viewpoint/create_diagram_connection.png){:class="img-responsive"}  
+      ![Create Diagram Connection](/images/functional_viewpoint/create_diagram_connection.png){:width="400" :class="img-responsive"}  
   
 11. Using these mechanisms, you can create the functional architecture of the system:  
   
-      ![Functional Architecture Window Lifter](/images/functional_viewpoint/system-function-hierarchy.png){:class="img-responsive"}
+      ![Functional Architecture Window Lifter](/images/functional_viewpoint/system-function-hierarchy.png){:width="500" :class="img-responsive"}
 
 
 ### How to create White-box Functions
@@ -129,21 +129,21 @@ To decompose a system function into a set of white box functions, follow these s
 
 1. Creating white-box functions works exactly the same as [creating system functions](#how-to-create-system-functions). However, we recommend creating the white-box functions in a separate folder called *White-Box Functions* (or even in another sub-folder named after the system function for which the white-box function is created).
 
-  ![Create White-Box Function](/images/functional_viewpoint/create_wb_function.png){:class="img-responsive"}  
+  ![Create White-Box Function](/images/functional_viewpoint/create_wb_function.png){:width="300":class="img-responsive"}  
 
 2. Navigate to the system function in the containment tree, for which you want to specify the functional white-box model.
 
 3. Right-click on the system function and select *Create Diagram*:  
   
-      ![Create Diagram](/images/functional_viewpoint/create_diagram.png){:class="img-responsive"}  
+      ![Create Diagram](/images/functional_viewpoint/create_diagram.png){:width="400" :class="img-responsive"}  
   
 4. A dialog will open in which you can select the kind of diagram you want to create. Select *SpesML Functional Internal Function Diagram*:  
   
-      ![Select Diagram](/images/functional_viewpoint/create_diagram_select.png){:class="img-responsive"}  
+      ![Select Diagram](/images/functional_viewpoint/create_diagram_select.png){:width="300" :class="img-responsive"}  
   
 5. Another dialog will open that lets you select the elements of the function that you immediately want to display in the new diagram. For our function, we can select which of the interfaces we want to see in the diagram. Keep all of them selected and click *OK*:  
   
-      ![Create Diagram Ports](/images/functional_viewpoint/create_diagram_ports.png){:class="img-responsive"}  
+      ![Create Diagram Ports](/images/functional_viewpoint/create_diagram_ports.png){:width="500" :class="img-responsive"}  
   
 6. The new diagram will open in the editor. It contains only the elements we selected in the previous dialog - in our case all ports of the function.
 
@@ -151,23 +151,23 @@ To decompose a system function into a set of white box functions, follow these s
 
 8. Specify the function as a *white-box function* by setting the *Function type* property to `Whitebox Function`.
 
-      ![Set White-box Function](/images/functional_viewpoint/create_wb_function_property.png){:class="img-responsive"}  
+      ![Set White-box Function](/images/functional_viewpoint/create_wb_function_property.png){:width="300" :class="img-responsive"}  
 
 9. To display the interfaces of the new white-box function, select the function and click on *Display all Ports*:  
   
-      ![Display all ports](/images/functional_viewpoint/create_diagram_parts_ports.png){:class="img-responsive"}  
+      ![Display all ports](/images/functional_viewpoint/create_diagram_parts_ports.png){:width="500" :class="img-responsive"}  
   
-10. Connections between interfaces are created in a similar way: Select the port of an interface you want to connect and click on *Connector* in the menu next to the port:  
+10. Connections between interfaces are created similarly: Select the port of an interface you want to connect to and click on *Connector* in the menu next to the port:  
   
-      ![Create Diagram Connections](/images/functional_viewpoint/create_diagram_connections.png){:class="img-responsive"}  
+      ![Create Diagram Connections](/images/functional_viewpoint/create_diagram_connections.png){:width="500" :class="img-responsive"}  
   
 11. Your cursor will become the connector tool with which you can easily navigate to the target port for the connection:  
   
-      ![Create Diagram Connection](/images/functional_viewpoint/create_diagram_connection.png){:class="img-responsive"}  
+      ![Create Diagram Connection](/images/functional_viewpoint/create_diagram_connection.png){:width="500" :class="img-responsive"}  
   
 12. Using these mechanisms, you can create a *functional white-box model* for a system function:  
   
-      ![Functional White Box Model](/images/functional_viewpoint/wb-model.png){:class="img-responsive"}
+      ![Functional White Box Model](/images/functional_viewpoint/wb-model.png){:width="500" :class="img-responsive"}
 
 
 
@@ -178,17 +178,17 @@ To create a mode model of a system, you can start by following these steps:
 
 2. Right-click on this function and select *Create Element*. A dialog will open in which you can select the kind of element you want to create. Select *Mode Model*:  
   
-      ![Select Element](/images/functional_viewpoint/create_mm_element.png){:class="img-responsive"}  
+      ![Select Element](/images/functional_viewpoint/create_mm_element.png){:width="400" :class="img-responsive"}  
 
 3. You are asked to choose a name for the element. You may simply call this element *mode model*:
       
-      ![Name Element](/images/functional_viewpoint/create_mm_name.png){:class="img-responsive"} 
+      ![Name Element](/images/functional_viewpoint/create_mm_name.png){:width="300" :class="img-responsive"} 
  
 4. Right-click on the *mode model* element and select *Create Diagram* to create a *SpeML State Machine Diagram*:  
   
-      ![Create Diagram](/images/functional_viewpoint/create_sm_diagram.png){:class="img-responsive"}  
+      ![Create Diagram](/images/functional_viewpoint/create_sm_diagram.png){:width="300":class="img-responsive"}  
   
-5. The state machine will open in the editor. Specify the mode model by [creating a state machine](/state_machines.html). 
+5. The state machine will open in the editor. Specify the mode model by [creating a state machine](/plugin/state_machines.html). 
 
 ## Elements
 
