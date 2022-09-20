@@ -17,87 +17,21 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 ## Universal Interface Model
 
-| Shown Name (GUI) in MagicDraw | Stereotype name in SpesML plugin | UML/SysML Element | Connected Modeling Concept |
+| Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
-| (Viewpoint-Specific) | (Viewpoint-Specific) | Block (to define a type of system element) | System Element  |
-| (Viewpoint-Specific) | (Viewpoint-Specific) | Part (to designate a system element of a defined type) |  |
+| (viewpoint-specific, see following tables) | (viewpoint-specific, see following tables) | Block (to define a type of system element) | System Element  |
+| (viewpoint-specific, see following tables) | (viewpoint-specific, see following tables) | Part (to designate a system element of a defined type) | System Element |
 | Channel | SpesML Channel | Flow Property | Channel |
 | Direction (default value = out) | Direction (default value = out) | Attribute "direction" + Port Conjugation  | Channel direction |
 | Interface (1) | SpesML Interface (1) | Proxy Port | Sub-Interface |
-|  -  |  -  | Interface Block (can be conceptually interpreted to be a type that defines sub-interfaces) |  |
 | Interface Type (1) | SpesML Interface Type (1) | None (Syntactic interface of a system element is defined by set of its channels. In SysML: Syntactic Interface of part is defined by set of instances of ports (precisely: elements aggregated by the port) corresponding to the block of the part) | Syntactic Interface |
 | Connector | no specific SpesML Stereotype | Connector | Channel matching (renaming) |
 | Value Type / Enumeration | no specific SpesML Stereotype | Value type + attributes of value types including types and cardinalities | Data Type |
-| - | - | Connector (to connect channels of system elements) | Composition Operator (decomposition) |
-|  -  |  -  | Part (instances of system elements in specific roles) |  |
 | State Machine | SpesML State Machine | State Machine | State Machine (Mealy/Moore) |
-| SpesML State Machine Diagram | SpesML State Machine Diagram | SysML State Machine Diagram |  |
+| SpesML State Machine Diagram | SpesML State Machine Diagram | SysML State Machine Diagram | - |
 | State | no specific SpesML Stereotype | State | State Symbol |
 | Value Property | no specific SpesML Stereotype | Value Property | Extended State Variable |
 | Transition | no specific SpesML Stereotype | Transition/Guard/Effect with Opaque Behavior | Transition |
-| TODO | TODO |  - | Delay |
-
-
-<table>
-    <tr>
-        <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
-    </tr>
-    <tr>
-        <td rowspan="2">System Element </td>
-        <td>Block (to define a type of system element)</td><td>(Viewpoint-Specific)</td><td>(Viewpoint-Specific)</td>
-    </tr>
-    <tr>
-       <td>Part (to designate a system element of a defined type)</td><td>(Viewpoint-Specific)</td><td>(Viewpoint-Specific)</td>
-    </tr>
-    <tr>
-        <td>Channel</td><td>Flow Property</td><td>SpesML Channel</td><td>Channel</td>
-    </tr>
-    <tr>
-        <td>Channel direction</td><td>Attribute "direction" + Port Conjugation </td><td>Direction (default value = out)</td><td>Direction (default value = out)</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Sub-Interface</td>
-        <td>Proxy Port</td><td>SpesML Interface (1)</td><td>Interface (1)</td>
-    </tr>
-    <tr>
-       <td>Interface Block (can be conceptually interpreted to be a type that defines sub-interfaces)</td><td> - </td><td> - </td>
-    </tr>
-    <tr>
-        <td>Syntactic Interface</td><td>None (Syntactic interface of a system element is defined by set of its channels. In SysML: Syntactic Interface of part is defined by set of instances of ports (precisely: elements aggregated by the port) corresponding to the block of the part)</td><td>SpesML Interface Type (1)</td><td>Interface Type (1)</td>
-    </tr>
-    <tr>
-        <td>Channel matching (renaming)</td><td>Connector</td><td>no specific SpesML Stereotype</td><td>Connector</td>
-    </tr>
-    <tr>
-        <td>Data Type</td><td>Value type + attributes of value types including types and cardinalities</td><td>no specific SpesML Stereotype</td><td>Value Type / Enumeration</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Composition Operator (decomposition)</td>
-        <td>Connector (to connect channels of system elements)</td><td>-</td><td>-</td>
-    </tr>
-    <tr>
-       <td>Part (instances of system elements in specific roles)</td><td> - </td><td> - </td>
-    </tr>
-    <tr>
-        <td>State Machine (Mealy/Moore)</td><td>State Machine</td><td>SpesML State Machine</td><td>State Machine</td>
-    </tr>
-    <tr>
-        <td></td><td>SysML State Machine Diagram</td><td>SpesML State Machine Diagram</td><td>SpesML State Machine Diagram</td>
-    </tr>
-    <tr>
-        <td>State Symbol</td><td>State</td><td>no specific SpesML Stereotype</td><td>State</td>
-    </tr>
-    <tr>
-        <td>Extended State Variable</td><td>Value Property</td><td>no specific SpesML Stereotype</td><td>Value Property</td>
-    </tr>
-    <tr>
-        <td>Transition</td><td>Transition/Guard/Effect with Opaque Behavior</td><td>no specific SpesML Stereotype</td><td>Transition</td>
-    </tr>
-    <tr>
-        <td>Delay</td><td> -</td><td>TODO</td><td>TODO</td>
-    </tr>
-
-</table>
 
 (1): Note: Defined as an **abstract** stereotype
 
