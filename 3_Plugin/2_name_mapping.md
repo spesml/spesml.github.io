@@ -16,6 +16,28 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 * In a third step these *SpesML Part Properties* can then be tagged as being a *System Function* or *Whitebox Function* using the *Function type* tag.
 
 ## Universal Interface Model
+
+| Shown Name (GUI) in MagicDraw | Stereotype name in SpesML plugin | UML/SysML Element | Connected Modeling Concept |
+|---|---|---|---|
+| (Viewpoint-Specific) | (Viewpoint-Specific) | Block (to define a type of system element) | System Element  |
+| (Viewpoint-Specific) | (Viewpoint-Specific) | Part (to designate a system element of a defined type) |  |
+| Channel | SpesML Channel | Flow Property | Channel |
+| Direction (default value = out) | Direction (default value = out) | Attribute "direction" + Port Conjugation  | Channel direction |
+| Interface (1) | SpesML Interface (1) | Proxy Port | Sub-Interface |
+|  -  |  -  | Interface Block (can be conceptually interpreted to be a type that defines sub-interfaces) |  |
+| Interface Type (1) | SpesML Interface Type (1) | None (Syntactic interface of a system element is defined by set of its channels. In SysML: Syntactic Interface of part is defined by set of instances of ports (precisely: elements aggregated by the port) corresponding to the block of the part) | Syntactic Interface |
+| Connector | no specific SpesML Stereotype | Connector | Channel matching (renaming) |
+| Value Type / Enumeration | no specific SpesML Stereotype | Value type + attributes of value types including types and cardinalities | Data Type |
+| - | - | Connector (to connect channels of system elements) | Composition Operator (decomposition) |
+|  -  |  -  | Part (instances of system elements in specific roles) |  |
+| State Machine | SpesML State Machine | State Machine | State Machine (Mealy/Moore) |
+| SpesML State Machine Diagram | SpesML State Machine Diagram | SysML State Machine Diagram |  |
+| State | no specific SpesML Stereotype | State | State Symbol |
+| Value Property | no specific SpesML Stereotype | Value Property | Extended State Variable |
+| Transition | no specific SpesML Stereotype | Transition/Guard/Effect with Opaque Behavior | Transition |
+| TODO | TODO |  - | Delay |
+
+
 <table>
     <tr>
         <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
