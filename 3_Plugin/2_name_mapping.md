@@ -16,6 +16,7 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 * In a third step these *SpesML Part Properties* can then be tagged as being a *System Function* or *Whitebox Function* using the *Function type* tag.
 
 ## Universal Interface Model
+
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
 | (viewpoint-specific, see following tables) | (viewpoint-specific, see following tables) | Block (to define a type of system element) | System Element  |
@@ -38,6 +39,7 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Requirements Viewpoint
+
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
 | Requirements Viewpoint | SpesML Requirements Viewpoint | Package | - |
@@ -52,6 +54,7 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Functional Viewpoint
+
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
 | Functional Viewpoint | SpesML Functional Viewpoint | Package | - |
@@ -79,6 +82,7 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Logical Viewpoint
+
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
 | Logical Viewpoint | SpesML Logical Viewpoint | Package | - |
