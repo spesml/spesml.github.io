@@ -113,155 +113,38 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Technical Viewpoint
-<table>
-    <tr>
-        <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
-    </tr>
-    <tr>
-        <td>-</td><td>Package</td><td>SpesML Technical Viewpoint</td><td>Technical Viewpoint</td>
-    </tr>  
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Technical Tracing Package</td><td>Technical Tracing Package</td>
-    </tr>    
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Technical Interface Types Package</td><td>Technical Interface Types Package</td>
-    </tr>   
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Technical Package</td><td>Technical Package</td>
-    </tr>    
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Software Execution Package</td><td>Software Execution Package</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Technical Component</td><td>Technical Component</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Technical Component Part</td><td>Technical Component Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Mechanical Component</td><td>Mechanical Component</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Mechanical Component Part</td><td>Mechanical Component Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Mechatronic Component</td><td>Mechatronic Component</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Mechatronic Component Part</td><td>Mechatronic Component Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Electronic Component</td><td>Electronic Component</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Electronic Component Part</td><td>Electronic Component Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Software Execution Subsystem</td><td>Software Execution Subsystem</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Software Execution Subsystem Part</td><td>Software Execution Subsystem Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Execution Component</td><td>Execution Component</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Execution Component Part</td><td>Execution Component Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Communication Component</td><td>Communication Component</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Communication Component Part</td><td>Communication Component Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Task Architecture</td><td>Task Architecture</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Task Architecture Part</td><td>Task Architecture Part</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Block</td><td>SpesML Task</td><td>Task</td>
-    </tr>
-    <tr>
-        <td>Component for Technical Architecture</td><td>Part Property</td><td>SpesML Task Part</td><td>Task Part</td>
-    </tr>
-    <tr>
-        <td>Message Connection</td><td>Connector</td><td>no specific SpesML Stereotype</td><td>Connector</td>
-    </tr>       
-    <tr>
-        <td>Related to context</td><td>Class</td><td>SpesML Technical Context</td><td>Technical Context</td>
-    </tr> 
-    <tr>
-        <td>Interface</td><td>Proxy Port</td><td>SpesML Technical Interface</td><td>Technical Interface</td>
-    </tr>
-    <tr>
-        <td>Interface</td><td>Interface Block</td><td>SpesML Technical Interface Type</td><td>Technical Interface Type</td>
-    </tr>     
-    <tr>
-        <td>Actor (for context)</td><td>Block</td><td>SpesML Technical Actor</td><td>Technical Actor</td>
-    </tr> 
-    <tr>
-        <td>Actor (for context)</td><td>Property</td><td>SpesML Technical Actor Part</td><td>Technical Actor Part</td>
-    </tr>  
-    <tr>
-        <td>-</td><td>SysML Internal Block Diagram</td><td>SpesML Technical Internal Component Diagram</td><td>SpesML Technical Internal Component Diagram</td>
-    </tr>        
-    <tr>
-        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Technical Tracing Map</td><td>SpesML Technical Tracing Map</td>
-    </tr>    
-    <tr>
-        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML TechnicalToRequirements Matrix</td><td>SpesML TechnicalToRequirements Matrix</td>
-    </tr>      
-    <tr>
-        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML TechnicalToLogical Matrix</td><td>SpesML TechnicalToLogical Matrix</td>
-    </tr>          
-</table>
-
-<!--
-## Operational Context
-Notiz: Es muss einen Scope / eine Domain geben, alle Elemente des operational context haben eine part-of relation zum Oberelement (zur Klammer).
-(The remaining elements are defined as in the logical architecture)
-
-<table>
-    <tr>
-        <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
-    </tr>
-    <tr>
-        <td>System under Development (SuD)</td><td>SpesML Logical Component</td><td>SpesML System under Development (SuD)</td><td>SuD</td>
-    </tr>  
-    <tr>
-        <td>Human Actor Context Element</td><td>SpesML Logical Component</td><td>SpesML Human Actor Context Element</td><td>Human Actor Context Element</td>
-    </tr> 
-    <tr>
-        <td>System Context Element</td><td>SpesML Logical Component</td><td>SpesML System Context Element</td><td>System Context Element</td>
-    </tr> 
-    <tr>
-        <td>Physical Context Element</td><td>SpesML Logical Component</td><td>SpesML Physical Context Element</td><td>Physical Context Element</td>
-    </tr>    
-</table>
-
-## Integration of Mechanical Elements
-Notiz: Das Thema geht über den logischen VP hinaus. Die Konzepte betreffen nicht nur die Integration mechanischer Komponenten. Ggfs. muss mam die Konzepte zu einem späteren Zeitpunkt nochmal neu einsortieren.
-
-<table>
-    <tr>
-        <th>Modeling Concept</th><th>SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
-    </tr>
-    <tr>
-        <td>User Function</td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td>Functional White-Box Model</td><td></td><td></td><td></td>
-    </tr>  
-    <tr>
-        <td>Granularity Layer</td><td></td><td></td><td></td>
-    </tr> 
-    <tr>
-        <td>Software Subsystem</td><td></td><td></td><td></td>
-    </tr> 
-    <tr>
-        <td>Physical Context Element</td><td>SpesML Logical Component</td><td>SpesML Physical Context Element</td><td>Physical Context Element</td>
-    </tr>    
-</table>
--->
+| Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
+|---|---|---|---|
+| Technical Viewpoint | SpesML Technical Viewpoint | Package | - |
+| Technical Tracing Package | SpesML Technical Tracing Package | Package | Structure/organize models |
+| Technical Interface Types Package | SpesML Technical Interface Types Package | Package | Structure/organize models |
+| Technical Package | SpesML Technical Package | Package | Structure/organize models |
+| Software Execution Package | SpesML Software Execution Package | Package | Structure/organize models |
+| Technical Component | SpesML Technical Component | Block | Component for Technical Architecture |
+| Technical Component Part | SpesML Technical Component Part | Part Property | Component for Technical Architecture |
+| Mechanical Component | SpesML Mechanical Component | Block | Component for Technical Architecture |
+| Mechanical Component Part | SpesML Mechanical Component Part | Part Property | Component for Technical Architecture |
+| Mechatronic Component | SpesML Mechatronic Component | Block | Component for Technical Architecture |
+| Mechatronic Component Part | SpesML Mechatronic Component Part | Part Property | Component for Technical Architecture |
+| Electronic Component | SpesML Electronic Component | Block | Component for Technical Architecture |
+| Electronic Component Part | SpesML Electronic Component Part | Part Property | Component for Technical Architecture |
+| Software Execution Subsystem | SpesML Software Execution Subsystem | Block | Component for Technical Architecture |
+| Software Execution Subsystem Part | SpesML Software Execution Subsystem Part | Part Property | Component for Technical Architecture |
+| Execution Component | SpesML Execution Component | Block | Component for Technical Architecture |
+| Execution Component Part | SpesML Execution Component Part | Part Property | Component for Technical Architecture |
+| Communication Component | SpesML Communication Component | Block | Component for Technical Architecture |
+| Communication Component Part | SpesML Communication Component Part | Part Property | Component for Technical Architecture |
+| Task Architecture | SpesML Task Architecture | Block | Component for Technical Architecture |
+| Task Architecture Part | SpesML Task Architecture Part | Part Property | Component for Technical Architecture |
+| Task | SpesML Task | Block | Component for Technical Architecture |
+| Task Part | SpesML Task Part | Part Property | Component for Technical Architecture |
+| Connector | no specific SpesML Stereotype | Connector | Message Connection |
+| Technical Context | SpesML Technical Context | Class | Used for context |
+| Technical Interface | SpesML Technical Interface | Proxy Port | Interface |
+| Technical Interface Type | SpesML Technical Interface Type | Interface Block | Interface |
+| Technical Actor | SpesML Technical Actor | Block | Actor (for context) |
+| Technical Actor Part | SpesML Technical Actor Part | Property | Actor (for context) |
+| SpesML Technical Internal Component Diagram | SpesML Technical Internal Component Diagram | SysML Internal Block Diagram | - |
+| SpesML Technical Tracing Map | SpesML Technical Tracing Map | Relation Map | Used for tracing |
+| SpesML TechnicalToRequirements Matrix | SpesML TechnicalToRequirements Matrix | Dependency Matrix | Used for tracing |
+| SpesML TechnicalToLogical Matrix | SpesML TechnicalToLogical Matrix | Dependency Matrix | Used for tracing |
