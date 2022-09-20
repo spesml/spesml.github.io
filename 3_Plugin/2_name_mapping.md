@@ -52,68 +52,27 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Functional Viewpoint
-<table>
-    <tr>
-        <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
-    </tr>
-    <tr>
-        <td>-</td><td>Package</td><td>SpesML Functional Viewpoint</td><td>Functional Viewpoint</td>
-    </tr>  
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Functional Tracing Package</td><td>Functional Tracing Package</td>
-    </tr>      
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Functional Package</td><td>Functional Package</td>
-    </tr>    
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Functional Interface Types Package</td><td>Functional Interface Types Package</td>
-    </tr> 
-    <tr>
-        <td>Function</td><td>Block</td><td>SpesML Function</td><td>Function</td>
-    </tr> 
-    <tr>
-        <td>Function</td><td>Property</td><td>SpesML Function Part</td><td>Function Part</td>
-    </tr> 
-    <tr>
-        <td>Message Connection</td><td>Connector</td><td>no specific SpesML Stereotype</td><td>Connector</td>
-    </tr>       
-    <tr>
-        <td>Related to context</td><td>Class</td><td>SpesML Functional Context</td><td>Functional Context</td>
-    </tr> 
-    <tr>
-        <td>Interface</td><td>Proxy Port</td><td>SpesML Functional Interface</td><td>Functional Interface</td>
-    </tr>    
-    <tr>
-        <td>Interface</td><td>Interface Block</td><td>SpesML Functional Interface Type</td><td>Functional Interface Type</td>
-    </tr> 
-    <tr>
-        <td>Actor (for context)</td><td>Block</td><td>SpesML Functional Actor</td><td>Functional Actor</td>
-    </tr> 
-    <tr>
-        <td>Actor (for context)</td><td>Property</td><td>SpesML Functional Actor Part</td><td>Functional Actor Part</td>
-    </tr>   
-    <tr>
-        <td>Behavior</td><td>State Machine</td><td>SpesML Mode Model</td><td>Mode Model</td>
-    </tr>  
-    <tr>
-        <td>Behavior</td><td>State Machine</td><td>SpesML State Machine</td><td>State Machine</td>
-    </tr>      
-    <tr>
-        <td>-</td><td>State Machine Diagram</td><td>SpesML State Machine Diagram</td><td>SpesML State Machine Diagram</td>
-    </tr> 
-    <tr>
-        <td>-</td><td>SysML Internal Block Diagram</td><td>SpesML Functional Internal Function Diagram</td><td>SpesML Functional Internal Function Diagram</td>
-    </tr>       
-    <tr>
-        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Functional Impact Map</td><td>SpesML Functional Impact Map</td>
-    </tr> 
-     <tr>
-        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Functional Tracing Map</td><td>SpesML Functional Tracing Map</td>
-    </tr>    
-    <tr>
-        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML FunctionalToRequirements Matrix</td><td>SpesML FunctionalToRequirements Matrix</td>
-    </tr>         
-</table>
+| Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
+|---|---|---|---|
+| Functional Viewpoint | SpesML Functional Viewpoint | Package | - |
+| Functional Tracing Package | SpesML Functional Tracing Package | Package | Structure/organize models |
+| Functional Package | SpesML Functional Package | Package | Structure/organize models |
+| Functional Interface Types Package | SpesML Functional Interface Types Package | Package | Structure/organize models |
+| Function | SpesML Function | Block | Function |
+| Function Part | SpesML Function Part | Property | Function |
+| Connector | no specific SpesML Stereotype | Connector | Message Connection |
+| Functional Context | SpesML Functional Context | Class | Related to context |
+| Functional Interface | SpesML Functional Interface | Proxy Port | Interface |
+| Functional Interface Type | SpesML Functional Interface Type | Interface Block | Interface |
+| Functional Actor | SpesML Functional Actor | Block | Actor (for context) |
+| Functional Actor Part | SpesML Functional Actor Part | Property | Actor (for context) |
+| Mode Model | SpesML Mode Model | State Machine | Behavior |
+| State Machine | SpesML State Machine | State Machine | Behavior |
+| SpesML State Machine Diagram | SpesML State Machine Diagram | State Machine Diagram | - |
+| SpesML Functional Internal Function Diagram | SpesML Functional Internal Function Diagram | SysML Internal Block Diagram | - |
+| SpesML Functional Impact Map | SpesML Functional Impact Map | Relation Map | Used for tracing |
+| SpesML Functional Tracing Map | SpesML Functional Tracing Map | Relation Map | Used for tracing |
+| SpesML FunctionalToRequirements Matrix | SpesML FunctionalToRequirements Matrix | Dependency Matrix | Used for tracing |
 
 
 
