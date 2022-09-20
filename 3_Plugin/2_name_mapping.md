@@ -117,6 +117,7 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Technical Viewpoint
+
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
 | Technical Viewpoint | SpesML Technical Viewpoint | Package | - |
@@ -152,5 +153,3 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 | SpesML Technical Tracing Map | SpesML Technical Tracing Map | Relation Map | Used for tracing |
 | SpesML TechnicalToRequirements Matrix | SpesML TechnicalToRequirements Matrix | Dependency Matrix | Used for tracing |
 | SpesML TechnicalToLogical Matrix | SpesML TechnicalToLogical Matrix | Dependency Matrix | Used for tracing |
-
-X
