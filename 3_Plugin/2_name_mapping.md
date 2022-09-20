@@ -16,7 +16,6 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 * In a third step these *SpesML Part Properties* can then be tagged as being a *System Function* or *Whitebox Function* using the *Function type* tag.
 
 ## Universal Interface Model
-
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
 | (viewpoint-specific, see following tables) | (viewpoint-specific, see following tables) | Block (to define a type of system element) | System Element  |
@@ -39,32 +38,15 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Requirements Viewpoint
-<table>
-    <tr>
-        <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
-    </tr>
-    <tr>
-        <td>-</td><td>Package</td><td>SpesML Requirements Viewpoint</td><td>Requirements Viewpoint</td>
-    </tr>  
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Requirements Tracing Package</td><td>Requirements Tracing Package</td>
-    </tr>      
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Requirements Package</td><td>Requirements Package</td>
-    </tr>   
-    <tr>
-        <td>Requirement</td><td>Requirement</td><td>SpesML Requirement</td><td>Requirement</td>
-    </tr>  
-    <tr>
-        <td>-</td><td>Generic Table</td><td>SpesML Requirements Table</td><td>SpesML Requirements Table</td>
-    </tr>  
-    <tr>
-        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Requirements Impact Map</td><td>SpesML Requirements Impact Map</td>
-    </tr> 
-    <tr>
-        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML RequirementsToRequirements Matrix</td><td>SpesML RequirementsToRequirements Matrix</td>
-    </tr>     
-</table>
+| Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
+|---|---|---|---|
+| Requirements Viewpoint | SpesML Requirements Viewpoint | Package | - |
+| Requirements Tracing Package | SpesML Requirements Tracing Package | Package | Structure/organize models |
+| Requirements Package | SpesML Requirements Package | Package | Structure/organize models |
+| Requirement | SpesML Requirement | Requirement | Requirement |
+| SpesML Requirements Table | SpesML Requirements Table | Generic Table | - |
+| SpesML Requirements Impact Map | SpesML Requirements Impact Map | Relation Map | Used for tracing |
+| SpesML RequirementsToRequirements Matrix | SpesML RequirementsToRequirements Matrix | Dependency Matrix | Used for tracing |
 
 
 
