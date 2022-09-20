@@ -79,89 +79,34 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Logical Viewpoint
-<table>
-    <tr>
-        <th>Modeling Concept</th><th>UML/SysML Element</th><th>Stereotype name in SpesML plugin</th><th>Shown Name (GUI) in MagicDraw</th>
-    </tr>
-    <tr>
-        <td>-</td><td>Package</td><td>SpesML Logical Viewpoint</td><td>Logical Viewpoint</td>
-    </tr> 
-    <tr>
-        <td>Model group (to structure/organize models)g</td><td>Package</td><td>SpesML Logical Tracing Package</td><td>Logical Tracing Package</td>
-    </tr>         
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Logical Package</td><td>Logical Package</td>
-    </tr>    
-    <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Logical Interface Types Package</td><td>Logical Interface Types Package</td>
-    </tr>
-     <tr>
-        <td>Model group (to structure/organize models)</td><td>Package</td><td>SpesML Logical Test Case Package</td><td>Logical Test Case Package</td>
-    </tr>        
-    <tr>
-        <td>Component for Logical Architecture</td><td>Block</td><td>SpesML Logical Component</td><td>Logical Component</td>
-    </tr>
-     <tr>
-        <td>Component for Logical Architecture</td><td>Part Property</td><td>SpesML Logical Component Part</td><td>Logical Component Part</td>
-    </tr>  
-    <tr>
-        <td>Component for Logical Architecture</td><td>Block</td><td>SpesML Functional-Logical Adapter</td><td>Functional-Logical Adapter</td>
-    </tr>
-     <tr>
-        <td>Component for Logical Architecture</td><td>Part Property</td><td>SpesML Functional-Logical Adapter Part</td><td>Functional-Logical Adapter Part</td>
-    </tr>
-    <tr>
-        <td>Component for Logical Architecture</td><td>Block</td><td>SpesML Logical Component with Functions</td><td>Logical Component with Functions</td>
-    </tr>
-     <tr>
-        <td>Component for Logical Architecture</td><td>Part Property</td><td>SpesML Logical Component with Functions Part</td><td>Logical Component with Functions Part</td>
-    </tr>
-    <tr>
-        <td>Related to testing</td><td>Block</td><td>SpesML Logical Test Case Component</td><td>Logical Test Case Component</td>
-    </tr>
-     <tr>
-        <td>Related to testing</td><td>Part Property</td><td>SpesML Logical Test Case Component Part</td><td>Logical Test Case Component Part</td>
-    </tr>
-    <tr>
-        <td>Message Connection</td><td>Connector</td><td>no specific SpesML Stereotype</td><td>Connector</td>
-    </tr>   
-    <tr>
-        <td>Related to context</td><td>Class</td><td>SpesML Logical Context</td><td>Logical Context</td>
-    </tr>       
-    <tr>
-        <td>Interface</td><td>Proxy Port</td><td>SpesML Logical Interface</td><td>Logical Interface</td>
-    </tr>
-    <tr>
-        <td>Interface</td><td>Interface Block</td><td>SpesML Logical Interface Type</td><td>Logical Interface Type</td>
-    </tr>  
-    <tr>
-        <td>Actor (for context)</td><td>Block</td><td>SpesML Logical Actor</td><td>Logical Actor</td>
-    </tr> 
-    <tr>
-        <td>Actor (for context)</td><td>Property</td><td>SpesML Logical Actor Part</td><td>Logical Actor Part</td>
-    </tr> 
-    <tr>
-        <td>Behavior</td><td>State Machine</td><td>SpesML State Machine</td><td>State Machine</td>
-    </tr>    
-    <tr>
-        <td>-</td><td>State Machine Diagram</td><td>SpesML State Machine Diagram</td><td>SpesML State Machine Diagram</td>
-    </tr>           
-    <tr>
-        <td>-</td><td>SysML Internal Block Diagram</td><td>SpesML Logical Internal Component Diagram</td><td>SpesML Logical Internal Component Diagram</td>
-    </tr>    
-    <tr>
-        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Logical Impact Map</td><td>SpesML Logical Impact Map</td>
-    </tr> 
-     <tr>
-        <td>Related to tracing</td><td>Relation Map</td><td>SpesML Logical Tracing Map</td><td>SpesML Logical Tracing Map</td>
-    </tr>    
-    <tr>
-        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML LogicalToRequirements Matrix</td><td>SpesML LogicalToRequirements Matrix</td>
-    </tr>      
-    <tr>
-        <td>Related to tracing</td><td>Dependency Matrix</td><td>SpesML LogicalToFunctional Matrix</td><td>SpesML LogicalToFunctional Matrix</td>
-    </tr>        
-</table>
+| Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
+|---|---|---|---|
+| Logical Viewpoint | SpesML Logical Viewpoint | Package | - |
+| Logical Tracing Package | SpesML Logical Tracing Package | Package | Structure/organize models |
+| Logical Package | SpesML Logical Package | Package | Structure/organize models |
+| Logical Interface Types Package | SpesML Logical Interface Types Package | Package | Structure/organize models |
+| Logical Test Case Package | SpesML Logical Test Case Package | Package | Structure/organize models |
+| Logical Component | SpesML Logical Component | Block | Component for Logical Architecture |
+| Logical Component Part | SpesML Logical Component Part | Part Property | Component for Logical Architecture |
+| Functional-Logical Adapter | SpesML Functional-Logical Adapter | Block | Component for Logical Architecture |
+| Functional-Logical Adapter Part | SpesML Functional-Logical Adapter Part | Part Property | Component for Logical Architecture |
+| Logical Component with Functions | SpesML Logical Component with Functions | Block | Component for Logical Architecture |
+| Logical Component with Functions Part | SpesML Logical Component with Functions Part | Part Property | Component for Logical Architecture |
+| Logical Test Case Component | SpesML Logical Test Case Component | Block | Used for testing |
+| Logical Test Case Component Part | SpesML Logical Test Case Component Part | Part Property | Used for testing |
+| Connector | no specific SpesML Stereotype | Connector | Message Connection |
+| Logical Context | SpesML Logical Context | Class | Used for context |
+| Logical Interface | SpesML Logical Interface | Proxy Port | Interface |
+| Logical Interface Type | SpesML Logical Interface Type | Interface Block | Interface |
+| Logical Actor | SpesML Logical Actor | Block | Actor (for context) |
+| Logical Actor Part | SpesML Logical Actor Part | Property | Actor (for context) |
+| State Machine | SpesML State Machine | State Machine | Behavior |
+| SpesML State Machine Diagram | SpesML State Machine Diagram | State Machine Diagram | - |
+| SpesML Logical Internal Component Diagram | SpesML Logical Internal Component Diagram | SysML Internal Block Diagram | - |
+| SpesML Logical Impact Map | SpesML Logical Impact Map | Relation Map | Used for tracing |
+| SpesML Logical Tracing Map | SpesML Logical Tracing Map | Relation Map | Used for tracing |
+| SpesML LogicalToRequirements Matrix | SpesML LogicalToRequirements Matrix | Dependency Matrix | Used for tracing |
+| SpesML LogicalToFunctional Matrix | SpesML LogicalToFunctional Matrix | Dependency Matrix | Used for tracing |
 
 
 
