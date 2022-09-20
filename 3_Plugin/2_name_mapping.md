@@ -152,3 +152,5 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 | SpesML Technical Tracing Map | SpesML Technical Tracing Map | Relation Map | Used for tracing |
 | SpesML TechnicalToRequirements Matrix | SpesML TechnicalToRequirements Matrix | Dependency Matrix | Used for tracing |
 | SpesML TechnicalToLogical Matrix | SpesML TechnicalToLogical Matrix | Dependency Matrix | Used for tracing |
+
+X
