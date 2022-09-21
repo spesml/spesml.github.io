@@ -29,7 +29,9 @@ in SpesML we focus on CPSs where the control of physical subsystems by
 SW subsystems is in the foreground and choose a correspondingly high
 interface abstraction for the modeling of physical parts (see Figure 1).
 
-<img src=".images/mechanical_elements/image1.png" style="width:3.97657in;height:2.125in" />
+<a name="figureBlueprint"></a>
+![Blueprint](/images/mechanical_elements/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 1: </b><em>System modeling blueprint (visualized as concept model)</em></div>
 
 Figure 1: Controller and Systems as relations on streams
 
