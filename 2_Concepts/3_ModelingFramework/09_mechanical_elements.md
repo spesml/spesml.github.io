@@ -27,10 +27,10 @@ extremely broad topic that requires a lot of domain know-how and cannot
 be comprehensively addressed within the SpesML project[^1]. Therefore,
 in SpesML we focus on CPSs where the control of physical subsystems by
 SW subsystems is in the foreground and choose a correspondingly high
-interface abstraction for the modeling of physical parts (see Figure 1).
+interface abstraction for tController_Systemshe modeling of physical parts (see Figure 1).
 
-<a name="figureBlueprint"></a>
-![Blueprint](/images/mechanical_elements/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<a name="Figure1"></a>
+!Figure1](/images/mechanical_elements/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 1: </b><em>Controller and Systems as relations on streams</em></div>
 
 <br>
@@ -88,8 +88,8 @@ physical component can be monitored via this interface depends on
 whether coupling of the software control application is more tight or
 more loose.
 
-<a name="figureBlueprint"></a>
-![Blueprint](/images/mechanical_elements/image2.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<a name="Figure2"></a>
+![Figure2](/images/mechanical_elements/image2.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 2: </b><em>Architecture of a Control Layer Composed with a Physical Device and Showing the Stream of States</em></div>
 
 <br>
