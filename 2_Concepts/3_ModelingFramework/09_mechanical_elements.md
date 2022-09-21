@@ -89,7 +89,7 @@ whether coupling of the software control application is more tight or
 more loose.
 
 <a name="figureBlueprint"></a>
-![Blueprint](/images/mechanical_elements/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![Blueprint](/images/mechanical_elements/image2.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 2: </b><em>Architecture of a Control Layer Composed with a Physical Device and Showing the Stream of States</em></div>
 
 <br>
