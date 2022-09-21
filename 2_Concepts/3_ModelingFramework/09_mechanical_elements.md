@@ -36,7 +36,6 @@ interface abstraction for the modeling of physical parts (see Figure 1).
 <br>
 The way we deal with the behavior of physical parts in SPES varies
 depending on the model viewpoint.
-
 <br><br>
 **Functional View**
 
