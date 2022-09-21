@@ -30,7 +30,7 @@ SW subsystems is in the foreground and choose a correspondingly high
 interface abstraction for tController_Systemshe modeling of physical parts (see Figure 1).
 
 <a name="Figure1"></a>
-!Figure1](/images/mechanical_elements/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![Figure1](/images/mechanical_elements/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 1: </b><em>Controller and Systems as relations on streams</em></div>
 
 <br>
