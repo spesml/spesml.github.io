@@ -29,7 +29,7 @@ in SpesML we focus on CPSs where the control of physical subsystems by
 SW subsystems is in the foreground and choose a correspondingly high
 interface abstraction for the modeling of physical parts (see Figure 1).
 
-<img src="./media/image2.png" style="width:3.97657in;height:2.125in" />
+<img src=".images/mechanical_elements/image1.png" style="width:3.97657in;height:2.125in" />
 
 Figure 1: Controller and Systems as relations on streams
 
@@ -86,7 +86,7 @@ physical component can be monitored via this interface depends on
 whether coupling of the software control application is more tight or
 more loose.
 
-<img src="./media/image3.png"
+<img src=".images/mechanical_elements/image2.png"
 style="width:1.46667in;height:1.14028in" />For modelling the control, we
 use state machines with input and output that define a relation between
 input and output streams or input and output histories which is the
