@@ -88,8 +88,11 @@ physical component can be monitored via this interface depends on
 whether coupling of the software control application is more tight or
 more loose.
 
-<img src=".images/mechanical_elements/image2.png"
-style="width:1.46667in;height:1.14028in" />For modelling the control, we
+<a name="figureBlueprint"></a>
+![Blueprint](/images/mechanical_elements/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 2: </b><em>Architecture of a Control Layer Composed with a Physical Device and Showing the Stream of States</em></div>
+
+For modelling the control, we
 use state machines with input and output that define a relation between
 input and output streams or input and output histories which is the
 abstract interface behavior of the physical system, as it is seen from
