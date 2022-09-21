@@ -31,9 +31,7 @@ interface abstraction for the modeling of physical parts (see Figure 1).
 
 <a name="figureBlueprint"></a>
 ![Blueprint](/images/mechanical_elements/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 1: </b><em>System modeling blueprint (visualized as concept model)</em></div>
-
-Figure 1: Controller and Systems as relations on streams
+<div align="center"><b>Figure 1: </b><em>Controller and Systems as relations on streams</em></div>
 
 The way we deal with the behavior of physical parts in SPES varies
 depending on the model viewpoint.
