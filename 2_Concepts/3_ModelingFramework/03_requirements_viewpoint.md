@@ -206,8 +206,6 @@ Methodologically, there are different ways to represent such derived requirement
 
 ## References
 
-[^Gersing] Peter Gersing. _Intelligent Home Booklet_. TDSE 2016.
-
 [^Incose-requirements]: INCOSE, _Guide for Writing Requirements_, Document No.: INCOSE-TP-2010-006-02.1, June 2017.
 [^iso26262]: ISO, ISO 26262, 2018.
 [^ears]: A. Mavin, P. Wilkinson, A. Harwood and M. Novak, _EARS (Easy Approach to Requirements Syntax)_. In: 17th IEEE International Requirements Engineering Conference, 2009, pp. 317–322.
