@@ -32,7 +32,7 @@ Maturity models are used to assess the process maturity of a development team an
 When using a bottom-up approach, distinct characteristics or assessment items are determined first and clustered in a second step into maturity levels to induce a more general view of the different steps of maturity evolution. They are distinguished from fixed-level maturity models, such as CMMI, in that they are suited to the incremental improvement of functional domains. One class of these bottom-up maturity models is the Focus Area type, where capabilities are defined for different focus areas and arranged in a progressing order that can be mapped to maturity levels. Focus area maturity models are especially effective at providing organizations with implementable practices and processes. The capabilities are grouped in focus area which in turn are grouped in functional domains. In the MBSE MM the latter was renamed to engineering function to emphasize the relation to engineering phases in the development process. The capabilities are positioned against each other in a maturity matrix and assigned letters according to their position (i.e., maturity progression) being the first letters of the alphabet with less maturity than letters that appear closer to the end (i.e., capability B is less mature than a capability D).  The SpesML MM is a focus area maturity model. 
 
 <p align="center">
-<img src="https://spesml.github.io/2_Concepts/6_MaturityModel/images/focusamm-example.png"  width=55% alignment="center">
+	![Focus area maturity model meta-model](/images/focusamm-example.png){:class="img-responsive"}
 </p>
 
 ## MBSE Maturity Model
