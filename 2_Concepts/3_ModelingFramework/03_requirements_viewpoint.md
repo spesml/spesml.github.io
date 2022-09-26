@@ -204,6 +204,34 @@ Methodologically, there are different ways to represent such derived requirement
 1. One approach is to represent derived requirements as assumed (*required*) requirements. This is related to the power window example in the section about the Require and Matches relations above. The main advantage of this approach is that it is obvious that these requirements need to be clarified with stakeholders: A stakeholder requirement justifying the decision has  to be introduced and *matched* with the assumed requirement.
 2. Alternatively, derived requirements can be introduced and linked to architectural elements (via *Satisfy*-traces) analogously to stakeholder-derived requirements. Since they are not traceable to a stakeholder requirement, however, in any case a rationale should be documented in the requirement and the source attribute of the requirement should state that this is a derived requirement. This approach is preferable for requirements justifying or constraining architectural decisions that do not need to be aligned with stakeholders.
 
+### Development Against Assumed Requirements
+
+Subsystem development frequently occurs in parallel with, or earlier than, development of the main system. Typical examples for such concurrent development are: 
+
+* Early development of subsystems or components within an organization before requirements are finalized and agreed upon; in fact, in some cases, it is precisely the experience of such early development sub-projects that is needed to finalize requirements and architecture.
+* Development of "baukasten" subsystem or components within an organization with the intent of using these elements in the construction of product systems for customers.
+* Development of off-the-shelf subsystems or components by suppliers.
+
+In these cases, development happens against *assumed* requirements, as there are no stable system requirements yet available. This means that it is not certain that the independently developed subsystem or component does indeed fulfill the properties required by the system. Moreover, the same argument goes in the other direction: A subsystem or component can have requirements on the integration context which may or may not be satisfied by the system to be developed.
+
+In SpesML, the *Require* and *Matches* relationships are intended to represent such development situations. 
+
+For instance, given a supplier intent on developing a subsystem that generates status information. When starting development, it is not perfectly certain at which frequency, let only with which precise formats and interface technologies and protocols, the status information has to be produced. Still, the supplier proceeds and develops such a system; it turns out that there are some demands on whatever system the subsystem is to be integrated in - most prominently, electrical power with certain characteristics has to be available. Thus, development proceeds against _assumed_ requirements and also for an _assumed_ integration context. 
+
+The *Require* relationship is used to state expectation on the integration context of an architectural element. The *Matches* relationship is used in the context of modular development to relate requirements assumed during subsystem development with those of the context system into which the subsystem is integrated:
+
+![Requirements and architecture decomposition](/images/requirements_viewpoint/require-matches.png){:class="img-responsive"}
+
+
+The *Matches* relationship is closely related to *Derive*, in that they state that if the source requirement is valid, the destination requirement of the trace should be valid, too. Thus, *Matches* also gives rise to a verification obligation, namely to verify that the *Required* requirements of the subsystem are indeed fulfilled by *Satisfied* requirements of the main system, and vice versa.
+
+For instance, when integrating the subsystem of our example, the integrator has to ensure that the guaranteed performance of the subsystem -i.e., the frequency of status delivery- matches the demands of the system under development. Conversely, the integrator also has to ensure that the expectations of the subsystem -i.e., its power demands- can be satisfied by the system under development. While in general it is not possible to automatically verify such pairings of assumed (*Require*) and guaranteed (*Satisfy*) requirements, it is typically feasible to manually review them. The *Require*/*Matches* relationships help to identify and track these review obligations.
+
+
+Note that in general the *Require*/*Matches* combinations may be circular: Without supplied power, it should come as not surprise if the subsystem fails to deliver status information. On the other hand, perhaps the system will only route power to the subsystem if the status information implies the subsystem is indeed alive? 
+
+Such circles must be broken by rephrasing one of the requirements in a way such that at least one component fulfills its guarantee in advance; only if then its assumed requirments are not fulfilled by the the other component may the first component renege on its guarantees. Clearly, this approach suitable only for behavioral properties. However, in practice this will rarely be a problem. Circularities are unlikely to occur in design constraints, and assumptions related to quality requirements typically involve resource guarantees allocated through a top-down budgeting process.
+
 ## References
 
 [^Incose-requirements]: INCOSE, _Guide for Writing Requirements_, Document No.: INCOSE-TP-2010-006-02.1, June 2017.
