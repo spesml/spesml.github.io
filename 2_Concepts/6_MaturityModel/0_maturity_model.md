@@ -77,9 +77,9 @@ More information on this Viewpoint can be found [here](https://spesml.github.io/
 ####  Requirements Elicitation (REE): 
 
 **REE A: Requirements are modeled by a distinct requirement element per requirement.** -- This is the capability with the lowest maturity in this viewpoint and all the other capabilities from this viewpoint depends upon. It describes that requirements are modeled in the SpesML plugin using the requirement element. In the RequirementsViewpoint folder, on the project template containment tree, through a mouse right-click is possible to select create element and create a SpesML Requirement element and depicted in the image below.
-<p align="center">
-<img src="https://spesml.github.io/2_Concepts/6_MaturityModel/images/reea-example.png"  width=35% alignment="center">
-</p>
+
+![REE A example](/images/reea-example.png){:class="img-responsive"}
+
 
 **REE B: Requirements are categorized into one of the categories: Capability, Functional, Quality, Constraint.**
 The categories supported by the SpesML Modeling Framework are better described [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#modeling-elements).
@@ -87,7 +87,7 @@ The categories supported by the SpesML Modeling Framework are better described [
 
 **RES A: Requirements are equipped with attributes containing meta-information including: name, category, status, rationale, and source.**: The SpesML Modeling framework supports a number of attributes and serving as template, which segregate information from the requirement description, improving readability.  Additional information on these requirement attributes you can find [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#requirements-attributes).
 
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/car-attributes.png" width=70%>
+![REE A example](/images/car-attributes.png){:class="img-responsive"}
 
 **RES B: Requirements text is formulated following certain sentence templates (e.g., EARS or Sophist MasterTemplate).**
 Sentence template require extra effort to achieve compliance at the initial phases, but prevents rework in future phases. Although the SpesML MF do not suggest using a specific template, it does suggest they should be used, whichever better fits the organization's needs (e.g, domain, project size). This is a *Conceptual* capability
@@ -104,16 +104,12 @@ The capabilities in this focus area represent types of tracing relations that ex
 
 **REF A: If a low-level requirement is derived from a high-level requirement, they are related by a derived relation. Note: Both requirements must address the same system scope.**
 The _Derive_ relationship is used to add detail or to include certain design decisions to a requirement. Unlike RES C, where the design decisions are included in the requirement description, REF A is about two different requirements related by this specific tracing relation. It is a common pattern that an architectural element satisfies a requirements, which itself is derived from a more high-level requirement as depicted in the figure below:
-<p align="center">
-<img src="https://spesml.github.io/2_Concepts/3_ModelingFramework/images/requirements_viewpoint/derive-satisfy.png"  width=35% alignment="center">
-</p>
+![changeHere](../3_ModelingFramework/images/requirements_viewpoint/derive-satisfy.png){:class="img-responsive"}
 
 **REF B: If a system requirement is broken down into several component requirements, the system requirement is related to the component requirements by a decompose relation.**
 This 
 The image below depicts the properties of this relation.
-<p align="center">
-<img src="https://spesml.github.io/2_Concepts/3_ModelingFramework/images/requirements_viewpoint/containment-satisfy.png"  width=55% alignment="center">
-</p>
+![changeHere](../3_ModelingFramework/images/requirements_viewpoint/containment-satisfy.png){:class="img-responsive"}
 
 **REF C: If a requirement satisfies a property that is required in another requirement, the requirements are related by a Match relation.**
 The *Match* relation traces an architectural element to a requirement of type *Requirement*.  One instance of this requirement is the definition of safety contracts for dynamic systems of systems, where some safety assurance is required to guarantee safety of the whole system.
@@ -127,16 +123,12 @@ More on the Functional Viewpoint can be seen [here](https://spesml.github.io/con
 
 **SFM A: System functions are modeled with a syntactic interface (inputs and outputs)**.
 The image below depicts the CentralWindowFunction and its respective input and output interfaces.
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/sfma-example.png" width=40%>
-</p>
+![changeHere](/images/sfma-example.png){:class="img-responsive"}
 
 **SFM B: System functions are related with a satisfy or require relationship to requirements they satisfy or assume.**
 The satisfy relation traces the requirement to a function, which is useful to identify whether there are requirements not addressed by any function, or if there are functions that do not fulfill any requirement. In the SpesML plugin, this relation is described with a table as depicted in the figure below.
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/sfmb-wbfb-example.png" width=30%>
-</p>
+![changeHere](/images/sfmb-wbfb-example.png){:class="img-responsive"}
 
 **SFM C: The behavior of the system functions is modeled by a state machine or decomposed in a white-box model.**  
 This capability is related to 
@@ -145,23 +137,17 @@ This capability is related to
 ####White-box Modeling (WBM)
 
 **WBM A: The white-box functions that implement a system function are modeled with a syntactic interface (inputs and outputs).**  
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/wbfa-example.png" width=35%>
-</p>
+![changeHere](/images/wbfa-example.png){:class="img-responsive"}
 
 **WBM  B: White-box functions are related with a satisfy or require relationship to requirements they satisfy or assume.**
 The image of SMF B also depicts this capability.
 **WBM  C: The behavior of the white-box functions is modeled.**  
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/wbfc-example.png" width=35%>
-</p>
+![changeHere](/images/wbfc-example.png){:class="img-responsive"}
 
 #### Mode Modeling (MOM)
 This focus area describes the implementation of modes of the SUD as described [here](https://spesml.github.io/concepts/modeling_framework/functional_viewpoint.html#mode-model).
 **MOM A: The operating modes of a system are modeled in terms of a state machine.**
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/3_ModelingFramework/images/functional_viewpoint/mode-model.png" width=35%>
-</p>
+![REE A example](../3_ModelingFramework/images/functional_viewpoint/mode-model.png{:class="img-responsive"}
 
 **MOM B: The operating modes in the mode model are consistent with the mode channels between the system's functions.**
 
@@ -173,9 +159,7 @@ The SUD context, inside (FTM A), outside (FTM B), and its behavior (FTM C) are c
 
 **FTM A: The system under development (i.e., the top-level system function) is modeled by a composition of all system functions.**
 The GIF below shows inside the system functions inside the SUD in the plugin. FIXME
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/ftma-example.gif" width=75%>
-</p>
+![changeHere](/images/ftma-example.gif){:class="img-responsive"}
 
 **FTM B: Functions of the operational context (e.g., external inputs) are modeled with a syntactic interface (inputs and outputs). Note: Functions do not need to be allocated to actors yet**  
 
@@ -189,29 +173,21 @@ More on the Logical Viewpoint can be seen [here](https://spesml.github.io/concep
 
 **LCM A: For logical components, their interface is modeled with associated input and output signals.**  
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/lcma-example.png" width=55%>
-</p>
+![changeHere](/images/lcma-example.png){:class="img-responsive"}
 
 **LCM B: The behavior of the logical components is modeled.**  
 
 **LCM C: Logical components and requirements they satisfy are related by a satisfy or require relation.**
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/lcmc-example.png" width=35%>
-</p>
+![changeHere](/images/lcmc-example.png){:class="img-responsive"}
 
 #### Logical Architecture Modeling (LAM)
 
 **LAM A: The logical components and their dependencies are modeled.**  
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/lama-example.png" width=55%>
-</p>
+![changeHere](/images/lama-example.png){:class="img-responsive"}
 
 **LAM B: Logical components are related to white-box functions that they implement by a realize relation.**
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/lamb-example.png" width=40%>
-</p>
+![changeHere](/images/lamb-example.png){:class="img-responsive"}
 
 More on tracing between logical components and functions can be found [here](https://spesml.github.io/concepts/modeling_framework/functional_viewpoint.html#tracing-between-functions-and-elements-of-the-logical-viewpoint).
 
@@ -223,15 +199,12 @@ More on tracing between logical components and functions can be found [here](htt
 
 **LTM B: Actors of the operational context (e.g., external systems or users) are modeled with a syntactic interface (inputs and outputs).**  
 The image below depicts the WindoLifterSytem in the Logical Context view.
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/ltmb-example.png" width=70%>
-</p>
+![changeHere](/images/ltmb-example.png){:class="img-responsive"}
 
 **LTM C: For each actor in the operational context, the behavior is modeled.**
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/ltmc-example.png" width=30%>
-</p>
+![changeHere](/images/ltmc-example.png){:class="img-responsive"}
+
 The actor also includes external logical components (e.g., BrightnessSensor in the image above)
 
 #### Logical Physical Modeling (LPM)
@@ -259,9 +232,7 @@ tbd...
 The usage of the SpesML MM is similar to the MBSE MM.
 
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/implementation-workflow.png" width=70%>
-</p>
+![changeHere](/images/implementation-workflow.png){:class="img-responsive"}
 
 **T1: Assess current processes**
 Equipped with the SpesML MM, the organization should compare their current MBSE development processes with the capabilities described in the maturity matrix. For each capability in the matrix, engineers should question whether they produce similar artifacts. For instance, the capability RES A mandates some attributes to be identified and could be the case that the organization does identify some attributes but not all of the ones described in this capability. This capability then is marked as TO BE ADAPTED. If the organization does not do anything similar to what is described in the capability then it should be marked as UNIMPLEMENTED.
