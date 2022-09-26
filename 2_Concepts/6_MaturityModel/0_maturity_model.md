@@ -31,9 +31,8 @@ Maturity models are used to assess the process maturity of a development team an
 
 When using a bottom-up approach, distinct characteristics or assessment items are determined first and clustered in a second step into maturity levels to induce a more general view of the different steps of maturity evolution. They are distinguished from fixed-level maturity models, such as CMMI, in that they are suited to the incremental improvement of functional domains. One class of these bottom-up maturity models is the Focus Area type, where capabilities are defined for different focus areas and arranged in a progressing order that can be mapped to maturity levels. Focus area maturity models are especially effective at providing organizations with implementable practices and processes. The capabilities are grouped in focus area which in turn are grouped in functional domains. In the MBSE MM the latter was renamed to engineering function to emphasize the relation to engineering phases in the development process. The capabilities are positioned against each other in a maturity matrix and assigned letters according to their position (i.e., maturity progression) being the first letters of the alphabet with less maturity than letters that appear closer to the end (i.e., capability B is less mature than a capability D).  The SpesML MM is a focus area maturity model. 
 
-<p align="center">
-	![Focus area maturity model meta-model](/images/focusamm-example.png){:class="img-responsive"}
-</p>
+![Focus area maturity model meta-model](/images/focusamm-example.png){:class="img-responsive"}
+
 
 ## MBSE Maturity Model
 
@@ -88,9 +87,7 @@ The categories supported by the SpesML Modeling Framework are better described [
 
 **RES A: Requirements are equipped with attributes containing meta-information including: name, category, status, rationale, and source.**: The SpesML Modeling framework supports a number of attributes and serving as template, which segregate information from the requirement description, improving readability.  Additional information on these requirement attributes you can find [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#requirements-attributes).
 
-<p align="center">
 <img src="https://raw.githubusercontent.com/spesml/spesml.github.io/master/2_Concepts/6_MaturityModel/images/car-attributes.png" width=70%>
-</p>
 
 **RES B: Requirements text is formulated following certain sentence templates (e.g., EARS or Sophist MasterTemplate).**
 Sentence template require extra effort to achieve compliance at the initial phases, but prevents rework in future phases. Although the SpesML MF do not suggest using a specific template, it does suggest they should be used, whichever better fits the organization's needs (e.g, domain, project size). This is a *Conceptual* capability
