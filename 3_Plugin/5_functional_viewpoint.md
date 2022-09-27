@@ -231,8 +231,8 @@ The *Function* is the central element of the functional viewpoint. After creatin
 <div align="center"><em>By setting the property `Function type`, a function can either be a system function or a white-box function</em></div>
 
 
-### ![Functional Part](/images/functional_viewpoint/FunctionPart.png){:class="img-responsive"}Functional Part
-Functions (i.e., system functions and white-box functions) can be decomposed into a set of smaller interconnected functions. Any `Function` can become a `Functional Part` by dragging it to a [Functional Internal Function Diagram](#functional-internal-function-diagram) (see below). Note that system function decomposition is quite different from white-box function decomposition (as described in the [Functional Viewpoint concept](/concepts/modeling_framework/functional_viewpoint.html)).  
+### ![Function Part](/images/functional_viewpoint/FunctionPart.png){:class="img-responsive"}Function Part
+Functions (i.e., system functions and white-box functions) can be decomposed into a set of smaller interconnected functions. Any `Function` can become a `Function Part` by dragging it to a [Functional Internal Function Diagram](#functional-internal-function-diagram) (see below). Note that system function decomposition is quite different from white-box function decomposition (as described in the [Functional Viewpoint concept](/concepts/modeling_framework/functional_viewpoint.html)).  
 
 ![`Functional parts`](/images/functional_viewpoint/system-function-hierarchy.png){:width="700" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><em>A system function is decomposed into three system functions, which become `Functional Parts` of the decomposed system function.</em></div>
