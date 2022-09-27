@@ -76,6 +76,9 @@ This element is a *UML/SysML Package* with a dedicated stereotype that allows to
 ### ![Logical Interface Types Package](/images/logical_viewpoint/LogicalInterfaceTypesPackage.png){:class="img-responsive"}Logical Interface Types Package
 Insert text here
 
+### Logical Test Case Package
+Insert text here (TODO: add correct icon)
+
 ### ![Logical Package](/images/logical_viewpoint/LogicalPackage.png){:class="img-responsive"}Logical Package
 Insert text here
 
@@ -91,6 +94,15 @@ This element is based on a *SysML Block* with a dedicated stereotype that allows
 
 ### ![Logical Component Part](/images/logical_viewpoint/LogicalComponentPart.png){:class="img-responsive"}Logical Component Part
 Insert text here
+
+### Logical Component with Functions
+Insert text here (TODO: add correct icon)
+
+### Functional-Logical Adapter
+Insert text here (TODO: add correct icon)
+
+### Logical Test Case Component
+Insert text here (TODO: add correct icon)
 
 ### ![Logical Interface Type](/images/logical_viewpoint/LogicalInterfaceType.png){:class="img-responsive"}Logical Interface Type
 Insert text here

@@ -26,7 +26,7 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 | Interface (1) | SpesML Interface (1) | Proxy Port | Sub-Interface |
 | Interface Type (1) | SpesML Interface Type (1) | None (Syntactic interface of a system element is defined by set of its channels. In SysML: Syntactic Interface of part is defined by set of instances of ports (precisely: elements aggregated by the port) corresponding to the block of the part) | Syntactic Interface |
 | Connector | no specific SpesML Stereotype | Connector | Channel matching (renaming) |
-| Value Type / Enumeration | no specific SpesML Stereotype | Value type + attributes of value types including types and cardinalities | Data Type |
+| [Value Type](/plugin/data_types.html#value-type) / [Enumeration](/plugin/data_types.html#enumeration) | no specific SpesML Stereotype | Value type + attributes of value types including types and cardinalities | Data Type |
 | State Machine | SpesML State Machine | State Machine | State Machine (Mealy/Moore) |
 | SpesML State Machine Diagram | SpesML State Machine Diagram | SysML State Machine Diagram | - |
 | State | no specific SpesML Stereotype | State | State Symbol |
@@ -42,13 +42,13 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
-| Requirements Viewpoint | SpesML Requirements Viewpoint | Package | - |
-| Requirements Tracing Package | SpesML Requirements Tracing Package | Package | Structure/organize models |
-| Requirements Package | SpesML Requirements Package | Package | Structure/organize models |
-| Requirement | SpesML Requirement | Requirement | Requirement |
-| SpesML Requirements Table | SpesML Requirements Table | Generic Table | - |
-| SpesML Requirements Impact Map | SpesML Requirements Impact Map | Relation Map | Used for tracing |
-| SpesML RequirementsToRequirements Matrix | SpesML RequirementsToRequirements Matrix | Dependency Matrix | Used for tracing |
+| [Requirements Viewpoint](/plugin/requirements_viewpoint.html#requirements-viewpoint) | SpesML Requirements Viewpoint | Package | - |
+| [Requirements Tracing Package](/plugin/requirements_viewpoint.html#requirements-tracing-package) | SpesML Requirements Tracing Package | Package | Structure/organize models |
+| [Requirements Package](/plugin/requirements_viewpoint.html#requirements-package) | SpesML Requirements Package | Package | Structure/organize models |
+| [Requirement](/plugin/requirements_viewpoint.html#requirement) | SpesML Requirement | Requirement | Requirement |
+| [SpesML Requirements Table](/plugin/requirements_viewpoint.html#spesml-requirements-table) | SpesML Requirements Table | Generic Table | - |
+| [SpesML Requirements Impact Map](/plugin/requirements_viewpoint.html#spesml-requirements-impact-map) | SpesML Requirements Impact Map | Relation Map | Used for tracing |
+| [SpesML RequirementsToRequirements Matrix](/plugin/requirements_viewpoint.html#spesml-requirementtorequirement-matrix) | SpesML RequirementsToRequirements Matrix | Dependency Matrix | Used for tracing |
 
 
 
@@ -57,25 +57,25 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
-| Functional Viewpoint | SpesML Functional Viewpoint | Package | - |
-| Functional Tracing Package | SpesML Functional Tracing Package | Package | Structure/organize models |
-| Functional Package | SpesML Functional Package | Package | Structure/organize models |
-| Functional Interface Types Package | SpesML Functional Interface Types Package | Package | Structure/organize models |
-| Function | SpesML Function | Block | Function |
-| Function Part | SpesML Function Part | Property | Function |
+| [Functional Viewpoint](/plugin/functional_viewpoint.html#functional-viewpoint) | SpesML Functional Viewpoint | Package | - |
+| [Functional Tracing Package](/plugin/functional_viewpoint.html#functional-tracing-package) | SpesML Functional Tracing Package | Package | Structure/organize models |
+| [Functional Interface Types Package](/plugin/functional_viewpoint.html#functional-interface-types-package) | SpesML Functional Interface Types Package | Package | Structure/organize models |
+| [Functional Package](/plugin/functional_viewpoint.html#functional-package) | SpesML Functional Package | Package | Structure/organize models |
+| [Function](/plugin/functional_viewpoint.html#function) | SpesML Function | Block | Function |
+| [Function Part](/plugin/functional_viewpoint.html#function-part) | SpesML Function Part | Property | Function |
 | Connector | no specific SpesML Stereotype | Connector | Message Connection |
-| Functional Context | SpesML Functional Context | Class | Related to context |
-| Functional Interface | SpesML Functional Interface | Proxy Port | Interface |
-| Functional Interface Type | SpesML Functional Interface Type | Interface Block | Interface |
-| Functional Actor | SpesML Functional Actor | Block | Actor (for context) |
+| [Functional Context](/plugin/functional_viewpoint.html#functional-context) | SpesML Functional Context | Class | Related to context |
+| [Functional Interface](/plugin/functional_viewpoint.html#functional-interface) | SpesML Functional Interface | Proxy Port | Interface |
+| [Functional Interface Type](/plugin/functional_viewpoint.html#functional-interface-type) | SpesML Functional Interface Type | Interface Block | Interface |
+| [Functional Actor](/plugin/functional_viewpoint.html#functional-actor) | SpesML Functional Actor | Block | Actor (for context) |
 | Functional Actor Part | SpesML Functional Actor Part | Property | Actor (for context) |
 | Mode Model | SpesML Mode Model | State Machine | Behavior |
 | State Machine | SpesML State Machine | State Machine | Behavior |
 | SpesML State Machine Diagram | SpesML State Machine Diagram | State Machine Diagram | - |
-| SpesML Functional Internal Function Diagram | SpesML Functional Internal Function Diagram | SysML Internal Block Diagram | - |
-| SpesML Functional Impact Map | SpesML Functional Impact Map | Relation Map | Used for tracing |
-| SpesML Functional Tracing Map | SpesML Functional Tracing Map | Relation Map | Used for tracing |
-| SpesML FunctionalToRequirements Matrix | SpesML FunctionalToRequirements Matrix | Dependency Matrix | Used for tracing |
+| [SpesML Functional Internal Function Diagram](/plugin/functional_viewpoint.html#spesml-functional-internal-function-diagram) | SpesML Functional Internal Function Diagram | SysML Internal Block Diagram | - |
+| [SpesML Functional Impact Map](/plugin/functional_viewpoint.html#spesml-functional-impact-map) | SpesML Functional Impact Map | Relation Map | Used for tracing |
+| [SpesML Functional Tracing Map](/plugin/functional_viewpoint.html#spesml-functional-tracing-map) | SpesML Functional Tracing Map | Relation Map | Used for tracing |
+| [SpesML FunctionalToRequirements Matrix](/plugin/functional_viewpoint.html#spesml-functiontorequirement-matrix) | SpesML FunctionalToRequirements Matrix | Dependency Matrix | Used for tracing |
 
 
 
@@ -85,32 +85,32 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
-| Logical Viewpoint | SpesML Logical Viewpoint | Package | - |
-| Logical Tracing Package | SpesML Logical Tracing Package | Package | Structure/organize models |
-| Logical Package | SpesML Logical Package | Package | Structure/organize models |
-| Logical Interface Types Package | SpesML Logical Interface Types Package | Package | Structure/organize models |
+| [Logical Viewpoint](/plugin/logical_viewpoint.html#logical-viewpoint) | SpesML Logical Viewpoint | Package | - |
+| [Logical Tracing Package](/plugin/logical_viewpoint.html#logical-tracing-package) | SpesML Logical Tracing Package | Package | Structure/organize models |
+| [Logical Interface Types Package](/plugin/logical_viewpoint.html#logical-interface-types-package) | SpesML Logical Interface Types Package | Package | Structure/organize models |
 | Logical Test Case Package | SpesML Logical Test Case Package | Package | Structure/organize models |
-| Logical Component | SpesML Logical Component | Block | Component for Logical Architecture |
-| Logical Component Part | SpesML Logical Component Part | Part Property | Component for Logical Architecture |
-| Functional-Logical Adapter | SpesML Functional-Logical Adapter | Block | Component for Logical Architecture |
-| Functional-Logical Adapter Part | SpesML Functional-Logical Adapter Part | Part Property | Component for Logical Architecture |
-| Logical Component with Functions | SpesML Logical Component with Functions | Block | Component for Logical Architecture |
+| [Logical Package](/plugin/logical_viewpoint.html#logical-package) | SpesML Logical Package | Package | Structure/organize models |
+| [Logical Component](/plugin/logical_viewpoint.html#logical-component) | SpesML Logical Component | Block | Component for Logical Architecture |
+| [Logical Component Part](/plugin/logical_viewpoint.html#logical-component-part) | SpesML Logical Component Part | Part Property | Component for Logical Architecture |
+| [Logical Component with Functions](/plugin/logical_viewpoint.html#logical-component-with-functions) | SpesML Logical Component with Functions | Block | Component for Logical Architecture |
 | Logical Component with Functions Part | SpesML Logical Component with Functions Part | Part Property | Component for Logical Architecture |
-| Logical Test Case Component | SpesML Logical Test Case Component | Block | Used for testing |
+| [Functional-Logical Adapter](/plugin/logical_viewpoint.html#functional-logical-adapter) | SpesML Functional-Logical Adapter | Block | Component for Logical Architecture |
+| Functional-Logical Adapter Part | SpesML Functional-Logical Adapter Part | Part Property | Component for Logical Architecture |
+| [Logical Test Case Component](/plugin/logical_viewpoint.html#logical-test-case-component) | SpesML Logical Test Case Component | Block | Used for testing |
 | Logical Test Case Component Part | SpesML Logical Test Case Component Part | Part Property | Used for testing |
 | Connector | no specific SpesML Stereotype | Connector | Message Connection |
-| Logical Context | SpesML Logical Context | Class | Used for context |
-| Logical Interface | SpesML Logical Interface | Proxy Port | Interface |
-| Logical Interface Type | SpesML Logical Interface Type | Interface Block | Interface |
-| Logical Actor | SpesML Logical Actor | Block | Actor (for context) |
+| [Logical Context](/plugin/logical_viewpoint.html#logical-context) | SpesML Logical Context | Class | Used for context |
+| [Logical Interface](/plugin/logical_viewpoint.html#logical-interface) | SpesML Logical Interface | Proxy Port | Interface |
+| [Logical Interface Type](/plugin/logical_viewpoint.html#logical-interface-type) | SpesML Logical Interface Type | Interface Block | Interface |
+| [Logical Actor](/plugin/logical_viewpoint.html#logical-actor) | SpesML Logical Actor | Block | Actor (for context) |
 | Logical Actor Part | SpesML Logical Actor Part | Property | Actor (for context) |
 | State Machine | SpesML State Machine | State Machine | Behavior |
 | SpesML State Machine Diagram | SpesML State Machine Diagram | State Machine Diagram | - |
-| SpesML Logical Internal Component Diagram | SpesML Logical Internal Component Diagram | SysML Internal Block Diagram | - |
-| SpesML Logical Impact Map | SpesML Logical Impact Map | Relation Map | Used for tracing |
-| SpesML Logical Tracing Map | SpesML Logical Tracing Map | Relation Map | Used for tracing |
-| SpesML LogicalToRequirements Matrix | SpesML LogicalToRequirements Matrix | Dependency Matrix | Used for tracing |
-| SpesML LogicalToFunctional Matrix | SpesML LogicalToFunctional Matrix | Dependency Matrix | Used for tracing |
+| [SpesML Logical Internal Component Diagram](/plugin/logical_viewpoint.html#spesml-logical-internal-component-diagram) | SpesML Logical Internal Component Diagram | SysML Internal Block Diagram | - |
+| [SpesML Logical Impact Map](/plugin/logical_viewpoint.html#spesml-logical-impact-map) | SpesML Logical Impact Map | Relation Map | Used for tracing |
+| [SpesML Logical Tracing Map](/plugin/logical_viewpoint.html#spesml-logical-tracing-map) | SpesML Logical Tracing Map | Relation Map | Used for tracing |
+| [SpesML LogicalToRequirements Matrix](/plugin/logical_viewpoint.html#spesml-logicaltorequirement-matrix) | SpesML LogicalToRequirements Matrix | Dependency Matrix | Used for tracing |
+| [SpesML LogicalToFunctional Matrix](/plugin/logical_viewpoint.html#spesml-logicaltofunctional-matrix) | SpesML LogicalToFunctional Matrix | Dependency Matrix | Used for tracing |
 
 
 
@@ -120,36 +120,36 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
-| Technical Viewpoint | SpesML Technical Viewpoint | Package | - |
-| Technical Tracing Package | SpesML Technical Tracing Package | Package | Structure/organize models |
-| Technical Interface Types Package | SpesML Technical Interface Types Package | Package | Structure/organize models |
-| Technical Package | SpesML Technical Package | Package | Structure/organize models |
-| Software Execution Package | SpesML Software Execution Package | Package | Structure/organize models |
-| Technical Component | SpesML Technical Component | Block | Component for Technical Architecture |
+| [Technical Viewpoint](/plugin/technical_viewpoint.html#technical-viewpoint)] | SpesML Technical Viewpoint | Package | - |
+| [Technical Tracing Package](/plugin/technical_viewpoint.html#technical-tracing-package) | SpesML Technical Tracing Package | Package | Structure/organize models |
+| [Technical Interface Types Package](/plugin/technical_viewpoint.html#technical-interface-types-package) | SpesML Technical Interface Types Package | Package | Structure/organize models |
+| [Technical Package](/plugin/technical_viewpoint.html#technical-package) | SpesML Technical Package | Package | Structure/organize models |
+| [Software Execution Package](/plugin/technical_viewpoint.html#software-execution-package) | SpesML Software Execution Package | Package | Structure/organize models |
+| [Technical Component](/plugin/technical_viewpoint.html#technical-component) | SpesML Technical Component | Block | Component for Technical Architecture |
 | Technical Component Part | SpesML Technical Component Part | Part Property | Component for Technical Architecture |
-| Mechanical Component | SpesML Mechanical Component | Block | Component for Technical Architecture |
+| [Mechanical Component](/plugin/technical_viewpoint.html#mechanical-component) | SpesML Mechanical Component | Block | Component for Technical Architecture |
 | Mechanical Component Part | SpesML Mechanical Component Part | Part Property | Component for Technical Architecture |
-| Mechatronic Component | SpesML Mechatronic Component | Block | Component for Technical Architecture |
+| [Mechatronic Component](/plugin/technical_viewpoint.html#mechatronic-component) | SpesML Mechatronic Component | Block | Component for Technical Architecture |
 | Mechatronic Component Part | SpesML Mechatronic Component Part | Part Property | Component for Technical Architecture |
-| Electronic Component | SpesML Electronic Component | Block | Component for Technical Architecture |
+| [Electronic Component](/plugin/technical_viewpoint.html#electronic-component) | SpesML Electronic Component | Block | Component for Technical Architecture |
 | Electronic Component Part | SpesML Electronic Component Part | Part Property | Component for Technical Architecture |
-| Software Execution Subsystem | SpesML Software Execution Subsystem | Block | Component for Technical Architecture |
+| [Software Execution Subsystem](/plugin/technical_viewpoint.html#software-execution-subsystem) | SpesML Software Execution Subsystem | Block | Component for Technical Architecture |
 | Software Execution Subsystem Part | SpesML Software Execution Subsystem Part | Part Property | Component for Technical Architecture |
-| Execution Component | SpesML Execution Component | Block | Component for Technical Architecture |
+| [Execution Component](/plugin/technical_viewpoint.html#execution-component) | SpesML Execution Component | Block | Component for Technical Architecture |
 | Execution Component Part | SpesML Execution Component Part | Part Property | Component for Technical Architecture |
-| Communication Component | SpesML Communication Component | Block | Component for Technical Architecture |
+| [Communication Component](/plugin/technical_viewpoint.html#communication-component) | SpesML Communication Component | Block | Component for Technical Architecture |
 | Communication Component Part | SpesML Communication Component Part | Part Property | Component for Technical Architecture |
-| Task Architecture | SpesML Task Architecture | Block | Component for Technical Architecture |
+| [Task Architecture](/plugin/technical_viewpoint.html#task-architecture) | SpesML Task Architecture | Block | Component for Technical Architecture |
 | Task Architecture Part | SpesML Task Architecture Part | Part Property | Component for Technical Architecture |
-| Task | SpesML Task | Block | Component for Technical Architecture |
+| [Task](/plugin/technical_viewpoint.html#task) | SpesML Task | Block | Component for Technical Architecture |
 | Task Part | SpesML Task Part | Part Property | Component for Technical Architecture |
 | Connector | no specific SpesML Stereotype | Connector | Message Connection |
-| Technical Context | SpesML Technical Context | Class | Used for context |
-| Technical Interface | SpesML Technical Interface | Proxy Port | Interface |
-| Technical Interface Type | SpesML Technical Interface Type | Interface Block | Interface |
-| Technical Actor | SpesML Technical Actor | Block | Actor (for context) |
+| [Technical Context](/plugin/technical_viewpoint.html#technical-context) | SpesML Technical Context | Class | Used for context |
+| [Technical Interface](/plugin/technical_viewpoint.html#technical-interface) | SpesML Technical Interface | Proxy Port | Interface |
+| [Technical Interface Type](/plugin/technical_viewpoint.html#technical-interface-type) | SpesML Technical Interface Type | Interface Block | Interface |
+| [Technical Actor](/plugin/technical_viewpoint.html#technical-actor) | SpesML Technical Actor | Block | Actor (for context) |
 | Technical Actor Part | SpesML Technical Actor Part | Property | Actor (for context) |
-| SpesML Technical Internal Component Diagram | SpesML Technical Internal Component Diagram | SysML Internal Block Diagram | - |
-| SpesML Technical Tracing Map | SpesML Technical Tracing Map | Relation Map | Used for tracing |
-| SpesML TechnicalToRequirements Matrix | SpesML TechnicalToRequirements Matrix | Dependency Matrix | Used for tracing |
-| SpesML TechnicalToLogical Matrix | SpesML TechnicalToLogical Matrix | Dependency Matrix | Used for tracing |
+| [SpesML Technical Internal Component Diagram](/plugin/technical_viewpoint.html#spesml-technical-internal-component-diagram) | SpesML Technical Internal Component Diagram | SysML Internal Block Diagram | - |
+| [SpesML Technical Tracing Map](/plugin/technical_viewpoint.html#spesml-technical-tracing-map) | SpesML Technical Tracing Map | Relation Map | Used for tracing |
+| [SpesML TechnicalToRequirements Matrix](/plugin/technical_viewpoint.html#spesml-technicaltorequirement-matrix) | SpesML TechnicalToRequirements Matrix | Dependency Matrix | Used for tracing |
+| [SpesML TechnicalToLogical Matrix](/plugin/technical_viewpoint.html#spesml-technicaltological-matrix) | SpesML TechnicalToLogical Matrix | Dependency Matrix | Used for tracing |
