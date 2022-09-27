@@ -10,7 +10,7 @@ permalink: /concepts/modeling_framework/requirements_viewpoint.html
 
 Requirements are an over-arching topic for SPES architectural models. Requirements – at different levels of precision – link the needs of stakeholders and the obligations arising from the development context with the architectural elements of the functional, logical, and technical viewpoints. 
 
-In this documentation section, we first describe the general apprach to the handling of requirements in SpesML, and then describe the modeling elements - first requirements, then tracing relations - used to represent this approach in SpesML modeling. Finally, we give some methodological advice on requirements modeling in SpesML.
+In this documentation section, we first describe the general approach to the handling of requirements in SpesML, and then describe the modeling elements - first requirements, then tracing relations - used to represent this approach in SpesML modeling. Finally, we give some methodological advice on requirements modeling in SpesML.
 
 ## General Approach
 
@@ -23,9 +23,9 @@ It is common to differentiate requirements according on the aspects they address
 
 As detailed in the next section, some of these categories can be further refined - for instance, there are different kinds of constraints, depending on whether it is a physical entity to be constrained (e.g., its weight), architectural design decisions (e.g., notational conventions), or the development process (e.g., the need to for certain analyses or tests). 
 
-In constrast with the elements of the functional, logical or technical viewpoints, requirements as such are not given a formal semantics. in SpesML. One reason is that for most categories, the Universal Interface Model - on which the formalization of the other viewpoints is based - is not a suitable mathematical basis. The second reason is that even for functional requirements, where such a formalization is intuitively possible, formalized requirements have little use in SpesML. Instead, the black-box functions of the functional viewpoint can be seen as formalized behavior descriptions of a group of related functional requirements. In practice, this gives a better understanding of the intended functionality tha isolated partial behavior specifications. 
+In contrast with the elements of the functional, logical or technical viewpoints, requirements as such are not given a formal semantics. in SpesML. One reason is that for most categories, the Universal Interface Model - on which the formalization of the other viewpoints is based - is not a suitable mathematical basis. The second reason is that even for functional requirements, where such a formalization is intuitively possible, formalized requirements have little use in SpesML. Instead, the black-box functions of the functional viewpoint can be seen as formalized behavior descriptions of a group of related functional requirements. In practice, this gives a better understanding of the intended functionality than isolated partial behavior specifications. 
 
-Requirements are connected to architectural elements or to other requirements through various tracing relations, again addressing different aspects, for instance, whether an architectural element is intended to *satisy* a requirement or whether a requirement is *derived* from another requirement.
+Requirements are connected to architectural elements or to other requirements through various tracing relations, again addressing different aspects, for instance, whether an architectural element is intended to *satisfy* a requirement or whether a requirement is *derived* from another requirement.
 
 Although requirements themselves in SpesML have, for the reasons discussed above, no mathematical semantics in the underlying Universal Interface Model, it is still possible to derive methodically useful properties at the level of the traceability graph consisting of linked requirements and architectural elements. For instance, it is possible to discover unimplemented stakeholder requirements or unmotivated derived requirements; it is also possible to construct lists of verification obligations arising from the graph structure.
 
@@ -50,7 +50,7 @@ The following table summarizes the categories:
 | Physical constraint | Requirement that specifies physical characteristics and/or physical constraints of the system or of a system part, such as weight, size or resource restrictions or the demand to realize a system part through a certain off-the-shelf component. | Any architectural model element in LVP/TVP.         |
 | Process constraint  | Demands of compliance to process norms or requirements on application of development steps or methods, e.g. particular analyses | Any architectural model element                     |
 
-
+The requirements taxonomy might seem a bit overwhelming at first. Indeed, for systems with limited size and complexity it is reasonable to just use the generic "requirement" category. More complex situations benefit from the higher expressibility and the stronger wellformedness conditions gained when differentiating categories.
 
 ### Requirements Attributes
 
@@ -133,7 +133,7 @@ For SpesML, the situation is slightly different. Testing of systems is highly de
 
 On the other hand, there are verification goals that can be fulfilled considering architectural models only:
 
-1. Design constraints, which pose demands on teh architectural model, are obviously to be verified on the model itself.
+1. Design constraints, which pose demands on the architectural model, are obviously to be verified on the model itself.
 2. In systems engineering, simulation of an architectural model with executable components behavior specifications is a specific form  of prototyping to get early feedback on the feasibility of the chosen architecture to satisfy requirements. 
 
 ### Approaches to Requirements Fulfillment 
@@ -152,13 +152,13 @@ Given the preliminaries of the previous sections, the next step is to consider c
 
 In summary, only the fulfillment of requirements of the categories given in the first three rows (capability, functional and interface requirements) are directly in the scope of SpesML. In addition, the fulfillment of certain design constraints - those expressed as well-formedness rules - can be regarded as being in scope. 
 
-The fulfillment of requirements of the other categories is not in the scope of the SpesML project. These categories should not be neglected in a systems development project, but questions of their fufilment are beyond what can reasonably be reached within SpesML.
+The fulfillment of requirements of the other categories is not in the scope of the SpesML project. These categories should not be neglected in a systems development project, but questions of their fulfillment are beyond what can reasonably be reached within SpesML.
 
 ### Representation of Requirements Fulfillment
 
 Common to the capability, functional and interface requirements categories is that their fulfillment is demonstrated primarily through test or simulation. For SpesML, the main question here is whether test simulation/test setups, scenarios and  results should be included or referenced in the architectural models. For functional and interface requirements - typically being universal properties -, in addition a coverage argument may need to be documented.
 
-The *Verify-*relationship is the main relationship to demonstrate fulfillment of requirements. It can be used to to link requirements to test or simulation information that is used to verify this requirement. Fulfillment also needs to consider which system or model element is responsible for ensuring a requirement;this aspect is denoted by the *Satisfy* relationship.
+The *Verify-*relationship is the main relationship to demonstrate fulfillment of requirements. It can be used to to link requirements to test or simulation information that is used to verify this requirement. Fulfillment also needs to consider which system or model element is responsible for ensuring a requirement; this aspect is denoted by the *Satisfy* relationship.
 
 In summary, the assertion that 
 
@@ -175,7 +175,9 @@ Since through the setup described above requirements fulfillment can be demonstr
 
 However, in SpesML this functionality is not implemented. The reason is that when the model is changed (either the requirement, the test object or the test setup), the test setup needs to be run again. This is a special case of automated change management, which is not implemented within SpesML.
 
-## Modeling Patterns
+## Modeling Guidelines
+
+As in most professional activities, for system development, certain activities are recurring and can be abstracted into "patterns". This section gives a small selection of examples.
 
 ### Co-Evolution of Requirements and Architecture
 
@@ -203,31 +205,49 @@ Subsystem development frequently occurs in parallel with, or earlier than, devel
 
 In these cases, development happens against *assumed* requirements, as there are no stable system requirements yet available. This means that it is not certain that the independently developed subsystem or component does indeed fulfill the properties required by the system. Moreover, the same argument goes in the other direction: A subsystem or component can have requirements on the integration context which may or may not be satisfied by the system to be developed.
 
-In SpesML, the *Require* and *Matches* relationships are intended to represent such development situations. 
+In SpesML, the *Require* and *Matches* relationships are intended to represent such development situations: 
 
-For instance, given a supplier intent on developing a subsystem that generates status information. When starting development, it is not perfectly certain at which frequency, let only with which precise formats and interface technologies and protocols, the status information has to be produced. Still, the supplier proceeds and develops such a system; it turns out that there are some demands on whatever system the subsystem is to be integrated in - most prominently, electrical power with certain characteristics has to be available. Thus, development proceeds against _assumed_ requirements and also for an _assumed_ integration context. 
+* The *Require* relationship is used to state expectation on the integration context of a subsystem (from the point of view of the subsystem), as well as expectation on the properties to be fulfilled by the subsystem (from the point of view of the system).
 
-The *Require* relationship is used to state expectation on the integration context of an architectural element. The *Matches* relationship is used in the context of modular development to relate requirements assumed during subsystem development with those of the context system into which the subsystem is integrated:
+* The *Matches* relationship is then used to describe which of the properties satisfied by the system imply that the integration demands of the subsystem are fulfilled, as well as which of the properties satisfied by the subsystem imply that the expectations of the system on the subsystem are fulfilled.
+
+As an example, given a supplier intent on developing a subsystem that generates status information. When starting development, it is not yet determined at which frequency, let only with which precise formats and interface technologies and protocols, the status information has to be produced. Still, the supplier continuous working and develops such a system. During development, it turns out that there are some demands on whatever system the subsystem is to be integrated in - most prominently, electrical power with certain characteristics has to be available. Thus, subsystem development proceeds against _assumed_ requirements (which are then guaranteed or *satisfied* by the subsystem) and also for an _assumed_ integration context (which is *required* by the subsystem).
+
+Conversely, the system developer discovers a need to have a subsystem to provide status messages with a certain minimum update rate. Clearly, the subsystem will have  power demands; hence, a certain power budget is guaranteed by the system. 
+
+When integrating the subsystem of our example, the integrator has to ensure that the guaranteed performance of the subsystem -i.e., the frequency of status delivery- matches the demands of the system under development. Conversely, the integrator also has to ensure that the expectations of the subsystem -i.e., its power demands- can be satisfied by the system under development. While in general it is not possible to automatically verify such pairings of assumed (*Require*) and guaranteed (*Satisfy*) properties, it is typically feasible to manually review them. The *Require*/*Matches* relationships help to identify and track these review obligations:
 
 ![Requirements and architecture decomposition](/images/requirements_viewpoint/require-matches.png){:class="img-responsive"}
 
 
-The *Matches* relationship is closely related to *Derive*, in that they state that if the source requirement is valid, the destination requirement of the trace should be valid, too. Thus, *Matches* also gives rise to a verification obligation, namely to verify that the *Required* requirements of the subsystem are indeed fulfilled by *Satisfied* requirements of the main system, and vice versa.
-
-For instance, when integrating the subsystem of our example, the integrator has to ensure that the guaranteed performance of the subsystem -i.e., the frequency of status delivery- matches the demands of the system under development. Conversely, the integrator also has to ensure that the expectations of the subsystem -i.e., its power demands- can be satisfied by the system under development. While in general it is not possible to automatically verify such pairings of assumed (*Require*) and guaranteed (*Satisfy*) properties, it is typically feasible to manually review them. The *Require*/*Matches* relationships help to identify and track these review obligations.
-
-
 Note that in general the *Require*/*Matches* combinations may be circular: Without supplied power, it should come as not surprise if the subsystem fails to deliver status information. On the other hand, perhaps the system will only route power to the subsystem if the status information implies the subsystem is indeed alive? 
 
-Such circles must be broken by rephrasing one of the requirements in a way such that at least one component fulfills its guarantee in advance; only if then its assumed requirments are not fulfilled by the the other component may the first component renege on its guarantees. Clearly, this approach suitable only for behavioral properties. However, in practice this will rarely be a problem. Circularities are unlikely to occur in design constraints, and assumptions related to quality requirements typically involve resource guarantees allocated through a top-down budgeting process.
+Such circles must be broken by rephrasing one of the requirements in a way such that at least one component fulfills its guarantee in advance; only if then its assumed requirements are not fulfilled by the the other component may the first component renege on its guarantees. Clearly, this approach suitable only for behavioral properties. However, in practice this will rarely be a problem. Circularities are unlikely to occur in design constraints, and assumptions related to quality requirements typically involve resource guarantees allocated through a top-down budgeting process.
+
+Note that the *Matches* relationship is closely related to *Derive*, in that they state that if the source requirement is valid, the destination requirement of the trace should be valid, too. As with *Derive*, *Matches* gives rise to a verification obligation, namely to verify that *Required* requirements of the subsystem are indeed fulfilled by *Satisfied* requirements of the main system, and vice versa.
+
+### Incremental Clarification of Requirements
+
+
+It is to be expected that in many cases it is not clear how a certain situation should be modeled. For instance, in the power window system case study, window operation is triggered not only by the driver and passengers, but also by light sensors. The intent here is that windows should be closed when entering a tunnel, in order to keep the stale air in the tunnel from polluting the car. 
+
+The obvious way to model this situation is as in the left side of the following figure: There are initial requirements that not only state that the window should close when entering a tunnel, but also the intended means of detecting tunnel entry (an alternative would be for instance a location-based approach). An alternative, if we believe the decision on tunnel detection should be done by the system designers, we might document this decision as a clarification (right side of the figure):
+
+![Requirements and architecture decomposition](/images/requirements_viewpoint/window-lifter-choices-1.png){:class="img-responsive"}
+
+It might be preferable, however, to emphasize this decision in order to enforce alignment with customers and other stakeholders; in this case, one might model the tunnel detection decision as an assumption (left side), which is kept dangling until validated by finally matching to a stakeholder requirement (right half):
+
+![Requirements and architecture decomposition](/images/requirements_viewpoint/window-lifter-choices-2.png){:class="img-responsive"}
+
+Note that at first blush this use of the *Require* and *Matches* relationships seems to be quite different from the use for concurrent development of system and subsystem development as outlined above. Its essence, however, is the same: We discover a requirements gap and solve it by developing against an assumed requirement. 
 
 ### Derived requirements
 
-The co-evolution is not restricted to the structure of requirements and architecture. For instance, new requirements may arise due to safety analyses, necessating additional functionality to mitigate newly discovered failure modes. Another reason for the introduction of new requirements may be architectural decisions that necessitate clarification of intended behavior beyond what can be inferred from stakeholder-derived requirements. In DO-178C [^do178c], such requirements are referred to as "derived requirements". 
+The co-evolution is not restricted to the structure of requirements and architecture. For instance, new requirements may arise due to safety analyses, necessitating additional functionality to mitigate newly discovered failure modes. Another reason for the introduction of new requirements may be architectural decisions that necessitate clarification of intended behavior beyond what can be inferred from stakeholder-derived requirements. In DO-178C [^do178c], such requirements are referred to as "derived requirements". 
 
 Methodologically, there are different ways to represent such derived requirements in SpesML:
 
-1. One approach is to represent derived requirements as assumed (*required*) requirements. **This is related to the power window example in the section about the Require and Matches relations above.** The main advantage of this approach is that it is obvious that these requirements need to be clarified with stakeholders: A stakeholder requirement justifying the decision has  to be introduced and *matched* with the assumed requirement.
+1. One approach is to represent derived requirements as assumed (*required*) requirements. This is related to the power window example above. The main advantage of this approach is that it is obvious that these requirements need to be clarified with stakeholders: A stakeholder requirement justifying the decision has  to be introduced and *matched* with the assumed requirement.
 2. Alternatively, derived requirements can be introduced and linked to architectural elements (via *Satisfy*-traces) analogously to stakeholder-derived requirements. Since they are not traceable to a stakeholder requirement, however, in any case a rationale should be documented in the requirement and the source attribute of the requirement should state that this is a derived requirement. This approach is preferable for requirements justifying or constraining architectural decisions that do not need to be aligned with stakeholders. Typically, such aspects are modeled as design constraint requirements.
 
 ## References
