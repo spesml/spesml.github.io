@@ -136,9 +136,9 @@ The following table shows the mapping between the previously describe concepts (
 
 | Concept | SysML Element | Stereotype / Name in SpesML plugin (MagicDraw) | Shown Name (GUI) in SpesML plugin (MagicDraw)|
 | ------ | ------ | ------ | ------ |
-| Platform/Container for execution and communication units | Definition: Block, Instance: Part | (is in our implementation identical with the [software execution subsystem](/plugin/technical_viewpoint.html#software-execution-subsystem)) | (is in our implementation identical with the [software execution subsystem](/plugin/technical_viewpoint.html#software-execution-subsystem)) |
-| Execution Unit (e.g., ECU) | Definition: Block, Instance: Part | [SpesML Execution Component](/plugin/technical_viewpoint.html#execution-component) | [Execution Component](/plugin/technical_viewpoint.html#execution-component) |
-| Communication Unit (e.g., bus) | Definition: Block, Instance: Part | [SpesML Communication Component](/plugin/technical_viewpoint.html#communication-component) | [Communication Component](/plugin/technical_viewpoint.html#communication-component) |
+| Platform/Container for execution and communication units | Definition: Block, Instance: Part | (is in our implementation identical with the [software execution subsystem](/plugin/technical_viewpoint.html#software-execution-subsystem)) | (is in our implementation identical with the software execution subsystem) |
+| Execution Unit (e.g., ECU) | Definition: Block, Instance: Part | [SpesML Execution Component](/plugin/technical_viewpoint.html#execution-component) | Execution Component |
+| Communication Unit (e.g., bus) | Definition: Block, Instance: Part | [SpesML Communication Component](/plugin/technical_viewpoint.html#communication-component) | Communication Component |
 | Communication Message/Interface | Proxy Port | [SpesML Technical Interface](/plugin/technical_viewpoint.html#technical-interface) | Technical Interface |
 
 
@@ -159,9 +159,9 @@ The following table shows the mapping between the previously describe mapping co
 
 | Concept | SysML Element | Stereotype / Name in SpesML plugin (MagicDraw) | Shown Name (GUI) in SpesML plugin (MagicDraw)|
 | ------ | ------ | ------ | ------ |
-| Task Instance to Execution Component Instance Mapping | Allocation Matrix | [SpesML TaskInstanceToExecution Allocation Matrix](/plugin/technical_viewpoint.html#taskinstancetoexecution-allocation-matrix) | [TaskInstanceToExecution Allocation Matrix](/plugin/technical_viewpoint.html#taskinstancetoexecution-allocation-matrix) |
-| Task Type to Execution Component Type Mapping | Allocation Matrix | [SpesML TaskTypeToExecution Allocation Matrix](/plugin/technical_viewpoint.html#tasktypetoexecution-allocation-matrix) | [TaskTypeToExecution Allocation Matrix](/plugin/technical_viewpoint.html#tasktypetoexecution-allocation-matrix) |
-| Task Port to Execution Component Port Mapping | Allocation Matrix | [SpesML PortToExecution Allocation Matrix](/plugin/technical_viewpoint.html#porttoexecution-allocation-matrix) | [PortToExecution Allocation Matrix](/plugin/technical_viewpoint.html#porttoexecution-allocation-matrix) |
+| Task Instance to Execution Component Instance Mapping | Allocation Matrix | [SpesML TaskInstanceToExecution Allocation Matrix](/plugin/technical_viewpoint.html#taskinstancetoexecution-allocation-matrix) | TaskInstanceToExecution Allocation Matrix |
+| Task Type to Execution Component Type Mapping | Allocation Matrix | [SpesML TaskTypeToExecution Allocation Matrix](/plugin/technical_viewpoint.html#tasktypetoexecution-allocation-matrix) | TaskTypeToExecution Allocation Matrix |
+| Task Port to Execution Component Port Mapping | Allocation Matrix | [SpesML PortToExecution Allocation Matrix](/plugin/technical_viewpoint.html#porttoexecution-allocation-matrix) | PortToExecution Allocation Matrix |
 | Task to Partition Component Mapping | Allocation Matrix | SpesML TaskPartition Allocation | TaskPartition Allocation |
 | Partition to Execution Component Mapping | Allocation Matrix | SpesML Partition Allocation | Partition Allocation |
 
