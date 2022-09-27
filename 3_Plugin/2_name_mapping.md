@@ -17,6 +17,8 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 ## Universal Interface Model
 
+You can find the concept of the Universal Interface Model [here](/concepts/modeling_framework/context.html).
+
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
 | (viewpoint-specific, see following tables) | (viewpoint-specific, see following tables) | Block (to define a type of system element) | System Element  |
@@ -40,6 +42,8 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 ## Requirements Viewpoint
 
+You can find the concept of the Requirement Viewpoint [here](/concepts/modeling_framework/requirements_viewpoint.html).
+
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
 | [Requirements Viewpoint](/plugin/requirements_viewpoint.html#requirements-viewpoint) | SpesML Requirements Viewpoint | Package | - |
@@ -54,6 +58,8 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Functional Viewpoint
+
+You can find the concept of the Functional Viewpoint [here](/concepts/modeling_framework/functional_viewpoint.html).
 
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
@@ -82,6 +88,8 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Logical Viewpoint
+
+You can find the concept of the Logical Viewpoint [here](/concepts/modeling_framework/logical_viewpoint.html).
 
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
@@ -117,6 +125,8 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 
 ## Technical Viewpoint
+
+You can find the concept of the Technical Viewpoint [here](/concepts/modeling_framework/technical_viewpoint.html).
 
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
