@@ -11,6 +11,7 @@ permalink: /concepts/maturity_model.html/
 
 - [Introduction](#introduction)
 	- [Focus area maturity models](#focus-area-maturity-models)
+	- [MBSE Maturity Model](#mbse-maturity-model)
 - [The SpesML Maturity Model](#the-spesml-maturity-model)
 	- [The SpesML Maturity Matrix](#the-spesml-maturity-matrix)
 	- [Capability description](#the-spesml-maturity-matrix)
@@ -136,7 +137,7 @@ The satisfy relation traces the requirement to a function, which is useful to id
 This capability is related to 
 **SFM D: The model of the system functions can be simulated together with a description of the context.**  
 
-####White-box Modeling (WBM)
+#### White-box Modeling (WBM)
 
 **WBM A: The white-box functions that implement a system function are modeled with a syntactic interface (inputs and outputs).**  
 ![changeHere](/images/wbfa-example.png){:class="img-responsive"}
