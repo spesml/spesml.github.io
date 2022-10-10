@@ -66,15 +66,40 @@ In the executable expression language, further expressions may be used than in s
 
 The `condition` is an expression that evaluates to a `boolean` value. If and only if the condition evaluates to `true`, the value of `expression 1` will be returned. Should it evaluate to `false`, `expression 2` will be returned instead.
 
-  ```java
-  if /*condition*/ 
-  then
-      //code 1
-  else
-      //code 2
+```java
+if /*condition*/ 
+then
+  //code 1
+else
+  //code 2
+```
 
-  The `else`-part is not optional.
+The `else`-part is not optional.
+  
+Example usage:
+```java
+Integer abs(Integer x) =
+  if x >= 0
+  then x
+  else -x;
+```
+  
+### `let-in`-expressions
 
+The `assignee X` has the value of the expression `assignor X` inside the `in-expression`. `let-in`-expressions can be used to create temporary values.
+
+```java
+let /*assignee 1*/ = /*assignor 1*/;
+    /*assignee 2*/ = /*assignor 2*/
+in  // in-expression (using assignees)
+```
+  
+Example usage:
+```java 
+Float pq1(Float p, Float q) =
+  let Float p2 = p / 2
+  in -p2 + sqrt(pow(p2, 2) - q);
+```
 
 ## Data Types
 
