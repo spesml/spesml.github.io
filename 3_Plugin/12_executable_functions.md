@@ -106,8 +106,66 @@ Float pq1(Float p, Float q) =
 - Data types are not defined by models of this language.
 - Data types are defined by value types in the containment tree in SpesML. 
 - Value types cannot be generic.
-- There are built-in generic types in this language: List\<E\>, Set\<E\>.
+- There are built-in generic types in this language: `List\<E\>`, `Set\<E\>`.
 - all built-in generic types provide the same methods as the corresponding Java types.
+
+## Packages
+
+Function modules are managed in function (module) packages. Each package may contain any number of function modules and sub packages. They are used to structure functions and avoid naming conflicts. Thus they are comparable to packages of common programming languages like Java.
+
+## Creating a function package
+
+To create a function package you may use the following steps:
+
+1. Navigate to the component in the containment tree which shall contain the function package.
+2. Open the context menu and select *Create Element*:
+
+![Create Element](/images/executable_functions_language/create_element.png){:width="617" :class="img-responsive"}
+
+3. In the dialog that opens select to create a function package:
+
+![Create Element](/images/executable_functions_language/create_function_package.png){:width="366" :class="img-responsive"}
+
+4. Enter the packages name, in this example we choose *a*:
+
+![Create Element](/images/executable_functions_language/created_package.png){:width="216" :class="img-responsive"}
+
+### Creating a function sub package
+
+To create a sub package, one may use the same steps as described above but select a function package in the containment tree to contain the new package.
+
+Here we created sub package *b* contained in the package *a*:
+
+![Create Element](/images/executable_functions_language/created_sub_package.png){:width="213" :class="img-responsive"}
+
+## Creating a function module
+
+Function modules must be contained within a package.
+
+1. In the containment tree select a function package.
+2. Open the context menu and select *Create Element*.
+3. In the dialog that opens select to create a function module:
+
+![Create Element](/images/executable_functions_language/create_function.png){:width="410" :class="img-responsive"}
+
+4. Enter the name of the module, in this example we choose *m*:
+
+![Create Element](/images/executable_functions_language/created_function_module.png){:width="122" :class="img-responsive"}
+
+5. Select the newly created module by double clicking on it.
+6. In the properties tab select the empty field right next to *Implementation Body*. A button with three dots will appear:
+
+![Create Element](/images/executable_functions_language/select_body.png){:width="453" :class="img-responsive"}
+
+7. Click on the button with the three dots to open a dialog:
+
+![Create Element](/images/executable_functions_language/edit_body.png){:width="418" :class="img-responsive"}
+
+8. Enter the executable function language code for the module. Note that the package declaration and name of the module must match the information stored in the containment tree; In our example the module `m` has the package declaration `a.b`:
+
+9. Click OK to stop editing the code.
+
+
 
 ## Grammar
 
