@@ -101,7 +101,6 @@ Requirements are not isolated model elements, but are typically related to other
 | ------------ | ------------------------------------------------------------ | -------- |
 | Containment  | Decomposition into sub-requirements. This is not really a tracing relationship, but instead part of the requirements meta model. It is frequently used for the co-evolution of architecture and requirements (see below). | Req/Req  |
 | Derive       | Derivation of one or more requirements from a source requirement. This is related to the concept of refinement in Focus. | Req/Req  |
-| Clarify      | Elaboration of a requirement by additional text or other models (e.g., state machines, sequence diagrams); conversely, elaborate architectural models by textual descriptions. | Any/Req  |
 | Satisfy      | Relate requirement with architectural model elements that are intended to satisfy the requirement. | Arch/Req |
 | Trace        | General-purpose relationship between a requirement and any other model element. The semantics of trace include no real constraints and therefore are quite weak. | Any/Req  |
 | Verify       | Relate requirements with test or simulation scenarios or other model elements. | Any/Req  |
