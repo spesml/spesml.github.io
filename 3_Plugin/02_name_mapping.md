@@ -17,7 +17,7 @@ Note that SpesML uses the SysML type/property concept for model elements (functi
 
 ## Universal Interface Model
 
-You can find the concept of the Universal Interface Model [here](/concepts/modeling_framework/context.html).
+You can find the concept of the Universal Interface Model [here](/concepts/modeling_framework/uim.html).
 
 | Implemented Modeling Element (GUI Name in MagicDraw) | Stereotype Name in SpesML plugin | Related UML/SysML Element | Related Modeling Concept |
 |---|---|---|---|
