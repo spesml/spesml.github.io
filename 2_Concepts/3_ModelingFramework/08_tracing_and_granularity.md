@@ -123,13 +123,13 @@ logical architecture in mind to build a bridge between the functional
 and the logical architectures. In a design decision, a structural
 architecture is developed from the set of white-box functions by
 uniquely mapping, i.e., tracing white-box functions to logical
-components (see Figure 3). To that end the logical components are
+components (see [Figure 3](#figureTraceFVP)). To that end the logical components are
 decomposed into sub-components that implement exactly one white-box
 function. Sub-components can be combined into logical architecture
 components by applying the Universal Interface Model 
 (<a href="https://spesml.github.io/concepts/modeling_framework/uim.html">UIM</a>). The
 sub-components then represent a refinement of the white-box functions
-(arrow labeled T/R in Figure 3). In the tool this is modeled by a
+(arrow labeled T/R in [Figure 3](#figureTraceFVP)). In the tool this is modeled by a
 *realize* relation from the logical sub-component to the white-box
 function. Composition of all these sub-components yields the syntactic
 and semantic interface of the respective component (again by application
@@ -163,7 +163,7 @@ discuss:
 
 <a name="figureTraceFVP"></a>
 ![TraceFVP](/images/tracing_and_granularity/image3.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 2: </b><em>Tracing Functional View to Logical Architecture</em></div>
+<div align="center"><b>Figure 3: </b><em>Tracing Functional View to Logical Architecture</em></div>
 
 2.  Our functional model of a system can be viewed as a network of
     communicating instances of white-box function types, where in most
@@ -191,7 +191,7 @@ further (sub-) components that are defined by additional requirements
 (i.e. requirements that are not covered by functions in the FVP). Those
 (sub-)components will not have a direct tracing relation to a white-box
 function. An example of these are requirements that arise through design
-decisions (white boxes in Figure 3).
+decisions (white boxes in [Figure 3](#figureTraceFVP)).
 
 ### Definition of Software-Components in the Logical Architecture
 
@@ -228,7 +228,7 @@ Depending on the project at hand we have three options:
     > this split, we suggest to further decompose the sub-components in
     > the logical architecture (Figure 3) into a cyber and a physical
     > part. These sub-sub-components can now be rearranged and composed
-    > to achieve the targeted split (see Figure 4). This approach does
+    > to achieve the targeted split (see [Figure 4](#figureSWSubsystem)). This approach does
     > not require implementation decisions already in the functional
     > view, but has the disadvantage that the behavior models of the
     > white-box functions can no longer be used directly to model the
@@ -239,7 +239,7 @@ Depending on the project at hand we have three options:
 
 <a name="figureSWSubsystem"></a>
 ![SWSubystem](/images/tracing_and_granularity/image4.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 2: </b><em>From Initial Logical Architecture to Central SW-Subsystem Architecture</em></div>
+<div align="center"><b>Figure 4: </b><em>From Initial Logical Architecture to Central SW-Subsystem Architecture</em></div>
 
 > It should be noted, that
 
@@ -292,8 +292,11 @@ Note:
     > to model redundancy in the technical view for the first time. We
     > use the trace *realize (redundant)* to model this.
 
-<img src="./media/image5.png"
-style="width:6.50694in;height:2.57917in" />The syntactical interface of
+<a name="figureTraceLA"></a>
+![TraceLA](/images/tracing_and_granularity/image5.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 5: </b><em>Tracing Logical Architecture to Technical Architecture</em></div>
+
+The syntactical interface of
 these technical components is then a refinement of the related logical
 components. Even if we propose a 1:1 relationship between logical and
 technical components, the interface refinement has a large impact of the
@@ -305,13 +308,12 @@ The runtime part of the software execution subsystem (the Central
 SW-Subsystems in case of a CPS) is described by a set of (executable)
 tasks that process inputs to outputs, or by a bus message catalog that
 contains all messages representing the technical data flow between these
-tasks (task architecture). (Link:
-https://spesml.github.io/concepts/modeling_framework/technical_viewpoint.html#technical-viewpoint-models-of-the-software-execution-subsystem)
+tasks (see 
+<a href="https://spesml.github.io/concepts/modeling_framework/technical_viewpoint.html#technical-viewpoint-models-of-the-software-execution-subsystem">task architecture</a>).
 
-<img src="./media/image6.PNG" style="width:6.44792in;height:2.7639in" />
-
-Figure 6: Software Execution Subsystem with recommended 1:1 and 1:n
-traces between logical components with software and software tasks
+<a name="figureTraceSES"></a>
+![TraceSES](/images/tracing_and_granularity/image6.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 6: </b><em>Software Execution Subsystem with recommended 1:1 and 1:n traces between logical components with software and software tasks</em></div>
 
 In general, the software tasks can be designed independent from the
 sub-component structure of the logical control component. However, in
