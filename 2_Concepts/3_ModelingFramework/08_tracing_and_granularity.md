@@ -322,7 +322,7 @@ software tasks necessary to implement the software execution subsystem,
 defining a 1:n relationship between the sub-components and the software
 tasks. This in turn defines a refinement relationship between the
 logical sub-components of the logical control component and the tasks of
-the software execution subsystem (see Figure 6). The tracing is modelled
+the software execution subsystem (see [Figure 6](#figureTraceSES)). The tracing is modelled
 through a *realizes* relation from the software tasks to the logical
 sub-components.
 
@@ -341,10 +341,10 @@ partitions) associated with a specific hardware execution resource.
 
 A detailed description of the allocation models used for deployment can
 be found here:
-<https://spesml.github.io/concepts/modeling_framework/technical_viewpoint.html#allocation-models>
+<a href="https://spesml.github.io/concepts/modeling_framework/technical_viewpoint.html#allocation-models">link</a>
 
 By defining “allocate to” traces in allocation metrices (see, e.g.,
-https://spesml.github.io/plugin/technical_viewpoint.html#taskinstancetoexecution-allocation-matrix)
+<a href="https://spesml.github.io/plugin/technical_viewpoint.html#taskinstancetoexecution-allocation-matrix">link</a>)
 between software tasks and execution components, it can be
 specified/modeled which software task should be deployed on which
 execution component. The cardinality of these allocation traces must be
