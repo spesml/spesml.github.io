@@ -163,7 +163,7 @@ discuss:
 
 <a name="figureMapping"></a>
 ![Mapping](/images/spesml_system_model/image3.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 3: </b><em>Mapping Functional View -\> Logical Architecture</em></div>
+<div align="center"><b>Figure 3: </b><em>Mapping Functional View to Logical Architecture</em></div>
 
 2.  Our functional model of a system can be viewed as a network of
     communicating instances of white-box function types, where in most
