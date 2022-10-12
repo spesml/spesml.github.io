@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Expressions
-nav_order: 9
+nav_order: 10
 parent: SpesML Plugin
 permalink: /plugin/expressions.html
 ---

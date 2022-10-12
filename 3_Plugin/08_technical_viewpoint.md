@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Technical Viewpoint
-nav_order: 7
+nav_order: 8
 parent: SpesML Plugin
 permalink: /plugin/technical_viewpoint.html
 ---

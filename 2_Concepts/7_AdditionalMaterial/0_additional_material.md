@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Additional Material
-nav_order: 8
+nav_order: 7
 parent: SpesML Concepts
 has_children: true
 has_toc: true

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Summary and Outlook
-nav_order: 7
+nav_order: 6
 parent: SpesML Concepts
 has_children: true
 has_toc: true
