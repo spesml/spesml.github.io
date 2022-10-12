@@ -126,8 +126,8 @@ uniquely mapping, i.e., tracing white-box functions to logical
 components (see Figure 3). To that end the logical components are
 decomposed into sub-components that implement exactly one white-box
 function. Sub-components can be combined into logical architecture
-components by applying the Universal Interface Model (UIM – see Link:
-https://spesml.github.io/concepts/modeling_framework/uim.html). The
+components by applying the Universal Interface Model 
+(<a href="https://spesml.github.io/concepts/modeling_framework/uim.html">UIM</a>). The
 sub-components then represent a refinement of the white-box functions
 (arrow labeled T/R in Figure 3). In the tool this is modeled by a
 *realize* relation from the logical sub-component to the white-box
@@ -141,8 +141,8 @@ functional view of the SuD is uniquely assigned.
 
 In our tool implementation, system functions and white-box functions are
 SpesML function elements, which are derived from the SysML Block element
-with SpesML Function stereotype applied (see Link:
-<https://spesml.github.io/plugin/spes_sysml_mapping.html> for more
+with SpesML Function stereotype applied (
+<a href="https://spesml.github.io/plugin/spes_sysml_mapping.html>link</a> for more
 details). As a consequence, traces are provided on the basis of model
 object types (the SysML Block elements). Thus, the *realizes* relation
 links the types of the logical sub-component and the white-box function.
