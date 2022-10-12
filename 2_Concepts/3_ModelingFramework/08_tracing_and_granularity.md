@@ -161,8 +161,8 @@ discuss:
     sub-components. To indicate this case, we use a *realizes
     (redundant)* relation to the white-box function.
 
-<a name="figureMapping"></a>
-![Mapping](/images/tracing_and_granularity/image2.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<a name="figureTraceFVP"></a>
+![TraceFVP](/images/tracing_and_granularity/image2.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 2: </b><em>Tracing Functional View to Logical Architecture</em></div>
 
 2.  Our functional model of a system can be viewed as a network of
