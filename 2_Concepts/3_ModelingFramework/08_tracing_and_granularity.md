@@ -19,13 +19,13 @@ minimum, and second, each trace should have a precise semantic meaning.
 In SpesML we introduce a set of stereotypes to allow easy setup of
 tracing matrixes (see below) and other customizations. A detailed
 description of the implementation of the tracing concept can be found
-here (Link: https://spesml.github.io/plugin/tracing.html).
+here (see <a href="https://spesml.github.io/plugin/tracing.html">Tracing Plugin</a>).
 
 ### Models in SPES
 
 In the SPES approach, the architecture description of the system under
 development (SuD) is structured with the help of predefined viewpoints
-(see Link: https://spesml.github.io/concepts.html/). Each viewpoint
+(see <a href="[https://spesml.github.io/plugin/tracing.html">Tracing Plugin](https://spesml.github.io/concepts/methodology/views_and_viewpoints.html)Viewpoints and Views</a>). Each viewpoint
 defines a set of models and model elements, for modeling the respective
 view of the SuD.
 
@@ -43,14 +43,15 @@ between model elements. There may be usage scenarios where a different
 approach has to be taken. This then comes at the expense of the
 semantics of the trace relationships.
 
-Figure 2 gives an overview of the trace relations of an SuD across the
+[Figure 2](#figureOverview) gives an overview of the trace relations of an SuD across the
 different views and across layers of granularity, which are described
 below in more detail. In SpesML we use the *satisfy* relation for
 tracing between requirements and the model elements from the different
 views and the *realizes* relation (*realizes (redundant)* respectively)
 for tracing between the views (different architectures).
 
-Note: Unlike indicated in Figure 2, the *satisfy* and *realizes*
+Note: Unlike indicated in 
+[Figure 2](#figureOverview), the *satisfy* and *realizes*
 relationships always points backwards from the implementing model
 element to the implemented model element.
 
@@ -65,10 +66,9 @@ relation from the more detailed requirement). The combination of
 linking architectural elements to high-level stakeholder needs or to
 obligations arising from the development context, such as compliance.
 
-<img src="./media/image1.png" style="width:3.80166in;height:3.69482in"
-alt="Derive and satisfy relationships" />
-
-Figure 1: Requirements tracing
+<a name="figureRequirements"></a>
+![Requirements](/images/spesml_system_model/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 1: </b><em>Requirements Tracing</em></div>
 
 Other tracing relations can be used in the context of modular subsystem
 development or to link simulation setups as verification evidence or
@@ -78,16 +78,17 @@ As the main focus of SpesML is on the architectural models of the
 functional, logical and technical viewpoints, SpesML prescribes no
 specific requirements engineering method. Nevertheless, it is good
 practice to follow certain guidelines; for example, the requirements
-guidelines of INCOSE \[Ref.\] are a suitable starting point.
+guidelines of INCOSE are a suitable starting point.
 
 Requirements are not isolated model elements, but are typically related
 to other requirements and other model elements through tracing
 relationships. A listing of all tracing relationships, supported in
-SpesML can be found here (Link:
-<https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html>)
+SpesML can be found here (<a href="https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html">
+Requirements Viewpoint</a>)
 
-<img src="./media/image2.png"
-style="width:10.14931in;height:5.11806in" />
+<a name="figureOverview"></a>
+![Overview](/images/spesml_system_model/image2.png){:class="img-responsive" style="display:block; width:10.14931in;height:5.11806in; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 2: </b><em>SpesML Model Relations Overview</em></div>
 
 Note: In order to follow our advice to keep the number of trace links
 small, it is a good idea to already differentiate at the requirements
