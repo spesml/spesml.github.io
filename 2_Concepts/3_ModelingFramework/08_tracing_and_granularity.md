@@ -25,7 +25,7 @@ here (see <a href="https://spesml.github.io/plugin/tracing.html">Tracing Plugin<
 
 In the SPES approach, the architecture description of the system under
 development (SuD) is structured with the help of predefined viewpoints
-(see <a href="[https://spesml.github.io/plugin/tracing.html">Tracing Plugin</a>). Each viewpoint
+(see <a href="https://spesml.github.io/plugin/tracing.html">Tracing Plugin</a>). Each viewpoint
 defines a set of models and model elements, for modeling the respective
 view of the SuD.
 
