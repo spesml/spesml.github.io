@@ -110,7 +110,7 @@ Therefore, for the SPES methodology we suggest a design pattern that
 provides a closer connection between the system function models in the
 functional view and the structure of the logical architecture by using
 the concept of system function white-box models (see</a>
-<a hfef="https://spesml.github.io/concepts/modeling_framework/functional_viewpoint.html">Functional Viewpoint</a>),
+<a href="https://spesml.github.io/concepts/modeling_framework/functional_viewpoint.html">Functional Viewpoint</a>),
 to achieve a meaningful tracing[^2] relationship between the model
 elements of the views.
 
