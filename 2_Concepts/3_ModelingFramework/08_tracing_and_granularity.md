@@ -142,8 +142,8 @@ functional view of the SuD is uniquely assigned.
 In our tool implementation, system functions and white-box functions are
 SpesML function elements, which are derived from the SysML Block element
 with SpesML Function stereotype applied (
-<a href="https://spesml.github.io/plugin/spes_sysml_mapping.html">link</a> for more
-details). As a consequence, traces are provided on the basis of model
+<a href="https://spesml.github.io/plugin/spes_sysml_mapping.html">see for more
+details</a>). As a consequence, traces are provided on the basis of model
 object types (the SysML Block elements). Thus, the *realizes* relation
 links the types of the logical sub-component and the white-box function.
 
@@ -161,10 +161,9 @@ discuss:
     sub-components. To indicate this case, we use a *realizes
     (redundant)* relation to the white-box function.
 
-<img src="./media/image3.png"
-style="width:6.37552in;height:3.43056in" />
-
-Figure 3: Mapping Functional View -\> Logical Architecture
+<a name="figureMapping"></a>
+![Mapping](/images/spesml_system_model/image3.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 3: </b><em>Mapping Functional View -\> Logical Architecture</em></div>
 
 2.  Our functional model of a system can be viewed as a network of
     communicating instances of white-box function types, where in most
