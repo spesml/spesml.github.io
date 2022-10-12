@@ -67,7 +67,7 @@ linking architectural elements to high-level stakeholder needs or to
 obligations arising from the development context, such as compliance.
 
 <a name="figureRequirements"></a>
-![Requirements](/images/spesml_system_model/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![Requirements](/images/tracing_and_granularity/image1.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 1: </b><em>Requirements Tracing</em></div>
 
 Other tracing relations can be used in the context of modular subsystem
@@ -87,7 +87,7 @@ SpesML can be found here (<a href="https://spesml.github.io/concepts/modeling_fr
 Requirements Viewpoint</a>)
 
 <a name="figureOverview"></a>
-![Overview](/images/spesml_system_model/image2.png){:class="img-responsive" style="display:block; width:10.14931in;height:5.11806in; margin-left:auto; margin-right:auto"}
+![Overview](/images/tracing_and_granularity/image2.png){:class="img-responsive" style="display:block; width:10.14931in;height:5.11806in; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 2: </b><em>SpesML Model Relations Overview</em></div>
 
 Note: In order to follow our advice to keep the number of trace links
@@ -162,8 +162,8 @@ discuss:
     (redundant)* relation to the white-box function.
 
 <a name="figureMapping"></a>
-![Mapping](/images/spesml_system_model/image3.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 3: </b><em>Mapping Functional View to Logical Architecture</em></div>
+![Mapping](/images/tracing_and_granularity/image2.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 2: </b><em>Tracing Functional View to Logical Architecture</em></div>
 
 2.  Our functional model of a system can be viewed as a network of
     communicating instances of white-box function types, where in most
