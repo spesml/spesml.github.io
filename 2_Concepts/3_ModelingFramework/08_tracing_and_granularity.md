@@ -162,7 +162,7 @@ discuss:
     (redundant)* relation to the white-box function.
 
 <a name="figureTraceFVP"></a>
-![TraceFVP](/images/tracing_and_granularity/image2.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![TraceFVP](/images/tracing_and_granularity/image3.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 2: </b><em>Tracing Functional View to Logical Architecture</em></div>
 
 2.  Our functional model of a system can be viewed as a network of
@@ -184,6 +184,7 @@ discuss:
     function through a shared sub-component in the logical view. As we
     are tracing to the white-box function types only, we can model this
     case with the standard *realizes* relation.
+    
 
 Note: The logical architecture (logical components) can also contain
 further (sub-) components that are defined by additional requirements
@@ -202,8 +203,7 @@ physical parts[^3] (physical components).
 
 Therefore, we are often interested to model the behavior of the SuD as
 observable at the interface between the software- and the physical part
-(see also link:
-https://spesml.github.io/concepts/modeling_framework/mechanical_elements.html).
+(<a href="https://spesml.github.io/concepts/modeling_framework/mechanical_elements.html">see for more details</a>).
 In order to achieve this, we want to design the control parts as
 independent components, called Software Subsystems, already in the
 logical architecture structure model.
@@ -237,8 +237,9 @@ Depending on the project at hand we have three options:
     > and the models of the Central SW-Subsystem Architecture since
     > white-box functions are now split over several logical components.
 
-<img src="./media/image4.png"
-style="width:6.09628in;height:3.01257in" />
+<a name="figureSWSubsystem"></a>
+![SWSubystem](/images/tracing_and_granularity/image4.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 2: </b><em>From Initial Logical Architecture to Central SW-Subsystem Architecture</em></div>
 
 > It should be noted, that
 
