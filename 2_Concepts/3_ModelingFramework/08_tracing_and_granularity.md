@@ -236,17 +236,6 @@ Depending on the project at hand we have three options:
     > and the models of the Central SW-Subsystem Architecture since
     > white-box functions are now split over several logical components.
 
-> It should be noted, that
-
--   in both cases all (sub-)sub-components are modelled according to the
-    Universal Interface Model which enables composition and therefore
-    also is also used to model the behavior of the SuD and its
-    architecture components, in particular the behavior at the interface
-    between the cyber and the physical parts and
-
--   we are using the *trace* relation between the elements of the
-    initial logical architecture and the SW-Subsystem architecture.
-
 3.  Options 1. and 2. can also be combined: The central SW-subsystem
     > architecture. Hence, the initial logical architecture can be seen as
     > an intermediate step in the development process only, whose models
@@ -256,7 +245,18 @@ Depending on the project at hand we have three options:
     > functions also into a cyber and a physical part. The sub-components
     > of the central SW-subsystem architecture then *realize* the refined
     > white-box functions.
-    
+ 
+It should be noted, that
+
+-   in all cases the (sub-)sub-components are modelled according to the
+    Universal Interface Model which enables composition and therefore
+    also is also used to model the behavior of the SuD and its
+    architecture components, in particular the behavior at the interface
+    between the cyber and the physical parts and
+
+-   we are using the *trace* relation between the elements of the
+    initial logical architecture and the SW-Subsystem architecture.
+
 <a name="figureSWSubsystem"></a>
 ![SWSubystem](/images/tracing_and_granularity/image4.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 4: </b><em>From Initial Logical Architecture to Central SW-Subsystem Architecture</em></div>
