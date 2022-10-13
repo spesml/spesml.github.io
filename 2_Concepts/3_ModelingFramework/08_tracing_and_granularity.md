@@ -536,6 +536,10 @@ technical components) and assuming that the model of the software
 execution subsystem follow the SPES approach, further semantically rich
 tracing relations across the layers of granularity can be defined.
 
+<a name="figureWBChains"></a>
+![WBChains](/images/tracing_and_granularity/image8.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 8: </b><em>Chains of white-box functions</em></div>
+
 If white-box functions that are realized in SW have already been
 identified in the white-box models of the functional view of the
 super-system those white-box functions become system function of the
@@ -565,12 +569,6 @@ functions exist:
     function on subsystem level (Figure 8; of course there will be
     additional tracing relations between the models of the subsystem not
     shown in the figure).
-    
-<a name="figureWBChains"></a>
-![WBChains](/images/tracing_and_granularity/image8.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 8: </b><em>Chains of white-box functions</em></div>
-
-##  
 
 <a name="figureSWSS"></a>
 ![TraceSWSS](/images/tracing_and_granularity/image9.png){:class="img-responsive" style="display:block; width:10.14931in;height:5.11806in; margin-left:auto; margin-right:auto"}
