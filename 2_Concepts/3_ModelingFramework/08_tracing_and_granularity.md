@@ -312,7 +312,7 @@ tasks (see
 <a href="https://spesml.github.io/concepts/modeling_framework/technical_viewpoint.html#technical-viewpoint-models-of-the-software-execution-subsystem">task architecture</a>).
 
 <a name="figureTraceSES"></a>
-![TraceSES](/images/tracing_and_granularity/image6.PNG){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![TraceSES](/images/tracing_and_granularity/image6.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 6: </b><em>Software Execution Subsystem with recommended 1:1 and 1:n traces between logical components with software and software tasks</em></div>
 
 In general, the software tasks can be designed independent from the
