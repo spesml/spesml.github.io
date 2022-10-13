@@ -141,8 +141,8 @@ functional view of the SuD is uniquely assigned.
 
 In our tool implementation, system functions and white-box functions are
 SpesML function elements, which are derived from the SysML Block element
-with SpesML Function stereotype applied (
-<a href="https://spesml.github.io/plugin/spes_sysml_mapping.html">see for more
+with SpesML Function stereotype applied 
+(<a href="https://spesml.github.io/plugin/spes_sysml_mapping.html">see for more
 details</a>). As a consequence, traces are provided on the basis of model
 object types (the SysML Block elements). Thus, the *realizes* relation
 links the types of the logical sub-component and the white-box function.
@@ -275,7 +275,7 @@ the model elements of the views. Therefore we suggest to develop an
 initial architecture in the technical view that has the same component
 structure as the logical architecture, which yields a 1:1 tracing
 relation between logical and technical components on this layer of
-abstraction (see Figure 5). The tracing is modelled through a *realizes*
+abstraction (see [Figure 5](#figureTraceLA)). The tracing is modelled through a *realizes*
 relation from the technical components to the logical components. The
 components of this initial technical architecture can be decomposed in
 further development steps.
@@ -412,8 +412,8 @@ the respective technical component (due to the construction of the layer
 of granularity).
 
 Of course, the SPES methodology can also be applied recursively to
-subsystems (see Link:
-<https://spesml.github.io/concepts/modeling_framework/subsystems.html>).
+subsystems (see 
+<a href="https://spesml.github.io/concepts/modeling_framework/subsystems.html">Subsystems</a>).
 In the following we will assume that subsystems are also modeled
 according to the SPES methodology and discuss which additional model
 relations can be identified.
