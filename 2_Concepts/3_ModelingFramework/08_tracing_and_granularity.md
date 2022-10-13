@@ -474,11 +474,10 @@ example):
 -   Matches (from requirement to requirement): This relationship
     expresses that expectations are provided by properties guaranteed by
     the subsystem.
-
-<img src="./media/image7.png"
-style="width:4.86109in;height:2.57692in" />
-
-Figure 7: Matching guarantees to assumptions
+    
+<a name="figureMatches"></a>
+![Matches](/images/tracing_and_granularity/image7.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 7: </b><em>SMatching guarantees to assumptions</em></div>
 
 A verification obligation also for these two relations arises from their
 use in a model.
