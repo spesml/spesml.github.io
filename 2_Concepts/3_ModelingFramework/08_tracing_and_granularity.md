@@ -280,12 +280,12 @@ further development steps.
 
 Note:
 
--   As with the logical architecture, the technical architecture can
+-   > As with the logical architecture, the technical architecture can
     > also contain further components that are defined by additional
     > implementation requirements which will not have a direct tracing
     > relation to a logical component.
 
--   It is also possible that logical components are implemented multiple
+-   > It is also possible that logical components are implemented multiple
     > times by technical components in the technical architecture, e.g.
     > to model redundancy in the technical view for the first time. We
     > use the trace *realize (redundant)* to model this.
