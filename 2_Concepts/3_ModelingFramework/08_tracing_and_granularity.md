@@ -174,10 +174,10 @@ discuss:
        sub-component in the logical view. This case will be modeled by *the
        realizes (redundant)* tracing relation.
 
-    2.  We may choose to implement the multiple instances of the white-box
-        function through a shared sub-component in the logical view. As we
-        are tracing to the white-box function types only, we can model this
-        case with the standard *realizes* relation.
+    2. We may choose to implement the multiple instances of the white-box
+       function through a shared sub-component in the logical view. As we
+       are tracing to the white-box function types only, we can model this
+       case with the standard *realizes* relation.
     
 <a name="figureTraceFVP"></a>
 ![TraceFVP](/images/tracing_and_granularity/image3.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
