@@ -236,10 +236,6 @@ Depending on the project at hand we have three options:
     > and the models of the Central SW-Subsystem Architecture since
     > white-box functions are now split over several logical components.
 
-<a name="figureSWSubsystem"></a>
-![SWSubystem](/images/tracing_and_granularity/image4.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 4: </b><em>From Initial Logical Architecture to Central SW-Subsystem Architecture</em></div>
-
 > It should be noted, that
 
 -   in both cases all (sub-)sub-components are modelled according to the
@@ -252,15 +248,18 @@ Depending on the project at hand we have three options:
     initial logical architecture and the SW-Subsystem architecture.
 
 3.  Options 1. and 2. can also be combined: The central SW-subsystem
-    architecture constitutes a refinement of the initial logical
-    architecture. Hence, the initial logical architecture can be seen as
-    an intermediate step in the development process only, whose models
-    are no longer needed in the further course of the development. We
-    recommend to reproduce this refinement step in the white-box models
-    of the functional view and decompose the corresponding white-box
-    functions also into a cyber and a physical part. The sub-components
-    of the central SW-subsystem architecture then *realize* the refined
-    white-box functions.
+    > architecture. Hence, the initial logical architecture can be seen as
+    > an intermediate step in the development process only, whose models
+    > are no longer needed in the further course of the development. We
+    > recommend to reproduce this refinement step in the white-box models
+    > of the functional view and decompose the corresponding white-box
+    > functions also into a cyber and a physical part. The sub-components
+    > of the central SW-subsystem architecture then *realize* the refined
+    > white-box functions.
+    
+<a name="figureSWSubsystem"></a>
+![SWSubystem](/images/tracing_and_granularity/image4.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 4: </b><em>From Initial Logical Architecture to Central SW-Subsystem Architecture</em></div>
 
 ### Tracing Relationships between Elements in the Logical View and Technical View
 
@@ -573,7 +572,7 @@ functions exist:
 ![TraceSWSS](/images/tracing_and_granularity/image9.png){:class="img-responsive" style="display:block; width:10.14931in;height:5.11806in; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 9: </b><em>Tracing for a SW-subsystem between layers of granularity</em></div>
 
-## ----------------     
+### ----------------     
 
 [^1]: From a formal point of view this “implementation” can be modeled
     as a refinement relation between the models under consideration.
