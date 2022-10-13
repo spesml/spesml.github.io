@@ -170,11 +170,9 @@ discuss:
     logical components in such a situation needs a design decision. Two
     options are available:
 
-<!-- -->
-
-    1.  > Each instance of the white-box function is implemented by a separate
-        > sub-component in the logical view. This case will be modeled by *the
-        > realizes (redundant)* tracing relation.
+    1. Each instance of the white-box function is implemented by a separate
+       sub-component in the logical view. This case will be modeled by *the
+       realizes (redundant)* tracing relation.
 
     2.  We may choose to implement the multiple instances of the white-box
         function through a shared sub-component in the logical view. As we
