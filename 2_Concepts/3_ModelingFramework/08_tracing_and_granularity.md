@@ -254,8 +254,8 @@ It should be noted, that
     architecture components, in particular the behavior at the interface
     between the cyber and the physical parts and
 
--   we are using the *trace* relation between the elements of the
-    initial logical architecture and the SW-Subsystem architecture.
+-   if the initial logical architecture should be kept for further development the *trace* relation between the elements of the
+    initial logical architecture and the SW-Subsystem architecture can be used.
 
 <a name="figureSWSubsystem"></a>
 ![SWSubystem](/images/tracing_and_granularity/image4.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
