@@ -223,7 +223,7 @@ Depending on the project at hand we have three options:
     > is, that we make an implementation decision already in the
     > functional models which may not be appropriate in all cases.
 
-2.  If the white-box functions are not already designed according to
+2.  > If the white-box functions are not already designed according to
     > this split, we suggest to further decompose the sub-components in
     > the logical architecture (Figure 3) into a cyber and a physical
     > part. These sub-sub-components can now be rearranged and composed
@@ -236,7 +236,7 @@ Depending on the project at hand we have three options:
     > and the models of the Central SW-Subsystem Architecture since
     > white-box functions are now split over several logical components.
 
-3.  Options 1. and 2. can also be combined: The central SW-subsystem
+3.  > Options 1. and 2. can also be combined: The central SW-subsystem
     > architecture. Hence, the initial logical architecture can be seen as
     > an intermediate step in the development process only, whose models
     > are no longer needed in the further course of the development. We
