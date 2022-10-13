@@ -55,20 +55,20 @@ meet the requirements from the application domains targeted to the
 characteristics of such systems.
 
 -   A key principle of SPES is *appropriate abstraction*. Hence, the
-    > models of SPES offer a rich variety of different abstraction
-    > techniques, both for data structures and for system components,
-    > where interface abstraction is the key to a modular systems
-    > engineering. For abstract descriptions and specifications
-    > development steps are offered to refine abstract descriptions to
-    > replace
+    models of SPES offer a rich variety of different abstraction
+    techniques, both for data structures and for system components,
+    where interface abstraction is the key to a modular systems
+    engineering. For abstract descriptions and specifications
+    development steps are offered to refine abstract descriptions to
+    replace
 
     -   abstract data models by concrete ones,
 
     -   system behavior specifications by implementations in terms of
-        > state machines and
+        state machines and
 
     -   system behavior specifications by decomposing them into
-        > architectures.
+        architectures.
 
 -   *Decomposition* plays an important role as a lever to master
     complexity in nearly all engineering activities. As discussed above,
