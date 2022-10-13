@@ -570,6 +570,8 @@ functions exist:
 ![WBChains](/images/tracing_and_granularity/image8.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 8: </b><em>Chains of white-box functions</em></div>
 
+##  
+
 <a name="figureSWSS"></a>
 ![TraceSWSS](/images/tracing_and_granularity/image9.png){:class="img-responsive" style="display:block; width:10.14931in;height:5.11806in; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 9: </b><em>Tracing for a SW-subsystem between layers of granularity</em></div>
