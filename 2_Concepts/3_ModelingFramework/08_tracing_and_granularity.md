@@ -209,7 +209,7 @@ logical architecture structure model.
 
 Depending on the project at hand we have three options:
 
-1.  The split into cyber functions and physical functions can already be
+1.  > The split into cyber functions and physical functions can already be
     > done when designing the functional white-box models, i.e., we
     > identify the white-box functions which correspond to the cyber
     > part of the SuD. In this case, we already have a structure of
