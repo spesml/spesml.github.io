@@ -161,10 +161,6 @@ discuss:
     sub-components. To indicate this case, we use a *realizes
     (redundant)* relation to the white-box function.
 
-<a name="figureTraceFVP"></a>
-![TraceFVP](/images/tracing_and_granularity/image3.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 3: </b><em>Tracing Functional View to Logical Architecture</em></div>
-
 2.  Our functional model of a system can be viewed as a network of
     communicating instances of white-box function types, where in most
     cases the network would contain only one instance of each type.
@@ -176,15 +172,18 @@ discuss:
 
 <!-- -->
 
-1.  Each instance of the white-box function is implemented by a separate
-    sub-component in the logical view. This case will be modeled by *the
-    realizes (redundant)* tracing relation.
+    1.  Each instance of the white-box function is implemented by a separate
+        sub-component in the logical view. This case will be modeled by *the
+        realizes (redundant)* tracing relation.
 
-2.  We may choose to implement the multiple instances of the white-box
-    function through a shared sub-component in the logical view. As we
-    are tracing to the white-box function types only, we can model this
-    case with the standard *realizes* relation.
+    2.  We may choose to implement the multiple instances of the white-box
+        function through a shared sub-component in the logical view. As we
+        are tracing to the white-box function types only, we can model this
+        case with the standard *realizes* relation.
     
+<a name="figureTraceFVP"></a>
+![TraceFVP](/images/tracing_and_granularity/image3.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><b>Figure 3: </b><em>Tracing Functional View to Logical Architecture</em></div>
 
 Note: The logical architecture (logical components) can also contain
 further (sub-) components that are defined by additional requirements
