@@ -172,9 +172,9 @@ discuss:
 
 <!-- -->
 
-    1.  Each instance of the white-box function is implemented by a separate
-        sub-component in the logical view. This case will be modeled by *the
-        realizes (redundant)* tracing relation.
+    1.  > Each instance of the white-box function is implemented by a separate
+        > sub-component in the logical view. This case will be modeled by *the
+        > realizes (redundant)* tracing relation.
 
     2.  We may choose to implement the multiple instances of the white-box
         function through a shared sub-component in the logical view. As we
@@ -209,42 +209,42 @@ logical architecture structure model.
 
 Depending on the project at hand we have three options:
 
-1.  > The split into cyber functions and physical functions can already be
-    > done when designing the functional white-box models, i.e., we
-    > identify the white-box functions which correspond to the cyber
-    > part of the SuD. In this case, we already have a structure of
-    > sub-components in the logical architecture consisting of software
-    > components and physical components with appropriate interfaces
-    > between these sub-components, which can be rearranged to form
-    > logical components that implement the cyber and the physical parts
-    > of the SuD (Central SW-Subsystem Architecture[^4]). This approach
-    > has the advantage that we can define a continuous semantical
-    > tracing between all the modeling views of the SuD. The drawback
-    > is, that we make an implementation decision already in the
-    > functional models which may not be appropriate in all cases.
+1.  The split into cyber functions and physical functions can already be
+    done when designing the functional white-box models, i.e., we
+    identify the white-box functions which correspond to the cyber
+    part of the SuD. In this case, we already have a structure of
+    sub-components in the logical architecture consisting of software
+    components and physical components with appropriate interfaces
+    between these sub-components, which can be rearranged to form
+    logical components that implement the cyber and the physical parts
+    of the SuD (Central SW-Subsystem Architecture[^4]). This approach
+    has the advantage that we can define a continuous semantical
+    tracing between all the modeling views of the SuD. The drawback
+    is, that we make an implementation decision already in the
+    functional models which may not be appropriate in all cases.
 
-2.  > If the white-box functions are not already designed according to
-    > this split, we suggest to further decompose the sub-components in
-    > the logical architecture (Figure 3) into a cyber and a physical
-    > part. These sub-sub-components can now be rearranged and composed
-    > to achieve the targeted split (see [Figure 4](#figureSWSubsystem)). This approach does
-    > not require implementation decisions already in the functional
-    > view, but has the disadvantage that the behavior models of the
-    > white-box functions can no longer be used directly to model the
-    > behavior of these sub-sub-components, and in addition, there is a
-    > disruption in the tracing between the modes of the functional view
-    > and the models of the Central SW-Subsystem Architecture since
-    > white-box functions are now split over several logical components.
+2.  If the white-box functions are not already designed according to
+    this split, we suggest to further decompose the sub-components in
+    the logical architecture (Figure 3) into a cyber and a physical
+    part. These sub-sub-components can now be rearranged and composed
+    to achieve the targeted split (see [Figure 4](#figureSWSubsystem)). This approach does
+    not require implementation decisions already in the functional
+    view, but has the disadvantage that the behavior models of the
+    white-box functions can no longer be used directly to model the
+    behavior of these sub-sub-components, and in addition, there is a
+    disruption in the tracing between the modes of the functional view
+    and the models of the Central SW-Subsystem Architecture since
+    white-box functions are now split over several logical components.
 
-3.  > Options 1. and 2. can also be combined: The central SW-subsystem
-    > architecture. Hence, the initial logical architecture can be seen as
-    > an intermediate step in the development process only, whose models
-    > are no longer needed in the further course of the development. We
-    > recommend to reproduce this refinement step in the white-box models
-    > of the functional view and decompose the corresponding white-box
-    > functions also into a cyber and a physical part. The sub-components
-    > of the central SW-subsystem architecture then *realize* the refined
-    > white-box functions.
+3.  Options 1. and 2. can also be combined: The central SW-subsystem
+    architecture. Hence, the initial logical architecture can be seen as
+    an intermediate step in the development process only, whose models
+    are no longer needed in the further course of the development. We
+    recommend to reproduce this refinement step in the white-box models
+    of the functional view and decompose the corresponding white-box
+    functions also into a cyber and a physical part. The sub-components
+    of the central SW-subsystem architecture then *realize* the refined
+    white-box functions.
  
 It should be noted, that
 
@@ -280,15 +280,15 @@ further development steps.
 
 Note:
 
--   > As with the logical architecture, the technical architecture can
-    > also contain further components that are defined by additional
-    > implementation requirements which will not have a direct tracing
-    > relation to a logical component.
+-   As with the logical architecture, the technical architecture can
+    also contain further components that are defined by additional
+    implementation requirements which will not have a direct tracing
+    relation to a logical component.
 
--   > It is also possible that logical components are implemented multiple
-    > times by technical components in the technical architecture, e.g.
-    > to model redundancy in the technical view for the first time. We
-    > use the trace *realize (redundant)* to model this.
+-   It is also possible that logical components are implemented multiple
+    times by technical components in the technical architecture, e.g.
+    to model redundancy in the technical view for the first time. We
+    use the trace *realize (redundant)* to model this.
 
 <a name="figureTraceLA"></a>
 ![TraceLA](/images/tracing_and_granularity/image5.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
