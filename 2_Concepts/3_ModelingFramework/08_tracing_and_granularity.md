@@ -574,7 +574,7 @@ functions exist:
 ![TraceSWSS](/images/tracing_and_granularity/image9.png){:class="img-responsive" style="display:block; width:10.14931in;height:5.11806in; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 9: </b><em>Tracing for a SW-subsystem between layers of granularity</em></div>
 
-##  
+###     
 
 [^1]: From a formal point of view this “implementation” can be modeled
     as a refinement relation between the models under consideration.
