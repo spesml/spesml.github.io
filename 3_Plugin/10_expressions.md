@@ -8,29 +8,54 @@ permalink: /plugin/expressions.html
 
 # Expressions
 
-An expression computes a single value and consists of operands, operators, and method calls.
+An expression computes a single strongly typed value and consists of operands, 
+operators, and method calls.
+
+```
+switchPosition == POS.OFF || output.current > 0
+```
+
+The above example is a boolean expression, i.e., an expression producing a 
+boolean value. It produces the logical disjunction, i.e., logical `OR` (`||`) 
+between it's left and right hand side. On the left hand side, the expressions 
+references the `switchPosition` toggle and checks whether the switch is in the 
+`OFF` position. On the right hand side, the output current is checked to be 
+greater then `0`.
+
+## Operands
+
+The operands in expressions can be either of the following:
+- basic literals such as `1`, `"message in a bottle"` or enumeration literals 
+such as `POS.OFF`
+- references to contextually available handles such as [value properties](
+/plugin/spes_sysml_mapping.html#universal-interface-model), [ports and their
+channels](/plugin/universal_interface_model.html), and [local variables](/plugin
+/executable_functions.html#let-in-expressions)
+- expressions themselves, allowing complex formulations
 
 ## Operators
-Operators perform operations on their operands.
 
-Operators evaluate in a specific order that is determined by their precedence and associativity.
-The operator with the higher precedence evaluates first.
-For example, multiplication has higher precedence than addition.
+Operators perform operations on their operands. Operators evaluate in a specific 
+order that is determined by their precedence and associativity. The operator 
+with the higher precedence evaluates first. For example, multiplication has 
+higher precedence than addition.
 
 `1 + 2 * 3` evaluates as `1 + (2 * 3)` which is `7`.
 
-If two operators have the same precedence, then the operators are applied in order of associativity.
-For example, multiplication and division have the same precedence. 
-The associativity of these operators is left to right; therefore, the operator on the left evaluates first.
+If two operators have the same precedence, then the operators are applied in 
+order of associativity. For example, multiplication and division have the same 
+precedence. The associativity of these operators is left to right; therefore, 
+the operator on the left evaluates first.
 
 `6 / 2 * 3` evaluates as `(6 / 2) * 3` which is `9`.
 
-Operators are classified into arithmetic, assignment, comparison, and logical operators.
+Operators are classified into arithmetic, assignment, comparison, and logical 
+operators.
 
 ### Arithmetic Operators
 
-Arithmetic operators perform mathematical operations.
-They apply to numbers and return a number.
+Arithmetic operators perform mathematical operations. They apply to numbers and 
+return a number.
 
 | Operator | Name | Example | Description |
 | :------: | :--: | :-----: | :---------: |
@@ -51,7 +76,8 @@ The variable or port and assigned value must have compatible types.
 
 `a = 2` assigns the value `2` to a variable or port called `a`.
 
-Variations of the assignment operator abbreviate combinations of assignment and other operators.
+Variations of the assignment operator abbreviate combinations of assignment and 
+other operators.
 
 | Operator | Example | Abbreviation for |
 | :------: | :-----: | :--------------: |
@@ -94,5 +120,3 @@ They apply and return boolean values.
 * Short circuit
 
 * Method calls 
-
-* Operands (variables, ports, literals)
