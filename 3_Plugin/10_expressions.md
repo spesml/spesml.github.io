@@ -9,7 +9,7 @@ permalink: /plugin/expressions.html
 # Expressions
 
 An expression computes a single strongly typed value and consists of operands, 
-operators, and method calls.
+operators, and executable functions.
 
 ```
 switchPosition == POS.OFF || output.current > 0
@@ -35,10 +35,20 @@ channels](/plugin/universal_interface_model.html), and [local variables](/plugin
 
 ## Operators
 
-Operators perform operations on their operands. Operators evaluate in a specific 
-order that is determined by their precedence and associativity. The operator 
-with the higher precedence evaluates first. For example, multiplication has 
-higher precedence than addition.
+Operators perform operations on their operands. Operators define the number
+and type of their arguments, as well as their return type. Any non type-
+correct use of an operator or non-resolvable reference will lead to validation
+failured.
+
+`switchPos == POS.OFF` will raise a validation error because the reference to
+`switchPosition` is spelled incorrectly.
+
+`switchPosition == DIRECTION.UP` will raise a validation error because the
+types of left and right hand side are not compatible.
+
+Operators evaluate in a specific order that is determined by their precedence 
+and associativity. The operator with the higher precedence evaluates first. For 
+example, multiplication has higher precedence than addition.
 
 `1 + 2 * 3` evaluates as `1 + (2 * 3)` which is `7`.
 
@@ -113,10 +123,31 @@ They apply and return boolean values.
 | `||` | Logical or | `a || b` | `true` if `a` or `b` is `true` |
 | `!` | Logical not | `!a` | `true` if `a` is `false` |
 
+## Executable Functions
+
+[Executable functions](/plugin/executable_functions.html) serve as means to 
+store functionality. This functionality can then be accessed in expressions by
+calling the functions.
+
+The expression `ArithmeticModule.abs(-4) == 4` calls a function `abs` stored in the 
+module `ArithmeticModule` with input value `-4`. The computed absolute value is then 
+compared to the desired outcome, `4`.
+
+## Automatic Checks (Well-formedness Rules)
+
+This list is limited, as it only applies to the most general expressions. Find
+detailed explanations pertaining to specific use cases in the respective 
+chapters:
+* [State Machines](/plugin/state_machines.html)
+* [Executable Functions](/plugin/executable_functions.html)
+
+| Error Description | Solution | 
+| :---------------: | :------: | 
+| Type of expr. could not be determined | Make sure that referenced context elements exists |
+|                                       | Make sure referenced elements are of compatible types |
+|                                       | Make sure to formulate type-correct expressions |
+
 ## Further Thoughts
 
 * Bit expressions
-
 * Short circuit
-
-* Method calls 
