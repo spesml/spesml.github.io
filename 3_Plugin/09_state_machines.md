@@ -247,6 +247,41 @@ Similarly, *i* is the name of the incoming port, and *v* is again the channel's 
 Variables, on the other hand, can be accessed via their simple name.
 In the above example, *buffer* is a variable of the respective component.
 
+### Behavior - Executable Functions
+
+To reuse complex expressions, they may be implemented as a set of [executable functions](/plugin/executable_functions.html)
+which are then included and used in the expressions of an *OpaqueBehavior*.
+To use them in the behavior of a state machine they need to be imported.
+Imported functions can then be called as described in the [executable functions definition](/plugin/executable_functions.html).
+
+### How to use Executable Functions
+
+To use [executable functions](/plugin/executable_functions.html)
+in the state machines *OpaqueBehavior*,
+one may import them:
+
+1. Select the state machine and in its *Properties* tab go to the *Tags* tab.
+
+![Implementation](/images/state_machine/state-machine-implementation.png){:class="img-responsive"}
+
+2. Double click the field right to *Implementations* to
+open the dialog to add an executable functions module.
+
+![Add Implementation](/images/state_machine/state-machine-add-implementation.png){:class="img-responsive"}
+
+3. On the dialogs left side select a function module in the containment tree.
+Add it to the state machine using the plus button. Repeat to add more modules.
+
+4. Confirm the changes made in the dialog using the *OK* button.
+The functions defined in the added modules are now available in the state machine.
+
+5. Use the functions (as described in their [documentation](/plugin/executable_functions.html))
+in the behavior of the state machine.
+In the example below, the function *switchE* is called using the parameter *E.e1*.
+
+![Call Function](/images/state_machine/state-machine-function-call.png){:class="img-responsive"}
+
+
 ## Further Thoughts
 
 * Non-determinism
