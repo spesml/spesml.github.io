@@ -49,4 +49,10 @@ The channel $c1$ is of type $T$. It is abstracted from the definition of the typ
 A system element and its syntactic interface.
 </div><br>
 
+
+### Semantic Interfaces
+The _semantic interface_ (or interface behavior) of a system element with the syntactic interface $I \blacktriangleright O$ is given by a function mapping an input communication history to a set of output communication histories $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$. 
+For each possible input $x \in \overrightarrow{I}$ on the channels contained in $I$, the function specifies all possible outputs $F(x)$ for the input. Thus, the function $F$ represents
+an underspecified behavior of a system element with the syntactic interface $I \blacktriangleright O$.
+
 ## Model Elements
