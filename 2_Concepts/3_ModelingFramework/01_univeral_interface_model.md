@@ -55,4 +55,23 @@ The _semantic interface_ (or interface behavior) of a system element with the sy
 For each possible input $x \in \overrightarrow{I}$ on the channels contained in $I$, the function specifies all possible outputs $F(x)$ for the input. Thus, the function $F$ represents
 an underspecified behavior of a system element with the syntactic interface $I \blacktriangleright O$.
 
+### Causality
+A semantic interface $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ is called _weakly causal_ (_strongly causal_), if the output up to time-point $t$ only depends on the input received until $t$ (until $t-1$ in case of _strongly causal_ behavior).
+Formally, 
+* a function $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ is called weakly causal if it holds that $\forall t \in \mathcal{N}: \forall x,y \in \overrightarrow{I}: x \downarrow t = y \downarrow t \Rightarrow F(x) \downarrow t = F(y) \downarrow t$.
+* a function $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ is called strongly causal if it holds that $\forall t \in \mathcal{N}: \forall x,y \in \overrightarrow{I}: x \downarrow t = y \downarrow t \Rightarrow F(x) \downarrow (t +1) = F(y) \downarrow (t + 1)$.
+
+If a semantic interface is not weakly causal, then it cannot be realized by any system element. 
+This holds because semantic interfaces that are not weakly causal can be interpreted to model behaviors that can react to events (receiving of messages)
+that happen in the future. Stated differently, if a semantic interface is not weakly causal, then the system element can already react in a time unit $`t`$ 
+to an input that it receives in a later time unit $t'$ with $t' > t$ (for at least one input communication history).
+
+Strongly causal semantic interfaces are even more restricted in the sense that every strongly causal semantic interface is also weakly causal. For strongly causal
+interface behaviors, the output in a time unit $t + 1$ only depends on the messages received up to and including the time unit $t$. Thus, without even
+receiving a message in a time unit, the component can already determine its possible outputs for the time unit. 
+Every strongly causal semantic interface is also weakly causal.
+Strongly causal semantic interfaces are useful 
+in the context of the composition of system elements. The composition of a strongly causal system element with another system elements guarantees nice properties
+in the sense that the compostion is guaranteed to be a well-defined system element. This is explained in the following sections in more detail.  
+
 ## Model Elements
