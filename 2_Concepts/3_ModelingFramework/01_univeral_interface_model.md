@@ -8,7 +8,7 @@ permalink: /concepts/modeling_framework/uim.html
 ---
 # Universal Interface Model
 
-The universal interface model (UIM) delivers the foundation for describing interfaces and behavior across all viewpoints. As such, as SPES ML modeler, you will never explicitely instantiate elements of the UIM, as you will instead create elements of the functional, logical and technical viewpoints. However, as the UIM is the basis for all interfaces in each viewpoint, you will implicitely use the UIM all the time. The following section describe the concepts of the UIM and how they map to SPES ML model elements of the different viewpoints.
+The universal interface model (UIM) delivers the foundation for describing interfaces and behavior across all viewpoints. As such, as SPES ML modeler, you will never explicitely instantiate elements of the UIM, as you will instead create elements of the functional, logical and technical viewpoints. However, as the UIM is the basis for all interfaces in each viewpoint, you will implicitely use the UIM all the time. The following section describe the concepts of the UIM and how they map to SPES ML model elements of the different viewpoints. The description uses a mathematical language to describe the concepts. While it is certainly helpful to have an understanding of the underlying mathematical theory, the actual modeling with SPES ML is done on a higher level of abstraction.
 
 ## General Concepts
 ### System Elements
@@ -72,6 +72,25 @@ receiving a message in a time unit, the component can already determine its poss
 Every strongly causal semantic interface is also weakly causal.
 Strongly causal semantic interfaces are useful 
 in the context of the composition of system elements. The composition of a strongly causal system element with another system elements guarantees nice properties
-in the sense that the compostion is guaranteed to be a well-defined system element. This is explained in the following sections in more detail.  
+in the sense that the compostion is guaranteed to be a well-defined system element. This is explained in the following sections in more detail. 
+
+### Causaility on a subset of channels
+Strong-causality can also concern only a subset of the output channels.
+A semantic interface $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ is called _strongly causal modulo_ $P \subseteq O$
+iff it holds that $F$ is weakly causal and  $\forall t \in \mathcal{N}: \forall x,y \in \overrightarrow{I}: x \downarrow t = y \downarrow t \Rightarrow (F(x)|P) \downarrow (t +1) = (F(y)|P) \downarrow (t + 1)$. 
+The requirement for weak causaility ensures that it can be realized by a system
+element. The second condition is a relaxation of the definition of strong
+causality. A semantic interface is strongly causal modulo a subset of its output
+channels $P$ if the outputs of the semantic interface up to time unit $t+1$
+on the output channels contained in $P$ solely depend on the inputs received
+up to time unit $t$. The messages emitted via the other output channels (not
+contained in $P$) in a time unit $t$ may depend on the messages received in
+the time unit $t$. A semantic interface is strongly causal modulo the set of
+all of its output channels iff it is strongly causal. The more fine-grained
+definition of strong causality is also very useful in the context of system
+element composition. The composition of two system elements yields a
+well-defined system element if one of the system elements is strongly causal
+modulo its output channels that are the input channels of the other system
+element. In the following, this is explained in more detail.
 
 ## Model Elements
