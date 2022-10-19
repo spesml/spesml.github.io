@@ -93,4 +93,44 @@ well-defined system element if one of the system elements is strongly causal
 modulo its output channels that are the input channels of the other system
 element. In the following, this is explained in more detail.
 
+### Introducing Strong Causality by Adding Output Delay
+Every weakly causal semantic interface can be transformed 
+to a semantic interface that is stronly causal modulo some of its output channels by 
+- delaying the messages communicated on the output channels and 
+- adding initial outputs to the channels (initial outputs may be empty sequences). 
+
+This is useful because, in general, it cannot be automatically proven whether a
+semantic interface is strongly causal modulo some of its output channels. In
+these cases, it is often hard for developers to determine whether the
+composition of two semantic interfaces (resp. system elements) is well-defined
+because the well-definedness either (1) needs to be proven manually by hand or
+(2) is not ensured at all, which might result in undesired behaviors.
+
+Instead, developers can explicitly delay some of the output channels to obtain
+semantic interfaces that are strongly causal modulo the output channels by
+construction. This eliminates the necessity for manual causality proofs and
+potentially undesired behaviors resulting from ill-formed compositions.
+The transformation is defined as follows: 
+
+Let $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ be a weakly
+causal semantic interface and let $P \subseteq O$ be a subset of the output
+channels of $F$. Let $init: P \rightarrow M^\ast$ be a function mapping each 
+channel $c \in P$ where $c : t$ to a finite stream of messages of its type $init(c) \in t^\ast$. The function 
+$init$ maps each channel to a stream of messages that should be initially 
+communicated over the channel.  
+
+Then, delaying the semantic interface $F$ with respect to 
+$init$ results in the semantic interface $G: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ 
+satisfying the following two conditions for all inputs $x \in \overrightarrow{I}$ and output channels $c \in O$:
+- $(G(x))(c) = (F(x))(c)$ if $c \notin P$ and
+- $(G(x))(c) = \\{ init(c) \cdot y \\;|\\; y \in F(x) \\}$ if $c \in P$.
+
+For every input, the outputs of the semantic interface $G$
+- on the channels not contained in $P$ 
+is equal to the outputs of $F$ on these channels when given the inputs.
+- on the channels contained in $P$ are obtained by prefixing the corresponding initial sequences to the outputs that 
+are produced by $F$ for the inputs.
+
+By construction, the semantic interface $G$ is strongly causal modulo $P$.
+
 ## Model Elements
