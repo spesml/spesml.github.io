@@ -10,8 +10,8 @@ permalink: /plugin/executable_functions.html
 
 This document overviews the textual SpesML sublanguage ```SpesMLFunctions``` for
 defining executable functions. The language is intended to be used for defining
-functions that are hard or impossible to directly express in state machines. The
-models of the language can be imported by state machines to use the functions in
+functions that are hard or impossible to directly express in [state machines](/plugin/state_machines.html).
+The models of the language can be imported by state machines to use the functions in
 the guards and effects of the state machine's transitions. 
 
 ## Modules 
@@ -20,7 +20,9 @@ The ```SpesMLFunctions``` models are called _modules_. Each module optionally
 starts with a _package declaration_, followed by arbitrarily many _import
 statements_, and the _module definition_. For instance, the following listing
 depicts an excerpt of a module. The package of the module is `a.b.c`. The module
-imports the two modules `a.b.c.module1` and `a.b.module2`. The name of the
+imports the two modules `a.b.c.module1` and `a.b.module2`,
+making their functions available in the current module.
+The name of the
 module is `module3`. Its fully qualified name is `a.b.c.module3`. The body of
 the module is defined after the modules name. It is enclosed by curly brackets.
 
@@ -41,7 +43,9 @@ montifun module3 {
 Each module consists of a set of functions. The functions are defined inside of
 the module's body. The definition of a function starts with the function's
 return type, followed by the function's name. The name is followed by a
-comma-separated list of parameter definitions, which is enclosed in round brackets.
+comma-separated list of parameter definitions,
+consisting of a [type](/plugin/data_types.html) and a name,
+which is enclosed in round brackets.
 Afterwards, the body of the function is defined between the equality sign and semicolon as a single expression. 
 
 For example, the following listing depicts the module `sums`, which contains the
@@ -59,8 +63,12 @@ module sums {
 }
 ```
 
+Calling a function in an expression can be done by passing parameters
+according to the types listed in its definition.
+E.g. using `sum` in an expression: `2 * sum(1, 3)`.
+
 The body of each function consists of an [expression](/plugin/expressions.html).
-In the executable expression language, further expressions may be used than in state machines:
+In the executable expression language, more elaborate expressions may be used than in state machines:
 
 ### `if`-expressions
 
@@ -100,14 +108,6 @@ Float pq1(Float p, Float q) =
   let Float p2 = p / 2
   in -p2 + sqrt(pow(p2, 2) - q);
 ```
-
-## Data Types
-
-- Data types are not defined by models of this language.
-- Data types are defined by value types in the containment tree in SpesML. 
-- Value types cannot be generic.
-- There are built-in generic types in this language: `List\<E\>`, `Set\<E\>`.
-- all built-in generic types provide the same methods as the corresponding Java types.
 
 ## Packages
 
@@ -165,7 +165,14 @@ Function modules must be contained within a package.
 
 9. Click OK to stop editing the code.
 
+## Automatic Checks (Well-formedness Rules)
 
+This list is limited, as it only applies to the error description
+that are not applicable to [expressions](/plugin/expressions.html) in general.
+
+| Error Description | Solution | 
+| :---------------: | :------: | 
+| unable to assign Type | Make sure that the type of the expression is assignable to the functions return type |
 
 ## Grammar
 
