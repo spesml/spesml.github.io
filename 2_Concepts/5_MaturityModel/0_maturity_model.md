@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: SpesML Maturity Model
@@ -28,21 +29,29 @@ On this page, we describe the SpesML Maturity Model (SpesML MM) whose goal is to
 The SpesML MM was based on the Model-based Systems Engineering Maturity Model (MBSE MM) developed in the context of the SPEDIT project. The MBSE MM was designed having the SPES methodology as a reference framework. More information on the MBSE MM can be found [here](https://www.fortiss.org/fileadmin/user_upload/05_Veroeffentlichungen/Whitepaper/fortiss_MBSE_whitepaper_web.pdf).
 
 ## Focus area maturity models
-Maturity models are used to assess the process maturity of a development team and to guide further improvement. Two approaches for implementing maturity models exist. With a top-down approach, a fixed number of maturity stages or levels is specified first and further corroborated with characteristics (typically in the form of specific assessment items) that support the initial assumptions about how maturity evolves. Prominent examples are CMMI or SPICE. 
+Maturity models are used to assess the process maturity of a development team, thus guiding further process improvement. Two approaches for implementing maturity models exist. With a top-down approach, a fixed number of maturity stages or levels is specified first and further corroborated with characteristics (typically in the form of specific assessment items) that support the initial assumptions about how maturity evolves. Prominent examples are CMMI or SPICE. 
 
-When using a bottom-up approach, distinct characteristics or assessment items are determined first and clustered in a second step into maturity levels to induce a more general view of the different steps of maturity evolution. They are distinguished from fixed-level maturity models, such as CMMI, in that they are suited to the incremental improvement of functional domains. One class of these bottom-up maturity models is the Focus Area type, where capabilities are defined for different focus areas and arranged in a progressing order that can be mapped to maturity levels. Focus area maturity models are especially effective at providing organizations with implementable practices and processes. The capabilities are grouped in focus area which in turn are grouped in functional domains. In the MBSE MM the latter was renamed to engineering function to emphasize the relation to engineering phases in the development process. The capabilities are positioned against each other in a maturity matrix and assigned letters according to their position (i.e., maturity progression) being the first letters of the alphabet with less maturity than letters that appear closer to the end (i.e., capability B is less mature than a capability D).  The SpesML MM is a focus area maturity model. 
+When using a bottom-up approach, distinct characteristics or assessment items are determined first and clustered in a second step into maturity levels to induce a more general view of the different steps of maturity evolution. They are distinguished from fixed-level maturity models, such as CMMI, in that they are suited to the incremental improvement of functional domains. One class of these bottom-up maturity models is the Focus Area type, where capabilities are defined for different focus areas and arranged in a progressing order that can be mapped to maturity levels. Focus area maturity models are especially effective at providing organizations with implementable practices and processes. The capabilities are grouped in focus area which in turn are grouped in functional domains. In the MBSE MM the latter was renamed to engineering function to emphasize the relation to engineering phases in the development process. The capabilities are positioned against each other in a maturity matrix and assigned letters according to their position (i.e., maturity progression) being the first letters of the alphabet with less maturity than letters that appear closer to the end (i.e., capability B is less mature than a capability D).  
 
 ![Focus area maturity model meta-model](/images/focusamm-example.png){:class="img-responsive"}
 
+Regarding its possible use, maturity models can be descriptive, prescriptive, or comparative. A maturity model is said to be descriptive when used for assessing the development team's current state. If it suggests improvements, the model is prescriptive, and when it can be used to compare the processes of different organizations, it is also comparative. 
 
 ## MBSE Maturity Model
 
-The MBSE MM can be used in any type of context since it does not describe processes in its capabilities but artifacts and tasks that could be performed.
+The  Model-based Systems Engineering Maturity Model (MBSE MM) was created during the project [SPES2020](http://spes2020.informatik.tu-muenchen.de/spes%5C_xt-home.html). It is a focus area maturity model which uses the SPES methodology as a reference framework. In the MBSE MM, functional domains are named engineering functions to emphasize the relation to engineering phases in the development process. The MBSE MM has six engineering functions that group a total of fifteen focus areas addressing the different activities that models can support. The focus areas have different capabilities amount, as modeling is not equally distributed over different engineering functions. For instance, Requirements Modeling has many practices while System Testing and Integration has only a tiny amount. The maturity level describes how well MBSE practices are implemented. 
+
+The MBSE MM is fully descriptive, partially prescriptive, and partially comparative. Partially prescriptive because the model diminish the solution space as an assessment tool. But it lacks guidance on selecting the subsequent capabilities to implement. The model is partially comparative because comparisons can be made only at the focus area level. There is no global maturity level requiring certain capabilities and teams might need different kind of needs.
+
+Despite the use of a reference framework, the MBSE MM is not tied to any specific development model (e.g., v-model, waterfall). The maturity levels are described in terms of generic artifacts (i.e., information bites)  generated in the development process (e.g., description of functions' interfaces), and capabilities enhancements (e.g., automatic analysis).
 
 # The SpesML Maturity Model
 
-Instead of _Functional Domains_, the focus areas are grouped in the four viewpoints supported by the SpesML Modeling Framework, namely Requirements, Functional, Logical, and Technical Viewpoints. 
-There is a special kind of capability called *Conceptual*. Capabilities of this kind are described in the SpesML theoretic framework but the plugin provides no support for it.
+The SpesML MM is a focus area maturity model. 
+
+The _Functional Domains_ of the SpesML MM were defined based on the four viewpoints supported by the SpesML Modeling Framework, namely Requirements, Functional, Logical, and Technical Viewpoints. 
+
+There are two types of capabilities, namely the normal type and the *Conceptual* type. Capabilities of the later kind are part of the SpesML theoretic framework but the plugin provides no support for it. These are signaled with a '( C)' at the end of its description.
 
 
 ## The SpesML Maturity Matrix
@@ -52,7 +61,7 @@ There is a special kind of capability called *Conceptual*. Capabilities of this 
 | Viewpoint |                             Focus Areas                             |                                                                                  Capability  A                                                                                 |                                                                                         Capability  B                                                                                         |                                                             Capability  C                                                             |                                               Capability  D                                              |     
 |:-----------------------:|:-------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|
 |  Requirements Viewpoint | Requirements   Elicitation (REE)                                    | Requirements   are modeled by a distinct requirement element per requirement.                                                                                                  | Requirements   are categorized into one of the categories: Capability, Functional, Quality,   Constraint. Pre-req: REE A                                                                                      |                                                                                                                                       |                                                                                                          |  
-|                         | Requirements Specification (RES)                                    | Requirements   are equipped with attributes containing meta-information including: name,   category, status, rationale, and source.                                             |Requirements   text is formulated following certain sentence templates (e.g., EARS or   Sophist MasterTemplate).                                                                              | The   requirements text is aligned with modeling elements that they are related to   (e.g., naming of ports or internal states).      | The   requirement is formalized in a formal specification language (e.g., temporal   logic).              |   
+|                         | Requirements Specification (RES)                                    | Requirements   are equipped with attributes containing meta-information including: name,   category, status, rationale, and source.                                             |Requirements   text is formulated following certain sentence templates (e.g., EARS or   Sophist MasterTemplate) ( C).                                                                              | The   requirements text is aligned with modeling elements that they are related to   (e.g., naming of ports or internal states) ( C).      | The   requirement is formalized in a formal specification language (e.g., temporal   logic) ( C).              |   
 |                         | Requirements Refinement (REF)                                       | If   a low-level requirement is derived from a high-level requirement, they are   related by a derived relation.   Note: Both requirements   must address the same system scope. | If   a system requirement is broken down to several component requirements, the   system requirement is related to the component requirements by a decompose relation                         | If   a requirement satisfies a property that is required in another requirements,   the requirements are related by a match relation. |                                                                                                          |  
 | **Viewpoint** |                             **Focus Areas**                             |                                                                                  **Capability  A**                                                                                 |                                                                                         **Capability  B**                                                                                         |                                                             **Capability  C**                                                             |                                               **Capability  D**                                              |     
 |   Functional Viewpoint  | System   Function Modeling (SFM)                                    | System   functions are modeled with a syntactic interface (inputs and outputs).                                                                                                 | System   functions are related with a satisfy or require   relationship to requirements they satisfy or assume.                                                                               | The   behavior of the system functions is modeled by a state machine or decomposed   in a white-box model.                            | The   model of the system functions can be simulated together with a description of   the context.       |   
@@ -63,7 +72,7 @@ There is a special kind of capability called *Conceptual*. Capabilities of this 
 |    Logical Viewpoint    | Logical Component Modeling (LCM)                                    | For logical   components, their interface is modeled with associated input and output   signals.                                                                               | The   behavior of the logical components is modeled.                                                                                                                                          | Logical   components and requirements they satisfy are related by a satisfy or require   relation.                                    |                                                                                                          |   
 |                         | Logical Architecture Modeling (LAM)                                 | The logical   components and their dependencies are modeled.                                                                                                                   | Logical   components are related to white-box functions that they implement by a realize relation.                                                                                             |                                                                                                                                       |                                                                                                          |   
 |                         | Logical   conText Modelling (LTM)                                 | The   system under development (i.e., the top-level logical component) is modeled   by a composition of all logical components.                                                | Actors   of the operational context (e.g., external systems or users) are modeled with a syntactic interface (inputs and outputs).                                                          | For each actor in the operational context, the behavior is modeled.                                                                 |                                                                                                          |   
-|                         | Logical  Physical Modelling (LPM)                                 | Physical values are modeled.  |   |                         | The behavior of physical components is modelled.                                                                                                         |  
+|                         | Logical  Physical Modelling (LPM)                                 | Physical values are modeled.  |   |                         | The behavior of physical components is modeled.                                                                                                         |  
 | **Viewpoint** |                             **Focus Areas**                             |                                                                                  **Capability  A**                                                                                 |                                                                                         **Capability  B**                                                                                         |                                                             **Capability  C**                                                             |                                               **Capability  D**                                              |     
 |Technical Viewpoint                         | Technical Component Modeling (TCM)                                    | For technical components, their interface is modeled with associated input and output signals.                                                                               | The behavior of the technical components is modeled.                                                                                                                                          | Technical components and requirements they satisfy are related by a satisfy or require  relation.                                    |                                                                                                          |  
 |                         | Technical Architecture Modeling (TAM)                                 | The technical components and their dependencies are modeled.                                                                                                                                                                                         | Technical components are related to logical components that they implement by a realize relation.                                                                                             |                                                                                                                                       |                                                                                                          |   
@@ -71,51 +80,54 @@ There is a special kind of capability called *Conceptual*. Capabilities of this 
 
 ## Capability description
 
-In the following, we describe each capability in detail.
+In the following, we describe each capability in detail, grouped by respective Viewpoint and Focus area.
 
 ### Requirements Viewpoint
-The focus of the capabilities in the Requirements Viewpoint were divided into different detail levels 
-More information on this Viewpoint can be found [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html).  
+There are three focus areas in this Viewpoint: the Requirements Elicitation (REE), the Requirements Specification (RES), and the Requirements Refinement (RER). More information on the Requirements Viewpoint can be found [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html).  
 
 ####  Requirements Elicitation (REE): 
+This focus area is the smallest of this Viewpoint, having only two capabilities. 
 
-**REE A: Requirements are modeled by a distinct requirement element per requirement.** -- This is the capability with the lowest maturity in this viewpoint and all the other capabilities from this viewpoint depends upon. It describes that requirements are modeled in the SpesML plugin using the requirement element. In the RequirementsViewpoint folder, on the project template containment tree, through a mouse right-click is possible to select create element and create a SpesML Requirement element and depicted in the image below.
-
+**REE A: Requirements are modeled by a distinct Requirement Element per requirement.** -- This capability describes that requirements are modeled in the SpesML plugin using the Requirement 
+Element. 
+*Using the plugin*: The engineer should right click the containment tree in the RequirementsViewpoint folder, and select create element->create a SpesML Requirement element as depicted in the image below.
 ![REE A example](/images/reea-example.png){:class="img-responsive"}
+The REE A is a very basic capability. Despite having the lowest maturity in this Viewpoint, all the other capabilities from this Viewpoint requires it.  
 
-
-**REE B: Requirements are categorized into one of the categories: Capability, Functional, Quality, Constraint.**
-The categories supported by the SpesML Modeling Framework are better described [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#modeling-elements).
+**REE B: Requirements are categorized into one of the categories: Capability, Functional, Quality, Constraint.** 
+This capability can be considered implemented when the Requirement Element category is defined. The categories supported by the SpesML Modeling Framework are described [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#modeling-elements).
 #### Requirements Specification (RES)
 
-**RES A: Requirements are equipped with attributes containing meta-information including: name, category, status, rationale, and source.**: The SpesML Modeling framework supports a number of attributes and serving as template, which segregate information from the requirement description, improving readability.  Additional information on these requirement attributes you can find [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#requirements-attributes).
+This focus area has four capabilities. Three of them are of the Conceptual type. 
 
+**RES A: Requirements are equipped with attributes containing meta-information including: name, category, status, rationale, and source.**: The SpesML Modeling framework supports a number of attributes and serving as template, which segregate information from the requirement description, improving readability.  
+*Using the plugin*: The attributes of a requirements can be accessed through right click menu->properties. The image below depicts how they are presented in the plugin.
 ![REE A example](/images/car-attributes.png){:class="img-responsive"}
+Additional information on requirement attributes can be found [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#requirements-attributes).
 
-**RES B: Requirements text is formulated following certain sentence templates (e.g., EARS or Sophist MasterTemplate).**
+**RES B: Requirements text is formulated following certain sentence templates (e.g., EARS or Sophist MasterTemplate) ( C).**
 Sentence template require extra effort to achieve compliance at the initial phases, but prevents rework in future phases. Although the SpesML MF do not suggest using a specific template, it does suggest they should be used, whichever better fits the organization's needs (e.g, domain, project size). This is a *Conceptual* capability
-
-**RES C: The requirements text is aligned with modeling elements that they are related to (e.g., naming of ports or internal states).** This capability is related to the documentation of architecture elements within a requirement description (e.g., the naming of ports). This capability requires (?) the LCM C. This is a *Conceptual* capability.
-**RES D: The requirement is formalized in a formal specification language (e.g., temporal logic).** This capability characterizes requirements described using formal representations, for instance in the property specification language which is being looked into in a separate project activity, or as formulas in a temporal logic. Formal representations typically are required to be reviewed in order to ensure that architectural model and property specification are consistent. This is a *Conceptual* capability.
-
+**RES C: The requirements text is aligned with modeling elements that they are related to (e.g., naming of ports or internal states) ( C).** This capability is related to the documentation of architecture elements within a requirement description (e.g., the naming of ports). This capability requires (?) the LCM C. This is a *Conceptual* capability.
+**RES D: The requirement is formalized in a formal specification language (e.g., temporal logic) ( C).** This capability characterizes requirements described using formal representations, for instance in the property specification language which is being looked into in a separate project activity, or as formulas in a temporal logic. Formal representations typically are required to be reviewed in order to ensure that architectural model and property specification are consistent. This is a *Conceptual* capability.
 
 
-Some capabilites were not implemented in the plugin, hence they are called *Conceptual* and they have a (C) in their description. Capabilities RES B, C, and D are Conceptual, hence the plugin does not provide support (e.g, automated consistency and correctness). More information on these properties can be seen [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#requirements-representation).
+
+Some capabilites were not implemented in the plugin, hence they are called *Conceptual* and they have a ( C) in their description. Capabilities RES B, C, and D are Conceptual, hence the plugin does not provide support (e.g, automated consistency and correctness). More information on these properties can be seen [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#requirements-representation).
 
 #### Requirements Refinement (REF)
-The capabilities in this focus area represent types of tracing relations that exist between requirements, and between requirements and architectural elements. More on tracing relations can be seen in this [link](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#tracing-relationships).
+The capabilities in this focus area represent types of tracing relations that exist between requirements, and between requirements and architectural elements. More on requirements tracing relations can be seen in this [link](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#tracing-relationships).
 
 **REF A: If a low-level requirement is derived from a high-level requirement, they are related by a derived relation. Note: Both requirements must address the same system scope.**
 The _Derive_ relationship is used to add detail or to include certain design decisions to a requirement. Unlike RES C, where the design decisions are included in the requirement description, REF A is about two different requirements related by this specific tracing relation. It is a common pattern that an architectural element satisfies a requirements, which itself is derived from a more high-level requirement as depicted in the figure below:
 ![changeHere](../3_ModelingFramework/images/requirements_viewpoint/derive-satisfy.png){:class="img-responsive"}
 
 **REF B: If a system requirement is broken down into several component requirements, the system requirement is related to the component requirements by a decompose relation.**
-This 
+The decompose relation traces related requirements. Unlike REF A, these requirements do not necessarily belong to the the same systems scope. 
 The image below depicts the properties of this relation.
 ![changeHere](../3_ModelingFramework/images/requirements_viewpoint/containment-satisfy.png){:class="img-responsive"}
 
 **REF C: If a requirement satisfies a property that is required in another requirement, the requirements are related by a Match relation.**
-The *Match* relation traces an architectural element to a requirement of type *Requirement*.  One instance of this requirement is the definition of safety contracts for dynamic systems of systems, where some safety assurance is required to guarantee safety of the whole system.
+The *Match* relation traces an architectural element to a requirement of type *Requirement*.  One instance of Match relation is the one used in requirement definiing safety contracts for dynamic systems of systems. In this kind of systems, some specific levels of safety assurance are required to guarantee safety of the whole system.
 
  
 ### Functional Viewpoint
@@ -138,24 +150,31 @@ This capability is related to
 **SFM D: The model of the system functions can be simulated together with a description of the context.**  
 
 #### White-box Modeling (WBM)
+The capabilities of this focus area are related to the modeling of the white-box functions.
 
 **WBM A: The white-box functions that implement a system function are modeled with a syntactic interface (inputs and outputs).**  
+*Using the plugin*: After the white box is created and placed 
+
 ![changeHere](/images/wbfa-example.png){:class="img-responsive"}
 
 **WBM  B: White-box functions are related with a satisfy or require relationship to requirements they satisfy or assume.**
 The image of SMF B also depicts this capability.
+
 **WBM  C: The behavior of the white-box functions is modeled.**  
 ![changeHere](/images/wbfc-example.png){:class="img-responsive"}
 
 #### Mode Modeling (MOM)
 This focus area describes the implementation of modes of the SUD as described [here](https://spesml.github.io/concepts/modeling_framework/functional_viewpoint.html#mode-model).
+
 **MOM A: The operating modes of a system are modeled in terms of a state machine.**
+
 ![REE A example](../3_ModelingFramework/images/functional_viewpoint/mode-model.png{:class="img-responsive"}
 
 **MOM B: The operating modes in the mode model are consistent with the mode channels between the system's functions.**
 
 
-**MOM C: It is automatically analyzed whether transitions between operating states are correctly maintained by the system functions.**  
+**MOM C: It is automatically analyzed whether transitions between operating states are correctly maintained by the system functions.** 
+This is a *Conceptual* capability. 
 
 #### Functional conText Modelling (FTM)
 The SUD context, inside (FTM A), outside (FTM B), and its behavior (FTM C) are contemplated by this focus area. 
