@@ -25,7 +25,7 @@ Atomic system elements are not further composed and directly have behavior descr
 The following figure depicts the relation between system elements, channels, and data types. 
 
 <div align="center">
-<img width="350" src="systemelement.png">
+<img width="350" src="images/universal_interface_model/systemelement.png">
 <br><b>Figure:</b> 
 Relation between system elements, channels, and data types.
 </div><br>
@@ -35,5 +35,18 @@ The *semantic interface* defines the behavior of the system element by relating 
 streams of messages emitted by the system element via its output channels. 
 As described in the following, the semantic interface of an atomic system element can, inter alia, be defined by a state machine. The semantic interface of a composed system element is always defined by the composition of the semantic interfaces of its subelements.
  
+### Syntactic Interface
+The _syntactic interface_ $I \blacktriangleright O$  of a system element is defined by a set of input channels $I$ and a set of output channels  $O$ . 
+A syntactic interface can be given in terms of sub-interfaces $(I_1 \blacktriangleright O_1), \ldots,(I_n \blacktriangleright O_n)$, where the sets of input channels respectively the sets of output channels are mutually exclusive. 
+The resulting syntactic interface then is $\bigcup_i I_i \blacktriangleright \bigcup_j O_j$. Finally, the _inverse_ to a syntactic interface  $I \blacktriangleright O$ is the syntactic interface  $O \blacktriangleright I$
+
+For instance, the following figure schematically depicts the system element $F$. The syntactic interface of $F$ is $\{ c1, c2 \} \blacktriangleright \{ c3,c4,c5 \}$.
+The channel $c1$ is of type $T$. It is abstracted from the definition of the type $T$ in the picture.  
+
+<div align="center">
+<img width="350" src="images/universal_interface_model/uim.png">
+<br><b>Figure:</b> 
+A system element and its syntactic interface.
+</div><br>
 
 ## Model Elements
