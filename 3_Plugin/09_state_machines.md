@@ -262,12 +262,12 @@ one may import them:
 
 1. Select the state machine and in its *Properties* tab go to the *Tags* tab.
 
-![Implementation](/images/state_machine/state-machine-implementation.png){:class="img-responsive"}
+	![Implementation](/images/state_machine/state-machine-implementation.png){:class="img-responsive"}
 
 2. Double click the field right to *Implementations* to
 open the dialog to add an executable functions module.
 
-![Add Implementation](/images/state_machine/state-machine-add-implementation.png){:class="img-responsive"}
+	![Add Implementation](/images/state_machine/state-machine-add-implementation.png){:class="img-responsive"}
 
 3. On the dialogs left side select a function module in the containment tree.
 Add it to the state machine using the plus button. Repeat to add more modules.
@@ -279,7 +279,7 @@ The functions defined in the added modules are now available in the state machin
 in the behavior of the state machine.
 In the example below, the function *switchE* is called using the parameter *E.e1*.
 
-![Call Function](/images/state_machine/state-machine-function-call.png){:class="img-responsive"}
+	![Call Function](/images/state_machine/state-machine-function-call.png){:class="img-responsive"}
 
 
 ## Further Thoughts
