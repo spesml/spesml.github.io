@@ -63,7 +63,7 @@ Formally,
 
 If a semantic interface is not weakly causal, then it cannot be realized by any system element. 
 This holds because semantic interfaces that are not weakly causal can be interpreted to model behaviors that can react to events (receiving of messages)
-that happen in the future. Stated differently, if a semantic interface is not weakly causal, then the system element can already react in a time unit $`t`$ 
+that happen in the future. Stated differently, if a semantic interface is not weakly causal, then the system element can already react in a time unit $t$ 
 to an input that it receives in a later time unit $t'$ with $t' > t$ (for at least one input communication history).
 
 Strongly causal semantic interfaces are even more restricted in the sense that every strongly causal semantic interface is also weakly causal. For strongly causal
@@ -132,5 +132,103 @@ is equal to the outputs of $F$ on these channels when given the inputs.
 are produced by $F$ for the inputs.
 
 By construction, the semantic interface $G$ is strongly causal modulo $P$.
+
+### Describing Semantic Interfaces
+
+A semantic interface can be described by an interface assertion involving the
+input and output channels of a system element. Equivalently, in case the
+behavior is weakly causal, it can be described by a state machine, e.g. a Mealy
+Machine. System elements, their syntactic interface, and their interface
+behavior can be composed to form again a system element with composed syntactic
+and semantic interfaces.
+
+### Composition of system elements
+
+Composed system elements consist of several subelements. The following figure
+schematically depicts the composition of the subelements of a composed system
+element by the example of a system element consisting of two subelements. The
+set of input channels of a composed system element must be equal to the set of
+all input channels of its subelements, which are no output channels of any other
+subelement. This ensures that all subelements receive messages via their input
+channels during runtime, even if the composed system element is further composed
+with other system elements in a larger architecture. The input channels of
+subelements that are also output channels of other subelements cannot be used as
+input channels by the environment anymore.  
+
+Every pair of subelements must have pairwise different sets of output channels.
+Thus, in any architecture consisting of arbitary many system elements, each
+channel is the output channel of at most one atomic system element. This ensures
+that two subelements never send messages on the same output channel. The set of
+output channels of a composed system element must equal to the set of output
+channels of its subelements. With this, it forwards the messages sent from its
+subelements via the output channels.  
+
+<div align="center">
+<img width="700" src="images/universal_interface_model/compositionschema.png">
+<br><b>Figure:</b> 
+Schematic illustration of system element composition.
+</div><br>
+
+The semantic interface of a composed system element is defined by the
+composition of the semantic interfaces of its subelements. The subelements
+communicate via their channels. The messages sent by a subelement via one of its
+output channels are received on this channel by all subelements having it as one
+of their input channels. The receiving subelements, on the other hand, produce
+outputs based on the received inputs. With this, the behaviors of the
+subelements influence each other via communicating messages over the channels,
+which ultimately defines the behavior of the composed system element.  
+
+The composition of system elements is not always well-defined in the sense that
+the semantic interface of a composed system element does not define a possible
+output for every possible input. Fortunately, this situation can be avoided if
+at least one system element in every cycle of interconnected system elements is
+strongly causal. A cycle of interconnected system elements is an ordered set of
+system elements $E_1, E_2,..., E_m$ such that $E_{i +1}$ has an input
+channel that is an output channel of $E_{i}$ for all $i < m$ and $E_1$ has
+an input channel that is an output channel of $E_m$. In this case, the
+semantic interface of a composed system element is guaranteed to be well-defined
+(i.e. weakly causal and defines an output for every possible input).
+Thus, it especially holds that the semantic interface of a composed system
+element is guaranteed to be well-defined by construction if all semantic
+interfaces of all subelements of the system element are strongly causal. More
+specifically, then the semantic interface of the composed system element is even
+strongly causal. In contrast, the semantic interface of a composed system
+element is not always strongly causal if it consists of at least one subelement
+that has no strongly causal semantic interface.
+
+For example, the following figure depicts the composition of the three system elements $E_1, E_2$ and $E_3$. 
+Assume that all of the system element are weakly causal.
+On the one hand, if all of the system elements are not strongly causal, then the composition might not be well-defined.
+On the other hand, if at least one of the three system elements is strongly causal, then the composition is guaranteed to 
+be well-defined. 
+
+<div align="center">
+<img width="700" src="images/universal_interface_model/syselemcomp.png">
+<br><b>Figure:</b> 
+Composition of three system elements.
+</div><br>
+
+The well-definedness of the composition can also be determined by considering
+the notion of strongly causal modulo. With this, we obtain a more fine-grained
+condition for determining whether the composition of multiple system elements is well-defined. 
+If for every cycle of interconnected system elements $E_1, E_2,..., E_m$, 
+there exists an index $0 < i < m$ such that $E_i$ is strongly causal modulo its output channels that are
+input channels of $E_{i+1}$ or $E_m$ is strongly causal modulo its output channels that are
+input channels of $E_1$, then the semantic interface of the composed sytem element is guaranteed to be well-defined.
+
+For example, the previous picture depicts the composition of the three system
+elements $E_1, E_2$ and $E_3$. Assume that all of the system elements are
+weakly causal. Further assume that none of the system elements is strongly
+causal. Then, the composition might not be well-defined. The composition includes exactly one cycle 
+$E_1, E_2, E_3$ of interconnected system elements. From the above, we can conclude that the composition 
+is well-defined if $E_1$ is strongly causal modulo $c2$ or $E_2$ is strongly causal modulo $c4$
+or $E_3$ is strongly causal modulo $c5$. In this case, $E_1$ (resp.
+$E_3$) is strongly causal modulo $c2$ (resp. $c_5$) iff $E_1$ (resp.
+$E_3$) is strongly causal because $c2$ (resp. $c_5$ ) as $c2$ (resp. $c_5$ ) is the only output
+channel of $E_1$ (resp. $E_3$ ). As by assumption, the system elements are
+not strongly causal, it holds that $E_1$ (resp. $E_3$) is not strongly
+causal modulo $c2$ (resp. $c_5$). However, if $E_2$ is strongly causual
+modulo $c4$, then the composition is well-defined, although none of the system
+elements is strongly causal.
 
 ## Model Elements
