@@ -57,7 +57,7 @@ For instance, the following figure schematically depicts the system element $F$.
 The channel $c1$ is of type $T$. It is abstracted from the definition of the type $T$ in the picture.  
 
 <div align="center">
-<img width="350" src="images/universal_interface_model/uim.png">
+<img width="350" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/uim.png">
 <br><b>Figure:</b> 
 A system element and its syntactic interface.
 </div><br>
@@ -177,7 +177,7 @@ channels of its subelements. With this, it forwards the messages sent from its
 subelements via the output channels.  
 
 <div align="center">
-<img width="700" src="images/universal_interface_model/compositionschema.png">
+<img width="700" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/compositionschema.png">
 <br><b>Figure:</b> 
 Schematic illustration of system element composition.
 </div><br>
@@ -216,7 +216,7 @@ On the other hand, if at least one of the three system elements is strongly caus
 be well-defined. 
 
 <div align="center">
-<img width="700" src="images/universal_interface_model/syselemcomp.png">
+<img width="700" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/syselemcomp.png">
 <br><b>Figure:</b> 
 Composition of three system elements.
 </div><br>
