@@ -231,4 +231,28 @@ causal modulo $c2$ (resp. $c_5$). However, if $E_2$ is strongly causual
 modulo $c4$, then the composition is well-defined, although none of the system
 elements is strongly causal.
 
+#### Formal Foundations of Composition 
+
+System elements, their syntactic interfaces, and their semantic interfaces can be composed to form again a system element with an aggregate syntactic interface and semantic interface. We compose systems from subsystems specified by their interface behavior to create composed systems. 
+
+Two syntactic interfaces $I_k = X_k \blacktriangleright Y_k$ with $k = 1, 2$ are called _composable_, if  $Y_1 \cap Y_2 = \emptyset$, i.e. the sets of output channels are mutually exclusive.
+The composition of two composable syntactic interfaces $I_k = X_k \blacktriangleright Y_k$ with $k = 1, 2$ is defined as the syntactic interface  $I_1 \otimes I_2 = X \blacktriangleright Y$ where $X = (X_1 \cup X_2) \setminus (Y_1 \cup Y_2)$ and $Y = (Y_1 \cup Y_2) \setminus (X_1 \cup X_2)$. Thus, the resulting input channels are the input channels that are not output channels. Similarly, the output channels are the output channels that are not input channels. If a channel is an output channel of one syntactic interface and an input channels of the other syntactic interface, then it is hidden from the environment in the syntactic interface resulting from the composition.  
+
+The semantic interface of the composed system element can be described by the logical conjunction of the interface assertions of the composed system elements.
+If $I_k = X_k \blacktriangleright Y_k$ for $k = 1, 2$ are two composable syntactic interfaces and $F_k$ for $k = 1, 2$ are semantic interfaces with the syntactic interfaces $I_k$ for $k = 1, 2$, then 
+the composition of $F_1$ and $F_2$ is defined as the function $(F_1 \otimes F_2): \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ where $I \blacktriangleright O = I_1 \otimes I_2$ satisfying 
+
+$(F_1 \otimes F_2)(x) = \{ y|O : y \in \overrightarrow{Z} \wedge y|I = x \wedge y|Y_1 \in F_1(y|X_1) \wedge y|Y_2 \in F_2(y|X_2) \}$ for all $x \in \overrightarrow{I}$ where $Z = X_1 \cup X_2 \cup Y_1 \cup Y_2$.
+
+Parallel composition of components may involve feedback channels, i.e. the set of channels $Z := (X_1 \cup X_2) \cap O$. The streams communicated over the channels contained in $(I1 \cup I2) \cap O$ correspond to feedback and this way to fixpoints (i.e. $x = F(x)$ for a composition in terms of behaviors). In case of strong causality of $F$, the fixpoint always exists and is unique according to the Banach fixpoint theorem. For weakly causal functions that are not stronly causal the existence of such a fixpoint cannot be guaranteed.
+
+More intuitively, the composition of two weakly causal semantic interfaces with composabel syntactic interfaces is not always a weakly causal semantic interface. Sometimes, it even holds that the composition is a function that does not map every input communication history to at least one output communication history, i.e., there are no well-defined outputs for all inputs.
+This complication can occur in the presence of feedback loops. 
+However, this complication is avoided if at least one of the composed semantic interfaces is strongly causal. Then, the resulting function is guaranteed to be a well-defined weakly causal semantic interface. If even both of the composed
+semantic interfaces are strongly causal, then the resulting semantic interface is also guaranteed to be strongly causal.   
+
+The composition of two weakly causal semantic interfaces with composabel syntactic interfaces is well-defined 
+if one of the semantic interfaces is strongly causal modulo its output channels that are input channels of the other semantic interface. 
+
+
 ## Model Elements
