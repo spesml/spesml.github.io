@@ -6,6 +6,7 @@ parent: SpesML Maturity Model
 grand_parent: SpesML Concepts
 permalink: /concepts/maturity_model/definition.html
 ---
+
 ## Capability description
 
 In the following, we describe each capability in detail, grouped by respective Viewpoint and Focus area. Additionally, we describe how the capability is used in the [plugin](https://spesml.github.io/plugin.html/).
@@ -169,10 +170,12 @@ The image below depicts the WindoLifterSytem in the Logical Context view.
 The actor also includes external logical components (e.g., BrightnessSensor in the image above)
 
 #### Logical Physical Modeling (LPM)
-tbd...
-##### LPM A: Physical Quantities are assigned to external logical components. 
+In the SpesML methdology, physical units are described in the Logical Viewpoint. This focus area describes the possible levels of maturity a development team can achieve when modelign physical information
+##### LPM A: Physical units are defined as using numeric values. 
+##### LPM B: Physical Quantities are assigned to external logical components. 
+##### LPM C: The precison of these units is...
+##### Physical quantities are modeled using the specific elements of the plugin.
 
-##### LPM B:...
 
 ### Technical Viewpoint
 #### Technical Component Modeling (TCM)                                    
@@ -180,8 +183,8 @@ tbd...
 ##### TCM B: The behavior of the technical components is modeled.                                                                                                                          
 ##### TCM C: technical components and requirements they satisfy are related by a satisfy or require  relation.                                                                                                     
 #### Technical Architecture Modeling (TAM)                                 
-##### The technical components and their dependencies are modeled.
-##### Technical components are related to logical components that they implement by a realize relation.           
+##### TAM A: The technical components and their dependencies are modeled.
+##### TAM B: Technical components are related to logical components that they implement by a realize relation.           
 #### Technical conText Modelling (TTM)                                
 ##### TTM A: The   system under development (i.e., the top-level technical component) is modeled by a composition of all technical components.
 
