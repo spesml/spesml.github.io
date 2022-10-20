@@ -136,7 +136,7 @@ Then, delaying the semantic interface $F$ with respect to
 $init$ results in the semantic interface $G: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ 
 satisfying the following two conditions for all inputs $x \in \overrightarrow{I}$ and output channels $c \in O$:
 - $(G(x))(c) = (F(x))(c)$ if $c \notin P$ and
-- $(G(x))(c) = \{ init(c) \cdot y \;|\; y \in F(x) \}$ if $c \in P$.
+- $(G(x))(c) = \{ init(c) \cdot y \;:\; y \in F(x) \}$ if $c \in P$.
 
 For every input, the outputs of the semantic interface $G$
 - on the channels not contained in $P$ 
@@ -255,7 +255,7 @@ The semantic interface of the composed system element can be described by the lo
 If $I_k = X_k \blacktriangleright Y_k$ for $k = 1, 2$ are two composable syntactic interfaces and $F_k$ for $k = 1, 2$ are semantic interfaces with the syntactic interfaces $I_k$ for $k = 1, 2$, then 
 the composition of $F_1$ and $F_2$ is defined as the function $(F_1 \otimes F_2): \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ where $I \blacktriangleright O = I_1 \otimes I_2$ satisfying 
 
-$(F_1 \otimes F_2)(x) = \{ y|O : y \in \overrightarrow{Z} \wedge y|I = x \wedge y|Y_1 \in F_1(y|X_1) \wedge y|Y_2 \in F_2(y|X_2) \}$ for all $x \in \overrightarrow{I}$ where $Z = X_1 \cup X_2 \cup Y_1 \cup Y_2$.
+$(F_1 \otimes F_2)(x) = \{ y\|O : y \in \overrightarrow{Z} \wedge y\|I = x \wedge y\|Y_1 \in F_1(y\|X_1) \wedge y\|Y_2 \in F_2(y\|X_2) \}$ for all $x \in \overrightarrow{I}$ where $Z = X_1 \cup X_2 \cup Y_1 \cup Y_2$.
 
 Parallel composition of components may involve feedback channels, i.e. the set of channels $Z := (X_1 \cup X_2) \cap O$. The streams communicated over the channels contained in $(I1 \cup I2) \cap O$ correspond to feedback and this way to fixpoints (i.e. $x = F(x)$ for a composition in terms of behaviors). In case of strong causality of $F$, the fixpoint always exists and is unique according to the Banach fixpoint theorem. For weakly causal functions that are not stronly causal the existence of such a fixpoint cannot be guaranteed.
 
