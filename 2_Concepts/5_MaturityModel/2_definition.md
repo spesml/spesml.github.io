@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Definition
-nav_order: 1
-parent: SpesMl MM
+nav_order: 2
+parent: SpesML MM
 grand_parent: SpesML Concepts
 permalink: /concepts/maturity_model/definition.html
 ---
