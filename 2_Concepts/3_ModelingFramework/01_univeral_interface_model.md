@@ -136,7 +136,7 @@ Then, delaying the semantic interface $F$ with respect to
 $init$ results in the semantic interface $G: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ 
 satisfying the following two conditions for all inputs $x \in \overrightarrow{I}$ and output channels $c \in O$:
 - $(G(x))(c) = (F(x))(c)$ if $c \notin P$ and
-- $(G(x))(c) = \\{ init(c) \cdot y \\;|\\; y \in F(x) \\}$ if $c \in P$.
+- $(G(x))(c) = \{ init(c) \cdot y \;|\; y \in F(x) \}$ if $c \in P$.
 
 For every input, the outputs of the semantic interface $G$
 - on the channels not contained in $P$ 
