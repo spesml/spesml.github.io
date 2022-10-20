@@ -38,7 +38,7 @@ Atomic system elements are not further composed and directly have behavior descr
 The following figure depicts the relation between system elements, channels, and data types. 
 
 <div align="center">
-<img width="350" src="images/universal_interface_model/systemelement.png">
+<img width="350" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/systemelement.png">
 <br><b>Figure:</b> 
 Relation between system elements, channels, and data types.
 </div><br>
