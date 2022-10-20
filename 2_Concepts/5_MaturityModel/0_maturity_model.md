@@ -23,14 +23,14 @@ permalink: /concepts/maturity_model.html/
 - [Relations to the MBSE MM](#relations-to-the-mbse-mm)
 
 # Introduction
-On this page, we describe the SpesML Maturity Model (SpesML MM) whose goal is to help teams adopting the SpesML methodology. This is achieved, first, by mapping their current Model-based Systems Engineering (MBSE) processes using the SpesML MM, to figure out which activities are in place and must be *adapted* to the SpesML methodology. And second, by finding out unimplemented capabilities that must be *adopted* anew to reach the desired maturity level for the organization.
+On this page, we describe the SpesML Maturity Model (SpesML MM) whose goal is to help teams adopting the SpesML methodology. The SpesML MM helps to achieve this first by mapping their current Model-based Systems Engineering (MBSE) processes using the SpesML MM, to figure out which activities are in place and must be *adapted* to the SpesML methodology. And second, by finding out unimplemented capabilities that must be *adopted* anew to reach the desired maturity level for the organization.
 
-The SpesML MM was based on the Model-based Systems Engineering Maturity Model (MBSE MM) developed in the context of the SPEDIT project. The MBSE MM was designed having the SPES methodology as a reference framework. More information on the MBSE MM can be found [here](https://www.fortiss.org/fileadmin/user_upload/05_Veroeffentlichungen/Whitepaper/fortiss_MBSE_whitepaper_web.pdf).
+The SpesML MM is based on the Model-based Systems Engineering Maturity Model (MBSE MM) developed in the context of the SPEDIT project. The MBSE MM was designed having the SPES methodology as a reference framework. 
 
 ## Focus area maturity models
 Maturity models are used to assess the process maturity of a development team, thus guiding further process improvement. Two approaches for implementing maturity models exist. With a top-down approach, a fixed number of maturity stages or levels is specified first and further corroborated with characteristics (typically in the form of specific assessment items) that support the initial assumptions about how maturity evolves. Prominent examples are CMMI or SPICE. 
 
-When using a bottom-up approach, distinct characteristics or assessment items are determined first and clustered in a second step into maturity levels to induce a more general view of the different steps of maturity evolution. They are distinguished from fixed-level maturity models, such as CMMI, in that they are suited to the incremental improvement of functional domains. One class of these bottom-up maturity models is the Focus Area type, where capabilities are defined for different focus areas and arranged in a progressing order that can be mapped to maturity levels. Focus area maturity models are especially effective at providing organizations with implementable practices and processes. The capabilities are grouped in focus area which in turn are grouped in functional domains. In the MBSE MM the latter was renamed to engineering function to emphasize the relation to engineering phases in the development process. The capabilities are positioned against each other in a maturity matrix and assigned letters according to their position (i.e., maturity progression) being the first letters of the alphabet with less maturity than letters that appear closer to the end (i.e., capability B is less mature than a capability D).  
+When using a bottom-up approach, distinct characteristics or assessment items are determined first and clustered in a second step into maturity levels to induce a more general view of the different steps of maturity evolution. They are distinguished from fixed-level maturity models, such as CMMI, in that they are suited to the incremental improvement of functional domains. One class of these bottom-up maturity models is the Focus Area type, where capabilities are defined for different focus areas and arranged in a progressing order that can be mapped to maturity levels. Focus area maturity models are especially effective at providing organizations with implementable practices and processes. The capabilities are grouped in focus area which in turn are grouped in functional domains. The capabilities are positioned against each other in a maturity matrix and assigned letters according to their position (i.e., maturity progression) being the first letters of the alphabet with less maturity than letters that appear closer to the end (i.e., capability B is less mature than a capability D).  The SpesML MM is a focus area maturity model. 
 
 ![Focus area maturity model meta-model](/images/focusamm-example.png){:class="img-responsive"}
 
@@ -42,11 +42,11 @@ The  Model-based Systems Engineering Maturity Model (MBSE MM) was created during
 
 The MBSE MM is fully descriptive, partially prescriptive, and partially comparative. Partially prescriptive because the model diminish the solution space as an assessment tool. But it lacks guidance on selecting the subsequent capabilities to implement. The model is partially comparative because comparisons can be made only at the focus area level. There is no global maturity level requiring certain capabilities and teams might need different kind of needs.
 
-Despite the use of a reference framework, the MBSE MM is not tied to any specific development model (e.g., v-model, waterfall). The maturity levels are described in terms of generic artifacts (i.e., information bites)  generated in the development process (e.g., description of functions' interfaces), and capabilities enhancements (e.g., automatic analysis).
+Despite the use of a reference framework, the MBSE MM is not tied to any specific development model (e.g., v-model, waterfall). The maturity levels are described in terms of generic artifacts (i.e., information bites)  generated in the development process (e.g., description of functions' interfaces), and capabilities enhancements (e.g., automatic analysis). More information on the MBSE MM can be found [here](https://www.fortiss.org/fileadmin/user_upload/05_Veroeffentlichungen/Whitepaper/fortiss_MBSE_whitepaper_web.pdf).
 
 # The SpesML Maturity Model
 
-The SpesML MM is a focus area maturity model. 
+The SpesML MM was created with the goal to help team in smooth adopting the SpesML methodology and tools. It helps through identification of similarities between current MBSE activities and the capabilities described in the SpesML MM. It is smooth because the capabilities are defined in small chunks that do not overburden the team during the process. 
 
 The _Functional Domains_ of the SpesML MM were defined based on the four viewpoints supported by the SpesML Modeling Framework, namely Requirements, Functional, Logical, and Technical Viewpoints. 
 
@@ -55,6 +55,7 @@ There are two types of capabilities, namely the normal type and the *Conceptual*
 
 ## The SpesML Maturity Matrix
 
+In this section we present the SpesML Maturity Matrix which is the representation of the model in matrix format. This representation allows for easy referencing and allows capability maturity comparison. In the next section we detail the capabilities, also giving usage examples in the plugin.
 
 
 | Viewpoint |                             Focus Areas                             |                                                                                  Capability  A                                                                                 |                                                                                         Capability  B                                                                                         |                                                             Capability  C                                                             |                                               Capability  D                                              |     
@@ -79,7 +80,7 @@ There are two types of capabilities, namely the normal type and the *Conceptual*
 
 ## Capability description
 
-In the following, we describe each capability in detail, grouped by respective Viewpoint and Focus area.
+In the following, we describe each capability in detail, grouped by respective Viewpoint and Focus area. Additionally, we describe how the capability is used in the [plugin](https://spesml.github.io/plugin.html/).
 
 ### Requirements Viewpoint
 There are three focus areas in this Viewpoint: the Requirements Elicitation (REE), the Requirements Specification (RES), and the Requirements Refinement (RER). More information on the Requirements Viewpoint can be found [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html).  
@@ -87,26 +88,30 @@ There are three focus areas in this Viewpoint: the Requirements Elicitation (REE
 ####  Requirements Elicitation (REE): 
 This focus area is the smallest of this Viewpoint, having only two capabilities. 
 
-**REE A: Requirements are modeled by a distinct Requirement Element per requirement.** -- This capability describes that requirements are modeled in the SpesML plugin using the Requirement 
-Element. 
-*Using the plugin*: The engineer should right click the containment tree in the RequirementsViewpoint folder, and select create element->create a SpesML Requirement element as depicted in the image below.
+##### **REE A: Requirements are modeled by a distinct Requirement Element per requirement.** 
+This capability describes that requirements are modeled in the SpesML plugin using the Requirement 
+Element. *Plugin usage*: The engineer should right click the containment tree in the RequirementsViewpoint folder, and select create element->create a SpesML Requirement element as depicted in the image below.
+
 ![REE A example](/images/reea-example.png){:class="img-responsive"}
-The REE A is a very basic capability. Despite having the lowest maturity in this Viewpoint, all the other capabilities from this Viewpoint requires it.  
+
+The REE A is a very basic capability. Despite having the lowest maturity in this Viewpoint, all the other capabilities from this Viewpoint requires it.  More information on the Requirement Element can be found [here](https://spesml.github.io/plugin/requirements_viewpoint.html#elements).
 
 **REE B: Requirements are categorized into one of the categories: Capability, Functional, Quality, Constraint.** 
 This capability can be considered implemented when the Requirement Element category is defined. The categories supported by the SpesML Modeling Framework are described [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#modeling-elements).
 #### Requirements Specification (RES)
 
-This focus area has four capabilities. Three of them are of the Conceptual type. 
+This focus area has four capabilities. Three of them are of Conceptual kind. 
 
 **RES A: Requirements are equipped with attributes containing meta-information including: name, category, status, rationale, and source.**: The SpesML Modeling framework supports a number of attributes and serving as template, which segregate information from the requirement description, improving readability.  
-*Using the plugin*: The attributes of a requirements can be accessed through right click menu->properties. The image below depicts how they are presented in the plugin.
+*Plugin usage*: The attributes of a requirements can be accessed through right click menu->properties. The image below depicts how they are presented in the plugin.
 ![REE A example](/images/car-attributes.png){:class="img-responsive"}
 Additional information on requirement attributes can be found [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#requirements-attributes).
 
 **RES B: Requirements text is formulated following certain sentence templates (e.g., EARS or Sophist MasterTemplate) ( C).**
 Sentence template require extra effort to achieve compliance at the initial phases, but prevents rework in future phases. Although the SpesML MF do not suggest using a specific template, it does suggest they should be used, whichever better fits the organization's needs (e.g, domain, project size). This is a *Conceptual* capability
+
 **RES C: The requirements text is aligned with modeling elements that they are related to (e.g., naming of ports or internal states) ( C).** This capability is related to the documentation of architecture elements within a requirement description (e.g., the naming of ports). This capability requires (?) the LCM C. This is a *Conceptual* capability.
+
 **RES D: The requirement is formalized in a formal specification language (e.g., temporal logic) ( C).** This capability characterizes requirements described using formal representations, for instance in the property specification language which is being looked into in a separate project activity, or as formulas in a temporal logic. Formal representations typically are required to be reviewed in order to ensure that architectural model and property specification are consistent. This is a *Conceptual* capability.
 
 
@@ -117,13 +122,11 @@ Some capabilites were not implemented in the plugin, hence they are called *Conc
 The capabilities in this focus area represent types of tracing relations that exist between requirements, and between requirements and architectural elements. More on requirements tracing relations can be seen in this [link](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#tracing-relationships).
 
 **REF A: If a low-level requirement is derived from a high-level requirement, they are related by a derived relation. Note: Both requirements must address the same system scope.**
-The _Derive_ relationship is used to add detail or to include certain design decisions to a requirement. Unlike RES C, where the design decisions are included in the requirement description, REF A is about two different requirements related by this specific tracing relation. It is a common pattern that an architectural element satisfies a requirements, which itself is derived from a more high-level requirement as depicted in the figure below:
-![changeHere](../3_ModelingFramework/images/requirements_viewpoint/derive-satisfy.png){:class="img-responsive"}
+The _Derive_ relationship is used to add detail or to include certain design decisions to a requirement. Unlike RES C, where the design decisions are included in the requirement description, REF A is about two different requirements related by this specific tracing relation. It is a common pattern that an architectural element satisfies a requirements, which itself is derived from a more high-level requirement. More information on the Derive relationship can be found [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#tracing-relationships). *Plugin usage*: This capability is realized in the SpesML RequirementToRequirement Matrix. More information on this can be found [here](https://spesml.github.io/plugin/requirements_viewpoint.html#spesml-requirementtorequirement-matrix).
 
 **REF B: If a system requirement is broken down into several component requirements, the system requirement is related to the component requirements by a decompose relation.**
 The decompose relation traces related requirements. Unlike REF A, these requirements do not necessarily belong to the the same systems scope. 
-The image below depicts the properties of this relation.
-![changeHere](../3_ModelingFramework/images/requirements_viewpoint/containment-satisfy.png){:class="img-responsive"}
+The decompose relation is further explained [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#co-evolution-of-requirements-and-architecture).
 
 **REF C: If a requirement satisfies a property that is required in another requirement, the requirements are related by a Match relation.**
 The *Match* relation traces an architectural element to a requirement of type *Requirement*.  One instance of Match relation is the one used in requirement definiing safety contracts for dynamic systems of systems. In this kind of systems, some specific levels of safety assurance are required to guarantee safety of the whole system.
@@ -143,6 +146,7 @@ The image below depicts the CentralWindowFunction and its respective input and o
 The satisfy relation traces the requirement to a function, which is useful to identify whether there are requirements not addressed by any function, or if there are functions that do not fulfill any requirement. In the SpesML plugin, this relation is described with a table as depicted in the figure below.
 
 ![changeHere](/images/sfmb-wbfb-example.png){:class="img-responsive"}
+More information on this relationships can be found [here](https://spesml.github.io/plugin/functional_viewpoint.html#spesml-functiontorequirement-matrix).
 
 **SFM C: The behavior of the system functions is modeled by a state machine or decomposed in a white-box model.**  
 This capability is related to 
@@ -274,8 +278,3 @@ The current processes that were identified as similar to the SpesML capabilities
 In this task, capabilities that were not identified as similar in task T1 must be adopted taking into consideration the implementation goal as described by artifact A2.
 
 ## Relations to the MBSE MM
-
-
-
-
-
