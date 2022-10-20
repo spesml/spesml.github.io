@@ -19,8 +19,8 @@ permalink: /concepts/maturity_model.html/
 		- [Functional Viewpoint](#functional-viewpoint)
 		- [Logical Viewpoint](#logical-viewpoint)
 		- [Technical Viewpoint](#technical-viewpoint)
-- [How to use the SpesML MM](#hot-to-use-the-spesml-mm)
-- [Relations to the MBSE MM](#relations-to-the-mbse-mm)
+	- [How to use the SpesML MM](#hot-to-use-the-spesml-mm)
+	- [Relations to the MBSE MM](#relations-to-the-mbse-mm)
 
 # Introduction
 On this page, we describe the SpesML Maturity Model (SpesML MM) whose goal is to help teams adopting the SpesML methodology. The SpesML MM helps to achieve this first by mapping their current Model-based Systems Engineering (MBSE) processes using the SpesML MM, to figure out which activities are in place and must be *adapted* to the SpesML methodology. And second, by finding out unimplemented capabilities that must be *adopted* anew to reach the desired maturity level for the organization.
@@ -88,22 +88,20 @@ There are three focus areas in this Viewpoint: the Requirements Elicitation (REE
 ####  Requirements Elicitation (REE): 
 This focus area is the smallest of this Viewpoint, having only two capabilities. 
 
-##### **REE A: Requirements are modeled by a distinct Requirement Element per requirement.** 
-This capability describes that requirements are modeled in the SpesML plugin using the Requirement 
-Element. *Plugin usage*: The engineer should right click the containment tree in the RequirementsViewpoint folder, and select create element->create a SpesML Requirement element as depicted in the image below.
+##### REE A: Requirements are modeled by a distinct Requirement Element per requirement.
+This capability describes that requirements are modeled in the SpesML plugin using the Requirement Element. *Plugin usage*: The engineer should right click the containment tree in the RequirementsViewpoint folder, and select create element->create a SpesML Requirement element as depicted in the image below.
 
 ![REE A example](/images/reea-example.png){:class="img-responsive"}
 
 The REE A is a very basic capability. Despite having the lowest maturity in this Viewpoint, all the other capabilities from this Viewpoint requires it.  More information on the Requirement Element can be found [here](https://spesml.github.io/plugin/requirements_viewpoint.html#elements).
 
 **REE B: Requirements are categorized into one of the categories: Capability, Functional, Quality, Constraint.** 
-This capability can be considered implemented when the Requirement Element category is defined. The categories supported by the SpesML Modeling Framework are described [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#modeling-elements).
+This capability can be considered implemented when the Requirement Element category is defined. The categories supported by the SpesML Modeling Framework are described [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#modeling-elements). *Plugin usage*: The requirements category is symbolized trough the capital letter in the requirements icon.
 #### Requirements Specification (RES)
 
 This focus area has four capabilities. Three of them are of Conceptual kind. 
 
-**RES A: Requirements are equipped with attributes containing meta-information including: name, category, status, rationale, and source.**: The SpesML Modeling framework supports a number of attributes and serving as template, which segregate information from the requirement description, improving readability.  
-*Plugin usage*: The attributes of a requirements can be accessed through right click menu->properties. The image below depicts how they are presented in the plugin.
+**RES A: Requirements are equipped with attributes containing meta-information including: name, category, status, rationale, and source.**: The SpesML Modeling framework supports a number of attributes and serving as template, which segregate information from the requirement description, improving readability. *Plugin usage*: The attributes of a requirements can be accessed through right click menu->properties. The image below depicts how they are presented in the plugin.
 ![REE A example](/images/car-attributes.png){:class="img-responsive"}
 Additional information on requirement attributes can be found [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#requirements-attributes).
 
@@ -253,7 +251,7 @@ tbd...
 
 **TTM C: For  each actor in the operational context, the behavior is modeled.**
 
-# How to use the SpesML MM
+## How to use the SpesML MM
 The usage of the SpesML MM is similar to the MBSE MM.
 
 
@@ -278,3 +276,8 @@ The current processes that were identified as similar to the SpesML capabilities
 In this task, capabilities that were not identified as similar in task T1 must be adopted taking into consideration the implementation goal as described by artifact A2.
 
 ## Relations to the MBSE MM
+
+
+
+
+
