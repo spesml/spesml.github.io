@@ -477,13 +477,13 @@ Therefore, connecting two ports in SysML corresponds to the concept of channel r
 * Blocks need to specify at least one proxy port (subinterface) 
 * Proxy ports are required to have an interface block as type
 * Flow Properties have the direction "out"
-* Flow Properties need to have a data type, see https://spesml.github.io/plugin/data_types.html
+* Flow Properties need to have a data type, see [Data Types Documentation](https://spesml.github.io/plugin/data_types.html)
 
 ### Structure
 * If a block is a composition (i.e. it has parts and an IBD) it may not own any behavior (e.g. a statemachine). It may only own ports, parts and connectors.
 * If a block is atomic (e.g. has a statemachine) it may not own any parts or IBDs
 * Only atomic blocks may have value properties
-* Value properties must have an associated type, see https://spesml.github.io/plugin/data_types.html
+* Value properties must have an associated type, see [Data Types Documentation](https://spesml.github.io/plugin/data_types.html)
 * All parts must have a block as type
 * Connectors must only connect ports with same type.
 * Connectors must always connect outgoing with incoming ports.
