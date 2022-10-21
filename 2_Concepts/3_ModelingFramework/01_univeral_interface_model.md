@@ -136,7 +136,7 @@ Then, delaying the semantic interface $F$ with respect to
 $init$ results in the semantic interface $G: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ 
 satisfying the following two conditions for all inputs $x \in \overrightarrow{I}$ and output channels $c \in O$:
 - $(G(x))(c) = (F(x))(c)$ if $c \notin P$ and
-- $(G(x))(c) = \{ init(c) \cdot y \;:\; y \in F(x) \}$ if $c \in P$.
+- $(G(x))(c) = \\{ init(c) \cdot y \;:\; y \in F(x) \\}$ if $c \in P$.
 
 For every input, the outputs of the semantic interface $G$
 - on the channels not contained in $P$ 
@@ -244,7 +244,7 @@ causal modulo $c2$ (resp. $c_5$). However, if $E_2$ is strongly causual
 modulo $c4$, then the composition is well-defined, although none of the system
 elements is strongly causal.
 
-#### Formal Foundations of Composition 
+### Formal Foundations of Composition
 
 System elements, their syntactic interfaces, and their semantic interfaces can be composed to form again a system element with an aggregate syntactic interface and semantic interface. We compose systems from subsystems specified by their interface behavior to create composed systems. 
 
@@ -268,4 +268,109 @@ The composition of two weakly causal semantic interfaces with composabel syntact
 if one of the semantic interfaces is strongly causal modulo its output channels that are input channels of the other semantic interface. 
 
 
-## Model Elements
+## Modeling Elements
+
+The above concepts are relflected by SPES ML model elements. As SPES ML builds upon SysML these are all SysML modeling elements. However, as SPES ML user you will never create the generic model elements listed below, but instead specific model elements for the different viewpoints. Nevertheless, keeping in mind how the theoretic concepts map to SysML modeling elements may be helpful, especially for those who are already familiar with SysML.
+
+### Data Type
+Data types in SPES ML are represented be SysML **Value Types**. 
+A value type in SysML can be one of the following:
+- **Primitive Value Type**, types which are values types predefined by SysML. 
+- **Enumeration**, defining a set of value literals to choose from  (e.g. enumeration `Status` with enumeration literals `ON` and `OFF`)
+- **Structured Type**, defining a type that consists of several attributes, each having a certain type and multiplicity (e.g. `Location` consisting of `x` and `y` each with type `Real`)
+
+The predefined value types are `Integer`, `Real`, `String`, `Boolean`, `Complex`, and the predefined SI value types according to the ISO-80000. The type `Integer` represents unbounded integer numbers and the type `Real` represents the 
+mathematical concepts of real numbers. `String` and `Boolean` are defined as usual. The type `Complex` represents complex numbers, each consisting of a `realPart` and and `imaginaryPart`, 
+both of type `Real`. For each SI unit quantity and each possible unit for the quantity, modelers can select a corresponding type for each attribute. Each quantity (e.g., length) can be measured using a unit (e.g, millimetre).
+The possible multiplicities for attributes are `0`, `1`, `0..1`, `1..*`, and `*`. 
+
+In MagicDraw, value types are directly created and modeled in the containment tree. 
+Block Definition Diagrams are not used for the creation of value types.
+For example, the following figure depicts an excerpt of a containment tree in MagicDraw.
+The package `data` contains the enumeration `Direction` and the structured value types `Node` and `Screw`. 
+The enumeration consists of the four enumeration literals `UP`, `DOWN`, `LEFT`, and `RIGHT`.
+The structured value type `Node` has the two attributes `children` and `value`. 
+The attribute `children` is of type `Node` and has the multiplicity `*`.
+The attribute `value` is of type `Integer` and has the multiplicity `1`. Thus, a `Node` instance can be interpreted to be the node of a directed graph that has an `Integer` `value` and is connected via other nodes according to its `children` attribute. The structured value type `Screw` has the two attributes `length` and `diameter`. Both are of type `length[millimetre]`. The quantity is `length` and `millimetre` is the unit. 
+
+<div align="center">
+<img width="450" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/valuetypes.png">
+<br><b>Figure:</b> 
+Definition of value types in the containment tree of a MagicDraw model.
+</div><br>
+
+### Channel
+A channel in the universal interface model is represented by a SysML **flow
+property** of an **interface block**. The name of a flow property and its
+corresponding interface block define the channel's name. The type of the flow
+property models the channel's type. In SpesML, the direction of all flow
+properties must be *out*. Whether the channels is used as an input or an output
+channel by a system element is determined by the proxy port that is typed with
+the interface block containing the channel. In SpesML, each interface block has
+a name and consists of an arbitrary number of flow properties. Each flow
+properties of each interface block defines a channel.
+
+In MagicDraw, interface blocks are directly created and modeled in the
+containment tree. Block Definition Diagrams are not used for the creation of
+interface blocks. For instance, the following figure depicts the interface block
+`MyInterface` containing the two flow properties `channel1` and `channel2`. The
+flow property `channel1` is of type `String` and the flow property `channel2` is
+of type `Integer`. Conceptually, the interface block can be interpreted to
+define the two channels `MyInterface.channel1` and `MyInterface.channel2`. 
+
+<div align="center">
+<img width="200" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/interfaceblock.png">
+<br><b>Figure:</b> 
+An interface block with two flow properties defines two channels.
+</div><br>
+
+### Sub-Interface
+Sub-interfaces of system elements are modeled with **proxy ports**. Each proxy
+port is typed with an interface block. As each interface block defines a set of
+channels, an interface block can be conceptually interpreted to be a type of
+sub-interfaces. Each proxy port must be owned by a block (described in detail
+below).
+
+By default, all the channels of the subinterface defined by a proxy port are
+output channels of the system element modeled by the block that owns the port.
+In order to represent the inverse of the syntactic sub-interface represented by
+a proxy port, the attribute **Is Conjugated** of the proxy port is set to
+_true_. This is visually displayed by a `~` symbol as a prefix to the name of
+the port. Thus, if the conjugated property of a proxy port is set to _true_,
+then it models a sub-interface solely containing input channels.
+
+Strong causality modulo some output channels can be introduced by delaying the
+outputs of the channels (cf. Formal Foundations sections). To this effect, the
+SpesML language profile adds the **Initial Sequences for Delay** property to the
+SysML of MagicDraw. All channels represented by a proxy port can be delayed by
+adding a value to the ```Initial Sequences for Delay``` property. The property
+can be found in the specification of proxy ports. The ```Initial Sequences for
+Delay``` property can only be given a value for ports where the conjugated
+property is set to _false_, i.e., only output channels can be delayed. If the
+property is given a value in a port, then all channels represented by the port
+are delayed. 
+
+The sequences of messages initially communicated via the delayed channels is
+defined by the value of the property ```Initial Sequences for Delay```. Values
+of the property ```Initial Sequences for Delay``` are finite sequences of the
+form _flowProp_ ```= ```_Expr_```;``` where _flowProp_ is the name of a flow
+property of the port (representing a channel) and _Expr_ is an expression
+evaluating to a value of the flow property's type. The expression cannot
+reference any variables. Every flow property may be used on the left-hand side
+at most once. If a flow property is not used on the left-hand side at all, then
+the empty sequence is initially communicated via the corresponding channel.   
+
+For example, the figure below depicts an excerpt of the specification of the
+proxy port ```p1```. The port is not conjugated. Thus, all of its flow
+properties represent output channels. The initial outputs on the channels
+corresponding to the flow properties are defined by the property ```Initial
+Sequences```. In this case, the initial output on ```channel1``` is the sequence
+```"Hello", "World"```.  
+
+<div align="center">
+<img width="700" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/portSpec.png">
+<br><b>Figure:</b> 
+A proxy port with initial sequences.
+</div><br>
+
+
