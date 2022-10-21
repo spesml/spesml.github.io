@@ -476,8 +476,6 @@ Therefore, connecting two ports in SysML corresponds to the concept of channel r
 ### Blocks and interfaces
 * Blocks need to specify at least one proxy port (subinterface) 
 * Proxy ports are required to have an interface block as type
-* All incoming ports of a block have the same timing
-* All outgoing ports of a block have the same timing
 * Flow Properties have the direction "out"
 * Flow Properties need to have a data type, see https://spesml.github.io/plugin/data_types.html
 
@@ -489,5 +487,4 @@ Therefore, connecting two ports in SysML corresponds to the concept of channel r
 * All parts must have a block as type
 * Connectors must only connect ports with same type.
 * Connectors must always connect outgoing with incoming ports.
-* Connectors must adhere to the timing of the ports.
 * Cycles in an IBD must contain a delay of at least 1 unit.
