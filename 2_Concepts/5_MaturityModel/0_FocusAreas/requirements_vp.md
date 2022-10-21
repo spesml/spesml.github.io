@@ -30,7 +30,7 @@ This focus area has four capabilities. Three of them are of Conceptual kind.
 The SpesML Modeling framework supports a number of attributes, which serves as template, and segregate information from the requirement description, improving readability. *Plugin usage*: The attributes of a requirements can be accessed through right click menu->Specification. The image below depicts how they are presented in the plugin.
 Additional information on requirement attributes can be found [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#requirements-attributes).
 
-![REE A example](/images/car-attributes.png){:class="img-responsive"}
+![REE A example](../images/car-attributes.png){:class="img-responsive"}
 
 ### RES B: Requirements text is formulated following certain sentence templates (e.g., EARS or Sophist MasterTemplate) ( C).
 Sentence template require extra effort to achieve compliance at the initial phases, but prevents rework in future phases. Although the SpesML MF do not suggest using a specific template, it does suggest they should be used to attend the organization's needs (e.g, domain, project size). This is a *Conceptual* capability
