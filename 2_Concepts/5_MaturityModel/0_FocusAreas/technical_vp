@@ -1,0 +1,24 @@
+---
+layout: default
+title: Technical Viewpoint
+nav_order: 4
+parent: Capability description
+grand_parent: SpesML Maturity Model
+permalink: /concepts/maturity_model/focus_areas/technical_vp.html
+---
+
+
+### Technical Viewpoint
+#### Technical Component Modeling (TCM)                                    
+##### TCM A: For technical components, their interface is modeled with associated input and output  signals.
+##### TCM B: The behavior of the technical components is modeled.                                                                                                                          
+##### TCM C: technical components and requirements they satisfy are related by a satisfy or require  relation.                                                                                                     
+#### Technical Architecture Modeling (TAM)                                 
+##### TAM A: The technical components and their dependencies are modeled.
+##### TAM B: Technical components are related to logical components that they implement by a realize relation.           
+#### Technical conText Modelling (TTM)                                
+##### TTM A: The   system under development (i.e., the top-level technical component) is modeled by a composition of all technical components.
+
+##### TTM B: Actors  of the operational context (e.g., external systems or users) are modeled with   a syntactic interface (inputs and outputs). 
+
+##### TTM C: For  each actor in the operational context, the behavior is modeled.
