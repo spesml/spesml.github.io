@@ -480,7 +480,7 @@ Therefore, connecting two ports in SysML corresponds to the concept of channel r
 * Flow Properties need to have a data type, see https://spesml.github.io/plugin/data_types.html
 
 ### Structure
-* If a block is a composition (i.e. it has parts and an IBD) it may not own any behavior (e.g. a statemachine)
+* If a block is a composition (i.e. it has parts and an IBD) it may not own any behavior (e.g. a statemachine). It may only own ports, parts and connectors.
 * If a block is atomic (e.g. has a statemachine) it may not own any parts or IBDs
 * Only atomic blocks may have value properties
 * Value properties must have an associated type, see https://spesml.github.io/plugin/data_types.html
