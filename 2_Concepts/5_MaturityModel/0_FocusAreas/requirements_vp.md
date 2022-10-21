@@ -2,7 +2,7 @@
 layout: default
 title: Requirements Viewpoint
 nav_order: 1
-parent: Capability definition
+parent: Capability description
 grand_parent: SpesML Maturity Model
 permalink: /concepts/maturity_model/focus_areas/requirements_vp.html
 ---
