@@ -301,7 +301,7 @@ Definition of value types in the containment tree of a MagicDraw model.
 
 ### Channel
 A channel in the universal interface model is represented by a SysML **flow
-property** of an **interface block**. The name of a flow property and its
+property**. A flow property must be typed with an **interface block**. The name of a flow property and its
 corresponding interface block define the channel's name. The type of the flow
 property models the channel's type. In SpesML, the direction of all flow
 properties must be *out*. Whether the channels is used as an input or an output
@@ -324,9 +324,11 @@ define the two channels `MyInterface.channel1` and `MyInterface.channel2`.
 An interface block with two flow properties defines two channels.
 </div><br>
 
+Note that an interface block in SPES ML may only contain channels and must own at least one channel.
+
 ### Sub-Interface
 Sub-interfaces of system elements are modeled with **proxy ports**. Each proxy
-port is typed with an interface block. As each interface block defines a set of
+port has a name and is typed with an interface block. As each interface block defines a set of
 channels, an interface block can be conceptually interpreted to be a type of
 sub-interfaces. Each proxy port must be owned by a block (described in detail
 below).
@@ -365,7 +367,9 @@ proxy port ```p1```. The port is not conjugated. Thus, all of its flow
 properties represent output channels. The initial outputs on the channels
 corresponding to the flow properties are defined by the property ```Initial
 Sequences```. In this case, the initial output on ```channel1``` is the sequence
-```"Hello", "World"```.  
+```"Hello", "World"```.
+
+For every cycle of connected parts (see below) there must be at least one delay.
 
 <div align="center">
 <img width="700" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/portSpec.png">
@@ -407,11 +411,11 @@ In SysML, this distinction is made:
 - A **block** defines a type of a system element. With this, it defines the interface and the behavior of all of its instances.   
     - Each block owns at least one proxy port. Each proxy port defines a sub-interface of the system elements modeled by the block. 
     - A block models composed system elements if it owns at least one part property. Then, it is called composed. Otherwise, it models atomic system elements and is called atomic. The part properties model the subelements of the system elements modeled by the block. Each part has a name and a type. The name of the part represent the name of the subelement of the system elements modeled by the block. The type of a part is a block. With this, each part can be interpreted to be an instance of a block.  
-    - Composed Blocks must own exactly one Internal Block Diagram that has the same name as the block. The Internal Block Diagrams contains the connections between the ports of the parts of the block. Thus, it models the connections between the subelements of the system elements modeled by the block. Blocks modeling atomic system elements must not own Internal Block Diagrams.  
+    - Composed Blocks must own exactly one Internal Block Diagram that has the same name as the block. The Internal Block Diagrams shows the connections between the ports of the parts of the block. Thus, it models the connections between the subelements of the system elements modeled by the block. Blocks modeling atomic system elements must not own Internal Block Diagrams.  
     - An atomic block may own *value properties*. Each value property has a name and a type. These properties represent the internal data state of instances of the block. Control states and behavior referencing the data states can be added, for instance, via state machines as discussed in one of the following sections.
     - A block can be used in different roles, e.g., a window-lifter-controler could be used in the roles *front-window-controler* and *back-window-controler*.
 - A **part** represents a system element in a specific role (e.g. *the window-lifter-controler* or the *back-window-controler* of a car). Communication relationships (via SysML connectors) are defined on the level of parts.
-If two distinct system elements have the same interface and behavior, this is represented by one block and two distinct parts. Each of the parts is an instance of the block in a different role.
+If two distinct system elements have the same interface and behavior, this is represented by one block and two distinct parts. Each of the parts is an instance of the block in a different role. On the other hand, all parts must have a block as type.
 
 
 In MagicDraw, blocks are directly created and modeled in the containment tree.
@@ -432,7 +436,9 @@ The block `Block2` owns the value property `counter` of type `Integer`. Instance
 Definition of blocks modeling system elements.
 </div><br>
 
-#### Composition
+Each part and each block is required to have a name.
+
+### Composition
 System elements are composed by connecting their proxy ports with SysML **connectors**. 
 Two ports may only be connected via a connector if they have the same types and their directions match.
 The directions of two ports match iff one of the following conditions is satisfied:
@@ -461,3 +467,27 @@ This ensures that the one system element receives the messages sent by the other
 Therefore, connecting two ports in SysML corresponds to the concept of channel renaming in the foundations. 
 
 [Broy10]:https://academic.oup.com/comjnl/article-abstract/53/10/1758/359930?redirectedFrom=fulltext
+
+## Well-formedness Rules
+
+### General Rules 
+* Parts, ports and proxy ports nmust be named
+
+### Blocks and interfaces
+* Blocks need to specify at least one proxy port (subinterface) 
+* Proxy ports are required to have an interface block as type
+* All incoming ports of a block have the same timing
+* All outgoing ports of a block have the same timing
+* Flow Properties have the direction "out"
+* Flow Properties need to have a data type, see https://spesml.github.io/plugin/data_types.html
+
+### Structure
+* If a block is a composition (i.e. it has parts and an IBD) it may not own any behavior (e.g. a statemachine)
+* If a block is atomic (e.g. has a statemachine) it may not own any parts or IBDs
+* Only atomic blocks may have value properties
+* Value properties must have an associated type, see https://spesml.github.io/plugin/data_types.html
+* All parts must have a block as type
+* Connectors must only connect ports with same type.
+* Connectors must always connect outgoing with incoming ports.
+* Connectors must adhere to the timing of the ports.
+* Cycles in an IBD must contain a delay of at least 1 unit.
