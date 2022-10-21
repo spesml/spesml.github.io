@@ -374,3 +374,90 @@ A proxy port with initial sequences.
 </div><br>
 
 
+### Remark: Direction of Flow Properties
+
+We restrict each interface block to only have flow properties with direction
+_out_ (see above). The direction of a channel is determined by the value of the
+conjugated property of the corresponding proxy port. The rationale for this
+restriction is to enable the modeller to easily grasp which proxy ports
+represent inputs and which represent outputs. In the following example, the
+system element (type) `WindowLifterController` has three channels, one input
+channel `temperature` and two output channels for controling the front and rear
+window actuator.
+
+
+<div align="center">
+<img width="900" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/WindowLifterSystem.jpg">
+<br><b>Figure:</b> 
+An IBD modeling a window lifter system.
+</div><br>
+
+
+### Syntactic Interface
+
+The syntactic interface of a system element is defined by its sub-interfaces, that means its (possibly conjugated) proxy ports with associated interface blocks.
+In SpesML, a syntactic interface is always assembled from sub-interfaces. 
+In the extreme case, a system element may only possess a single sub-interface. 
+
+### System Element
+System Elements (modeling functions, logical components or technical components respectively) are represented as SysML **blocks** as well as **parts**.
+The formal foundations of system elements do not distinguish between the definitions of a system element and their roles or instances. 
+
+In SysML, this distinction is made:
+- A **block** defines a type of a system element. With this, it defines the interface and the behavior of all of its instances.   
+    - Each block owns at least one proxy port. Each proxy port defines a sub-interface of the system elements modeled by the block. 
+    - A block models composed system elements if it owns at least one part property. Then, it is called composed. Otherwise, it models atomic system elements and is called atomic. The part properties model the subelements of the system elements modeled by the block. Each part has a name and a type. The name of the part represent the name of the subelement of the system elements modeled by the block. The type of a part is a block. With this, each part can be interpreted to be an instance of a block.  
+    - Composed Blocks must own exactly one Internal Block Diagram that has the same name as the block. The Internal Block Diagrams contains the connections between the ports of the parts of the block. Thus, it models the connections between the subelements of the system elements modeled by the block. Blocks modeling atomic system elements must not own Internal Block Diagrams.  
+    - An atomic block may own *value properties*. Each value property has a name and a type. These properties represent the internal data state of instances of the block. Control states and behavior referencing the data states can be added, for instance, via state machines as discussed in one of the following sections.
+    - A block can be used in different roles, e.g., a window-lifter-controler could be used in the roles *front-window-controler* and *back-window-controler*.
+- A **part** represents a system element in a specific role (e.g. *the window-lifter-controler* or the *back-window-controler* of a car). Communication relationships (via SysML connectors) are defined on the level of parts.
+If two distinct system elements have the same interface and behavior, this is represented by one block and two distinct parts. Each of the parts is an instance of the block in a different role.
+
+
+In MagicDraw, blocks are directly created and modeled in the containment tree.
+Block Definition Diagrams are not used for the creation of blocks.
+For instance, the following figure depicts the blocks `Block1`, `Block2`, `Block3` and the interface block `MyInterface`. The interface block has already been described above. 
+The block `Block1` has the ports `p1` and `p2`. The type of both ports is the interface block `MyInterface`. In contrast to the port `p1`, the port `p2` is conjugated. 
+Thus, the sub-interfaces of the instances of `block1` that are defined by the port `p1` solely contain output channels.
+In contrast, the sub-interface modeled by `p2` solely contains input channels. 
+In the containment tree, this is indicated by the keywords `in` and `out` that appear in front of the ports' names.
+The ports of the blocks `Block2` and `Block3` are defined analogously. The blocks `Block2` and `Block3` are atomic as they do not contain parts or Internal Block Diagrams.
+In contrast, the block `Block1` is composed as it contains the two parts `part1` and `part2` as well as the IBD `Block1`.
+The part `part1` is of type `Block2` whereas the part `part2` is of type `Block3`. 
+The block `Block2` owns the value property `counter` of type `Integer`. Instances of `Block2` have concrete `Integer` values assigned to this property, which is accessible via its name `counter`. The Internal Block Diagram owned by `Block1` composes the parts of the block as described in the following section.
+
+<div align="center">
+<img width="250" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/blocks.png">
+<br><b>Figure:</b> 
+Definition of blocks modeling system elements.
+</div><br>
+
+#### Composition
+System elements are composed by connecting their proxy ports with SysML **connectors**. 
+Two ports may only be connected via a connector if they have the same types and their directions match.
+The directions of two ports match iff one of the following conditions is satisfied:
+1. One port is owned by the block and the other port is owned by a part and both ports are conjugated.
+2. One port is owned by the block and the other port is owned by a part and both ports are not conjugated.
+3. Both ports are owned by parts and one of the ports is conjugated and the other port is not conjugated.
+
+The first condition corresponds to the case where messages are transmitted from an input port of the block to an input port of a part.
+The seconds condition corresponds to the case where messages are transmitted from an output port of a part to an output port of a block.
+The third condition corresponds to the case where messages are transmitted from an output port of a part to an input port of a part. 
+
+For instance, the following figure depicts the Internal Block Diagram of the system element `Block1`.
+It has the two parts `part1` and `part2` of types `Block2` and `Block3`. The input port `p2` of `Block1`
+is connected to the input port `p7` of `part2`. This corresponds to the first condition for matching directions.
+The connection between the ports `p4` of `part1` and `p1` of `Block1` corresponds to the second condition.
+Similarly, the connection between the ports `p8` of `part2` and `p3` of `part1` corresponds to the third condition.  
+
+<div align="center">
+<img width="650" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/Block1.png">
+<br><b>Figure:</b> 
+Internal Block Diagram connecting proxy ports of parts.
+</div><br>
+
+From a theoretical viewpoint, connecting two ports via a connector renames the corresponding channels such that they have the same identity.
+This ensures that the one system element receives the messages sent by the other system element via the corresponding channel.
+Therefore, connecting two ports in SysML corresponds to the concept of channel renaming in the foundations. 
+
+[Broy10]:https://academic.oup.com/comjnl/article-abstract/53/10/1758/359930?redirectedFrom=fulltext
