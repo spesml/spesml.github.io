@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Definition
+title: Capability definition
 nav_order: 2
 parent: SpesML Maturity Model
 grand_parent: SpesML Concepts
