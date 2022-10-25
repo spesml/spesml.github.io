@@ -6,7 +6,6 @@ parent: Capability description
 grand_parent: SpesML Maturity Model
 permalink: /concepts/maturity_model/focus_areas/logical_vp.html
 ---
-
 # Logical Viewpoint
 The Logical Viewpoint is the functional domain of the SpesML MM concerned with the modeling of the logical components. There are three focus areas in this Viewpoint: the Logical Component Modeling (LCM), the Logical Architecture Modeling (LAM), the Logical Context Modeling (LTM), and the Logical Physical Modeling (LPM). More information on the Logical Viewpoint can be found [here](https://spesml.github.io/concepts/modeling_framework/logical_viewpoint.html).
 
@@ -22,7 +21,7 @@ This is the most basic capability of this focus area, and functional domain. The
 This capability describes that the logical components have their behavior modeled. *Plugin usage*: In the plugin, state machines are used to model the behavior of components. More information on this can be found [here](https://spesml.github.io/plugin/state_machines.html). Another possibility is to use the state machines from the Functional Viewpoint using a Functional-Logical Adpater. More information on this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#functional-logical-adapter).
 
 ### LCM C: Logical components and requirements they satisfy are related by a satisfy or require relation.
-This capability requires to have the satisfy relation between the component and the requirement to be explicit defined in the models. *Plugin usage*: can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#spesml-logicaltorequirement-matrix)
+This capability requires that satisfy relation between  components and requirements are explicitly defined in the models. *Plugin usage*: how to do this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#spesml-logicaltorequirement-matrix)
 
 ![changeHere](../images/lcmc-example.png){:class="img-responsive"}
 
@@ -43,14 +42,15 @@ The components of the logical viewpoint implement the white-box functions and th
 In this focus area, the relevant context elements for the logical viewpoint are modeled.
 
 ### LTM A: The system under development (i.e., the top-level logical component) is modeled by a composition of all logical components (i.e., internal context).
-By having the it modeled from the SUD all the way until 
+To have this capability implemented, all components and their dependencies must be modeled, thus allowing the SuD to be modeled as a composition of all components. This is related to the internal context of the SuD. 
 Pre-req: LAM A and LCM A.
 
 ### LTM B: Actors of the operational context (e.g., external systems or users) are modeled with a syntactic interface (inputs and outputs).  
-The image below depicts the WindoLifterSytem in the Logical Context view.
+This capability demands the modeling of the operational (i.e., external) context, which encompasses external systems and users. The image below depicts the logical context of the WindoLifterSytem.
 ![changeHere](/images/ltmb-example.png){:class="img-responsive"}
 
-##### LTM C: For each actor in the operational context, the behavior is modeled.
+### LTM C: For each actor in the operational context, the behavior is modeled.
+This capability describes that the actors have their behavior modeled. *Plugin usage*: In the plugin, state machines are used to model the behavior of actors. More information on this can be found [here](https://spesml.github.io/plugin/state_machines.html). Another possibility is to use the state machines from the respective elements previously defined the Functional Viewpoint using a Functional-Logical Adpater. More information on this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#functional-logical-adapter).
 
 ![changeHere](/images/ltmc-example.png){:class="img-responsive"}
 
@@ -58,13 +58,18 @@ The actor also includes external logical components (e.g., BrightnessSensor in t
 
 
 ## Logical Physical Modelling (LPM)  
-In the SpesML methodology, physical and mechanical properties of the system are described in the Logical Viewpoint. This focus area describes the possible levels of maturity a development team can achieve when modelling physical information for a SUD.  
-  
-### LPM A: Physical properties of the system and context are defined using DataTypes.  
-  
-### LPM B: Physical behaviour of the SUD and Context elements are modelled.  
-  
-### LPM C: Physical behaviour is used when simulating the logical components.
+In the SpesML methodology, physical and mechanical properties of the system and the interaction between physical and cyber components are described in the Logical Viewpoint. This focus area describes the possible levels of maturity a development team can achieve when modelling physical information for a SuD. 
 
-Quantities are assigned to external logical components. 
-##### Physical quantities are modeled using the specific elements of the plugin.
+### LPM A: Physical components and cyber components (SW-Subsystem) are identified and modeled as separate components in the logical structure.
+Special elements are used to identify and model physical and cyber components in the logical viewpoint.
+  
+### LPM B: Interface behavior between the physical components and the SW-Subsystem is modeled on a high level of abstraction.
+The interface behavior of the physical and cyber components are modeled on a high level of abstraction.
+
+
+### LPM C: Physical behaviour of the SUD and Context elements are modeled on a high level of abstraction.  
+This capability requires that the physical behavior of both SuD and Context elements are modeled.
+
+
+### LPM D: Aspects of the physical behaviour of the SuD are included when simulating the logical components.
+The simulation of the logical components includes the aspects of the physical behavior of the SuD.
