@@ -30,13 +30,13 @@ This focus area is concerned with the modeling of the relations between componen
 
 ### LAM A: The logical components and their dependencies are modeled.
 This capability prescribe the connection between modeled components by signal lines. 
-![changeHere](/images/lama-example.png){:class="img-responsive"}
+![changeHere](../images/lama-example.png){:class="img-responsive"}
 
 ### LAM B: Logical components are related to white-box functions that they implement by a realize relation.
 The components of the logical viewpoint implement the white-box functions and this is made explicit through a *realize* relation. More on tracing between logical components and functions can be found [here](https://spesml.github.io/concepts/modeling_framework/functional_viewpoint.html#tracing-between-functions-and-elements-of-the-logical-viewpoint).
 *Plugin usage*: this information is stored in the SpesML LogicalToFunctional Matrix. More information on this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#spesml-logicaltofunctional-matrix).
 
-![changeHere](/images/lamb-example.png){:class="img-responsive"}
+![changeHere](../images/lamb-example.png){:class="img-responsive"}
 
 ## Logical conText Modeling (LTM)
 In this focus area, the relevant context elements for the logical viewpoint are modeled.
@@ -47,12 +47,12 @@ Pre-req: LAM A and LCM A.
 
 ### LTM B: Actors of the operational context (e.g., external systems or users) are modeled with a syntactic interface (inputs and outputs).  
 This capability demands the modeling of the operational (i.e., external) context, which encompasses external systems and users. The image below depicts the logical context of the WindoLifterSytem.
-![changeHere](/images/ltmb-example.png){:class="img-responsive"}
+![changeHere](../images/ltmb-example.png){:class="img-responsive"}
 
 ### LTM C: For each actor in the operational context, the behavior is modeled.
 This capability describes that the actors have their behavior modeled. *Plugin usage*: In the plugin, state machines are used to model the behavior of actors. More information on this can be found [here](https://spesml.github.io/plugin/state_machines.html). Another possibility is to use the state machines from the respective elements previously defined the Functional Viewpoint using a Functional-Logical Adpater. More information on this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#functional-logical-adapter).
 
-![changeHere](/images/ltmc-example.png){:class="img-responsive"}
+![changeHere](../images/ltmc-example.png){:class="img-responsive"}
 
 The actor also includes external logical components (e.g., BrightnessSensor in the image above)
 
