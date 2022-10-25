@@ -35,6 +35,9 @@ The presented approach targets various scenarios that may emerge in systems engi
 
 We also envision combinations of these. The proposed approach enables that.
 
+The modeled behavior in the [logical viewpoint](/concepts/modeling_framework/logical_viewpoint.html) can be seen as requirement for the behavior in the technical viewpoint. In this project, we do not provide further behavior models within the technical viewpoint and do not verify in the technical viewpoint the modeled behavior of the logical viewpoint. However, we provide all the input for such behavior modeling and verification through our technical viewpoint concepts like tracing logical components to technical components and tasks, the task architecture in general, the platform architecture, their interfaces and the deplyoment of tasks to execution components. More on this in the next sections.
+
+
 The following sections will, as already mentioned, cover first the more general technical elements (mainly on the system granularity layer) and then the software execution subsystem in detail. 
 To understand the relations and possibilities of the technical viewpoint, the following [Figure 1](#figureOverview) gives an overview. In addition, we provide in [Figure 2](#figureExample) an abstract example of how a technical architecture can look like across granularity layers.
  
