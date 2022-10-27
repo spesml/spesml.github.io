@@ -74,14 +74,12 @@ In the executable expression language, more elaborate expressions may be used th
 
 The `condition` is an expression that evaluates to a `boolean` value. If and only if the condition evaluates to `true`, the value of `expression 1` will be returned. Should it evaluate to `false`, `expression 2` will be returned instead.
 
-[//]: # (REVIEW: The text above uses 'expression1' and 'expression2', the code below uses 'code 1' and 'code2' - this is probabaly an unintended inconsistency)
-
 ```java
 if /*condition*/ 
 then
-  //code 1
+  //expression 1
 else
-  //code 2
+  //expression 2
 ```
 
 The `else`-part is not optional.
@@ -116,8 +114,6 @@ Float pq1(Float p, Float q) =
 Function modules are managed in function (module) packages. Each package may contain any number of function modules and sub packages. They are used to structure functions and avoid naming conflicts. Thus they are comparable to packages of common programming languages like Java.
 
 ## Creating a function package
-
-[//]: # (REVIEW: A minor comment (no need to fix IMHO): The executable functions will probabaly be used only rerely inside the technical viewpoint, but mostly in FVP or LVP. The screenshots could use e.g. the logical viewpoint.)
 
 To create a function package you may use the following steps:
 
@@ -177,34 +173,3 @@ that are not applicable to [expressions](/plugin/expressions.html) in general.
 | Error Description | Solution | 
 | :---------------: | :------: | 
 | unable to assign Type | Make sure that the type of the expression is assignable to the functions return type |
-
-## Grammar
-
-[//]: # (REVIEW: An introductory sentence to this section would be nice to link it to the first part of the document. Something like: "The above described executable function languafe is based on the MontiCore grammar. Further explainaitons can be found ... ")
-
-An explanation of the MontiCore grammar format can be found [here](https://www.monticore.de/handbook.pdf).
-The MontiCore grammar of the ```SpesMLFunctions``` language can be found [here](https://git.rwth-aachen.de/spesmlgroup/spesml/-/blob/master/04_Arbeitspakete/Tooling/prototypen/textual-languages/src/main/grammars/de/monticore/SpesMLFunctions.mc4). 
-The grammar (transitively) extends the other
-- expression grammars
-    - ```SpesMLExpressions```, which can be found [here](https://git.rwth-aachen.de/spesmlgroup/spesml/-/blob/master/04_Arbeitspakete/Tooling/prototypen/textual-languages/src/main/grammars/de/monticore/SpesMLExpressions.mc4)
-    - ```CommonExpressions```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/expressions/CommonExpressions.mc4)
-    - ```AssignmentExpressions```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/expressions/AssignmentExpressions.mc4)
-    - ```ExpressionsBasis```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/expressions/ExpressionsBasis.mc4)
-- literal grammars
-    - ```MCLiteralsBasis```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/literals/MCLiteralsBasis.mc4)
-    - ```MCCommonLiterals```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/literals/MCCommonLiterals.mc4)
-
-- type grammars
-    - ```MCBasicTypes```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/types/MCBasicTypes.mc4)
-    - ```MCSimpleGenericTypes```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/types/MCSimpleGenericTypes.mc4)
-    - ```MCCollectionTypes```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/types/MCCollectionTypes.mc4)
-
-- statement grammars
-    - ```MCCommonStatements```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/statements/MCCommonStatements.mc4)
-    - ```MCVarDeclarationStatements```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/statements/MCVarDeclarationStatements.mc4)
-    - ```MCStatementsBasis```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/statements/MCStatementsBasis.mc4)
-    - ```MCReturnStatements```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/statements/MCReturnStatements.mc4)
-- symbol grammars 
-    - ```OOSymbols```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/symbols/OOSymbols.mc4)
-   - ```BasicSymbols```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/symbols/BasicSymbols.mc4)
-- and the basic grammar ```MCBasics```, which can be found [here](https://github.com/MontiCore/monticore/blob/dev/monticore-grammar/src/main/grammars/de/monticore/MCBasics.mc4)
