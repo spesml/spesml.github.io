@@ -7,13 +7,14 @@ grand_parent: SpesML Maturity Model
 permalink: /concepts/maturity_model/focus_areas/logical_vp.html
 ---
 # Logical Viewpoint
-The Logical Viewpoint is the functional domain of the SpesML MM concerned with the modeling of the logical components. There are three focus areas in this Viewpoint: the Logical Component Modeling (LCM), the Logical Architecture Modeling (LAM), the Logical Context Modeling (LTM), and the Logical Physical Modeling (LPM). More information on the Logical Viewpoint can be found [here](https://spesml.github.io/concepts/modeling_framework/logical_viewpoint.html).
+<!-- Review: -->
+The Logical Viewpoint<!-- Review: If I remember correctly, Wolfgang suggested to always use lower case letter for concept terms such as "logical viewpoint" in the documentation --> is the functional domain of the SpesML MM concerned with the modeling of the logical components. There are three <!-- Review: four? --> focus areas in this Viewpoint: the Logical Component Modeling (LCM), the Logical Architecture Modeling (LAM), the Logical Context Modeling (LTM), and the Logical Physical Modeling (LPM). More information on the Logical Viewpoint can be found [here](https://spesml.github.io/concepts/modeling_framework/logical_viewpoint.html).
 
 ## Logical Component Modeling (LCM)
 This focus area address the component modeling in the logical viewpoint.
 
 ### LCM A: For logical components, their interface is modeled with associated input and output signals. 
-This is the most basic capability of this focus area, and functional domain. The other capabilities require this capability to be implemented. *Plugin usage*: This is described [here](https://spesml.github.io/plugin/logical_viewpoint.html#how-to-model).
+This is the most basic capability of this focus area, and functional domain. The other capabilities require this capability to be implemented. *Plugin usage*: <!-- Review: Maybe one or two sentences on what is relevant here would be nice (as e.g. for state machines). Here this could probabaly be mentioning Logical Interfaces with Logical Interface Types and a reference to the screenshot. --> This is described [here](https://spesml.github.io/plugin/logical_viewpoint.html#how-to-model).
 
 ![changeHere](../images/lcma-example.png){:class="img-responsive"}
 
@@ -21,7 +22,7 @@ This is the most basic capability of this focus area, and functional domain. The
 This capability describes that the logical components have their behavior modeled. *Plugin usage*: In the plugin, state machines are used to model the behavior of components. More information on this can be found [here](https://spesml.github.io/plugin/state_machines.html). Another possibility is to use the state machines from the Functional Viewpoint using a Functional-Logical Adpater. More information on this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#functional-logical-adapter).
 
 ### LCM C: Logical components and requirements they satisfy are related by a satisfy or require relation.
-This capability requires that satisfy relation between  components and requirements are explicitly defined in the models. *Plugin usage*: how to do this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#spesml-logicaltorequirement-matrix)
+This capability requires that satisfy relation between  components and requirements are explicitly defined in the models. *Plugin usage*: <!-- Review: One sence on whast is relevant would be nice. E.g. "The SpesML pülugin uses a tracing matrix to model this. The Screenshot below shows the possible tracing matrixes in the tool." --> how to do this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#spesml-logicaltorequirement-matrix)
 
 ![changeHere](../images/lcmc-example.png){:class="img-responsive"}
 
@@ -46,7 +47,7 @@ To have this capability implemented, all components and their dependencies must 
 Pre-req: LAM A and LCM A.
 
 ### LTM B: Actors of the operational context (e.g., external systems or users) are modeled with a syntactic interface (inputs and outputs).  
-This capability demands the modeling of the operational (i.e., external) context, which encompasses external systems and users. The image below depicts the logical context of the WindoLifterSytem.
+This capability demands the modeling of the operational (i.e., external) context, which encompasses external systems and users. The image below depicts the logical context of the WindowLifterSytem <!-- Review: "... int which the actors of the operational context are modeled by the grey diagram elements."? -->.
 ![changeHere](../images/ltmb-example.png){:class="img-responsive"}
 
 ### LTM C: For each actor in the operational context, the behavior is modeled.
@@ -62,14 +63,20 @@ In the SpesML methodology, physical and mechanical properties of the system and 
 
 ### LPM A: Physical components and cyber components (SW-Subsystem) are identified and modeled as separate components in the logical structure.
 Special elements are used to identify and model physical and cyber components in the logical viewpoint.
+
+<!-- Review: Is there an exmaple and/or more details of the implementation in the SpesML tool? -->
   
 ### LPM B: Interface behavior between the physical components and the SW-Subsystem is modeled on a high level of abstraction.
 The interface behavior of the physical and cyber components are modeled on a high level of abstraction.
 
+<!-- Review: Is there an exmaple and/or more details of the implementation in the SpesML tool? -->
 
 ### LPM C: Physical behaviour of the SUD and Context elements are modeled on a high level of abstraction.  
 This capability requires that the physical behavior of both SuD and Context elements are modeled.
 
+<!-- Review: Is there an exmaple and/or more details of the implementation in the SpesML tool? -->
 
 ### LPM D: Aspects of the physical behaviour of the SuD are included when simulating the logical components.
 The simulation of the logical components includes the aspects of the physical behavior of the SuD.
+
+<!-- Review: Is there an exmaple and/or more details of the implementation in the SpesML tool? -->
