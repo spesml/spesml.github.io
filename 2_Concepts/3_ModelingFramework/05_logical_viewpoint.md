@@ -13,9 +13,9 @@ This document describes the basic concepts that will be covered in the _Logical 
 
 *Content:*
 - [Logical Viewpoint](#logical-viewpoint)
-  - [Logical Viewpoint: Overview](#Logical-Viewpoint-Overview)
-  - [Logical Components and their relations to other model elements of the Logical Viewpoint](#Logical-Components-and-their-relations-to-other-model-elements-of-the-logical-viewpoint)
-  - [Logical Context: The System and its Context in the Logical Viewpoint](#Logical-Context-The-System-and-its-Context-in-the-Logical-Viewpoint)
+  - [Logical Viewpoint: Overview](#logical-viewpoint-overview)
+  - [Logical Components and their relations to other model elements of the Logical Viewpoint](#logical-components-and-their-relations-to-other-model-elements-of-the-logical-viewpoint)
+  - [Logical Context: The System and its Context in the Logical Viewpoint](#logical-context-the-system-and-its-context-in-the-logical-viewpoint)
   - [Modeling Interfaces and behavior of Logical Components](#Modeling-Interfaces-and-behavior-of-Logical-Components)
   - [Decomposition of Logical Components](#Decomposition-of-Logical-Components)
   - [Tracing Relations between Logical Components and other Elements](#Tracing-Relations-between-Logical-Components-and-other-Elements)
@@ -33,7 +33,7 @@ Hereby, the components of the LVP are intended to be modelled independently of t
 In the SpesML tooling a Logical Component is represented as a dedicated `SysML Block` as can be seen in the example in Figure 1:
 
 ![Logical Component](/images/logical_viewpoint/logical-component.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 1: </b><em>A `SysML Block representing a Logical Component`</em></div>
+<div align="center"><b>Figure 1: </b><em>A SysML Block representing a Logical Component</em></div>
 
 # Logical Context: The System and its Context in the Logical Viewpoint
 The _logical context_ specifies the interface of the SuD to the operational context on a logical (i.e. technology independent) level. 
