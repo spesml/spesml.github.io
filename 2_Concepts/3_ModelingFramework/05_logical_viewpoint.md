@@ -14,7 +14,7 @@ This document describes the basic concepts that will be covered in the _logical 
 *Content:*
 - [Logical Viewpoint](#logical-viewpoint)
   - [Logical Viewpoint: Overview](#logical-viewpoint-overview)
-  - [Logical Components and their relations to other model elements of the Logical Viewpoint](#logical-components-and-their-relations-to-other-model-elements-of-the-logical-viewpoint)
+  - [Logical Components and their relations to other model elements of the Logical Viewpoint](#logical-components-central-model-elements-of-the-logical-viewpoint)
   - [Logical Context: The System and its Context in the Logical Viewpoint](#logical-context-the-system-and-its-context-in-the-logical-viewpoint)
   - [Modeling Interfaces and behavior of Logical Components](#modeling-interfaces-and-behavior-of-logical-components)
   - [Decomposition of Logical Components](#decomposition-of-logical-components)
@@ -26,7 +26,7 @@ The logical viewpoint (LVP) describes how the system under development (SuD) can
 To do so, the LVP defines models to describe the [logical system context](#logical-context-the-system-and-its-context-in-the-logical-viewpoint), the [decomposition](#decomposition-of-logical-components) of the SuD in logical components and sub-components and their respective [interface behavior](#modeling-interfaces-and-behavior-of-logical-components). 
 In the following we describe the basic concepts and models for the LVP.
 
-# Logical Components and their relations to other model elements of the Logical Viewpoint
+# Logical Components: Central Model Elements of the Logical Viewpoint
 The central modelling concept of the logical viewpoint are the so-called _logical components_. 
 They strictly follow the [universal interface model](https://spesml.github.io/concepts/modeling_framework/uim.html) including syntactic and semantic interface, causality and compositionality. 
 Hereby, the components of the LVP are intended to be modelled independently of the future technical realization.
@@ -45,15 +45,16 @@ In SysML, the logical context is modelled using a specific `SysML Internal Block
 
 As for all other viewpoints, the logical context defines the scope of what is _inside_ the system boundaries and what is _outside_.  
 To classify logical components as being outside the system boundary (i.e. in the actual context), there is a dedicated property _external_ to specify this. 
-The logical components for the SuD and the context elements are connected in the SpesML SysML-profile and plugin in the logical context diagram as can be seen in Figure 3:
+The logical components for the SuD and the context elements are connected in the SpesML SysML-profile and plugin in the logical context diagram as can be seen in Figure 3. 
+Hereby, context elements are visualized in grey:
 
 ![Logical Context](/images/logical_viewpoint/logical-context.png){:width="800" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 3: </b><em>An example for a logical system context.</em></div>
 
-More information on modelling the system context can be found [here](https://spesml.github.io/concepts/modeling_framework/context.html)
+More information on modelling the system context can be found [here](https://spesml.github.io/concepts/modeling_framework/context.html).
 
-# Modeling Interfaces and behavior of Logical Components
-As already mentioned, also the logical viewpoint is based on the concepts of the [Universal Interface Model](https://spesml.github.io/concepts/modeling_framework/uim.html) and it’s mapping to SysML. 
+# Modeling Interfaces and Behavior of Logical Components
+As already mentioned, also the logical viewpoint is based on the concepts of the [universal interface model](https://spesml.github.io/concepts/modeling_framework/uim.html) and it’s mapping to SysML. 
 This means, that interfaces of logical components consist of a _syntactical_ and a _semantical_ interface.
 
 The _syntactical_ interfaces consist of _logical interfaces_ which are represented by `SysML Proxy Ports`. 
@@ -67,9 +68,10 @@ An exemplary definition of a logical interface and interface types can be seen i
 ![Logical Interface](/images/logical_viewpoint/logical-intreface.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 5: </b><em>Exemplary definition of a SpesML logical interface</em></div>
 
-The _semantical_ interface of logical components is modelled by means of state machines that operate base on the component’s input streams and produce the components output streams.
-More information on SpesML state machines can be found, [here](https://spesml.github.io/concepts/modeling_framework/state_machines.html). Figure 6 gives an example in the SpesML tool. 
-Hereby, the guards and actions can also use executable functions, as ca be seen [here](https://spesml.github.io/concepts/modeling_framework/executable_functions.html).
+The _semantical_ interface of logical components is modelled by means of state machines that operate based on the component’s input streams and produce the component's output streams according to the FOCUS theory
+Hereby, the guards and actions can not only contain comparison and assignment operations, but also use executable functions, as is in detail explaied [here](https://spesml.github.io/concepts/modeling_framework/executable_functions.html).
+More information on SpesML state machines in general can be found, [here](https://spesml.github.io/concepts/modeling_framework/state_machines.html). 
+Figure 6 gives an example in the SpesML tool:
 
 ![State Machine](/images/logical_viewpoint/state-machine.png){:width="800" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 6: </b><em>An example for a SpesML state machine.</em></div>
@@ -94,9 +96,9 @@ In the SpesML profile and plugin, we use `SysML Matrixes` for this tracing as ca
 ![Tracing from FVP to LVP](/images/logical_viewpoint/tracing_fvp-lvp.png){:width="600" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 8: </b><em>Tracing from the functional to the logical viewpoint.</em></div>
 
-The technical realization of logical components will be described by in the [technical viewpoint](https://spesml.github.io/concepts/modeling_framework/technical_viewpoint.html). 
-Hereby, we recommend to trace every logical components to exactly one technical component (1:1 tracing).
-More detailed (general) information on tracing in SpesML can be found [here](https://spesml.github.io/concepts/modeling_framework/tracing.html)
+The technical realization of the logical components will be described by in the [technical viewpoint](https://spesml.github.io/concepts/modeling_framework/technical_viewpoint.html). 
+Hereby, we recommend to trace every logical component to exactly one technical component (1:1 tracing).
+More detailed information on tracing in SpesML can be found [here](https://spesml.github.io/concepts/modeling_framework/tracing.html).
 
 # Modelling the Transition to the Technical Viewpoint
 As is introduced [here](https://spesml.github.io/concepts/modeling_framework/tracing.html#definition-of-software-components-in-the-logical-architecture) in more detail, the logical viewpoint can also explicitly model certain aspects of the transition from the logical to the technical viewpoint. 
