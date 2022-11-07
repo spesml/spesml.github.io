@@ -20,7 +20,7 @@ A data type in SysML can be one of the following:
 
 ### Primitive Types
 
-The predefined primitive types are `boolean`, `byte`, `short`, `char`, `int`, `long`, `float`, and `double`.
+The predefined primitive types are *boolean*, *byte*, *short*, *char*, *int*, *long*, *float*, and *double*.
 
 | Data Type | Description |
 | :------: | :--------------: |
@@ -45,11 +45,9 @@ Value types combine primitive types, enumerations, and other value types to defi
 Each value type must have a name and optionally a visibility (default is package). A value type consists of one to many properties, which must have a name and type. 
 A property may have a multiplicity (default is `1`), whit possible multiplicities being `0`, `1`, `0..1`, `1..*`, and `*`. 
 
-The predefined value types are `Integer`, `Real`, `String`, `Boolean`, `Complex`, and the predefined SI value types according to the ISO-80000. 
+The predefined value types are `Integer`, `Real`, `String`, and `Boolean`. 
 The type `Integer` represents unbounded integer numbers, and the type `Real` represents the mathematical concepts of real numbers. 
-`String` and `Boolean` are defined as usual. The type `Complex` represents complex numbers, each consisting of a `realPart` and and `imaginaryPart`, both of type `Real`. 
-For each SI unit quantity and each possible unit for the quantity, modelers can select a corresponding type for each attribute. 
-Each quantity (e.g., length) can be measured using a unit (e.g., millimeter). 
+`String` and `Boolean` are defined as usual.  
 
 ## How to Model
 
