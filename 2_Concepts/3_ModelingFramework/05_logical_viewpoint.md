@@ -20,6 +20,7 @@ This document describes the basic concepts that will be covered in the _logical 
   - [Decomposition of Logical Components](#decomposition-of-logical-components)
   - [Tracing Relations between Logical Components and other Elements](#tracing-relations-between-logical-components-and-other-elements)
   - [Modeling the Transition to the Technical Viewpoint](#modeling-the-transition-to-the-technical-viewpoint)
+  - [Well-formedness Rules](#well-formedness-rules)
 
 # Logical Viewpoint: Overview
 The logical viewpoint (LVP) describes how the system under development (SuD) can be structured in order to achieve the behavior which is specified in the [functional view](https://spesml.github.io/concepts/modeling_framework/functional_viewpoint.html) independent of the future technical realization. 
