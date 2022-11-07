@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Logical Viewpoint
@@ -7,14 +8,13 @@ grand_parent: SpesML Maturity Model
 permalink: /concepts/maturity_model/focus_areas/logical_vp.html
 ---
 # Logical Viewpoint
-<!-- Review: -->
-The Logical Viewpoint<!-- Review: If I remember correctly, Wolfgang suggested to always use lower case letter for concept terms such as "logical viewpoint" in the documentation --> is the functional domain of the SpesML MM concerned with the modeling of the logical components. There are three <!-- Review: four? --> focus areas in this Viewpoint: the Logical Component Modeling (LCM), the Logical Architecture Modeling (LAM), the Logical Context Modeling (LTM), and the Logical Physical Modeling (LPM). More information on the Logical Viewpoint can be found [here](https://spesml.github.io/concepts/modeling_framework/logical_viewpoint.html).
+The Logical Viewpoint functional domain of the SpesML MM is concerned with the modeling of the logical components. There are four focus areas in this Viewpoint: the Logical Component Modeling (LCM), the Logical Architecture Modeling (LAM), the Logical Context Modeling (LTM), and the Logical Physical Modeling (LPM). More information on the Logical Viewpoint can be found [here](https://spesml.github.io/concepts/modeling_framework/logical_viewpoint.html).
 
 ## Logical Component Modeling (LCM)
 This focus area address the component modeling in the logical viewpoint.
 
 ### LCM A: For logical components, their interface is modeled with associated input and output signals. 
-This is the most basic capability of this focus area, and functional domain. The other capabilities require this capability to be implemented. *Plugin usage*: <!-- Review: Maybe one or two sentences on what is relevant here would be nice (as e.g. for state machines). Here this could probabaly be mentioning Logical Interfaces with Logical Interface Types and a reference to the screenshot. --> This is described [here](https://spesml.github.io/plugin/logical_viewpoint.html#how-to-model).
+This capability describes the modeling of logical components with respective interfaces. This is the most basic capability of this focus area, and functional domain. The other capabilities require this capability to be implemented. *Plugin usage*: In the plugin the interfaces are defined using Logical Interfaces with Logical Interface Types. How to use in the plugin is described [here](https://spesml.github.io/plugin/logical_viewpoint.html#how-to-model). The image below depicts how a logical component with interfaces look like in the plugin.
 
 ![changeHere](../images/lcma-example.png){:class="img-responsive"}
 
@@ -22,7 +22,7 @@ This is the most basic capability of this focus area, and functional domain. The
 This capability describes that the logical components have their behavior modeled. *Plugin usage*: In the plugin, state machines are used to model the behavior of components. More information on this can be found [here](https://spesml.github.io/plugin/state_machines.html). Another possibility is to use the state machines from the Functional Viewpoint using a Functional-Logical Adpater. More information on this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#functional-logical-adapter).
 
 ### LCM C: Logical components and requirements they satisfy are related by a satisfy or require relation.
-This capability requires that satisfy relation between  components and requirements are explicitly defined in the models. *Plugin usage*: <!-- Review: One sence on whast is relevant would be nice. E.g. "The SpesML pülugin uses a tracing matrix to model this. The Screenshot below shows the possible tracing matrixes in the tool." --> how to do this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#spesml-logicaltorequirement-matrix)
+This capability requires that the *satisfy* relations between  components and requirements are explicitly defined in the models. *Plugin usage*: The SpesML plugin uses a tracing matrix to model this. On how to trace components and requirements using the satisfy relationship in the plugin can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#spesml-logicaltorequirement-matrix). The screenshot below shows the possible tracing matrices in the tool.
 
 ![changeHere](../images/lcmc-example.png){:class="img-responsive"}
 
@@ -30,7 +30,7 @@ This capability requires that satisfy relation between  components and requireme
 This focus area is concerned with the modeling of the relations between components, which form the logical architecture.
 
 ### LAM A: The logical components and their dependencies are modeled.
-This capability prescribe the connection between modeled components by signal lines. 
+This capability prescribe the connection between modeled components by signal lines. The screenshot below depicts this.
 ![changeHere](../images/lama-example.png){:class="img-responsive"}
 
 ### LAM B: Logical components are related to white-box functions that they implement by a realize relation.
@@ -47,11 +47,11 @@ To have this capability implemented, all components and their dependencies must 
 Pre-req: LAM A and LCM A.
 
 ### LTM B: Actors of the operational context (e.g., external systems or users) are modeled with a syntactic interface (inputs and outputs).  
-This capability demands the modeling of the operational (i.e., external) context, which encompasses external systems and users. The image below depicts the logical context of the WindowLifterSytem <!-- Review: "... int which the actors of the operational context are modeled by the grey diagram elements."? -->.
+This capability demands the modeling of the operational (i.e., external) context, which encompasses external systems and users. The image below depicts the logical context of the WindowLifterSytem, in which the actors of the operational context are modeled by the grey diagram elements.
 ![changeHere](../images/ltmb-example.png){:class="img-responsive"}
 
 ### LTM C: For each actor in the operational context, the behavior is modeled.
-This capability describes that the actors have their behavior modeled. *Plugin usage*: In the plugin, state machines are used to model the behavior of actors. More information on this can be found [here](https://spesml.github.io/plugin/state_machines.html). Another possibility is to use the state machines from the respective elements previously defined the Functional Viewpoint using a Functional-Logical Adpater. More information on this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#functional-logical-adapter).
+This capability describes that the actors have their behavior modeled. *Plugin usage*: In the plugin, state machines are used to model the behavior of actors. More information on this can be found [here](https://spesml.github.io/plugin/state_machines.html). Another possibility is to use the state machines from the respective elements previously defined the Functional Viewpoint using a Functional-Logical Adapter. More information on this can be found [here](https://spesml.github.io/plugin/logical_viewpoint.html#functional-logical-adapter).
 
 ![changeHere](../images/ltmc-example.png){:class="img-responsive"}
 
