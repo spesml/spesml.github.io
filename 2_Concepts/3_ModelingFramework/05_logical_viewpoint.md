@@ -107,10 +107,10 @@ In particular the identification of future software sub-systems can be modelled 
 These sub-components can then be regrouped in separate logical components that can then be technically modelled accordingly in the [technical view](https://spesml.github.io/concepts/modeling_framework/technical_viewpoint.html).
 The Figures 9 and 10 show how to model the transition to the technical view for software aspects:
 
-![Specifying Software in the LV](/images/logical_viewpoint/specify_logical_software.png){:width="300" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![Specifying Software in the LV](/images/logical_viewpoint/specify_logical_software.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 9: </b><em>To model the transition from logical to technical viewpoint, logical components can be declared to become software in the technical view.</em></div>
 
-![Software in the LV](/images/logical_viewpoint/logical-software-diagram.png){:width="600" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![Software in the LV](/images/logical_viewpoint/logical-software-diagram.png){:width="800" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 10: </b><em>Logical components which will become software in the technical view are indicated in diagrams with a yellow color.</em></div>
 
 # Well-formedness Rules
