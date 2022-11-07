@@ -45,9 +45,9 @@ Value types combine primitive types, enumerations, and other value types to defi
 Each value type must have a name and optionally a visibility (default is package). A value type consists of one to many properties, which must have a name and type. 
 A property may have a multiplicity (default is `1`), whit possible multiplicities being `0`, `1`, `0..1`, `1..*`, and `*`. 
 
-The predefined value types are `Integer`, `Real`, `String`, and `Boolean`. 
-The type `Integer` represents unbounded integer numbers, and the type `Real` represents the mathematical concepts of real numbers. 
-`String` and `Boolean` are defined as usual.  
+The predefined value types are *Integer*, *Real*, *String*, and *Boolean*. 
+The type *Integer* represents unbounded integer numbers, and the type *Real* represents the mathematical concepts of real numbers. 
+*String* and *Boolean* are defined as usual.  
 
 ## How to Model
 
