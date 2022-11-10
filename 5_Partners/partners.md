@@ -35,7 +35,7 @@ In the SpesML project, 11 partners from industry and science, as well as another
 * Qwitto GmbH
 * Schaeffler Technologies AG & Co.KG
 * Siemens AG
-* Siemens Healthineers GmbH
+* Siemens Healthcare GmbH
 * Validas AG
 
 ## Academic Partners
