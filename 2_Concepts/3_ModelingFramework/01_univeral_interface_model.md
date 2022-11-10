@@ -21,7 +21,7 @@ permalink: /concepts/modeling_framework/uim.html
 
 # Universal Interface Model
 
-The universal interface model (UIM) delivers the foundation for describing interfaces and behavior across all viewpoints. As such, as SPES ML modeler, you will never explicitely instantiate elements of the UIM, as you will instead create elements of the functional, logical and technical viewpoints. However, as the UIM is the basis for all interfaces in each viewpoint, you will implicitely use the UIM all the time. The following section describe the concepts of the UIM and how they map to SPES ML model elements of the different viewpoints. The description uses a mathematical language to describe the concepts. While it is certainly helpful to have an understanding of the underlying mathematical theory, the actual modeling with SPES ML is done on a higher level of abstraction.
+The universal interface model (UIM) delivers the foundation for describing interfaces and behavior across all views. As such, as SPES ML modeler, you will never explicitely instantiate elements of the UIM, as you will instead create elements of the functional, logical and technical viewpoints. However, as the UIM is the basis for all interfaces in each viewpoint, you will implicitely use the UIM all the time. The following section describe the concepts of the UIM and how they map to SPES ML model elements of the different viewpoints. The description uses a mathematical language to describe the concepts. While it is certainly helpful to have an understanding of the underlying mathematical theory, the actual modeling with SPES ML is done on a higher level of abstraction.
 
 ## General Concepts
 ### System Elements
@@ -39,7 +39,7 @@ The following figure depicts the relation between system elements, channels, and
 
 <div align="center">
 <img width="350" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/systemelement.png">
-<br><b>Figure:</b> 
+<br><b>Figure 1:</b> 
 Relation between system elements, channels, and data types.
 </div><br>
 
@@ -58,7 +58,7 @@ The channel $c1$ is of type $T$. It is abstracted from the definition of the typ
 
 <div align="center">
 <img width="350" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/uim.png">
-<br><b>Figure:</b> 
+<br><b>Figure 2:</b> 
 A system element and its syntactic interface.
 </div><br>
 
@@ -66,13 +66,15 @@ A system element and its syntactic interface.
 ### Semantic Interfaces
 The _semantic interface_ (or interface behavior) of a system element with the syntactic interface $I \blacktriangleright O$ is given by a function mapping an input communication history to a set of output communication histories $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$. 
 For each possible input $x \in \overrightarrow{I}$ on the channels contained in $I$, the function specifies all possible outputs $F(x)$ for the input. Thus, the function $F$ represents
-an underspecified behavior of a system element with the syntactic interface $I \blacktriangleright O$.
+an underspecified or indeterministic behavior of a system element with the syntactic interface $I \blacktriangleright O$.
 
 ### Causality
-A semantic interface $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ is called _weakly causal_ (_strongly causal_), if the output up to time-point $t$ only depends on the input received until $t$ (until $t-1$ in case of _strongly causal_ behavior).
+A semantic interface $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ is called _weakly causal_ (_strongly causal_), if the output up to time-point $t+1$ only depends on the input received until $t+1$ (until $t$ in case of _strongly causal_ behavior).
 Formally, 
 * a function $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ is called weakly causal if it holds that $\forall t \in \mathcal{N}: \forall x,y \in \overrightarrow{I}: x \downarrow t = y \downarrow t \Rightarrow F(x) \downarrow t = F(y) \downarrow t$.
 * a function $F: \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$ is called strongly causal if it holds that $\forall t \in \mathcal{N}: \forall x,y \in \overrightarrow{I}: x \downarrow t = y \downarrow t \Rightarrow F(x) \downarrow (t +1) = F(y) \downarrow (t + 1)$.
+
+In the above, $x\downarrow t$ denotes the stream $x$ until timepoint $t$. 
 
 If a semantic interface is not weakly causal, then it cannot be realized by any system element. 
 This holds because semantic interfaces that are not weakly causal can be interpreted to model behaviors that can react to events (receiving of messages)
@@ -81,11 +83,11 @@ to an input that it receives in a later time unit $t'$ with $t' > t$ (for at lea
 
 Strongly causal semantic interfaces are even more restricted in the sense that every strongly causal semantic interface is also weakly causal. For strongly causal
 interface behaviors, the output in a time unit $t + 1$ only depends on the messages received up to and including the time unit $t$. Thus, without even
-receiving a message in a time unit, the component can already determine its possible outputs for the time unit. 
+receiving a message in a time unit, the component can already determine its possible outputs for the time unit, which is then based on the input received so far. 
 Every strongly causal semantic interface is also weakly causal.
 Strongly causal semantic interfaces are useful 
 in the context of the composition of system elements. The composition of a strongly causal system element with another system elements guarantees nice properties
-in the sense that the compostion is guaranteed to be a well-defined system element. This is explained in the following sections in more detail. 
+in the sense that the composition is guaranteed to be a well-defined system element. This is explained in the following sections in more detail. 
 
 ### Causaility on a subset of channels
 Strong-causality can also concern only a subset of the output channels.
@@ -116,7 +118,7 @@ This is useful because, in general, it cannot be automatically proven whether a
 semantic interface is strongly causal modulo some of its output channels. In
 these cases, it is often hard for developers to determine whether the
 composition of two semantic interfaces (resp. system elements) is well-defined
-because the well-definedness either (1) needs to be proven manually by hand or
+because the well-definedness either (1) needs to be proven manually or
 (2) is not ensured at all, which might result in undesired behaviors.
 
 Instead, developers can explicitly delay some of the output channels to obtain
@@ -169,7 +171,7 @@ subelements that are also output channels of other subelements cannot be used as
 input channels by the environment anymore.  
 
 Every pair of subelements must have pairwise different sets of output channels.
-Thus, in any architecture consisting of arbitary many system elements, each
+Thus, in any architecture consisting of an arbitrary number of system elements, each
 channel is the output channel of at most one atomic system element. This ensures
 that two subelements never send messages on the same output channel. The set of
 output channels of a composed system element must equal to the set of output
@@ -178,7 +180,7 @@ subelements via the output channels.
 
 <div align="center">
 <img width="700" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/compositionschema.png">
-<br><b>Figure:</b> 
+<br><b>Figure 3:</b> 
 Schematic illustration of system element composition.
 </div><br>
 
@@ -217,7 +219,7 @@ be well-defined.
 
 <div align="center">
 <img width="700" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/syselemcomp.png">
-<br><b>Figure:</b> 
+<br><b>Figure 4:</b> 
 Composition of three system elements.
 </div><br>
 
@@ -227,7 +229,7 @@ condition for determining whether the composition of multiple system elements is
 If for every cycle of interconnected system elements $E_1, E_2,..., E_m$, 
 there exists an index $0 < i < m$ such that $E_i$ is strongly causal modulo its output channels that are
 input channels of $E_{i+1}$ or $E_m$ is strongly causal modulo its output channels that are
-input channels of $E_1$, then the semantic interface of the composed sytem element is guaranteed to be well-defined.
+input channels of $E_1$, then the semantic interface of the composed system element is guaranteed to be well-defined.
 
 For example, the previous picture depicts the composition of the three system
 elements $E_1, E_2$ and $E_3$. Assume that all of the system elements are
@@ -270,18 +272,18 @@ if one of the semantic interfaces is strongly causal modulo its output channels 
 
 ## Modeling Elements
 
-The above concepts are relflected by SPES ML model elements. As SPES ML builds upon SysML these are all SysML modeling elements. However, as SPES ML user you will never create the generic model elements listed below, but instead specific model elements for the different viewpoints. Nevertheless, keeping in mind how the theoretic concepts map to SysML modeling elements may be helpful, especially for those who are already familiar with SysML.
+The above concepts are reflected by SPES ML model elements. As SPES ML builds upon SysML these are all SysML modeling elements. However, as SPES ML user you will never create the generic model elements listed below, but instead specific model elements for the different views. Nevertheless, keeping in mind how the theoretic concepts map to SysML modeling elements may be helpful, especially for those who are already familiar with SysML.
 
 ### Data Type
-Data types in SPES ML are represented be SysML **Value Types**. 
+Data types in SPES ML are represented by SysML **Value Types**. 
 A value type in SysML can be one of the following:
 - **Primitive Value Type**, types which are values types predefined by SysML. 
 - **Enumeration**, defining a set of value literals to choose from  (e.g. enumeration `Status` with enumeration literals `ON` and `OFF`)
 - **Structured Type**, defining a type that consists of several attributes, each having a certain type and multiplicity (e.g. `Location` consisting of `x` and `y` each with type `Real`)
 
-The predefined value types are `Integer`, `Real`, `String`, `Boolean`, `Complex`, and the predefined SI value types according to the ISO-80000. The type `Integer` represents unbounded integer numbers and the type `Real` represents the 
+The predefined value types are `Integer`, `Real`, `String`, `Boolean`, `Complex`, and the predefined SI value types according to ISO-80000. The type `Integer` represents unbounded integer numbers and the type `Real` represents the 
 mathematical concepts of real numbers. `String` and `Boolean` are defined as usual. The type `Complex` represents complex numbers, each consisting of a `realPart` and and `imaginaryPart`, 
-both of type `Real`. For each SI unit quantity and each possible unit for the quantity, modelers can select a corresponding type for each attribute. Each quantity (e.g., length) can be measured using a unit (e.g, millimetre).
+both of type `Real`. For each SI unit quantity and each possible unit for the quantity, modelers can select a corresponding type for each attribute. Each quantity (e.g., length) can be measured using a unit (e.g, millimeter).
 The possible multiplicities for attributes are `0`, `1`, `0..1`, `1..*`, and `*`. 
 
 In MagicDraw, value types are directly created and modeled in the containment tree. 
@@ -291,11 +293,11 @@ The package `data` contains the enumeration `Direction` and the structured value
 The enumeration consists of the four enumeration literals `UP`, `DOWN`, `LEFT`, and `RIGHT`.
 The structured value type `Node` has the two attributes `children` and `value`. 
 The attribute `children` is of type `Node` and has the multiplicity `*`.
-The attribute `value` is of type `Integer` and has the multiplicity `1`. Thus, a `Node` instance can be interpreted to be the node of a directed graph that has an `Integer` `value` and is connected via other nodes according to its `children` attribute. The structured value type `Screw` has the two attributes `length` and `diameter`. Both are of type `length[millimetre]`. The quantity is `length` and `millimetre` is the unit. 
+The attribute `value` is of type `Integer` and has the multiplicity `1`. Thus, a `Node` instance can be interpreted to be the node of a directed graph that has an `Integer` `value` and is connected via other nodes according to its `children` attribute. The structured value type `Screw` has the two attributes `length` and `diameter`. Both are of type `length[millimeter]`. The quantity is `length` and `millimeter` is the unit. 
 
 <div align="center">
 <img width="450" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/valuetypes.png">
-<br><b>Figure:</b> 
+<br><b>Figure 5:</b> 
 Definition of value types in the containment tree of a MagicDraw model.
 </div><br>
 
@@ -304,7 +306,7 @@ A channel in the universal interface model is represented by a SysML **flow
 property**. A flow property must be typed with an **interface block**. The name of a flow property and its
 corresponding interface block define the channel's name. The type of the flow
 property models the channel's type. In SpesML, the direction of all flow
-properties must be *out*. Whether the channels is used as an input or an output
+properties must be *out*. Whether the channels are used as an input or an output
 channel by a system element is determined by the proxy port that is typed with
 the interface block containing the channel. In SpesML, each interface block has
 a name and consists of an arbitrary number of flow properties. Each flow
@@ -320,7 +322,7 @@ define the two channels `MyInterface.channel1` and `MyInterface.channel2`.
 
 <div align="center">
 <img width="200" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/interfaceblock.png">
-<br><b>Figure:</b> 
+<br><b>Figure 6:</b> 
 An interface block with two flow properties defines two channels.
 </div><br>
 
@@ -373,7 +375,7 @@ For every cycle of connected parts (see below) there must be at least one delay.
 
 <div align="center">
 <img width="700" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/portSpec.png">
-<br><b>Figure:</b> 
+<br><b>Figure 7:</b> 
 A proxy port with initial sequences.
 </div><br>
 
@@ -383,16 +385,16 @@ A proxy port with initial sequences.
 We restrict each interface block to only have flow properties with direction
 _out_ (see above). The direction of a channel is determined by the value of the
 conjugated property of the corresponding proxy port. The rationale for this
-restriction is to enable the modeller to easily grasp which proxy ports
+restriction is to enable the modeler to easily grasp which proxy ports
 represent inputs and which represent outputs. In the following example, the
 system element (type) `WindowLifterController` has three channels, one input
-channel `temperature` and two output channels for controling the front and rear
+channel `temperature` and two output channels for controlling the front and rear
 window actuator.
 
 
 <div align="center">
 <img width="900" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/WindowLifterSystem.jpg">
-<br><b>Figure:</b> 
+<br><b>Figure 8:</b> 
 An IBD modeling a window lifter system.
 </div><br>
 
@@ -410,7 +412,7 @@ The formal foundations of system elements do not distinguish between the definit
 In SysML, this distinction is made:
 - A **block** defines a type of a system element. With this, it defines the interface and the behavior of all of its instances.   
     - Each block owns at least one proxy port. Each proxy port defines a sub-interface of the system elements modeled by the block. 
-    - A block models composed system elements if it owns at least one part property. Then, it is called composed. Otherwise, it models atomic system elements and is called atomic. The part properties model the subelements of the system elements modeled by the block. Each part has a name and a type. The name of the part represent the name of the subelement of the system elements modeled by the block. The type of a part is a block. With this, each part can be interpreted to be an instance of a block.  
+    - A block models composed system elements if it owns at least one part property. Then, it is called composed. Otherwise, it models atomic system elements and is called atomic. The part properties model the subelements of the system elements modeled by the block. Each part has a name and a type. The name of the part represents the name of the subelement of the system elements modeled by the block. The type of a part is a block. With this, each part can be interpreted to be an instance of a block.  
     - Composed Blocks must own exactly one Internal Block Diagram that has the same name as the block. The Internal Block Diagrams shows the connections between the ports of the parts of the block. Thus, it models the connections between the subelements of the system elements modeled by the block. Blocks modeling atomic system elements must not own Internal Block Diagrams.  
     - An atomic block may own *value properties*. Each value property has a name and a type. These properties represent the internal data state of instances of the block. Control states and behavior referencing the data states can be added, for instance, via state machines as discussed in one of the following sections.
     - A block can be used in different roles, e.g., a window-lifter-controler could be used in the roles *front-window-controler* and *back-window-controler*.
@@ -432,7 +434,7 @@ The block `Block2` owns the value property `counter` of type `Integer`. Instance
 
 <div align="center">
 <img width="250" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/blocks.png">
-<br><b>Figure:</b> 
+<br><b>Figure 9:</b> 
 Definition of blocks modeling system elements.
 </div><br>
 
@@ -458,7 +460,7 @@ Similarly, the connection between the ports `p8` of `part2` and `p3` of `part1` 
 
 <div align="center">
 <img width="650" src="../../2_Concepts/3_ModelingFramework/images/universal_interface_model/Block1.png">
-<br><b>Figure:</b> 
+<br><b>Figure 10:</b> 
 Internal Block Diagram connecting proxy ports of parts.
 </div><br>
 
@@ -471,7 +473,7 @@ Therefore, connecting two ports in SysML corresponds to the concept of channel r
 ## Well-formedness Rules
 
 ### General Rules 
-* Parts, ports and proxy ports nmust be named
+* Parts, ports and proxy ports must be named
 
 ### Blocks and interfaces
 * Blocks need to specify at least one proxy port (subinterface) 
