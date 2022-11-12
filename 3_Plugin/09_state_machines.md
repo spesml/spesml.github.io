@@ -62,13 +62,15 @@ A clock signal triggers any transition without an explicit trigger.
 For message signals, the trigger defines the port where message signals trigger the transition.
 
 ### Guard
-The guard of a transition governs its execution. 
-The transition is executed only if its guard holds. 
-Guards can reason about the properties of the incoming message or variables.
+A transition's guard governs the transition's execution. 
+That is, a transition can only execute if its guard holds. 
+Guards are strongly typed, boolean expressions over value attributes and messages on the incoming channels of the enclosing block.
 
 ## Behavior
 Actions define the behavior of a component or respective state machine in terms of messages sent via outgoing channels.
 The actions defined in the transition's effect are executed after any exit action of the source state and before any entry action of the target state.
+Actions may read and write to value attributes, write to outgoing channels, and read from incoming channels of the enclosing block.
+Actions can be implemented through statements with strongly typed expressions.
 
 ### Entry Action
 
