@@ -64,13 +64,13 @@ For message signals, the trigger defines the port where message signals trigger 
 ### Guard
 A transition's guard governs the transition's execution. 
 That is, a transition can only execute if its guard holds. 
-Guards are strongly typed, boolean expressions over value attributes and messages on the incoming channels of the enclosing block.
+Guards are strongly [typed](/plugin/data_types.html), [boolean](/plugin/data_types.html#primitive-types) [expressions](/plugin/expressions.html) over value attributes and messages on the incoming channels of the enclosing block.
 
 ## Behavior
 Actions define the behavior of a component or respective state machine in terms of messages sent via outgoing channels.
 The actions defined in the transition's effect are executed after any exit action of the source state and before any entry action of the target state.
 Actions may read and write to value attributes, write to outgoing channels, and read from incoming channels of the enclosing block.
-Actions can be implemented through statements with strongly typed expressions.
+Actions can be implemented through statements with strongly [typed](/plugin/data_types.html) [expressions](/plugin/expressions.html).
 
 ### Entry Action
 
@@ -224,7 +224,7 @@ Add or modify guards, triggers, or transition actions via the transition specifi
 
 	![Transition Specification](/images/state_machine/transition-specification.png){:class="img-responsive"}
 
-3. Add a textual boolean expression as the transition's *Guard*.
+3. Add a textual boolean [expression](/plugin/expressions.html) as the transition's *Guard*.
 
 4. Select a message event or timing event as the transition's *Event Type*. (CURRENTLY UNSUPPORTED)
 
@@ -238,7 +238,7 @@ Add or modify guards, triggers, or transition actions via the transition specifi
 Entry and exit actions, do-activities, and transition effects are defined via an *OpaqueBehavior*.
 Actions are added to the *Body* of the *OpaqueBehavior* as textual statements.
 A semicolon terminates each statement.
-Expression statements primarily consist of assignment expressions and inline computations.
+Statements primarily consist of [assignment expressions](/plugin/expressions.html#assignment-operators) and inline computations.
 
 Assignment expression may write values to outgoing ports or variables.
 Furthermore, expressions may read values from incoming channels and variables.
