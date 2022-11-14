@@ -102,7 +102,21 @@ Model elements for interface, in brackets the names in the logical viewpoint as 
 
    <img src="../3_Plugin/images/universal_interface_model/spes_delay.png" />
 
+### How to connect interfaces
+1. Open a diagram showing the internal structure of a system element (e.g. a Logical Internal Component Digaram, but also context diagrams are possible).
+2. Locate the system elements on the diagram that you want to connect via interfaces.
+3. Make sure the interfaces you want to connect are visible. You can choose the visible interfaces by right-click on an element in the diagram and selecting "Display" -> "Display Parts/Ports"
 
+   <img src="../3_Plugin/images/universal_interface_model/spes_connect1.png" />
+
+4. In the smart manipulator of the source interface, choose the connector icon ...
+
+   <img src="../3_Plugin/images/universal_interface_model/spes_connect2.png" />
+    
+5 ... and pull the connector to the target interface.
+
+  <img src="../3_Plugin/images/universal_interface_model/spes_connect3.png" />
+    
 ## Well-formedness Rules
 
 ### General Rules 
