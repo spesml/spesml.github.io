@@ -53,7 +53,27 @@ The directions of two interfaces match if one of the following conditions is sat
 1. Both interfaces are either conjugated or not conjugated but one interface is owned by the system element above in the composition hierarchy. This represents the situation where message are routed inside into to outside from a system element. 
 2. One of the interfaces is conjugated and the other interface is not conjugated and both owning system elements are on the same level in the composition hierarchy.
 
+## How to Model
 
+### How to Create an Interface
+1. Select an system element for which you want to create an interface in the containment tree  (e.g. a logical component). 
+Model elements for interface, in brackets the names in the logical viewpoint as examples.
+
+2. Right-click the system element and select "Create Element".
+ 
+   <img src="../3_Plugin/images/universal_interface_model/spes_create_element.png" />
+   
+3. From the popup, choose the appropriate interface (e.g. "Logical Interface" for a logical component)
+
+   <img src="../3_Plugin/images/universal_interface_model/spes_create_interface.png" />
+   
+4. Name the interface  
+
+   <img src="../3_Plugin/images/universal_interface_model/spes_create_interface2.png" />
+
+5. If the newly created interface represents an input interface, set the interface as conjugated. This can be done by opening the specification window for the newly created interface (Right-Click -> Specification) and setting the property "Is Conjugated" to true.
+
+   <img src="../3_Plugin/images/universal_interface_model/spes_create_interface3.png" />
 
 ## Well-formedness Rules
 
