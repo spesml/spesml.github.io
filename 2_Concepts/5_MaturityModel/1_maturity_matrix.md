@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SpesML Maturity Matrix
-nav_order: 1
+nav_order: 2
 parent: SpesML Maturity Model
 grand_parent: SpesML Concepts
 permalink: /concepts/maturity_model/maturity_matrix.html
