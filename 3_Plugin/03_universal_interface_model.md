@@ -108,8 +108,10 @@ Model elements for interface, in brackets the names in the logical viewpoint as 
 3. Make sure the interfaces you want to connect are visible. You can choose the visible interfaces by right-click on an element in the diagram and selecting "Display" -> "Display Parts/Ports"
 
    <img src="../3_Plugin/images/universal_interface_model/spes_connect1.png" />
-
-4. In the smart manipulator of the source interface, choose the connector icon ...
+   
+3. Make sure the interfaces have the same interface type and the directions of the interfaces match (see section "Composition" above)
+4. 
+5. In the smart manipulator of the source interface, choose the connector icon ...
 
    <img src="../3_Plugin/images/universal_interface_model/spes_connect2.png" />
     
