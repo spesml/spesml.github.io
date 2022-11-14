@@ -9,6 +9,7 @@ has_children: false
 has_toc: true
 permalink: /concepts/maturity_model/definition.html
 ---
+# Capability description
 
 - [Requirements Viewpoint](#requirements-viewpoint)
 - [Functional Viewpoint](#functional-viewpoint)
