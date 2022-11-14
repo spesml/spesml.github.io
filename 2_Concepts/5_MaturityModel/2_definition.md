@@ -40,9 +40,6 @@ Sentence template require extra effort to achieve compliance at the initial phas
 ### RES C: The requirements text is aligned with modeling elements that they are related to (e.g., naming of ports or internal states) ( C).
 This capability is related to the documentation of architecture elements within a requirement description (e.g., the naming of ports). This capability requires the LCM C capability. This is a *Conceptual* capability.
 
-###  RES D: The requirement is formalized in a formal specification language (e.g., temporal logic) ( C).
-This capability characterizes requirements described using formal representations, for instance in the property specification language which is being looked into in a separate project activity, or as formulas in a temporal logic. Formal representations typically are required to be reviewed in order to ensure that architectural model and property specification are consistent. This is a *Conceptual* capability.
-
 ## Requirements Refinement (REF)
 The capabilities in this focus area represent types of tracing relations that exist between requirements, and between requirements and architectural elements. More on requirements tracing relations can be seen [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#tracing-relationships).
 
