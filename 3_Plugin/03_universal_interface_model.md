@@ -95,7 +95,14 @@ Model elements for interface, in brackets the names in the logical viewpoint as 
 9. To assign an interface type to an interface, either pull to interface type onto the interface in the containment tree. Alternatively you can open the specification window of the interface and set the interface type in the "Type" property.
 
      <img src="../3_Plugin/images/universal_interface_model/spes_create_interface_type4.png" />
- 
+
+### How to mark an interface as delayed
+1. Open the specification window for the interface. Mind that only output interfaces (i.e. interfaces that are not conjugated) can be delayed.
+2. Set the property "Initital Sequence for Delay" to an expression in the form __channel1=value1,value2,value3;...;channelX=value1,value2,value4__. This would set the initial sequence for channel named "channel1" to the seqeuence "value1, value2, value3". The channels in the expressions must be present in the interface type of the interface.
+
+   <img src="../3_Plugin/images/universal_interface_model/spes_delay.png" />
+
+
 ## Well-formedness Rules
 
 ### General Rules 
