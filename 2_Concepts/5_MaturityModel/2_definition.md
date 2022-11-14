@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Capability description
@@ -21,23 +22,17 @@ The Requirements Viewpoint is the functional domain of the SpesML MM concerned w
 This focus area is the smallest of this Viewpoint, having only two capabilities. 
 
 ### REE A: Requirements are modeled by a distinct Requirement Element per requirement.
-This capability states that requirements should be modeled in the SpesML plugin using the Requirement Element. *Plugin usage*: The engineer should right click the containment tree in the RequirementsViewpoint folder, and select create element->create a SpesML Requirement element. The image below show the menu where the SpesML Requirement can be selected.
-
-![REE A example](../images/reea-example.png){:class="img-responsive"}
-
-The REE A is the most basic capability from this functional domain. Because of this, all the other capabilities from this Viewpoint requires it.  More information on the Requirement Element can be found [here](https://spesml.github.io/plugin/requirements_viewpoint.html#elements).
+This capability states that requirements should be modeled in the SpesML plugin using the Requirement Element. *Plugin usage*: The engineer should right click the containment tree in the RequirementsViewpoint folder, and select create element->create a SpesML Requirement element. The REE A is the most basic capability from this functional domain. Because of this, all the other capabilities from this Viewpoint requires it.  More information on the Requirement Element can be found [here](https://spesml.github.io/plugin/requirements_viewpoint.html#elements).
 
 ###  REE B: Requirements are categorized into one of the categories: Capability, Functional, Quality, Constraint.
 This capability can be considered implemented when the Requirement Element category is defined. The categories supported by the SpesML Modeling Framework are described [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#modeling-elements). *Plugin usage*: The requirements category is symbolized trough the capital letter in the requirements icon and can be selected in the Specification window.
 ## Requirements Specification (RES)
 
-This focus area has four capabilities. Three of them are of Conceptual kind. 
+This focus area has three capabilities, two of them are of Conceptual kind. 
 
 ### RES A: Requirements are equipped with attributes containing meta-information including: name, category, status, rationale, and source. 
 The SpesML Modeling framework supports a number of attributes, which serves as template, and segregate information from the requirement description, improving readability. *Plugin usage*: The attributes of a requirements can be accessed through right click menu->Specification. The image below depicts how they are presented in the plugin.
 Additional information on requirement attributes can be found [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html#requirements-attributes).
-
-![REE A example](../images/car-attributes.png){:class="img-responsive"}
 
 ### RES B: Requirements text is formulated following certain sentence templates (e.g., EARS or Sophist MasterTemplate) ( C).
 Sentence template require extra effort to achieve compliance at the initial phases, but prevents rework in future phases. Although the SpesML MF do not suggest using a specific template, it does suggest they should be used to attend the organization's needs (e.g, domain, project size). This is a *Conceptual* capability
@@ -246,6 +241,3 @@ The software subsystem is decomposed in the least granular form, namely tasks.
 
 ### SAM B: The mapping of SW tasks to elements of the execution platform is modeled.
 The tasks created from the decomposition of the software subsystems is mapped to the elements of the execution platform. 
-
-  
-
