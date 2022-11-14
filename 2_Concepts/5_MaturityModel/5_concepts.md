@@ -1,3 +1,12 @@
+---
+layout: default
+title: Concepts
+nav_order: 5
+parent: SpesML Maturity Model
+grand_parent: SpesML Concepts
+permalink: /concepts/maturity_model/concepts.html
+---
+
 # Introduction
 On this page, we describe the SpesML Maturity Model (SpesML MM) whose goal is to help teams adopting the SpesML methodology. The SpesML MM helps to achieve this first by mapping their current Model-based Systems Engineering (MBSE) processes using the SpesML MM, to figure out which activities are in place and must be *adapted* to the SpesML methodology. And second, by finding out unimplemented capabilities that must be *adopted* anew to reach the desired maturity level for the organization.
 
