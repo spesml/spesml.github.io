@@ -75,6 +75,27 @@ Model elements for interface, in brackets the names in the logical viewpoint as 
 
    <img src="../3_Plugin/images/universal_interface_model/spes_create_interface3.png" />
 
+### How to Type an Interface
+1. If a suitable interface type already exists, jumpt to step 9. If not create a new interface type as follows.
+2. Choose a suitable package for your interface type (e.g. a package named "Interface Types").
+3. Right-click on the package and select "Create Element".
+4. In the popup choose the appropriate Interface Type (e.g. "Logical Interface Type" for a logical interface).
+
+   <img src="../3_Plugin/images/universal_interface_model/spes_create_interface_type1.png" />
+
+6. Name the newly created interface type.
+7. The newly created interface type has no channels yet. To create a channel right-click the interface type and select "Create Element". In the popup, select "Channel".
+
+   <img src="../3_Plugin/images/universal_interface_model/spes_create_interface_type2.png" />
+   
+8. Name the channel and assign the channel a type by pulling a data type on the channel in the containment tree or selecting the type in the specification window of the channel.
+
+     <img src="../3_Plugin/images/universal_interface_model/spes_create_interface_type3.png" />
+     
+9. To assign an interface type to an interface, either pull to interface type onto the interface in the containment tree. Alternatively you can open the specification window of the interface and set the interface type in the "Type" property.
+
+     <img src="../3_Plugin/images/universal_interface_model/spes_create_interface_type4.png" />
+ 
 ## Well-formedness Rules
 
 ### General Rules 
