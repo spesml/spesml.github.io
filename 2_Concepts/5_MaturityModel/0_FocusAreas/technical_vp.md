@@ -8,7 +8,7 @@ permalink: /concepts/maturity_model/focus_areas/technical_vp.html
 ---
 
 # Technical Viewpoint
-In this page we describe the Technical Viewpoint functional domain. There are five focus areas in this Viewpoint: the Technical Component Modeling, the Technical Architecture Modeling, the Technical Context Modeling, the Modeling of Software Execution Platform, and the Software Architecture Modeling. This functional domain lacks 'behavior modeling' capabilities, the behavior modeling happens in the Functional and Logical Viewpoints. Modeling guideline for this functional domain can e seen [here](https://spesml.github.io/plugin/technical_viewpoint.html#how-to-model).
+In this page we describe the Technical Viewpoint functional domain. There are five focus areas in this Viewpoint: the Technical Component Modeling (TCM), the Technical Architecture Modeling (TAM), the Technical Context Modeling (TTM), the Modeling of Software Execution Platform (HAM), and the Software Architecture Modeling (HAM). This functional domain lacks 'behavior modeling' capabilities, the behavior modeling happens in the Functional and Logical Viewpoints. Modeling guideline for this functional domain can e seen [here](https://spesml.github.io/plugin/technical_viewpoint.html#how-to-model).
 	
 ## Technical Component Modeling (TCM)
 This focus area describe capabilities related to the modeling of technical components.                                    
