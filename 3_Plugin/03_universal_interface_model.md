@@ -19,13 +19,13 @@ In all viewpoints (i.e. Functional VP, Logical VP, Technical VP) the available m
 Model elements for interface, in brackets the names in the logical viewpoint as examples.
 </div><br>
 
-Figure 1 shows the modeling elements for the interfaces. A *system element* (e.g. a logical component from the logical view or a (black-box/white-box) function from the functional view) owns one ore more *interfaces*. In the different views, the interfaces are named "Logical Interface", "Functional Interface", etc. An interface can be either a source interface (messages are flowing out of the owning system element) or a target interface (messages are flowing into the owning system element). To mark an interface as a target interface, the interface must be *conjugated*. 
+Figure 1 shows the modeling elements for the interfaces. 
 
-An interface is always typed. That means, it is associated with an *interface type*. Again, in the different views an interface type is termed "Logical Interfact Type", "Functional Interface Type" etc. An interface type must always be named and may only contain channels as sub-elements.
-
-The interface type describes what can flow out of a system element by the means of *channels*. Therefore each interface type owns one or more channels. Channels always are named and represent unidirectional communication from the source interface to the target interface. Although a channel has a direction, this direction must always be set to "out". this restriction makes it possible to clearly see which information is flowing in which direction.
-
-Each channel again is typed with a *data type*, describing what kind of messages are exchanged via this channel.
+* **Interface:** A system element (e.g. a logical component from the logical view or a (black-box/white-box) function from the functional view) owns one ore more interfaces. In the different views, the interfaces are named "Logical Interface", "Functional Interface", etc. An interface can be either a source interface (messages are flowing out of the owning system element) or a target interface (messages are flowing into the owning system element). To mark an interface as a target interface, the interface must be *conjugated*. 
+* **Interface Type:** An interface is always typed. That means, it is associated with an interface type. Again, in the different views an interface type is termed "Logical Interfact Type", "Functional Interface Type" etc. An interface type must always be named and may only contain channels as sub-elements.
+* **Channel:** The interface type describes what can flow out of a system element by the means of channels. Therefore each interface type owns one or more channels. Channels always are named and represent unidirectional communication from the source interface to the target interface. Although a channel has a direction, this direction must always be set to "out". this restriction makes it possible to clearly see which information is flowing in which direction.
+* **Data Type:** Each channel again is typed with a data type, describing what kind of messages are exchanged via this channel. Details on data types can be found [here](https://spesml.github.io/plugin/data_types.html)
+* **Connector:** Two interfaces may be connected using a connector, which describes that messages can flow between the interfases.
 
 To specify that two system elements interact, their interfaces may be connected by *connectors*.
 
