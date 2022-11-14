@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Concepts
-nav_order: 5
+nav_order: 1
 parent: SpesML Maturity Model
 grand_parent: SpesML Concepts
 permalink: /concepts/maturity_model/concepts.html
