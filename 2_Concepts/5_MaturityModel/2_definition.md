@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Capability description
-nav_order: 5
+nav_order: 3
 parent: SpesML Maturity Model
 grand_parent: SpesML Concepts
 has_children: false
