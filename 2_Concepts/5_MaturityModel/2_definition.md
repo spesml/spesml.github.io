@@ -202,7 +202,7 @@ The communication links characteristics are defined when this capability is impl
 ### HAM C: The SW architecture (BaseSW, middleware, RTE, application SW) on an execution element is modeled.
 This capability describes the modeling of all software elements on an execution element.
 
-### HAM D: The properties and resources of the execution elements (e.g., CPU, RAM, ROM) are modeled. PreReq: HAM A
+### HAM D: The properties and resources of the execution elements (e.g., CPU, RAM, ROM) are modeled.
 This capability recommends the modeling of the execution elements properties. These properties have direct impact on the SuD properties, such as processing time. 
 
 ## SW Architecture Modeling (SAM)	
