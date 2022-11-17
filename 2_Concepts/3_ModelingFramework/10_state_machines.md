@@ -20,12 +20,7 @@ permalink: /concepts/modeling_framework/state_machines.html
 
 # State Machines 
 
-The semantic interface of atomic system elements can, inter alia, be defined by state machines (non-deterministic Mealy Machines). 
-To this effect, the system element can be linked to the state machine that defines its behaviors. Each state machine linked to a system element must have the same input 
-and output channels as the system element. The following introduces a reduced abstract syntax for state machines. The syntax can easily be 
-extended by guards on transitions, hierarchical states, and further advanced concepts. However, every practically meaningful (weakly-causal and realizable) 
-semantic interface can be modeled with a state machine solely using the reduced abstract syntax. Thus, it is always possible to transform a state machine in an extended syntax
-to a semantically equivalent state machine in the reduced abstract syntax.    
+The behavior of atomic system elements can be defined by state machines. The following introduces a reduced abstract syntax for state machines. The syntax can easily be extended by guards on transitions, hierarchical states, and further advanced concepts. However, every practically meaningful (weakly-causal and realizable)  semantic interface can be modeled with a state machine solely using the reduced abstract syntax. Thus, it is always possible to transform a state machine in an extended syntax to a semantically equivalent state machine in the reduced abstract syntax.    
 
 As depicted in the following figure, each state machine consists of 
 * states,
@@ -41,9 +36,8 @@ Each transition consists of
 * an assignment mapping each output channel of the automaton to a finite stream of messages of the channel's type.  
 
 <div align="center">
-<img width="500" src="statemachine.png">
-<br><b>Figure:</b> 
-Concepts of the reduced abstract syntax for state machines.
+<img width="350" src="../../2_Concepts/3_ModelingFramework/images/state_machines/statemachine.png">
+<br><b>Figure 1:</b> State-machine concepts 
 </div><br>
 
 For a state machine to be meaningful, it must define a possible output for all possible inputs for each of its states. 
@@ -68,7 +62,7 @@ Thus, communication histories represent a black-box view on runs of state machin
 The relation between the possible input and output communication histories of all runs of a state machine induce the state machine's semantic interface. 
 With this, the semantic interface of a state machine is the function relating all possible input channel communication histories to all possible output channel communication histories as defined by the state machine.
 
-The semantic interface of a state machine is guaranteed to be weakly causal. 
+The behavior of a state machine is guaranteed to be weakly causal. 
 In case the state machine is a Moore Machine, the semantic interface is even strongly causal.
 A Moore Machine is a state machine where the output of each transition solely depends on the source state of the transition and not on the current input.
 Thus, all transitions originating from a state have the same output. In an implementation, requiring an initial output for a state machine and making the state machine
