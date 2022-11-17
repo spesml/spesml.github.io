@@ -24,18 +24,18 @@ permalink: /concepts/modeling_framework/technical_viewpoint.html
 
 ## General Concept of the Technical Viewpoint
 
-The technical viewpoint is mostly concerned with the question of how to get from the platform independent models of the logical viewpoint (logical components) to platform-specific models (technical components). In the following, we describe all models of the technical viewpoint including the software execution subsystem. 
+The technical viewpoint and its instance, the technical view, are mostly concerned with the question of how to get from the platform independent models of logical viewpoint (logical components) to platform-specific models (technical components). In the following, we describe all models of the technical viewpoint including the software execution subsystem. 
 
 In general, we see generic technical models on the first granularity layer (the overall system), which can then be refined to more specialized models on the next granularity layer(s). An example for such a refinement/specialization is the software execution subsystem. This is why we divide this chapter of the technical viewpoint into two parts. First, we present the [more generic models of the technical viewpoint on system layer](#technical-viewpoint-models-on-the-system-layer) and afterwards, the [models of the software execution subsystem on lower granularity layers](#technical-viewpoint-models-of-the-software-execution-subsystem).
 
-The presented approach targets various scenarios that may emerge in systems engineering.
+The presented approach targets various scenarios that may emerge in systems engineering, e.g.:
 
-1. Integration of technical components from various engineering disciplines. For instance, integration of a mechatronic component (incl. mechanics, electronics, and software). Such a scenario can be supported by specific technical components and their dedicated interfaces to other technical components.
+1. Integration of technical components from various engineering disciplines, e.g., integration of a mechatronic component (incl. mechanics, electronics, and software). Such a scenario can be supported by specific technical components and their dedicated interfaces to other technical components.
 2. Engineering a new system architecture in terms of hardware topology. Engineering a more centralized architecture requires an overview of computation resources and communication resources that are intended for the new system.
 
 We also envision combinations of these. The proposed approach enables that.
 
-The modeled behavior in the [logical viewpoint](/concepts/modeling_framework/logical_viewpoint.html) can be seen as requirement for the behavior in the technical viewpoint. In this project, we do not provide further behavior models within the technical viewpoint and do not verify in the technical viewpoint the modeled behavior of the logical viewpoint. However, we provide all the input for such behavior modeling and verification through our technical viewpoint concepts like tracing logical components to technical components and tasks, the task architecture in general, the platform architecture, their interfaces, and the deployment of tasks to execution components. More on this in the next sections.
+The modeled behavior in a [logical view](/concepts/modeling_framework/logical_viewpoint.html) can be seen as requirement for the behavior of the corresponding technical view. In this project, we do not provide further behavior models for technical views and do not verify in technical views the modeled behavior of the logical views. However, we provide all the input for such behavior modeling and verification through our technical viewpoint concepts like tracing logical components to technical components and tasks, the task architecture in general, the platform architecture, their interfaces, and the deployment of tasks to execution components. More on this in the next sections.
 
 
 The following sections will, as already mentioned, cover first the more general technical elements (mainly on the system granularity layer) and then the software execution subsystem in detail. 
@@ -43,7 +43,7 @@ To understand the relations and possibilities of the technical viewpoint, the fo
  
 <a name="figureOverview"></a>
 ![Overview](/images/technical_viewpoint/TVP_Element_Overview.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 1: </b><em>Overview over all elements of the Technical Viewpoint.</em></div>
+<div align="center"><b>Figure 1: </b><em>Overview over all elements of the technical viewpoint.</em></div>
 
 
 
@@ -57,7 +57,7 @@ To understand the relations and possibilities of the technical viewpoint, the fo
 
 **Hierarchy.** Components may be decomposed into further subcomponents within the same granularity layer, e.g., the system layer. The purpose of such hierarchical decompositions is usually to gain a better overview, especially for large, complex systems. It is possible to decompose a technical component into any combination of any other subcomponents. The other more specific components can only be decomposed in subcomponents of their own type, i.e., a mechanical component can only contain more mechanical components, and an electronic component only more electronic components. Mechatronic components can also contain more mechatronic components, but in addition it is possible to specialize the combination even more with mechanical and/or electronic components. An exception is the software execution subsystem. The content of such a software execution subsystem is described in its own models (see [section](#technical-viewpoint-models-of-the-software-execution-subsystem)) including task architectures and execution platforms. Note that it is not possible to decompose a software execution subsystem into other component types like technical, mechanical, electronic, and mechatronic components. In any case, we recommend to leave the software execution subsystem empty on its granularity layer and refine it on the next granularity layer. 
 
-**Technical Context.** Similar to the functional and logical viewpoint, a context can be modeled within the technical viewpoint as well. With such a _technical context_ it is possible to place the current system under development (SuD) in relation to connected (external) systems and _technical actors_. The technical context contains the current SuD and exactly all technical systems and actors that are connected with the SuD via at least one direct technical interface. This way it is possible to display where the system inputs are coming from and where the system outputs are going to without explicitly modeling all the external systems.
+**Technical Context.** Similar to the functional and logical view, a context can be modeled within the technical view as well. With such a _technical context_ it is possible to place the current system under development (SuD) in relation to connected (external) systems and _technical actors_. The technical context contains the current SuD and exactly all technical systems and actors that are connected with the SuD via at least one direct technical interface. This way it is possible to display where the system inputs are coming from and where the system outputs are going to without explicitly modeling all the external systems.
 
 **Design Recommendations.** As the purpose and abstraction of specific engineering disciplines are highly heterogeneous, such models differ accordingly. Whether a component is further refined as an independent subsystem on the next granularity layer depends on the specific development project. We consider the possibility of having multiple components of a certain engineering discipline. As already mentioned, we recommend refining software execution subsystems on the next granularity layer by models representing the software architecture, hardware architecture and their corresponding allocation.
 
@@ -67,12 +67,12 @@ The relationship between logical and technical architectural components is n:m i
 
 Our overall approach is to provide meaningful tracing relationships between the model elements of the views. Therefore, we suggest developing an initial architecture in the technical view that has the same component structure as the logical architecture, which yields a 1:1 tracing relation between logical and technical components on this layer of abstraction. 
 
-Even when using a 1:1 tracing relation between logical and technical components, it is important to notice that in advance we recommend structuring the logical viewpoint in terms of grouping logical subcomponents that are realized in the software execution subsystem. This enables for a meaningful 1:1 trace relation. Note that even if we propose a 1:1 relationship between logical and technical components, the interface refinement has a large impact on the details of the technical architecture.
+Even when using a 1:1 tracing relation between logical and technical components, it is important to notice that in advance we recommend structuring the logical view in terms of grouping logical subcomponents that are realized in the software execution subsystem. This enables for a meaningful 1:1 trace relation. Note that even if we propose a 1:1 relationship between logical and technical components, the interface refinement has a large impact on the details of the technical architecture.
  
 Other relationships are possible, but we strongly encourage to manifest engineering decision in terms of a proper logical systems architecture that enables for a 1:1 relationship.
 
 ### Redundancy in the Technical Viewpoint
-Applying redundancy (patterns) is necessary in systems engineering for many reasons. Redundancy realized in concrete technical components, however, can be already modeled in the logical viewpoint, yielding a 1:1 mapping to technical components. Furthermore, it is also possible that logical components occur multiple times in the technical architecture, meaning to model redundancy in the technical view for the first time. These logical components manifest themselves in a 1:n relation in technical components.
+Applying redundancy (patterns) is necessary in systems engineering for many reasons. Redundancy realized in concrete technical components, however, can be already modeled in the logical view, yielding a 1:1 mapping to technical components. Furthermore, it is also possible that logical components occur multiple times in the technical architecture, meaning to model redundancy in the technical view for the first time. These logical components manifest themselves in a 1:n relation in technical components.
 
 ***
 
