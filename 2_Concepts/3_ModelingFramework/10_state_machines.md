@@ -18,10 +18,6 @@ permalink: /concepts/modeling_framework/state_machines.html
   };
 </script>
 
-
-# State Machines
-
-
 # State Machines 
 
 The semantic interface of atomic system elements can, inter alia, be defined by state machines (non-deterministic Mealy Machines). 
