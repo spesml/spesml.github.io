@@ -40,7 +40,7 @@ In the SpesML project, 11 partners from industry and science, as well as another
 
 ## Academic Partners
 * fortiss GmbH
-* RWTH Aachen
+* RWTH Aachen, Lehrsuhl für Software Engineering
 * TU München
 * Universität zu Köln
 
