@@ -65,10 +65,12 @@ With this, the semantic interface of a state machine is the function relating al
 
 ## Mealy and Moore Machines
 We can distinguish two different types of state machines, Moore Machines and Mealy Machines.
-A Moore Machine is a state machine where the output of each transition solely depends on the source state of the transition and not on the current input.
-Thus, all transitions originating from a state produce the same output. For Mealy Machines the output produced by a transition is determined by the current state as well as the input.
+A **Moore Machine** is a state machine where the output of each transition solely depends on the source state of the transition and not on the current input.
+Thus, all transitions originating from a state produce the same output. For **Mealy Machines**, the output produced by a transition is determined by the current state as well as the input.
 
 The behavior produced by Moore as well as Mealy machines is guaranteed to be weakly causal. In case of Moore Machines, the behavior is also strongly causal.
+
+The Spes ML plugin supports Mealy Machines. However, components owning state machines can be marked as delayed, which enforces strong causality for owned state machine.
 
 ## Timed-Event and Time Synchronous State Machines 
 **Timed-event** state machines transition on the occurence of an event, which may be messages on incoming channels. A transition can be taken if an incoming message upholds the transition's precondition. Taking a transition does not denote the end of the current time slice, instead time is encoded in message streams. One possibility is to encode time in message streams is the addition of a special symbol $\checkmark$ called a tick. A tick denotes the end of a time slice. 
