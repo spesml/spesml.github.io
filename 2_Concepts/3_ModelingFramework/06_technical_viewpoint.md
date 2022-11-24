@@ -31,7 +31,7 @@ In general, we see generic technical models on the first granularity layer (the 
 The presented approach targets various scenarios that may emerge in systems engineering, e.g.:
 
 1. Integration of technical components from various engineering disciplines, e.g., integration of a mechatronic component (incl. mechanics, electronics, and software). Such a scenario can be supported by specific technical components and their dedicated interfaces to other technical components.
-2. Engineering a new system architecture in terms of hardware topology, e.g., with a more centralized software part (see [software execution subsystem](#technical-viewpoint-models-of-the-software-execution-subsystem). This requires an overview of computation resources and communication resources that are intended for the new system.
+2. Engineering a new system architecture in terms of hardware topology, e.g., with a more centralized software part (see [software execution subsystem](#technical-viewpoint-models-of-the-software-execution-subsystem)). This requires an overview of computation resources and communication resources that are intended for the new system.
 
 We also envision combinations of these. The proposed approach enables that.
 
