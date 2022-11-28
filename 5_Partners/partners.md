@@ -16,7 +16,7 @@ In the SpesML project, 11 partners from industry and science, as well as another
 ![Qwitto Logo](/images/qwitto_resized.jpg) &nbsp;
 ![Schaeffler Logo](/images/schaeffler_resized.png) &nbsp;
 ![Siemens Logo](/images/siemens_resized.png) &nbsp;
-![Healthineers Logo](/images/healthineers_resized.png) &nbsp;
+<!-- ![Healthineers Logo](/images/healthineers_resized.png) &nbsp; -->
 ![Validas Logo](/images/validas_resized.png) &nbsp;
 ![fortiss Logo](/images/fortiss_resized.png) &nbsp;
 ![RWTH Logo](/images/rwth_resized.png) &nbsp;
