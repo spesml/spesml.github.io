@@ -20,6 +20,7 @@ permalink: /concepts/modeling_framework/technical_viewpoint.html
     - [Design-time Software Models](#design-time-software-models)
     - [Execution Platform Models](#execution-platform-models)
     - [Allocation Models](#allocation-models)
+  - [Well-Formedness Rules specific for the Technical Viewpoint](#well-formedness-rules-specific-for-the-technical-viewpoint)
 
 
 ## General Concept of the Technical Viewpoint
@@ -168,5 +169,24 @@ The following table shows the mapping between the previously describe mapping co
 | Task to Partition Component Mapping | Allocation Matrix | SpesML TaskPartition Allocation | TaskPartition Allocation |
 | Partition to Execution Component Mapping | Allocation Matrix | SpesML Partition Allocation | Partition Allocation |
 
+## Well-Formedness Rules specific for the Technical Viewpoint
+
+The technical viewpoint incorporates all the general well-formedness rules that were introduced for the whole SpesML project/concept due to, for example, the Universal Interface Model (only syntactical-wise for the technical viewpoint). In addition, the following rules were identified specifically for the technical viewpoint, mainly due to its deployment allocations and task tracing:
+
+- **WFR-T1: Port deployment must be aligned with task to execution component deployment.**
+  - Task ports can only be deployed to ports of execution components to which the task as owner of the port is deployed itself. It is not allowed to deploy/allocate ports to ports of other execution components to which the task(s) have no deployment/allocation connection.
+  - *Reason*: It does not make sense to separate ports and their tasks between different physical elements in the real world.
+- **WFR-T2: Each task must be allocated to exactly one execution component.**
+  - In the end, it is not allowed that a task is without deployment allocation to an execution allocation, and there must also not be a task that is allocated to two or more execution components within the same allocation matrix.
+  - *Reason*: There needs to be a clear / distinct deployment.
+- **WFR-T3: Each task port must be either connected to another task port or allocated to a port of an execution component (none connection/allocation at all is not an option as well as both at the same time).**
+  - In the end, it is not allowed that a task port is not connected or allocated at all, meaning that it either needs to have a connection to another task port or an allocation to another execution component port. It is also not allowed to have it connected to another task and at the same time allocated to an execution component. Furthermore, a task port must not be allocated to several execution component ports at the same time.
+  - *Reason*: It must be clear to what the output of a task should be forwarded (either to another internal task or to another physical element).
+- **WFR-T4: Each execution and communication component needs to be connected to at least one other (technical) component.**
+  - A communication component must be connected to at least one execution component. An execution component must be connected to at least one other technical component like another execution component or a communication component or to an external technical component (like an external sensor or actuator). A connection means that there must be at least one port that is connected via a Connector to a port of the other element. A self-loop does not count.
+  - *Reason*: A stand-alone (separated) communication component is useless, because it cannot provide any communication (communication needs always at least two endpoints). A stand-alone (separated) execution component that has not even one connection to other hardware (or the physical world in general) does not make sense for a cyber-physical system since a characteristic of a cyber-physical system is its interaction between software (execution) and physical world.
+- **WFR-T5: A logical sub-component of a logical component that was tagged as software must not be traced to any other element than a task.**
+  - In the logical view, a logical component can get the property "software". If this is the case for a logical component and it contains further logical sub-components, these sub-components can have only traces to task(s) in the technical view. If there are traces to other technical elements, it is invalid.
+  - *Reason*: As soon as a logical component is indicated as (pure) software with internal software sub-components, it can only be related to a software execution subsystem in the technical view and this means that its sub-components can only be software tasks.
 
 
