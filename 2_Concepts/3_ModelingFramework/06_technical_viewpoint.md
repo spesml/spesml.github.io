@@ -20,7 +20,7 @@ permalink: /concepts/modeling_framework/technical_viewpoint.html
     - [Design-time Software Models](#design-time-software-models)
     - [Execution Platform Models](#execution-platform-models)
     - [Allocation Models](#allocation-models)
-  - [Well-Formedness Rules Specific For The Technical Viewpoint](#well-formedness-rules-specific-for-the-technical-viewpoint)
+  - [Well-Formedness Rules specific for the Technical Viewpoint](#well-formedness-rules-specific-for-the-technical-viewpoint)
 
 
 ## General Concept of the Technical Viewpoint
@@ -169,7 +169,7 @@ The following table shows the mapping between the previously describe mapping co
 | Task to Partition Component Mapping | Allocation Matrix | SpesML TaskPartition Allocation | TaskPartition Allocation |
 | Partition to Execution Component Mapping | Allocation Matrix | SpesML Partition Allocation | Partition Allocation |
 
-## Well-Formedness Rules Specific For The Technical Viewpoint
+## Well-Formedness Rules specific for the Technical Viewpoint
 
 The technical viewpoint incorporates all the general well-formedness rules that were introduced for the whole SpesML project/concept due to, for example, the Universal Interface Model (only syntactical-wise for the technical viewpoint). In addition, the following rules were identified specifically for the technical viewpoint, mainly due to its deployment allocations and task tracing:
 
