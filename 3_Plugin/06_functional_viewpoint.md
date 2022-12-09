@@ -15,9 +15,9 @@ In the center of the Functional Viewpoint is the concept of _system functions_. 
 
 The Functional Viewpoint then consists of three model types:
 
-- Functional Black-box Model: Contains all system functions and structures them in a hierarchy
-- Functional White-box Model: Describes the decomposition of one particular system function into a set of related white-box functions
-- Mode Model: Describes operational states of the system. These operational states can be referenced in mode channels that describe dependencies between system functions.
+- **Functional Black-box Model**: Contains all system functions and structures them in a hierarchy
+- **Functional White-box Model**: Describes the decomposition of one particular system function into a set of related white-box functions
+- **Mode Model**: Describes operational states of the system. These operational states can be referenced in mode channels that describe dependencies between system functions.
 
 ## Method
 
@@ -30,17 +30,17 @@ The following figure illustrates these relations:
 
 ## Structure
 
-The different models of the Functional Viewpoint are structured in the Containment Tree of a project. A top-level node called `Functional Viewpoint` contains all elements of this viewpoint (see figure below). 
+The different models of the Functional Viewpoint create a functional view of a system that is structured in the Containment Tree of a project. A top-level node called `FunctionalView` contains all elements of this view (see figure below). 
 
-![Elements of the Functional VP in the Containment Tree](/images/functional_viewpoint/containment-tree.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><em>Elements of the Functional VP in the Containment Tree</em></div>
+![Elements of the Functional View in the Containment Tree](/images/functional_viewpoint/containment-tree.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+<div align="center"><em>Elements of the Functional View in the Containment Tree</em></div>
 
 Below this node, there are the following specific subnodes:
 
-- **System Functions**: This package contains all _system function_ elements. The functional white-box model of each system function is located below the system function element.
-- **White-box Functions**: This package contains all _white-box function_ elements.
+- **Elements -> System Functions**: This package contains all _system function_ elements. The functional white-box model of each system function is located below the system function element.
+- **Elements -> White-box Functions**: This package contains all _white-box function_ elements.
 - **System**: This package contains the functional black-box model and the mode model of the system.
-- **Functional Context**: This package contains the top-level view of the functional viewpoint and contains a diagram of the system under development in the context of its surrounding external systems and actors.
+- **Functional Context**: This package contains the top-level view of the functional viewpoint and contains a diagram of the system under development in the context of its surrounding context functions.
 
 
 ![Elements of the Functional VP in the Containment Tree](/images/functional_viewpoint/containment-tree-expanded.png){:width="500" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
@@ -54,7 +54,7 @@ Tracing information is gathered in the `Functional Tracing Package`, consisting 
 
 To specify a system function with inputs and outputs, follow these steps:
 
-1. Navigate to the `System Functions` folder under `FunctionalViewpoint -> Elements` (or create it if it does not exist)
+1. Navigate to the `System Functions` folder under `FunctionalView -> Elements` (or create it if it does not exist)
 
 2. Right-click on the folder and select *Create Element*. A dialog will open in which you can select elements you want to create. Select *Function*:  
   
@@ -208,12 +208,12 @@ The `Functional Package` contains all elements of the Functional Viewpoint inclu
 
 
 ### ![Functional Context](/images/functional_viewpoint/FunctionalContext.png){:class="img-responsive"}Functional Context
-The Functional Context represents the top-level view of the system under development. It contains a single [system function](#function) that represents the system under development and that must be marked as such by setting the property `system under development` to `yes` (see below).
+The Functional Context represents the top-level view of the system under development. It contains a single [system function](#function) that represents the system under development and that must be marked as such by setting the property `system under development to `yes` (see below).
 
 ![Marking a system function as *system under development*](/images/functional_viewpoint/sud-property.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><em>Marking a system function as *system under development*</em></div>
 
-Additionaly, the Functional Context contains a number of [Functional Actors](#functional-actor) and [external functions](#function) that represent elements of the context. 
+Additionally, the Functional Context contains a number of [Functional Actors](#functional-actor) and [external functions](#function) that represent elements of the context. 
 A function can be defined as external by changing the property `external` from `no` to `yes` (see below). 
 
 ![Marking a function as *external* function](/images/functional_viewpoint/external-property.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
@@ -245,7 +245,7 @@ A Functional Interface Type can either contain a Value Property (e.g., a specifi
 ### ![Functional Interface](/images/functional_viewpoint/FunctionalInterface.png){:class="img-responsive"}Functional Interface
 This element is based on a *SysML Proxy Port* with a dedicated stereotype that allows defining where the element can be placed and other specifications.
 A Functional Interface is used to connect different functional elements generically. 
-It can be specified further by using [Functional Interface Types](#functional-interface-type) and [Channels](#channel) to model the connection and information flow between the elements (via  channels).
+It can be specified further by using [Functional Interface Types](#functional-interface-type) and [Channels](#channel) to model the connection and information flow between the elements (via channels).
 A Functional Interface is nothing more than a port that can be attached to a [function](#function). If another function has also such a port/interface with the same [Functional Interface Type](#functional-interface-type)], the user can connect these two ports with a *Connector* line.
 
 ### ![Channel](/images/universal_interface_model/Channel.png){:class="img-responsive"}Channel
