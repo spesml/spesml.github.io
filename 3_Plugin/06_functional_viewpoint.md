@@ -265,3 +265,33 @@ This diagram can be used to create and visualize trace relations between [functi
 ### ![Functional Internal Function Diagram](/images/diagrams/composite_structure.png){:class="img-responsive"}SpesML Functional Internal Function Diagram
 This diagram is based on a *UML Composite Structure Diagram/SysML Internal Block Diagram* and provides a reduced diagram toolbar related to SpesML. Note that intentionally [Functional Parts](#functional-part) cannot be created using the diagram toolbar. Instead, it is recommended to create these elements by dragging/dropping a Function to the diagram.
 
+## Modeling Rules (Well-formedness Rules)
+
+### Functional Context
+
+- The functional context must include exactly one system function that represents the SuD. 
+
+### System Functions
+
+- System functions must have at least one output port connected to an output port of the overall SuD or at least one input port connected to an input port of the overall SuD.
+- _Recommendation:_ A system function models behavior, so the name should begin with a verb (e.g., controlWindows)
+
+### System Function Hierarchies
+
+- There exists exactly one root system function, the SuD
+
+### White-Box Functions
+
+- Each functional white-box model must be related to exactly one system function.
+- Each system function must be related to at most one functional white-box model.
+- The interface of a system function (i.e., inputs and outputs) must be reflected in its related functional white-box model, i.e., each input and output port of the system function must also be a _free_ input or output port in the functional white-box model (i.e., a port without any flow property). 
+- Each white-box function must be related to at most one logical component that implements this white-box function.
+
+### Mode Model
+
+- There is at most one mode model per system.
+- Each value that can be sent over a mode channel (i.e., a channel between system functions in the functional black-box model) must have a corresponding state in the mode model.
+- Transitions in the mode model do not have any guards or actions as they simply define potential sequences of modes.
+- A mode model has an initial state but no final state. 
+
+
