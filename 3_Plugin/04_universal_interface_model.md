@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Modeling Interfaces
-nav_order: 3
+nav_order: 4
 parent: SpesML Plugin
 permalink: /plugin/universal_interface_model.html
 ---

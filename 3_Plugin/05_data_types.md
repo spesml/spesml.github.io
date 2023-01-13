@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Data Types
-nav_order: 4
+nav_order: 5
 parent: SpesML Plugin
 permalink: /plugin/data_types.html
 ---

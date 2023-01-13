@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Functional Viewpoint
-nav_order: 6
+nav_order: 7
 parent: SpesML Plugin
 permalink: /plugin/functional_viewpoint.html
 ---

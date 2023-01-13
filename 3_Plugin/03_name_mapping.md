@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SPES Concept Mapping To SysML
-nav_order: 2
+nav_order: 3
 parent: SpesML Plugin
 permalink: /plugin/spes_sysml_mapping.html
 ---

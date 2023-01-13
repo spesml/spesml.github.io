@@ -46,6 +46,3 @@ The *SpesML Plugin* provides a fully integrated help. There are two ways to acce
 2. Open the *Specification* of any SpesML model element or SpesML diagram and click on *Help* to access an element/diagram specific help page
 
 ![SpesML Integrated Help](/images/overview/Help.png){:class="img-responsive"}
-
-## Running Example: Window Lifter System
-TODO

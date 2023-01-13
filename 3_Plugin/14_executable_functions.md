@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Executable Functions
-nav_order: 13
+nav_order: 14
 parent: SpesML Plugin
 permalink: /plugin/executable_functions.html
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Granularity Layer Transitions
-nav_order: 11
+nav_order: 12
 parent: SpesML Plugin
 permalink: /plugin/granularity_transitions.html
 ---
