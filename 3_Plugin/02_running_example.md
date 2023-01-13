@@ -59,7 +59,7 @@ Finally, if the car is closed and locked, all windows are automatically closed a
 
 
 
-# Requirements of the Window Lifter System
+## Requirements of the Window Lifter System
 
 For the modeling process we needed to have specific requirements that can be used in the requirement view and can be traced to elements of the other views.
 The following table shows our selection, which is based on the previous given description of our window lifter system. 
