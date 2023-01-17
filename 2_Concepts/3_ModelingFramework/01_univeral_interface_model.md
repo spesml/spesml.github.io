@@ -63,7 +63,7 @@ A system element and its syntactic interface.
 
 
 ### Semantic Interfaces
-The _semantic interface_ (or interface behavior) of a system element with the syntactic interface $I \blacktriangleright O$ is given by a function mapping an input communication history to a set of output communication histories $F.
+The _semantic interface_ (or interface behavior) of a system element with the syntactic interface $I \blacktriangleright O$ is given by a function mapping an input communication history to a set of output communication histories $F$.
 Intuitively, a communication history is a mapping from channels to the sequences of messages that are exchanged over this channel. We use the notation $\overrightarrow{C}$ to denote the communication histories for a channel set $C$.
 \overrightarrow{I}\rightarrow \wp (\overrightarrow{O})$. 
 For each possible input $x \in \overrightarrow{I}$ on the channels contained in $I$, the function specifies all possible outputs $F(x)$ for the input. Thus, the function $F$ represents
