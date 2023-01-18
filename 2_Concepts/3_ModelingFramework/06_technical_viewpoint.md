@@ -10,22 +10,22 @@ permalink: /concepts/modeling_framework/technical_viewpoint.html
 
 *Content:*
 - [Technical Viewpoint](#technical-viewpoint)
-  - [General Concept of the Technical Viewpoint](#general-concept-of-the-technical-viewpoint)
-  - [Technical Viewpoint Models on the System Layer](#technical-viewpoint-models-on-the-system-layer)
-    - [Elements and Structure of the Technical Viewpoint](#elements-and-structure-of-the-technical-viewpoint)
-    - [Assumptions for the Technical Viewpoint and its Tracing Relations](#assumptions-for-the-technical-viewpoint-and-its-tracing-relations)
-    - [Redundancy in the Technical Viewpoint](#redundancy-in-the-technical-viewpoint)
-  - [Technical Viewpoint Models of the Software Execution Subsystem](#technical-viewpoint-models-of-the-software-execution-subsystem)
+  - [General Concept](#general-concept)
+  - [Models on the System Layer](#models-on-the-system-layer)
+    - [Elements and Structure](#elements-and-structure)
+    - [Assumptions and Tracing Relations](#assumptions-and-tracing-relations)
+    - [Redundancy](#redundancy)
+  - [Models of the Software Execution Subsystem](#models-of-the-software-execution-subsystem)
     - [Run-time Software Models](#run-time-software-models)
     - [Design-time Software Models](#design-time-software-models)
     - [Execution Platform Models](#execution-platform-models)
     - [Allocation Models](#allocation-models)
-  - [Well-Formedness Rules specific for the Technical Viewpoint](#well-formedness-rules-specific-for-the-technical-viewpoint)
+  - [Specific Well-Formedness Rules](#specific-well-formedness-rules)
 
 
-## General Concept of the Technical Viewpoint
+## General Concept
 
-The technical viewpoint and its instance, the technical view, are mostly concerned with the question of how to get from the platform independent models of logical viewpoint (logical components) to platform-specific models (technical components). In the following, we describe all models of the technical viewpoint including the software execution subsystem. 
+The technical viewpoint and its instances, the technical views, are mostly concerned with the question of how to get from the platform independent models of [logical viewpoint](/concepts/modeling_framework/logical_viewpoint.html) (logical components) to platform-specific models (technical components). In the following, we describe all models of the technical viewpoint including the software execution subsystem. 
 
 In general, we see generic technical models on the first granularity layer (the overall system), which can then be refined to more specialized models on the next granularity layer(s). An example for such a refinement/specialization is the software execution subsystem. This is why we divide this chapter of the technical viewpoint into two parts. First, we present the [more generic models of the technical viewpoint on system layer](#technical-viewpoint-models-on-the-system-layer) and afterwards, the [models of the software execution subsystem on a lower layer of granularity](#technical-viewpoint-models-of-the-software-execution-subsystem).
 
@@ -36,7 +36,7 @@ The presented approach targets various scenarios that may emerge in systems engi
 
 We also envision combinations of these. The proposed approach enables that.
 
-The modeled behavior in a [logical view](/concepts/modeling_framework/logical_viewpoint.html) can be seen as requirement for the behavior of the corresponding technical view. In this project, we do not provide further behavior models for technical views and do not verify in technical views the modeled behavior of the logical views. However, we provide all the input for such behavior modeling and verification through our technical viewpoint concepts like tracing logical components to technical components and tasks, the task architecture in general, the platform architecture, their interfaces, and the deployment of tasks to execution components. More on this in the next sections. In addition, the technical viewpoint does not consider the [universal interface model (UIM)](/concepts/modeling_framework/uim.html), except its syntactical interface. The UIM is used within the functional and logical view, where behavior is modeled, but since the technical view does not incorporate behavior models, it is not possible to fully integrate the UIM there.
+In SpesML, we do not provide behavior models for technical views since we are not in a position to fully describe the behavior of all possible technical components in detail. The engineer can fall back to other dedicated techniques if needed. However, we provide the input for such behavior modeling and further development steps like deployment and scheduling analysis through our technical viewpoint concepts like tracing logical components to technical components and tasks, the task architecture in general, the platform architecture, their interfaces, and the deployment of tasks to execution components. In addition, the technical viewpoint does not consider the [universal interface model (UIM)](/concepts/modeling_framework/uim.html), except its syntactical interface.
 
 
 The following sections will cover first the more general technical elements (mainly on the first layer of granularity) and then the software execution subsystem in detail. 
@@ -48,9 +48,9 @@ To understand the relations and possibilities of the technical viewpoint, the fo
 
 
 
-## Technical Viewpoint Models on the System Layer
+## Models on the System Layer
 
-### Elements and Structure of the Technical Viewpoint
+### Elements and Structure
 
 **Components.** On the system granularity layer, the technical architecture of the system is described using components. These components represent the system either in a generic way or more specific using models of the respective technical engineering disciplines. The generic component is called _technical component_ and can be used for everything in any discipline. If the content of a component can be assigned completely to one specific discipline, a more specific component type can be chosen to represent this. Referring to this, available disciplines are mechanical engineering with the _mechanical component_, electrical engineering with the _electronic component_, the combination of them with the _mechatronic component_ and the pure software engineering with the _software execution subsystem_. The software execution subsystem is a container element for all the models/elements of the software execution subsystem, which is explained in the [related section](#technical-viewpoint-models-of-the-software-execution-subsystem).
 
@@ -63,7 +63,7 @@ To understand the relations and possibilities of the technical viewpoint, the fo
 **Design Recommendations.** As the purpose and abstraction of specific engineering disciplines are highly heterogeneous, such models differ accordingly. Whether a component is further refined as an independent subsystem on the next granularity layer depends on the specific development project. We consider the possibility of having multiple components of a certain engineering discipline. As already mentioned, we recommend refining software execution subsystems on the next granularity layer by models representing the software architecture, hardware architecture and their corresponding allocation.
 
 
-### Assumptions for the Technical Viewpoint and its Tracing Relations
+### Assumptions and Tracing Relations
 The relationship between logical and technical architectural components is n:m in general if the technical architecture is designed without the logical architecture in mind. 
 
 Our overall approach is to provide meaningful tracing relationships between the model elements of the views. Therefore, we suggest developing an initial architecture in the technical view that has the same component structure as the logical architecture, which yields a 1:1 tracing relation between logical and technical components on this layer of abstraction. 
@@ -72,7 +72,7 @@ Even when using a 1:1 tracing relation between logical and technical components,
  
 Other relationships are possible, but we strongly encourage to manifest engineering decision in terms of a proper logical systems architecture that enables for a 1:1 relationship.
 
-### Redundancy in the Technical Viewpoint
+### Redundancy
 Applying redundancy (patterns) is necessary in systems engineering for many reasons. Redundancy realized in concrete technical components, however, can be already modeled in the logical view, yielding a 1:1 mapping to technical components. Furthermore, it is also possible that logical components occur multiple times in the technical architecture, meaning to model redundancy in the technical view for the first time. These logical components manifest themselves in a 1:n relation in technical components.
 
 ***
@@ -83,7 +83,7 @@ Applying redundancy (patterns) is necessary in systems engineering for many reas
 
 ***
 
-## Technical Viewpoint Models of the Software Execution Subsystem
+## Models of the Software Execution Subsystem
 When a software execution subsystem is refined on the next granularity layer, a set of models can be used to describe it. This section provides an overview of possible models and their relations. We call it software execution subsystem, because it is a subsystem that not only models the software of the system but also the execution of the software including the hardware that is needed for this. [Figure 3](#figureOverviewSES) shows how we divide the software execution subsystem.
 As part of the software execution subsystem, the execution platform models represent everything that is needed to execute the software of the system. Its main model is the execution platform, which describes a hardware topology of digital subsystems in terms of execution as well as communication resources. Another part of the software subsystem are the software models representing the pure software part of the system. The software models have both dynamic parts, represented by dedicated run-time software models like task architectures, as well as static parts, namely design-time software models, like middlewares and operating systems. Relations between software architecture and execution platform describe potential allocations of software artifacts to hardware computing (execution) resources.
 
@@ -169,9 +169,9 @@ The following table shows the mapping between the previously describe mapping co
 | Task to Partition Component Mapping | Allocation Matrix | SpesML TaskPartition Allocation | TaskPartition Allocation |
 | Partition to Execution Component Mapping | Allocation Matrix | SpesML Partition Allocation | Partition Allocation |
 
-## Well-Formedness Rules specific for the Technical Viewpoint
+## Specific Well-Formedness Rules
 
-The technical viewpoint incorporates all the general well-formedness rules that were introduced for the whole SpesML project/concept due to, for example, the Universal Interface Model (only syntactical-wise for the technical viewpoint). In addition, the following rules were identified specifically for the technical viewpoint, mainly due to its deployment allocations and task tracing:
+The technical viewpoint incorporates all the general well-formedness rules that were introduced for the whole SpesML concept due to, for example, the Universal Interface Model (only syntactical-wise for the technical viewpoint). In addition, the following rules were identified specifically for the technical viewpoint, mainly due to its deployment allocations and task tracing:
 
 - **WFR-T1: Port deployment must be aligned with task to execution component deployment.**
   - Task ports can only be deployed to ports of execution components to which the task as owner of the port is deployed itself. It is not allowed to deploy/allocate ports to ports of other execution components to which the task(s) have no deployment/allocation connection.
