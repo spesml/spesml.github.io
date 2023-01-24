@@ -42,7 +42,7 @@ If the switch is not pushed or pulled anymore, it returns in its neutral positio
 The exact same behavior is performed for every incoming window lifter control stimulus, which does not always need to be the direct stimuli from its own button but can be a global window movement command or a command from the global driver switches. This results in the situation that the driver can control with three switches in the driver door the other three windows besides the own driver window with the fourth switch.
 
 ### Safety Functionality
-As jam protection, the window motor will not only stop when the window's end positions are reached, but also at any time when an obstacle is detected in the way of the current window movement. In addition, the respective window will immediately reverse its movement and open completely in the latter case of an detected obstacle to enable a possible release of such an obstacle. 
+As jam protection, the window motor will not only stop when the window's end positions are reached, but also at any time when an obstacle is detected in the way of the current window movement. In addition, the respective window will immediately reverse its movement and open completely in the latter case of a detected obstacle to enable a possible release of such an obstacle. 
 
 Passengers should not be allowed to control the windows in a way that disturbs the driver, which is why the global movement commands by the driver switches will always override any other switch stimuli.
 
@@ -53,7 +53,7 @@ The window motors need a certain voltage to ensure a safe and complete opening o
 ### Comfort Functionality
 As first comfort feature, it is not needed to hold the switch permanently in an active position for a corresponding window movement. As soon as the switch is pushed or pulled for at least 0.5 seconds, the window will continue with the current movement until it reaches its end position or any other obstacle, even if the switch is released. If the switch is pushed or pulled again during this time after the first release, the automatic mode is stopped.
 
-The second comfort feature is that all windows are automatically closed, if possible, as soon as the car enters a tunnel. This is detected by a rapid brightness change via the brightness sensor. 
+The second comfort feature is that all windows are automatically closed as soon as the car enters a tunnel and if nothing else prevents or overrides it. This is detected by a rapid brightness change via the brightness sensor. 
 
 Finally, if the car is closed and locked, all windows are automatically closed as well, if possible. This is not only a comfort but also a kind of safety feature.
 
@@ -75,7 +75,7 @@ Furthermore, it is not relevant whether these requirements are perfectly realist
 | WL-5 | The system shall automatically close all windows when a tunnel is entered. |
 | WL-6 | The system shall detect when window movement is blocked. In this case, the closing of the window shall be stopped and the window shall be lowered completely. |
 | WL-7 | The system shall continuously move a window up or down as long as the corresponding button on the operating panel is pushed. |
-| WL-8 | The system shall fully open or close a window, when the corresponding button on the operating panel is pushed continuously for at least 0.5 seconds. |
+| WL-8 | The system shall fully open or close a window when the corresponding button on the operating panel is pushed continuously for at least 0.5 seconds. |
 | WL-9 | The system shall not drive the window motors to raise a window when the window is already fully closed. |
 | WL-10 | The system shall not drive the window motors to lower a window when the window is already fully opened. |
 | WL-11 | The system shall not operate the window motors when the battery voltage of the vehicle is below 10V. |
