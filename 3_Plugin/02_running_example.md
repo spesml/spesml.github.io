@@ -7,12 +7,12 @@ permalink: /plugin/running_example.html/
 ---
 # The Window Lifter System As Running Example
 
-To support concept explanations and the tooling guide for the SpesML project, we have chosen the window lifter system (WLS) as a running example.
+To illustrate SpesML concepts and the tool implementation in the SpesML project, we have chosen the window lifter system (WLS) as a running example.
 The system has the task of handling the opening and closing of the side windows in a car, with which usually everyone had already contact in real life and thus should be able to easily understand the basis aspects. 
 In addition, the system is simple enough to be used as introduction example, but still has several possibilities to extend it to show all important concepts and features of SpesML. 
-The general functionality of this example is based on ["Das Türsteuergerät. Eine Beispielspezifikation" by Houdek and Paech](https://wwwbroy.in.tum.de/lehre/vorlesungen/ase/ss05/iese-002_02.pdf), which we filtered and adapted to have a perfectly fitting running example.
+The general functionality of this example is based on the description of a fictitious WLS by Houdek and Peach [^1], which we filtered and adapted to have a perfectly fitting running example.
 
-The following sections will introduce our running example of a window lifter system by first describing which elements it consists of, then explaining the functionality of the system, and finally presenting the requirements that we used to develop the example model. 
+The following sections will introduce our running example of a window lifter system by first describing the elements it consists of, then explaining the functionality of the system, and finally presenting the requirements that we used to develop the example model. 
 
 
 
@@ -79,3 +79,6 @@ Furthermore, it is not relevant whether these requirements are perfectly realist
 | WL-9 | The system shall not drive the window motors to raise a window when the window is already fully closed. |
 | WL-10 | The system shall not drive the window motors to lower a window when the window is already fully opened. |
 | WL-11 | The system shall not operate the window motors when the battery voltage of the vehicle is below 10V. |
+
+
+[^1]: Reference report by Houdek and Paech: ["Das Türsteuergerät. Eine Beispielspezifikation"](https://wwwbroy.in.tum.de/lehre/vorlesungen/ase/ss05/iese-002_02.pdf)
