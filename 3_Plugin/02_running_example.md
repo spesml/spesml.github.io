@@ -12,59 +12,60 @@ The system has the task of handling the opening and closing of the side windows 
 In addition, the system is simple enough to be used as introduction example, but still has several possibilities to extend it to show all important concepts and features of SpesML. 
 The general functionality of this example is based on the description of a fictitious WLS by Houdek and Peach [^1], which we filtered and adapted to have a perfectly fitting running example.
 
-The following sections will introduce our running example of a window lifter system by first describing the elements it consists of, then explaining the functionality of the system, and finally presenting the requirements that we used to develop the example model. 
+We have only selected the system specifications that are most useful for the demonstration purpose, which means that the following system description is not complete regarding an actual window lifter system.
+Furthermore, it is not relevant whether our example system is perfectly realistic, because it should only demonstrate how specific SpesML concepts and the SpesML plugin can and should be used.
+
+The following sections will introduce our running example of a window lifter system by first describing the elements it consists of, then explaining the functionality of the system, and finally presenting the resulting requirements that we used to develop the example model. 
 
 
 
-## Context and Technical Elements of the Window Lifter System
+## Hardware Setup
 
-Our basic example system consists of a standard car with four side doors, where each door has a window that can be opened and closed.
-The vertical movement of these four windows is achieved with four motors, one for each window/door.
-A passenger can control the window movement via switches that are integrated into the armrests of the doors.
-The two rear doors and the front passenger door have exactly one window lifter switch each. The driver door has four window lifter switches to enable a global control possibility (one for each controllable window) and further three switches for the child-proof lock (one for each other passenger window).
+Our system consists of a standard car with four side doors, where each door has a window that can be opened and closed.
+The vertical movement of these four windows is achieved by four electric motors, one for each window/door.
+The movement of the windows can be controlled via switches that are integrated into the armrests of the doors.
+The two rear doors and the front passenger door have exactly one window lifter switch each. The driver door has four window lifter switches to enable a global control possibility, one for each window, and further three switches for the child-proof lock, one for each other passenger window.
 
-A central brightness sensor exists in the car that provides the current brightness of the environment.
-Every door has an own ECU that is connected to the respective window lifter motor to control the motor and receive the motor's feedback. In addition, a central ECU exists that is connected to all of the four door ECUs and is responsible for all the tasks that can be decided and performed centrally for all the doors and their windows. 
-Regarding connection type, the central ECU is connected to the central brightness sensor and all other input providing devices via Ethernet, except for the other four ECUs, because all ECUs are connected among each other via a CAN bus. The four door ECUs are connected with their respective window motor via USB.
+A brightness sensor exists in the car that provides the current brightness of the environment.
+Every door has an own control unit, e.g., an ECU, that is connected to the respective window lifter motor to control the motor and receive the motor's feedback. In addition, a central control unit exists that is connected to all of the four door control units and is responsible for all the tasks that can be decided and performed centrally for all the doors and their windows. 
+The central control unit is connected to the brightness sensor and all other input devices via Ethernet, except for the other four control units, because all control units are connected among each other via a bus system, e.g. a CAN bus. The four door control units are connected with their respective window motor via USB.
 
-Whether a window has reached one of its end positions, is detected via small feelers at these positions. Whether something blocks the window's further movement in general, is detected via a higher resistance of the respective window lifter motor. To reduce the complexity of the example model, we have decided to model this motor feedback simply as status feedback with four modes: if the window is in its top position, in its bottom position, somewhere in between, or blocked. 
+There are small sensors that detect whether a window has reached one of its end positions. When something is blocking the window movement in general, it is detected by a higher resistance of the respective window lifter motor. To reduce the complexity of the example model, we have decided to model this motor feedback simply as status feedback with four modes: if the window is in its top position, in its bottom position, somewhere in between, or blocked. 
 
 
 
-## Functionality of the Window Lifter System
+## Functionality
 
-The functionality can be best explained by first introducing the basic behavior of the windows and their switches. Afterwards, we describe the safety features that make the basic behavior more secure before we finally show the comfort features that should support the driver and the passengers.
+The functionality can be best explained by first introducing the basic behavior of the windows and their switches. Afterwards, we describe safety features that make the basic behavior more secure before we finally show the comfort features that should support the driver and the passengers.
 
 ### Basic Functionality
-Every door has a switch for its own window. If this switch is pushed downwards, the own window will move down ("opening"), and if it is pulled upwards, the window will move up ("closing").
-If the switch is not pushed or pulled anymore, it returns in its neutral position. The previously described window movements that are aligned with the positioning of the switch will continue as long as the switch is active, i.e., pushed or pulled, and the window is not in its corresponding end position. This means on the other side that the movement will automatically stop in two basic cases. First, the window will stop if the switch is not pushed or pulled anymore, but this can be overridden by a comfort feature, which will be explained later. Second, the window will stop if it is completely opened during a pushed switch or completely closed during a pulled switch, even if the switch is still pushed or pulled. These two basic cases are extended with more stop triggers by some safety features, which will be explained soon.
+Every door has a switch for its own window. If this switch is pushed downwards, the connected window will move down ("opening"), and if the switch is pulled upwards, the window will move up ("closing").
+If the switch is not pushed or pulled anymore, it returns to its neutral position. The described window movements that are aligned with the positioning of the switch will continue as long as the switch is active, i.e., pushed or pulled. The window movement will stop when the switch is released or the window is in its corresponding end position or a safety feature overrides the movement. 
 
-The exact same behavior is performed for every incoming window lifter control stimulus, which does not always need to be the direct stimuli from its own button but can be a global window movement command or a command from the global driver switches. This results in the situation that the driver can control with three switches in the driver door the other three windows besides the own driver window with the fourth switch.
+The driver can control these window movements not only for the driver window but for all windows, which is why the driver door panel has three additional window switches.
 
 ### Safety Functionality
-As jam protection, the window motor will not only stop when the window's end positions are reached, but also at any time when an obstacle is detected in the way of the current window movement. In addition, the respective window will immediately reverse its movement and open completely in the latter case of a detected obstacle to enable a possible release of such an obstacle. 
+As pinch protection, the window motor will immediately stop when an obstacle is detected for the current window movement and then open the window completely. A similar feature could be implemented for crash situations, but since the functionality and the implementation would be so similar to the pinch protection, we have ignored it in this example system for the sake of complexity reduction.
 
-Passengers should not be allowed to control the windows in a way that disturbs the driver, which is why the global movement commands by the driver switches will always override any other switch stimuli.
+Passengers should not be allowed to control the windows in a way that disturbs the driver, which is why the global movement commands by the driver switches can always override any action from other switches.
 
-In case the driver wants to prevent any manipulation of the windows by the other passengers, a child-proof lock can be activated via switches in the driver's door panel. The child-proof lock can be activated for each other passenger window separately. If child-proof lock was activated for a window, all switch inputs by this passenger are ignored until the child-proof lock button is pressed again to deactivate this mode.
+The driver can disable the window control from other passengers by activating a child-proof lock in the driver's door panel. The child-proof lock can be activated for each other passenger window separately. If child-proof lock was activated for a window, all switch inputs by this passenger are disabled until the child-proof lock button is pressed again.
 
-The window motors need a certain voltage to ensure a safe and complete opening or closing process. Therefore, the window motors, and thereby the window movement, will not start if the battery voltage is below 10V.
+The window motors need a certain voltage to ensure a safe and complete opening or closing process. Therefore, the window motors, and thereby the window movement, is automatically disabled if the battery voltage is below a certain threshold, e.g., 10V.
 
 ### Comfort Functionality
-As first comfort feature, it is not needed to hold the switch permanently in an active position for a corresponding window movement. As soon as the switch is pushed or pulled for at least 0.5 seconds, the window will continue with the current movement until it reaches its end position or any other obstacle, even if the switch is released. If the switch is pushed or pulled again during this time after the first release, the automatic mode is stopped.
+As a comfort feature, it is not needed to hold the switch permanently in an active position to trigger a corresponding window movement. As soon as the switch is pushed or pulled for at least 0.5 seconds, the window will continue with the current movement until it reaches its end position or any other obstacle, even if the switch is released. If the switch is pushed or pulled again during this time after the first release, the automatic mode is stopped.
 
-The second comfort feature is that all windows are automatically closed as soon as the car enters a tunnel and if nothing else prevents or overrides it. This is detected by a rapid brightness change via the brightness sensor. 
+As another comfort feature, all windows are automatically closed as soon as the car enters a tunnel and if nothing else prevents or overrides it. This is detected by a rapid brightness change via the brightness sensor. 
 
-Finally, if the car is closed and locked, all windows are automatically closed as well, if possible. This is not only a comfort but also a kind of safety feature.
+Finally, if the car is closed and locked, all windows are automatically closed as well, if possible.
 
 
 
-## Requirements of the Window Lifter System
+## Requirements
 
-For the modeling process we needed to have specific requirements that can be used in the requirement view and can be traced to elements of the other views.
-The following table shows our selection, which is based on the previous given description of our window lifter system. 
-We have only selected the ones that are most useful for the demonstration purpose, which means that the requirement list is not complete.
-Furthermore, it is not relevant whether these requirements are perfectly realistic, because they should only demonstrate how requirements can and should be used in SpesML.
+For the modeling process we needed to have specific requirements that can be used in the requirement view and can be traced to model elements of the other views.
+The following table shows the selection that we have chosen based on the previous system description of our window lifter system. 
 
 | ID | Requirement |
 |---|---|
