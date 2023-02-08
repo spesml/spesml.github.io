@@ -53,7 +53,7 @@ As already mentioned, also the logical viewpoint is based on the concepts of the
 This means, that interfaces of logical components consist of a _syntactical_ and a _semantical_ interface.
 The _syntactical_ interfaces of logical components is modeled using _logical interfaces_ which are represented by `SysML Proxy Ports`. 
 need to be assigned a _logical interface type. This interface type again is defined as a set of channels, represented by `SysML Channels`. This conceptual metamodel for logical interfaces can be seen in Figures 4:
-![Logical Interface Type](/images/logical_viewpoint/logical-datatypes.png){:width="300" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
+![Logical Interface Type](/images/logical_viewpoint/logical-datatypes.png){:width="500" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 4: </b><em>Conceptual Metamodel for syntactical interfaces of logical components.</em></div>
 
 The _semantical_ interface of logical components is modelled by means of state machines that operate based on the component’s input port values and produce the component's output port values.
