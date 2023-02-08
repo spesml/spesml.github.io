@@ -14,13 +14,12 @@ This document describes the basic concepts that will be covered in the _logical 
 *Content:*
 - [Logical Viewpoint](#logical-viewpoint)
   - [Logical Viewpoint: Overview](#logical-viewpoint-overview)
-  - [Logical Components and their relations to other model elements of the Logical Viewpoint](#logical-components-central-model-elements-of-the-logical-viewpoint)
+  - [Logical Components: Central Model Elements of the Logical Viewpoint](#logical-components-central-model-elements-of-the-logical-viewpoint)
   - [Logical Context: The System and its Context in the Logical Viewpoint](#logical-context-the-system-and-its-context-in-the-logical-viewpoint)
   - [Interface behavior of Logical Components](# interface -behavior-of-logical-components)
   - [Decomposition of Logical Components](#decomposition-of-logical-components)
   - [Tracing Relations between Logical Components and other Elements](#tracing-relations-between-logical-components-and-other-elements)
   - [Modeling the Transition to the Technical Viewpoint](#modeling-the-transition-to-the-technical-viewpoint)
-  - [Well-formedness Rules](#well-formedness-rules)
 
 # Logical Viewpoint: Overview
 The logical viewpoint (LVP) describes how the system under development (SuD) can be structured in order to achieve the behavior which is specified in the [functional view](https://spesml.github.io/concepts/modeling_framework/functional_viewpoint.html) independent of the technical realization. 
@@ -95,4 +94,3 @@ Figures 7 and 8 give an example for how to model the transition to the technical
 
 ![Software in the LV](/images/logical_viewpoint/logical-software-diagram.png){:width="800" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 8: </b><em>Logical components which will become software in the technical view are indicated in diagrams with a yellow color.</em></div>
-
