@@ -51,7 +51,8 @@ More information on modeling the system context can be found [in the context doc
 # Interface Behavior of Logical Components
 As already mentioned, also the logical viewpoint is based on the concepts of the [universal interface model](https://spesml.github.io/concepts/modeling_framework/uim.html) and it’s mapping to SysML. 
 This means, that interfaces of logical components consist of a _syntactical_ and a _semantical_ interface.
-need to be assigned a _logical interface type_. This interface type again is defined as a set of _channels_. This conceptual metamodel for logical interfaces can be seen in Figures 4:
+The _syntactical_ interfaces of logical components is modeled using _logical interfaces_ which are represented by `SysML Proxy Ports`. 
+need to be assigned a _logical interface type. This interface type again is defined as a set of channels, represented by `SysML Channels`. This conceptual metamodel for logical interfaces can be seen in Figures 4:
 ![Logical Interface Type](/images/logical_viewpoint/logical-datatypes.png){:width="300" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 4: </b><em>Conceptual Metamodel for syntactical interfaces of logical components.</em></div>
 
@@ -94,3 +95,4 @@ Figures 7 and 8 give an example for how to model the transition to the technical
 
 ![Software in the LV](/images/logical_viewpoint/logical-software-diagram.png){:width="800" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
 <div align="center"><b>Figure 8: </b><em>Logical components which will become software in the technical view are indicated in diagrams with a yellow color.</em></div>
+
