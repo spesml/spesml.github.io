@@ -52,24 +52,24 @@ More information on modeling the system context can be found [in the context doc
 As already mentioned, also the logical viewpoint is based on the concepts of the [universal interface model](https://spesml.github.io/concepts/modeling_framework/uim.html) and it’s mapping to SysML. 
 This means, that interfaces of logical components consist of a _syntactical_ and a _semantical_ interface.
 The _syntactical_ interfaces of logical components is modeled using _logical interfaces_ which are represented by `SysML Proxy Ports`. 
-need to be assigned a _logical interface type. This interface type again is defined as a set of channels, represented by `SysML Channels`. This conceptual metamodel for logical interfaces can be seen in Figures 4:
+need to be assigned a _logical interface type. This interface type again is defined as a set of channels, represented by `SysML Channels`. This conceptual metamodel for logical interfaces can be seen in Figures 3:
 ![Logical Interface Type](/images/logical_viewpoint/logical-datatypes.png){:width="500" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 4: </b><em>Conceptual Metamodel for syntactical interfaces of logical components.</em></div>
+<div align="center"><b>Figure 3: </b><em>Conceptual Metamodel for syntactical interfaces of logical components.</em></div>
 
 The _semantical_ interface of logical components is modelled by means of state machines that operate based on the component’s input port values and produce the component's output port values.
 Hereby, the guards and actions can not only contain comparison and assignment operations, but also use [executable functions](https://spesml.github.io/concepts/modeling_framework/executable_functions.html).
 More information on SpesML [state machines](https://spesml.github.io/concepts/modeling_framework/state_machines.html) can be found in the respective documentation article. 
-Figure 5 gives an example in the SpesML tool:
+Figure 4 gives an example in the SpesML tool:
 
 ![State Machine](/images/logical_viewpoint/state-machine.png){:width="1000" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 5: </b><em>An example for a SpesML state machine.</em></div>
+<div align="center"><b>Figure 4: </b><em>An example for a SpesML state machine.</em></div>
 
 # Decomposition of Logical Components
 To structure the logical system architecture and to reduce complexity, all logical components can be decomposed into sub-components. This means that the behavior of a decomposed component results from the the composed behavior of the sub-components. 
-In the SpesML SysML-profile and plugin, decomposition is modeled by means of dedicated `SysML Internal Block Diagrams (IBDs)` in which `SysML Parts` are instantiated and connected for the subcomponents as can be seen in Figure 6:
+In the SpesML SysML-profile and plugin, decomposition is modeled by means of dedicated `SysML Internal Block Diagrams (IBDs)` in which `SysML Parts` are instantiated and connected for the subcomponents as can be seen in Figure 5:
 
 ![Composition](/images/logical_viewpoint/decomposition.png){:width="1000" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 6: </b><em>Decomposition of a logical component into sub-components.</em></div>
+<div align="center"><b>Figure 5: </b><em>Decomposition of a logical component into sub-components.</em></div>
 
 Decomposition of logical components also involves the syntactic and semantic interface of components and sub-components: 
 Here, all inputs of the component need to be connected to an input of a sub-component and all outputs of a component need to be connected to an output of a subcomponent. 
@@ -88,11 +88,11 @@ The logical view can also explicitly model certain aspects of the transition fro
 In particular the identification of sub-systems in the technical view can be modelled here, by decomposing logical components into different sub-components. Hereby, these logical sub-components can be annotated with the engineering discipline to which they relate in the technical view using a dedicated property. The possible values which are foreseen in SpesML are *Software*, *Mechanical*, *Electronic* and *Mechatronic*, but in general also other disciplines which are distinguished in the technical view would be feasible. 
 In case this distinct mapping to a single engineering discipline is not possible for a logical component or sub-component, a clear tracing to a technical component of a single engineering discipline would not be possible, either. In all such cases, the SpesML methodology strongly suggests to decompose or regroup the logical architecture such that a clear assignment to engineering disciplines and a clear tracing to the respective technical components is made possible.
  
-Figures 7 and 8 give an example for how to model the transition to the technical view for software aspects:
+Figures 6 and 7 give an example for how to model the transition to the technical view for software aspects:
 
 ![Specifying Software in the LV](/images/logical_viewpoint/specify_logical_software.png){:width="400" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 7: </b><em>To model the transition from logical to technical viewpoint, logical components can be declared to become software in the technical view.</em></div>
+<div align="center"><b>Figure 6: </b><em>To model the transition from logical to technical viewpoint, logical components can be declared to become software in the technical view.</em></div>
 
 ![Software in the LV](/images/logical_viewpoint/logical-software-diagram.png){:width="800" :class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 8: </b><em>Logical components which will become software in the technical view are indicated in diagrams with a yellow color.</em></div>
+<div align="center"><b>Figure 7: </b><em>Logical components which will become software in the technical view are indicated in diagrams with a yellow color.</em></div>
 
