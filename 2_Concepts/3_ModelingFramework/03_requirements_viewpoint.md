@@ -12,7 +12,7 @@ Requirements are an over-arching topic for SPES architectural models. Requiremen
 
 In this documentation section, we first describe the general approach to the handling of requirements in SpesML, and then describe the modeling elements - first requirements, then tracing relations - used to represent this approach in SpesML modeling. Finally, we give some methodological advice on requirements modeling in SpesML.
 
-## General Approach
+## General Concept
 
 It is common to differentiate requirements according on the aspects they address. In SpesML we roughly distinguish between:
 
@@ -23,7 +23,7 @@ It is common to differentiate requirements according on the aspects they address
 
 As detailed in the next section, some of these categories can be further refined - for instance, there are different kinds of constraints, depending on whether it is a physical entity to be constrained (e.g., its weight), architectural design decisions (e.g., notational conventions), or the development process (e.g., the need to for certain analyses or tests). 
 
-In contrast with the elements of the functional, logical or technical viewpoints, requirements as such are not given a formal semantics. in SpesML. One reason is that for most categories, the Universal Interface Model - on which the formalization of the other viewpoints is based - is not a suitable mathematical basis. The second reason is that even for functional requirements, where such a formalization is intuitively possible, formalized requirements have little use in SpesML. Instead, the black-box functions of the functional viewpoint can be seen as formalized behavior descriptions of a group of related functional requirements. In practice, this gives a better understanding of the intended functionality than isolated partial behavior specifications. 
+In contrast with the elements of the functional, logical or technical viewpoints, requirements as such are not given a formal semantics. in SpesML. One reason is that for most categories, the Universal Interface Model - on which the formalization of the other viewpoints is based - is not a suitable mathematical basis. The second reason is that even for functional requirements, where such a formalization is intuitively possible, formalized requirements have little use in SpesML. Instead, the system functions of the functional viewpoint can be seen as formalized behavior descriptions of a group of related functional requirements. In practice, this gives a better understanding of the intended functionality than isolated partial behavior specifications. 
 
 Requirements are connected to architectural elements or to other requirements through various tracing relations, again addressing different aspects, for instance, whether an architectural element is intended to *satisfy* a requirement or whether a requirement is *derived* from another requirement.
 
@@ -89,12 +89,12 @@ While requirements are essentially just textual objects (stored in the requireme
 
 Clearly, the more formal the representation, the higher the potential for automated consistency and correctness checks. While within the SpesML project there are no plans to deeply integrate such checks, they are an obvious extension point for further work.
 
-## Tracing Relationships
+## Tracing
 
 Requirements are not isolated model elements, but are typically related to other requirements and other model elements through tracing relationships. The following table lists the tracing relationships used in SpesML. The right-most column ("Tracing") shows the model elements connected by the requirement ("source/destination"): 
 
 * *Req*: Requirements
-* *Arch*: Main architectural elements of the viewpoints, i.e., functions in the functional viewpoint or components in the logical or technical viewpoints.
+* *Arch*: Main architectural elements of the views, i.e., functions in the functional view or components in the logical or technical views.
 * *Any*: Either requirements or main architectural elements. 
 
 | Relationship | Description                                                  | Tracing  |
@@ -161,7 +161,7 @@ The *Verify-*relationship is the main relationship to demonstrate fulfillment of
 
 In summary, the assertion that 
 
-1. a component (or a system or white-box function of the functional viewpoint) satisfies a requirement *R*, and that 
+1. a component (or a system or white-box function of the functional view) satisfies a requirement *R*, and that 
 2. this fact is demonstrated through a test setup
 
 is modeled with *Verify* and *Satisfy* links as shown in this figure:
