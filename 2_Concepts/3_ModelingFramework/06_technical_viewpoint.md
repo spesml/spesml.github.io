@@ -111,8 +111,8 @@ The following table shows the mapping between the previously describe concepts (
 
 | Concept | SysML Construct | Stereotype / Name in SpesML plugin (MagicDraw) | Shown Name (GUI) in SpesML plugin (MagicDraw)|
 | ------ | ------ | ------ | ------ |
-| Container for software elements (software element architecture) | Definition: Block, Instance: Part | [SpesML Software Element Architecture](/plugin/technical_viewpoint.html#task-architecture) | Software Element Architecture |
-| Software Element | Definition: Block, Instance: Part | [SpesML Software Element](/plugin/technical_viewpoint.html#task) | Software Element |
+| Container for software elements (software element architecture) | Definition: Block, Instance: Part | [SpesML Software Element Architecture](/plugin/technical_viewpoint.html#software-element-architecture) | Software Element Architecture |
+| Software Element | Definition: Block, Instance: Part | [SpesML Software Element](/plugin/technical_viewpoint.html#software-element) | Software Element |
 | Software Element Message/Interface | Proxy Port | [SpesML Technical Interface](/plugin/technical_viewpoint.html#technical-interface) | Technical Interface |
 | Channel | Flow Property | [SpesML Channel](/plugin/technical_viewpoint.html#channel)<sup>1</sup> | Channel<sup>1</sup> |
 
