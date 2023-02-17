@@ -139,7 +139,7 @@ A Software Element Architecture is a container element for [Software Elements](#
 A Software Element Architecture can be further specified by adding a [Technical Internal Component Diagram](#technical-internal-component-diagram) to it. With such an owner it is possible to place [Software Elements](#software-element) in this diagram. 
 A Software Element Architecture does NOT provide any syntactic interface via e.g., [Technical Interfaces](#technical-interface). It is only used as a virtual container for all the [Software Elements](#software-element) and does not need to have any connection with other (physical) elements.
 
-### ![Software Element](/images/technical_viewpoint/TaskComponent.png){:class="img-responsive"}Software Element
+### ![Software Element](/images/technical_viewpoint/TaskComponent.png){:class="img-responsive"} Software Element
 This element is based on a *SysML Block* with a dedicated stereotype that allows defining where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
 A Software Element is a specific (atomic) component representing a single software element that was mapped from the [logical view](/plugin/logical_viewpoint.html) and should be executed on an execution unit represented by an [Execution Element](#execution-element).
 A Software Element cannot be further specified by adding a diagram to it. It is an atomic unit on which software-related Logical Components of the [logical viewpoint](/plugin/logical_viewpoint.html) can be mapped, and which itself can then be mapped on [Execution Elements](#execution-element) to realize the final (software) deployment with such an allocation.
@@ -147,7 +147,7 @@ A Software Element can provide a syntactic interface via [Technical Interfaces](
 
 
 
-### ![Technical Interface](/images/technical_viewpoint/TechnicalInterface.png){:class="img-responsive"}Technical Interface
+### ![Technical Interface](/images/technical_viewpoint/TechnicalInterface.png){:class="img-responsive"} Technical Interface
 This element is based on a *SysML Proxy Port* with a dedicated stereotype that allows defining where the element can be placed and other specifications.
 A Technical Interface is used to connect different technical elements/components generically. 
 It can be specified further by using [Technical Interface Types](#technical-interface-type) and [Channels](#channel) to model the connection between the elements and even actual information flows (via the channels).
