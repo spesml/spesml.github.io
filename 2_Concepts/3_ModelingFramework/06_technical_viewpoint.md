@@ -163,15 +163,13 @@ Furthermore, we are supporting the allocation of software element ports to execu
 
 When integrating design-time software models, e.g., software partitions, it is important to note that this consequently has an effect on the allocation models as well, as models from the run-time software, e.g., software elements, can conceptually be allocated to models of the design-time software, e.g., software partitions, which in turn will be allocated to execution platform models. This means there are _software element to partition component mappings_ and _partition to execution element mappings_.
 
-The following table shows the mapping between the previously describe mapping concepts and the SysML construct we used to realize it in SpesML (together with the names in the MagicDraw tool).  
+The following table shows the mapping between the previously describe mapping concepts and the SysML construct we used to realize it in SpesML (together with the names in the MagicDraw tool). Be aware that for these realized matrices in MagicDraw the term "task" was used instead of "software element". This was only done because of implementation issues, but we still mean with "task" the concept of "software elements". 
 
 | Concept | SysML Element | Stereotype / Name in SpesML plugin (MagicDraw) | Shown Name (GUI) in SpesML plugin (MagicDraw)|
 | ------ | ------ | ------ | ------ |
-| Task Instance to Execution Element Instance Mapping | Allocation Matrix | [SpesML TaskInstanceToExecution Allocation Matrix](/plugin/technical_viewpoint.html#taskinstancetoexecution-allocation-matrix) | TaskInstanceToExecution Allocation Matrix |
-| Task Type to Execution Element Type Mapping | Allocation Matrix | [SpesML TaskTypeToExecution Allocation Matrix](/plugin/technical_viewpoint.html#tasktypetoexecution-allocation-matrix) | TaskTypeToExecution Allocation Matrix |
-| Task Port to Execution Element Port Mapping | Allocation Matrix | [SpesML PortToExecution Allocation Matrix](/plugin/technical_viewpoint.html#porttoexecution-allocation-matrix) | PortToExecution Allocation Matrix |
-| Task to Partition Component Mapping | Allocation Matrix | SpesML TaskPartition Allocation | TaskPartition Allocation |
-| Partition to Execution Element Mapping | Allocation Matrix | SpesML Partition Allocation | Partition Allocation |
+| Software Element Instance to Execution Element Instance Mapping | Allocation Matrix | [SpesML TaskInstanceToExecution Allocation Matrix](/plugin/technical_viewpoint.html#spesml-taskinstancetoexecution-allocation-matrix) | SpesML TaskInstanceToExecution Allocation Matrix |
+| Software Element Type to Execution Element Type Mapping | Allocation Matrix | [SpesML TaskTypeToExecution Allocation Matrix](/plugin/technical_viewpoint.html#spesml-tasktypetoexecution-allocation-matrix) | SpesML TaskTypeToExecution Allocation Matrix |
+| Software Element Port to Execution Element Port Mapping | Allocation Matrix | [SpesML PortToExecution Allocation Matrix](/plugin/technical_viewpoint.html#spesml-porttoexecution-allocation-matrix) | SpesML PortToExecution Allocation Matrix |
 
 ## Specific Well-Formedness Rules
 
