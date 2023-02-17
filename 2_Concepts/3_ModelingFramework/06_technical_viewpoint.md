@@ -50,7 +50,7 @@ The following sections will cover first the more general technical components, m
  
 <a name="figureOverview"></a>
 ![Overview](/images/technical_viewpoint/TVP_Element_Overview_Concept.png){:class="img-responsive" style="display:block; margin-left:auto; margin-right:auto"}
-<div align="center"><b>Figure 1: </b><em>Overview over all elements of our technical viewpoint concept.</em></div>
+<div align="center"><b>Figure 1: </b><em>Overview over the SpesML technical viewpoint concept.</em></div>
 
 
 
