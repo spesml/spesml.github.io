@@ -53,7 +53,7 @@ Regarding the deployment, it is possible to create allocation matrices for a [So
 
 
 ## How to model
-TODO: Should be done if the technical viewpoint is completely realized in the plugin (and in a final state).
+**TODO:** Should be done if the technical viewpoint is completely realized in the plugin (and in a final state).
 
 
 
