@@ -8,11 +8,11 @@ permalink: /plugin/technical_viewpoint.html
 # ![Technical Viewpoint](/images/technical_viewpoint/TechnicalViewpoint.png){:height="30px" width="30px"}{:class="img-responsive"}SpesML Plugin - Technical Viewpoint
 
 ## Overview
-The technical view, as instance of the technical viewpoint, is the last step on the way to platform-specific models. Here, technical elements represent the system finally for specific platforms while logical components of platform-independent models of the [logical view](/plugin/logical_viewpoint.html) can be mapped to software elements deployed on execution units of these specific platforms. This is needed to be able to generate code out of the models and enable further system engineering activities including software element ("task") optimization/scheduling.
+The technical view, as an instance of the technical viewpoint, is the last step on the way to platform-specific models. Here, technical elements finally represent the system for specific platforms while logical components of platform-independent models of the [logical view](/plugin/logical_viewpoint.html) can be mapped to software elements deployed on execution units of these specific platforms. This is needed to generate code out of the models and enable further system engineering activities including software element ("task") optimization and scheduling.
 
 For a better understanding of the concept of the technical viewpoint, please have a look at the respective [theoretical concept documentation](/concepts/modeling_framework/technical_viewpoint.html). 
-The [specific well-formedness rules for the technical viewpoint](/concepts/modeling_framework/technical_viewpoint.html#well-formedness-rules-specific-for-the-technical-viewpoint) are integrated into the SpesML plugin via MagicDraw Validation Rules, like all other well-formedness rules within the SpesML project.
-In the following, we will explain the realization/implementation of the technical viewpoint within our SpesML plugin.
+The [specific well-formedness rules for the technical viewpoint](/concepts/modeling_framework/technical_viewpoint.html#well-formedness-rules-specific-for-the-technical-viewpoint) are integrated into the SpesML plugin via MagicDraw Validation Rules, like all other well-formedness rules within the SpesML project, and will not be elaborated further in this section.
+In the following, we will explain the implementation of the technical viewpoint within our SpesML plugin.
 
 ## Method
 Within the technical view it is possible to models technical architectures. Technical architectures can be composed of various component types to represent the technical specifications of a system (see the concept in [Figure 1](#figureConcept)). Logical components of the [logical view](/plugin/logical_viewpoint.html) can then be mapped onto these technical components. A technical architecture can not only represent mechanical, electrical/electronic, or mechatronic elements (or any generic technical element) but also a software execution subsystem. A software execution subsystem is a model of the pure software part of the system including its execution elements. It contains a software element architecture with software elements onto which the software-relevant logical components of the [logical view](/plugin/logical_viewpoint.html) are mapped. Furthermore, it contains an execution platform consisting of execution units like ECUs and communication elements like buses. An allocation of software elements to execution units realizes the deployment.
@@ -59,7 +59,7 @@ Regarding the deployment, it is possible to create allocation matrices for a [So
 
 
 ## Elements
-### ![Technical View](/images/technical_viewpoint/TechnicalViewpoint.png){:class="img-responsive"}Technical View
+### ![Technical View](/images/technical_viewpoint/TechnicalViewpoint.png){:class="img-responsive"}<span style="color:white">///</span>Technical View
 This element is a *UML/SysML Package* with a dedicated stereotype that allows defining an adequate SpesML model structure and guides users by restricting what elements and diagrams can be created below this package for the [technical view](/plugin/technical_viewpoint.html). This package usually contains only further packages to separate different purpose categories within the technical view. In addition, it is already possible to create a [Technical Context](#technical-context) as a starting point.
 
 ### ![Technical Tracing Package](/images/technical_viewpoint/TechnicalTracingPackage.png){:class="img-responsive"}Technical Tracing Package
@@ -139,7 +139,7 @@ A Software Element Architecture is a container element for [Software Elements](#
 A Software Element Architecture can be further specified by adding a [Technical Internal Component Diagram](#technical-internal-component-diagram) to it. With such an owner it is possible to place [Software Elements](#software-element) in this diagram. 
 A Software Element Architecture does NOT provide any syntactic interface via e.g., [Technical Interfaces](#technical-interface). It is only used as a virtual container for all the [Software Elements](#software-element) and does not need to have any connection with other (physical) elements.
 
-### ![Software Element](/images/technical_viewpoint/TaskComponent.png){:class="img-responsive"} Software Element
+### ![Software Element](/images/technical_viewpoint/TaskComponent.png){:class="img-responsive"}Software Element
 This element is based on a *SysML Block* with a dedicated stereotype that allows defining where the element can be placed and other specifications. In addition, it restricts that only certain sub-elements can be created below it.
 A Software Element is a specific (atomic) component representing a single software element that was mapped from the [logical view](/plugin/logical_viewpoint.html) and should be executed on an execution unit represented by an [Execution Element](#execution-element).
 A Software Element cannot be further specified by adding a diagram to it. It is an atomic unit on which software-related Logical Components of the [logical viewpoint](/plugin/logical_viewpoint.html) can be mapped, and which itself can then be mapped on [Execution Elements](#execution-element) to realize the final (software) deployment with such an allocation.
@@ -147,7 +147,7 @@ A Software Element can provide a syntactic interface via [Technical Interfaces](
 
 
 
-### ![Technical Interface](/images/technical_viewpoint/TechnicalInterface.png){:class="img-responsive"} Technical Interface
+### ![Technical Interface](/images/technical_viewpoint/TechnicalInterface.png){:class="img-responsive"}Technical Interface
 This element is based on a *SysML Proxy Port* with a dedicated stereotype that allows defining where the element can be placed and other specifications.
 A Technical Interface is used to connect different technical elements/components generically. 
 It can be specified further by using [Technical Interface Types](#technical-interface-type) and [Channels](#channel) to model the connection between the elements and even actual information flows (via the channels).
