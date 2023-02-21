@@ -126,17 +126,17 @@ Design-time software models are usually modeled as black-box models that describ
 
 ### Execution Platform Models
 
-The _execution platform_ enables the description of a hardware topology of digital subsystems. We call it execution platform, because it mostly represents execution units (see below) and we want to clearly distinguish this architecture/platform from a more general hardware architecture that could imply containing, e.g., mechanical components.
-Since the digital subsystem exclusively consists of software elements, which are components realized in software, the execution platform needs to specify the hardware resources which are necessary for the execution of these software parts.
+The _execution platform_ enables the description of an execution hardware topology of software execution subsystems. We call it execution platform, because it mostly represents execution units and we want to clearly distinguish this architecture from a more general hardware architecture that could imply containing, e.g., mechanical components.
+The previously described software element architectures of the run-time software models cannot model where their software elements are executed. Therefore, execution platforms are needed to specify possible hardware resources for software execution to know in combination with the deployment allocations where the software can and will be executed.
 The most prominent hardware components hereby are execution units like Electrical Control Units (ECUs) that can execute software elements.
-However, also technical communication units such as bus systems are highly relevant for the software execution in distributed technical architectures. Therefore, execution platforms can contain _execution_ as well _communication elements_ to represent these two entity types.
+However, also technical communication units such as bus systems are highly relevant for the software execution in distributed technical architectures. Therefore, execution platforms can contain _execution_ as well _communication elements_ to represent these two entity types. Although we were focused on these two types for the SpesML project, the metamodel is easily expendable with further types, like e.g., external memory or watchdogs. Therefore, we are talking in general of _physical elements_ when describing the content of execution platforms, and exection as well as communication elements are more specific types among them (see [Figure 1](#figureOverview)). 
 
 For actually gaining an added value for systems engineering, an important aspect is to capture more than the structure of the hardware topology alone. The specification of relevant attributes of all technical entities is the key to enable verification and analysis of the technical architecture.
 For execution elements, this might entail to capture the available memory and computational power.
 For communication elements, the usual technical aspects are bandwidth, real time capabilities and similar quality of service attributes.
 All of these entities and attributes are finally relevant for the allocation models.
 
-Actuators and sensor will be modeled outside the execution platform as part of mechatronic components, but it is often needed that they are connected to some execution elements. This is why execution platforms and the contained execution and communication elements can be connected with other technical/mechatronic components like actuators and sensors with the generic _technical interface_.
+The connection between physical elements of an execution platform can be modeled via the generic _technical interface_. Actuators and sensors are often modeled outside the execution platform as part of mechatronic components, but it might be needed that they are connected to some of the internal elements of an execution platform like execution elements. This is why execution platforms and their contained elements can also be connected to other technical component, again via the generic _technical interface_.
 
 The following table shows the mapping between the previously describe concepts (execution platform, execution and communication elements) and the SysML construct we used to realize it in SpesML (together with the names in the MagicDraw tool).  
 
