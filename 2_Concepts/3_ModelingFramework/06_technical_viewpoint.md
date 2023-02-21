@@ -29,8 +29,6 @@ permalink: /concepts/modeling_framework/technical_viewpoint.html
 
 **TODO: add the new stuff about the properties and add the examples (rules, etc.)**
 
-**TODO: check links, especially containing "task"**
-
 The technical viewpoint and its instances, the technical views, are mostly concerned with the question of how to get from the platform independent models of [logical viewpoint](/concepts/modeling_framework/logical_viewpoint.html) (logical components) to platform-specific models (technical components). In the following, we describe all models of the technical viewpoint including the software execution subsystem. 
 
 In general, we see generic technical models on the first granularity layer (the overall system), which can then be refined to more specialized models on the next granularity layer(s). An example for such a refinement/specialization is the software execution subsystem. This is why we divide this chapter of the technical viewpoint into two parts. First, we present the [more generic models of the technical viewpoint on the system layer](#models-on-the-system-layer) and afterwards, the [models of the software execution subsystem on a lower layer of granularity](#models-of-the-software-execution-subsystem).
