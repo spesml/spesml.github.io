@@ -151,7 +151,7 @@ The following table shows the mapping between the previously describe concepts (
 ### Allocation Models
  
 A software allocation model realizes a mapping of software elements from the software element architecture to execution elements of the execution platform. Thereby, it is an integrated platform-specific solution model for the software execution subsystem. 
-Such an allocation is necessary to identify the respective execution (and communication) resources for given software architecture artifacts, e.g., an allocation of a set of software elements to a certain ECU. This allocation enables further system engineering activities, e.g., scheduling analysis software elements.
+Such an allocation is necessary to identify the respective execution (and communication) resources for given software architecture artifacts, e.g., an allocation of a set of software elements to certain execution elements to describe the software deployment. This allocation enables further system engineering activities, e.g., scheduling analysis software elements. Finding an optimal or at least suitable deployment allocation can be done via, e.g., SAT solvers, like shown in [AutoFOCUS 3](https://www.fortiss.org/en/results/software/autofocus-3).
 
 All allocations of software elements to execution elements in the software deployment model must be of cardinality n:1. This means, that each software element can only be deployed to exactly one execution element, while each execution element can execute several (n) software elements.
 
