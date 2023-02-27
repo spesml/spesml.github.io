@@ -174,7 +174,7 @@ The following table shows the mapping between the previously describe mapping co
 The technical viewpoint incorporates all the general well-formedness rules (WFR) that were introduced for the whole SpesML concept due to, e.g., the Universal Interface Model. In addition, the following rules were identified specifically for the technical viewpoint, mainly due to its deployment allocations and software element tracing:
 
 - **WFR-T1: Interface/Port deployment must be aligned with software element to execution element deployment.**
-  - •	Software element interfaces can only be deployed to ports of execution elements to which the software element as owner of the interface is deployed itself. It is not allowed to deploy interfaces to ports of other execution elements to which the software element(s) have no deployment connection.
+  - Software element interfaces can only be deployed to ports of execution elements to which the software element as owner of the interface is deployed itself. It is not allowed to deploy interfaces to ports of other execution elements to which the software element(s) have no deployment connection.
   - *Reason*: It does not make sense to separate interfaces and their software elements between different physical elements in the real world.
 - **WFR-T2: Each software element must be allocated to exactly one execution element.**
   - In the end, it is not allowed that a software element is without deployment allocation to an execution allocation, and there must also not be a software element that is allocated to two or more execution elements.
