@@ -160,7 +160,7 @@ The simulation of the logical components includes the aspects of the physical be
 
 
 # Technical Viewpoint
-In this page we describe the Technical Viewpoint functional domain. There are five focus areas in this Viewpoint: the Technical Component Modeling (TCM), the Technical Architecture Modeling (TAM), the Technical Context Modeling (TTM), the Modeling of Software Execution Platform (HAM), and the Software Architecture Modeling (HAM). This functional domain lacks 'behavior modeling' capabilities, the behavior modeling happens in the Functional and Logical Viewpoints. Modeling guideline for this functional domain can e seen [here](https://spesml.github.io/plugin/technical_viewpoint.html#how-to-model).
+In this section we describe the Technical Viewpoint functional domain. There are five focus areas in this Viewpoint: the Technical Component Modeling (TCM), the Technical Architecture Modeling (TAM), the Technical Context Modeling (TTM), the Modeling of Software Execution Platform (HAM), and the Software Architecture Modeling (HAM). This functional domain lacks 'behavior modeling' capabilities, the behavior modeling happens in the Functional and Logical Viewpoints. Modeling guideline for this functional domain can e seen [here](https://spesml.github.io/plugin/technical_viewpoint.html#how-to-model).
 	
 ## Technical Component Modeling (TCM)
 This focus area describe capabilities related to the modeling of technical components.                                    
@@ -213,3 +213,39 @@ The software subsystem is decomposed in the least granular form, namely tasks.
 
 ### SAM B: The mapping of SW tasks to elements of the execution platform is modeled.
 The tasks created from the decomposition of the software subsystems is mapped to the elements of the execution platform. 
+
+# Simulation	
+In this section we describe the Simulation functional domain which is concerned with the implementation of simulation capabilities in state machines at the Functional and Logical viewpoints. There are four focus areas in this functional domain: 
+the Time synchronous (TIS), the Timed only (TIO), the Untimed (UNT), and the Composed simulation (COS). This functional domain is overarching, meaning it is related to multiple viewpoints. More information about simulation can be found [here](https://spesml.github.io/concepts/modeling_framework/simulation.html).
+
+## Time synchronous (TIS)
+
+### TIS A: Simulation of deterministic time synchronous state machines.
+This capability is considered implemented if state machines are developed to be simulated in a deterministic time synchronous manner.
+### TIS B: Simulation of composed time synchronous state machines.
+This capability is considered implemented if state machines are developed to be simulated in a composed time synchronous manner.
+### TIS C: Simulation of under-specified time synchronous state machines.
+This capability is considered implemented if state machines are developed to be simulated in an under-specified time synchronous manner.
+### TIS D: Scheduling of simulations of time synchronous state machines.
+This capability is considered implemented if state machines are developed to be simulated in a scheduled time synchronous manner.
+
+## Timed only (TIO)
+
+### TIO A: Simulation of deterministic timed state machines
+This capability is considered implemented if state machines are developed to be simulated in a scheduled time synchronous manner.
+### TIO B: Simulation of composed time state machines.
+### TIO C: Simulation of under-specified time synchronous state machines.
+### TIO D: Scheduling of simulations of time synchronous state machines.
+
+## Untimed (UNT)
+
+### UNT A: Simulation of deterministic untimed synchronous state machines
+### UNT B: Simulation of composed time synchronous state machines.
+### UNT C: Simulation of under-specified time synchronous state machines.
+### UNT D: Scheduling of simulations of time synchronous state machines.
+
+## Composed simulation (COS)
+This focus are has only one capability and it is concerned with the implementation of simulation capabilities to the fullest.
+
+### COS A: All simulations are implemented to the greatest capability
+This capability is considered implemented if all other focus area of the Simulation functional domain are implemented to the fullest maturity.
