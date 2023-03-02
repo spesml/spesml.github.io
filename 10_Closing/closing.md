@@ -3,7 +3,7 @@ layout: default
 title: Closing Event
 nav_order: 10
 has_toc: false
-permalink: /workshop.html/
+permalink: /closing-event.html/
 ---
 # Closing Event
 
