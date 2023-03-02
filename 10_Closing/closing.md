@@ -12,4 +12,4 @@ The closing event takes place on April 20th, 2023, at Siemens Healthcare in Erla
 ## Agenda
 
 ## Registration
-For the event, we require your registration. The event is limited to 50 participants. For registration, please write [Wolfgang Boehm](mailto:boehmw@in.tum.de) and state your name and affiliation.
+For the event, we require your registration. The event is limited to 50 participants. Please register via [Wolfgang Boehm](mailto:boehmw@in.tum.de), stating your name and affiliation.
