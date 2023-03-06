@@ -16,7 +16,7 @@ Location: &nbsp;&nbsp; Siemens Healthineers Traing Center<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 91052 Erlangen
 
 ## Registration
-For the event, we require your registration by April 6th, 2023. The event is limited to 50 participants. Please register via [Wolfgang Boehm](mailto:boehmw@in.tum.de), stating your name and affiliation.
+For the event, we require your registration by April 6th, 2023. The event is limited to 50 participants. Please register via email to [Wolfgang Boehm](mailto:boehmw@in.tum.de), stating your name and affiliation.
 
 ## Agenda
 10:00 - 10:15 &nbsp;&nbsp;&nbsp;&nbsp; Welcome and Agenda<br>
