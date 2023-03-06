@@ -5,12 +5,16 @@ nav_order: 10
 has_toc: false
 permalink: /closing-event.html/
 ---
-# Closing Event
+# Closing Event on April 20th, 2023 at Siemens Healthineers in Erlangen
 
 The closing event takes place on April 20th, 2023, at Siemens Healthcare in Erlangen and is open to the general public. During the event, the partners will present the results of the SpesML Project, which builds on a long history of research on the SPES Methodology and FOCUS theory. In a marketplace we will demonstrate selected results and give the opportunity for direct discussions with the project engineers. We welcome everybody interested in our research or further collaboration. For registration, please see the information below.
 
+## Date & Location
+Date: &nbsp;&nbsp;&nbsp;&nbsp; April 20th, 2023<br><br>
+Location: &nbsp;&nbsp; 
+
 ## Registration
-For the event, we require your registration. The event is limited to 50 participants. Please register via [Wolfgang Boehm](mailto:boehmw@in.tum.de), stating your name and affiliation.
+For the event, we require your registration by April 6th, 2023. The event is limited to 50 participants. Please register via [Wolfgang Boehm](mailto:boehmw@in.tum.de), stating your name and affiliation.
 
 ## Agenda
 10:00 - 10:15 &nbsp;&nbsp;&nbsp;&nbsp; Welcome and Agenda<br>
@@ -27,3 +31,5 @@ For the event, we require your registration. The event is limited to 50 particip
 16:10 - 16:20 &nbsp;&nbsp;&nbsp;&nbsp; Experiences of the Agile Approach in SpesML<br>
 16:20 - 17:00 &nbsp;&nbsp;&nbsp;&nbsp; Panel Diskussion<br>
 approx. 17:00 &nbsp;&nbsp;&nbsp;&nbsp; End of the Event<br>
+
+###Note: The event is open to the public and free of charge. Registration by April 6th, 2023 is necessary (see above).
