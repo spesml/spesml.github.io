@@ -25,5 +25,5 @@ For the event, we require your registration. The event is limited to 50 particip
 15:00 - 15:50 &nbsp;&nbsp;&nbsp;&nbsp; Coffee Break / Marketplace<br>
 15:50 - 16:10 &nbsp;&nbsp;&nbsp;&nbsp; Siemens Healthineers Case Study<br>
 16:10 - 16:20 &nbsp;&nbsp;&nbsp;&nbsp; Experiences of the Agile Approach in SpesML<br>
-16:20 - 17:00 &nbsp;&nbsp;&nbsp;&nbsp; Panel Diskussion 
-approx. 17:00 &nbsp;&nbsp;&nbsp;&nbsp; End of the Event
+16:20 - 17:00 &nbsp;&nbsp;&nbsp;&nbsp; Panel Diskussion<br>
+approx. 17:00 &nbsp;&nbsp;&nbsp;&nbsp; End of the Event<br>
