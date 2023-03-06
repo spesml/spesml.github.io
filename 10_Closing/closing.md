@@ -12,8 +12,8 @@ The closing event takes place on April 20th, 2023, at Siemens Healthcare in Erla
 ## Date & Location
 Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; April 20th, 2023, 10 a.m. - 5 p.m.<br> 
 Location: &nbsp;&nbsp; Siemens Healthineers Traing Center<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Allee am Röthelheimpark 3<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 91052 Erlangen
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Allee am Röthelheimpark 3<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 91052 Erlangen
 
 ## Registration
 For the event, we require your registration by April 6th, 2023. The event is limited to 50 participants. Please register via [Wolfgang Boehm](mailto:boehmw@in.tum.de), stating your name and affiliation.
