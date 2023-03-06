@@ -11,7 +11,7 @@ The closing event takes place on April 20th, 2023, at Siemens Healthcare in Erla
 
 ## Date & Location
 Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; April 20th, 2023, 10 a.m. - 5 p.m.<br> 
-Location: &nbsp;&nbsp; Siemens Healthineers Traing Center<br>
+Location: &nbsp;&nbsp; Siemens Healthineers Training Center<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Allee am Röthelheimpark 3<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 91052 Erlangen
 
