@@ -13,5 +13,5 @@ The closing event takes place on April 20th, 2023, at Siemens Healthcare in Erla
 For the event, we require your registration. The event is limited to 50 participants. Please register via [Wolfgang Boehm](mailto:boehmw@in.tum.de), stating your name and affiliation.
 
 ## Agenda
-10:00 - 10:15	> Welcome and Agenda<br>
-10:15 - 10:45	    SpesML Project Highlights
+10:00 - 10:15	  Welcome and Agenda<br>
+10:15 - 10:45	  SpesML Project Highlights<br>
