@@ -20,15 +20,16 @@ For the event, we require your registration by April 6th, 2023. The event is lim
 
 ## Agenda
 10:00 - 10:15 &nbsp;&nbsp;&nbsp;&nbsp; Welcome and Agenda<br>
-10:15 - 10:45 &nbsp;&nbsp;&nbsp;&nbsp; SpesML Project Highlights<br>
-10:45 - 11:15 &nbsp;&nbsp;&nbsp;&nbsp; SpesML Tool Platform<br>
-11:15 - 11:45 &nbsp;&nbsp;&nbsp;&nbsp; Tracing and Wellformedness in SpesML<br>
-11:45 - 12:15 &nbsp;&nbsp;&nbsp;&nbsp; Models of a Software Subsystem<br>
-12:15 - 12:45 &nbsp;&nbsp;&nbsp;&nbsp; Modeling Behavior of Cyber Physical Systems<br>
-12:45 - 14:15 &nbsp;&nbsp;&nbsp;&nbsp; Lunch / Guided Tour / SpesML Marketplace<br>
-14:15 - 14:40 &nbsp;&nbsp;&nbsp;&nbsp; Simulation, Alnalyses and Tests<br>
-14:40 - 15:00 &nbsp;&nbsp;&nbsp;&nbsp; Schaeffler Case Study<br>
-15:00 - 15:50 &nbsp;&nbsp;&nbsp;&nbsp; Coffee Break / Marketplace<br>
+10:15 - 10:30 &nbsp;&nbsp;&nbsp;&nbsp; Modeling form an Industry Perspective<br>
+10:30 - 11:00 &nbsp;&nbsp;&nbsp;&nbsp; SpesML Project Highlights<br>
+11:00 - 11:30 &nbsp;&nbsp;&nbsp;&nbsp; SpesML Tool Platform<br>
+11:30 - 12:00 &nbsp;&nbsp;&nbsp;&nbsp; Tracing and Wellformedness in SpesML<br>
+12:00 - 12:30 &nbsp;&nbsp;&nbsp;&nbsp; Models of a Software Subsystem<br>
+12:30 - 14:00 &nbsp;&nbsp;&nbsp;&nbsp; Lunch / Guided Tour / SpesML Marketplace<br>
+14:00 - 14:30 &nbsp;&nbsp;&nbsp;&nbsp; Modeling Behavior of Cyber Physical Systems<br>
+14:30 - 14:50 &nbsp;&nbsp;&nbsp;&nbsp; Simulation, Alnalyses and Tests<br>
+14:50 - 15:30 &nbsp;&nbsp;&nbsp;&nbsp; Coffee Break / Marketplace<br>
+15:30 - 15:50 &nbsp;&nbsp;&nbsp;&nbsp; Schaeffler Case Study<br>
 15:50 - 16:10 &nbsp;&nbsp;&nbsp;&nbsp; Siemens Healthineers Case Study<br>
 16:10 - 16:20 &nbsp;&nbsp;&nbsp;&nbsp; Experiences of the Agile Approach in SpesML<br>
 16:20 - 17:00 &nbsp;&nbsp;&nbsp;&nbsp; Panel Diskussion<br>
