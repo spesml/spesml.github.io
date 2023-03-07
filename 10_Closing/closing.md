@@ -20,7 +20,7 @@ For the event, we require your registration by April 6th, 2023. The event is lim
 
 ## Agenda
 10:00 - 10:15 &nbsp;&nbsp;&nbsp;&nbsp; Welcome and Agenda<br>
-10:15 - 10:30 &nbsp;&nbsp;&nbsp;&nbsp; Modeling from an Industry Perspective<br>
+10:15 - 10:30 &nbsp;&nbsp;&nbsp;&nbsp; Model-Based Engineering from an Industry Perspective<br>
 10:30 - 11:00 &nbsp;&nbsp;&nbsp;&nbsp; SpesML Project Highlights<br>
 11:00 - 11:30 &nbsp;&nbsp;&nbsp;&nbsp; SpesML Tool Platform<br>
 11:30 - 12:00 &nbsp;&nbsp;&nbsp;&nbsp; Tracing and Wellformedness in SpesML<br>
