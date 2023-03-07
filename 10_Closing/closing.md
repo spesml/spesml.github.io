@@ -35,4 +35,4 @@ For the event, we require your registration by April 6th, 2023. The event is lim
 16:20 - 17:00 &nbsp;&nbsp;&nbsp;&nbsp; Panel Diskussion<br>
 approx. 17:00 &nbsp;&nbsp;&nbsp;&nbsp; End of the Event<br><br><br>
 
-<b>Note:</b> The event is open to the public and free of charge. Registration by April 6th, 2023 is necessary (see above).
+<b>Note:</b> The event is open to the public and free of charge. Registration by April 6th, 2023 is necessary (see above). 
