@@ -14,6 +14,7 @@ permalink: /concepts/maturity_model/definition.html
 - [Functional Viewpoint](#functional-viewpoint)
 - [Logical Viewpoint](#logical-viewpoint)
 - [Technical Viewpoint](#technical-viewpoint)
+- [Simulation](#simulation)
 
 # Requirements Viewpoint
 The Requirements Viewpoint is the functional domain of the SpesML MM concerned with the definition of requirements. There are three focus areas in this Viewpoint: the Requirements Elicitation (REE), the Requirements Specification (RES), and the Requirements Refinement (RER). More information on the Requirements Viewpoint can be found [here](https://spesml.github.io/concepts/modeling_framework/requirements_viewpoint.html).  
@@ -232,17 +233,24 @@ This capability is considered implemented if state machines are developed to be 
 ## Timed only (TIO)
 
 ### TIO A: Simulation of deterministic timed state machines
-This capability is considered implemented if state machines are developed to be simulated in a scheduled time synchronous manner.
-### TIO B: Simulation of composed time state machines.
-### TIO C: Simulation of under-specified time synchronous state machines.
-### TIO D: Scheduling of simulations of time synchronous state machines.
+This capability is considered implemented if deterministic timed state machines are developed to be simulated.
+### TIO B: Simulation of composed timed state machines.
+This capability is considered implemented if composed timed state machines are developed to be simulated.
+### TIO C: Simulation of under-specified timed synchronous state machines.
+This capability is considered implemented if under-specified timed state machines are developed to be simulated.
+### TIO D: Scheduling of simulations of timed synchronous state machines.
+This capability is considered implemented if timed synchronous state machines are developed to be simulated in a scheduled manner.
 
 ## Untimed (UNT)
 
 ### UNT A: Simulation of deterministic untimed synchronous state machines
-### UNT B: Simulation of composed time synchronous state machines.
-### UNT C: Simulation of under-specified time synchronous state machines.
-### UNT D: Scheduling of simulations of time synchronous state machines.
+This capability is considered implemented if deterministic untimed synchronous state machines are developed to be simulated.
+### UNT B: Simulation of composed untimed synchronous state machines.
+This capability is considered implemented if composed untimed synchronous state machines are developed to be simulated.
+### UNT C: Simulation of under-specified untimed synchronous state 
+This capability is considered implemented if under-specified untimed synchronous state machines are developed to be simulated.machines.
+### UNT D: Scheduling of simulations of untimed synchronous state machines.
+This capability is considered implemented if untimed synchronous state machines are developed to be simulated in a scheduled manner.
 
 ## Composed simulation (COS)
 This focus are has only one capability and it is concerned with the implementation of simulation capabilities to the fullest.
