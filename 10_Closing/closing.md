@@ -27,7 +27,7 @@ For the event, we require your registration by April 6th, 2023. The event is lim
 12:00 - 12:30 &nbsp;&nbsp;&nbsp;&nbsp; Models of a Software Subsystem<br>
 12:30 - 14:00 &nbsp;&nbsp;&nbsp;&nbsp; Lunch / Guided Tour / SpesML Marketplace<br>
 14:00 - 14:30 &nbsp;&nbsp;&nbsp;&nbsp; Modeling Behavior of Cyber Physical Systems<br>
-14:30 - 14:50 &nbsp;&nbsp;&nbsp;&nbsp; Simulation, Alnalyses and Tests<br>
+14:30 - 14:50 &nbsp;&nbsp;&nbsp;&nbsp; Simulation, Analyses and Tests<br>
 14:50 - 15:30 &nbsp;&nbsp;&nbsp;&nbsp; Coffee Break / Marketplace<br>
 15:30 - 15:50 &nbsp;&nbsp;&nbsp;&nbsp; Schaeffler Case Study<br>
 15:50 - 16:10 &nbsp;&nbsp;&nbsp;&nbsp; Siemens Healthineers Case Study<br>
