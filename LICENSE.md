@@ -53,7 +53,7 @@ Copyright (c) Gesellschaft für Systems Engineering e.V. (GfSE), 2023, All right
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Open Source Initiative: The 3-Clause BSD License, https://opensource.org/licenses/BSD-3-Clause
+Open Source Initiative: The [3-Clause BSD License](https://opensource.org/licenses/BSD-3-Clause)
 ### Creative Commons Attribution 4.0 (CC BY 4.0)
 
 SpesML documentation is licensed under the Creative Commons Attribution 4.0 (CC BY 4.0) license which permits use, sharing, adaption, distribution and reproduction in any medium or format under the following terms:
@@ -64,13 +64,13 @@ SpesML documentation is licensed under the Creative Commons Attribution 4.0 (CC 
 
 * No warranties are given
 
-Creativecommons.org: Creative Commons Attribution 4.0 International Public License: https://creativecommons.org/licenses/by/4.0/legalcode
+Creativecommons.org: [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode)
 
  
 ### Further Software Packages
 
 The SpesML workbench uses the following software, which require separate license agreements:
 
-* Dassault Systemes MagicDraw https://docs.nomagic.com/display/NMDOC/Installation+and+licensing
+* [Dassault Systemes MagicDraw](https://docs.nomagic.com/display/NMDOC/Installation+and+licensing)
 
-* Monticore Language Workbench https://monticore.github.io/monticore/00.org/Licenses/LICENSE-MONTICORE-3-LEVEL/ 
+* [Monticore Language Workbench](https://monticore.github.io/monticore/00.org/Licenses/LICENSE-MONTICORE-3-LEVEL/)
