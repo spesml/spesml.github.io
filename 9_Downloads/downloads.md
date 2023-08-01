@@ -13,6 +13,6 @@ This download archive gathers all documentations, papers, plugins and publicatio
 
 Download the SpesML Plugin for MagicDraw 2021x Refresh1.  
   
-[Download](/downloads/SpesML.zip){: .btn }
+[Download](https://github.com/spesml/spesml.github.io/releases/download/Release/SpesML.zip){: .btn }
 
 
