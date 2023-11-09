@@ -9,7 +9,7 @@ permalink: /plugin/overview.html/
 As a result of the project we have developed a *SpesML Plugin* for the tool *MagicDraw* [(Link)](https://www.3ds.com/products-services/catia/products/no-magic/magicdraw/). In order to use the *SpesML Plugin* at least a *MagcDraw Standard Edition* as well as the *SysML Plugin* is required. The SpesML Plugin was built for MagicDraw 2021x Refresh 1.
 
 ## Download
-You can find the latest version of the SpesML Plugin [here](/downloads).
+You can find the latest version of the SpesML Plugin [here](/downloads.html).
 
 ## Installation
 To install the *SpesML Plugin* perform the following steps:
